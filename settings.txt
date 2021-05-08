@@ -682,3 +682,18 @@ Your router or DNS server has DNS rebinding protection enabled, preventing=
 Your server has been registered=
 Your Unraid Server is reachable from the internet=
 YYYY-MM-DD=
+
+; New entries (13) - 2021-05-08
+%s ago=
+%s is out of range minimum 1 maximum 65535=%s is out of range (minimum 1 maximum 65535)
+DNS servers=
+Duplicate port entered=
+Header custom meta text color=
+Local syslog port=
+or=
+Port %s is already in use by other services=
+Port %s is duplicated=
+Port %s is out of range minimum 1 maximum 65535=Port %s is out of range (minimum 1 maximum 65535)
+Port already in use=
+Port out of range=
+Remote syslog port=
