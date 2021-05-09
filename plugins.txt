@@ -28,3 +28,7 @@ Uninstall=
 Update All Plugins=
 Upgrade=
 View Release Notes=
+
+; New entries (2) - 2021-05-09
+Checking connectivty=
+No response, aborting=
