@@ -312,7 +312,6 @@ is not unique (this is common with USB card readers).
 For more information, please [Contact Support](https://lime-technology.com/contact).
 :end
 
-; New entries (3) - 2021-05-10
-Beta=
+; New entries (2) - 2021-05-10
 Next=
 Stable=
