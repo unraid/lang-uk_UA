@@ -315,3 +315,6 @@ For more information, please [Contact Support](https://lime-technology.com/conta
 ; New entries (2) - 2021-05-10
 Next=
 Stable=
+
+; New entries (1) - 2021-05-20
+Beta=
