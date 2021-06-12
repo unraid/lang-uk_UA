@@ -132,3 +132,6 @@ Was this container created using this plugin=
 Web=
 WebUI=
 Writable=
+
+; New entries (1) - 2021-06-12
+Crypto Currency=
