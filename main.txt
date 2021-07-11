@@ -311,3 +311,8 @@ Wrong key=
 xfs_repair status=
 You may not add new disks and also remove existing disks=You may not add new disk(s) and also remove existing disk(s)
 your server=
+
+; New entries (3) - 2021-07-11
+enter disk index and device name as applicable to your controller=
+next device=
+previous device=
