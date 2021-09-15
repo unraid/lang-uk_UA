@@ -402,15 +402,6 @@ This will stop the array=
 year=
 years=
 month=
-months=
-day=
-days=
-hour=
-hours=
-minute=
-minutes=
-second=
-seconds=
 ago=
 
 ; New entries (210) - 2021-05-08
