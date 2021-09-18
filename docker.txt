@@ -36,8 +36,6 @@ DNS=
 Docker Containers=
 Docker Hub URL=
 Docker Service failed to start=
-Donation Link=
-Donation Text=
 Downloaders=
 Drivers=
 Edit Configuration=
@@ -59,7 +57,6 @@ Icon URL=
 Image ID=
 Key=
 Label=
-latest=
 Management=
 MediaApp=
 MediaServer=
@@ -104,7 +101,6 @@ Show docker allocations=
 Show more settings=
 Stable=
 Start All=
-Start Container After Install=
 starting up containers=
 Stop All=
 Stopping container=
@@ -112,7 +108,6 @@ Successfully removed container=
 Successfully removed orphan image=
 Successfully stopped container=
 Support Thread=
-Template repositories=
 Template URL=
 Template=
 The command failed=
@@ -135,3 +130,7 @@ Writable=
 
 ; New entries (1) - 2021-06-12
 Crypto Currency=
+
+; New entries (2) - 2021-09-18
+Additional Requirements=
+None Listed=
