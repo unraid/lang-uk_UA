@@ -1,41 +1,39 @@
-Recycle Bin=
+Age Days=
+Array=
+Array is stopped=
+Browse the Share Recycle Bin=
 Deleted Files=
-Stop the Recycle Bin=
-Restart the Recycle Bin=
-Start the Recycle Bin=
-Recycle Bin Total Size=
-Remove Aged Files=
-Remove aged files from the Recycle Bin=
+Deleted Files Log=
+Empty=
+Empty the=
 Empty All Trash=
-Remove all files from the Recycle Bin=
-Refresh the Recycle Bin page=
-Enable Recycle Bin for deleted files=
-Update Recycle Bin Size in Background=
-Enable on Unassigned Devices for Deleted Files=
-Recycle Bin parameters=
+Empty Trash=
+Enable on Unassigned Devices=
+Enable Recycle Bin=
 Excluded Directories=
 Excluded Files=
 Excluded Shares=
-Age Days=
-Remove Aged Files on Schedule=
-Remove Aged Files Notification=
 Log Deleted Files=
-Empty=
-Array is stopped=
-SMB Share=
-Share Type=
-Trash Size=
-Empty Trash=
-Array=
-Browse the Share Recycle Bin=
-Empty the=
 Recycle Bin=
-Deleted Files Log=
 Recycle Bin Log=
-Yes I want to do this=
-to remove deleted files older than the 'Age Days' setting=
-Empty All Trash=
-to remove all deleted files=
+Recycle Bin parameters=
+Recycle Bin permissions=
+Recycle Bin Total Size=
+Refresh the Recycle Bin page=
+Remove Aged Files=
+Remove aged files from the Recycle Bin=
+Remove Aged Files Notification=
+Remove Aged Files on Schedule=
+Remove all files from the Recycle Bin=
+Restart the Recycle Bin=
+Share Type=
+SMB Share=
+Start the Recycle Bin=
+Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=
+Stop the Recycle Bin=
+These actions apply to all shares=
+Trash Size=
+Update Recycle Bin Size in Background=
 ;
 ; Help
 ;
@@ -55,7 +53,10 @@ These actions apply to all shares:
 
 :recycle_bin_enable_plug:
 > Set to 'Yes' to enable the Recycle Bin functionality for deleted files when the server is started.
+> To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
+> To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
 :end
+
 
 :recycle_bin_background_plug:
 > Set to 'Yes' to enable the Recycle Bin Size to be updated in the background every minute.  This can make the Recycle Bin Settings and Shares pages more responsive and prevent disk spinups when accessing the Recycle Bin.  The Recycle Bin size can take up to a minute to refresh when this is enabled.
