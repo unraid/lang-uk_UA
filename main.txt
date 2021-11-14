@@ -73,6 +73,7 @@ Download SMART report=
 Dual parity valid requires ALL disks in their original slots=*Dual parity* valid requires **ALL** disks in their original slots
 Elapsed time=
 Enable user share assignment=
+enter disk index and device name as applicable to your controller=
 Erase=
 Erase Device Content=
 encrypted=
@@ -103,6 +104,7 @@ Hide=
 Identification=
 Identity=
 if checked, Start array but do not mount disks=
+If this is a new array, move the largest disk into the parity slot=If this is a new array, move the largest disk into the *parity* slot
 If you are adding a new disk or replacing a disabled disk, try Parity-Swap=
 Information=
 Insufficient free disk space available=
@@ -131,6 +133,7 @@ Missing=
 Mounted=
 Mover is running=
 network settings=
+next device=
 New data disks detected=New data disk(s) detected
 No array data disks have been assigned=
 No data disks=
@@ -161,6 +164,7 @@ Pool Devices=
 Pool name already exists=
 Pool of %s devices=
 Preclear in progress=
+previous device=
 Printable Characters Only=
 Proceed to start=
 Raw Value=
@@ -303,10 +307,4 @@ xfs_repair status=
 You may not add new disks and also remove existing disks=You may not add new disk(s) and also remove existing disk(s)
 your server=
 
-; New entries (3) - 2021-07-11
-enter disk index and device name as applicable to your controller=
-next device=
-previous device=
-
-; New entries (1) - 2021-11-06
-If this is a new array, move the largest disk into the parity slot=If this is a new array, move the largest disk into the *parity* slot
+; Note: November 14, 2021 - 245 missing translations

@@ -2,6 +2,7 @@ Access Mode=
 Add another Path, Port, Variable, Label or Device=
 Add Configuration=
 Add=
+Additional Requirements=
 Always=
 App to Host=
 Application=
@@ -29,6 +30,7 @@ Container=
 CPU Memory load=CPU & Memory load
 CPU Pinning=
 Created=
+Crypto Currency=
 Default Value=
 Device=
 Display=
@@ -65,6 +67,7 @@ Missing parameters=
 Music=
 Network Type=
 No Docker containers installed=
+None Listed=
 of=
 orphan image=
 Other=
@@ -80,6 +83,7 @@ Productivity=
 Project Page=
 Proxy=
 Pulling image=
+Read Me First=
 Read Only - Shared=
 Read Only - Slave=
 Read Only=
@@ -128,12 +132,4 @@ Web=
 WebUI=
 Writable=
 
-; New entries (1) - 2021-06-12
-Crypto Currency=
-
-; New entries (2) - 2021-09-18
-Additional Requirements=
-None Listed=
-
-; New entries (1) - 2021-11-07
-Read Me First=
+; Note: November 14, 2021 - 129 missing translations
