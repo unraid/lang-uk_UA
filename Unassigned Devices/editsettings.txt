@@ -40,6 +40,7 @@ Volume=
 :ud_edit_user_script_choose_name_plug:
 > If you have the User Scripts plugin installed, you can have Unassigned Devices show the running status of the User Script that will be using this device.  This field will only be enabled when a Script File exists.
 :end
+<?endif;?>=
 
 :ud_edit_script_run_background_plug:
 > Turn on the 'Run in Background' to have the script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
@@ -51,3 +52,5 @@ Volume=
 > Click the **Default Script** button to initialize the edit box with a default script.
 > You still need to click **Save** in order to commit the change.
 :end
+
+; Note: November 15, 2021 - 25 missing translations
