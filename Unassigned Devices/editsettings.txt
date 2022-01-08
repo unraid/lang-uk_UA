@@ -53,4 +53,4 @@ Volume=
 > You still need to click **Save** in order to commit the change.
 :end
 
-; Note: December 16, 2021 - 25 missing translations
+; Note: January 8, 2022 - 25 missing translations
