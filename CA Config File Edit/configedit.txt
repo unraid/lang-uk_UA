@@ -1,14 +1,14 @@
-Select File=
-Error reading file=
-No Backup File Found=
-Select a file to edit=
-note editing a binary file could have unintended consequences=
-No file selected=
-Backup File=
-Editing=
-Generally, it is not recommended to change the format=
+Select File=Виберіть Файл
+Error reading file=Помилка читання файлу
+No Backup File Found=Файл резервної копії не знайдено
+Select a file to edit=Виберіть файл для редагування
+note editing a binary file could have unintended consequences=Примітка редагування двійкового файлу може мати непередбачувані наслідки
+No file selected=Не вибрано жодного файлу
+Backup File=Файл резервної копії
+Editing=Редагування
+Generally, it is not recommended to change the format=Як правило, не рекомендується змінювати формат
 Credits=
-No Backup File Found=
-File Format=
+No Backup File Found=Файл резервної копії не знайдено
+File Format=Формат файлу
 
 ; Note: May 20, 2022 - 12 missing translations

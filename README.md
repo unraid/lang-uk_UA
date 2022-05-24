@@ -1,122 +1,122 @@
-# lang-uk_UK
+# lang-ua_UA
 
-### READ THIS WHEN YOU WANT TO MAKE TRANSLATIONS TO ANOTHER LANGUAGE
+### ПРОЧИТАЙТЕ ЦЕ, КОЛИ ВИ ХОЧЕТЕ ЗРОБИТИ ПЕРЕКЛАДИ ІНШОЮ МОВОЮ
 
-There are sixteen text files included in this repository, each with their own section of translations:
+У цьому сховищі міститься шістнадцять основних текстових файлів, кожен із власним розділом перекладів:
 
-- translations.txt -- these are general translations and loaded each time
-- helptext.txt     -- these are all help text sections and loaded each time
-- dashboard.txt    -- these are translations for the dashboard section
-- main.txt         -- these are translations for the main section
-- shares.txt       -- these are translations for the shares section
-- users.txt        -- these are translations for the users section
-- settings.txt     -- these are translations for the settings section
-- plugins.txt      -- these are translations for the plugins section
-- docker.txt       -- these are translations for the docker section
-- vms.txt          -- these are translations for the vms section
-- tools.txt        -- these are translations for the tools section
-- javascript.txt   -- these are translations for javascript scripts
-- scripts.txt      -- these are translations for local scripts
-- apps.txt         -- these are translations for the CA section
-- ca_settings      -- these are translations for the CA settings
-- javascript.ca.txt-- these are translations for the CA javascript
+- translations.txt -- це загальні переклади, які завантажуються щоразу
+- helptext.txt -- це всі розділи довідкового тексту, які завантажуються щоразу
+- dashboard.txt -- це переклади для розділу інформаційної панелі
+- main.txt -- це переклади основного розділу
+- shares.txt -- це переклади розділу shares
+- users.txt -- це переклади для розділу користувачів
+- settings.txt -- це переклади розділу налаштувань
+- plugins.txt -- це переклади розділу плагінів
+- docker.txt -- це переклади розділу docker
+- vms.txt -- це переклади розділу vms
+- tools.txt -- це переклади розділу інструментів
+- javascript.txt -- це переклади для сценаріїв javascript
+- scripts.txt -- це переклади для локальних скриптів
+- apps.txt -- це переклади для розділу CA (у папці Community Apps)
+- ca_settings - це переклади налаштувань ЦС (у папці Community Apps)
+- javascript.ca.txt-- це переклади для CA javascript (у папці Community Apps)
 
-All file names are in lowercase and should be included in the repository to make the translations complete.
+Усі назви файлів пишуться у нижньому регістрі та повинні бути включені в репозиторій, щоб переклади були повними.
 
-Removing a particular file, means no translations will be available for that section and the GUI will display text in original English.
+Видалення певного файлу означає, що переклади для цього розділу не будуть доступні, а графічний інтерфейс відображатиме текст оригінальною англійською мовою.
 
-### TRANSLATIONS
+### ПЕРЕКЛАДИ
 
-Each text file contains regular text strings stored in UTF-8 format with linux line-endings.
-Use a text editor which supports UTF-8 and linux format, like [notepad++](https://notepad-plus-plus.org/downloads)
+Кожен текстовий файл містить звичайні текстові рядки, що зберігаються у форматі UTF-8 із закінченнями рядків Linux.
+Використовуйте текстовий редактор, який підтримує формат UTF-8 і linux, наприклад [notepad++](https://notepad-plus-plus.org/downloads)
 
-The content of each text file is separated into two parts
+Вміст кожного текстового файлу розділений на дві частини
 
-### PART 1
+### ЧАСТИНА 1
 
-These are single line entries which are in the format:
+Це однорядкові записи у форматі:
 
-`original English text=translated Foreign text`
+`оригінал англійського тексту = перекладений іноземний текст`
 
-Only modify the text after the equal sign(=) and leave the original English text at the left untouched.
-Removing a line or omitting a translation after the equal sign, results in the GUI displaying this line with the original English text.
+Змініть текст лише після знака рівності (=) і залиште оригінальний англійський текст ліворуч.
+Видалення рядка або пропуск перекладу після знака рівності призводить до того, що графічний інтерфейс відображає цей рядок з оригінальним англійським текстом.
 
-The translated text may have 'special characters', such as slashes, parenthesis or brackets which are not included in the key text,
-but which are used to display text accordingly. E.g.
+Перекладений текст може містити «спеціальні символи», такі як косі риски, дужки або дужки, які не входять до основного тексту,
+але які використовуються для відображення тексту відповідно. напр.
 
-`Options see Help=Options (see Help)`
+`Параметри див. Help=Options (див. Довідку)`
 
-The characters \* and \*\* are used to display text in italics and bold respectively. E.g.
+Символи \* і \*\* використовуються для відображення тексту курсивом і жирним шрифтом відповідно. напр.
 
-`Array must be Stopped to change=Array must be **Stopped** to change`
+`Масив має бути зупинений для зміни=Масив має бути **зупинений** для зміни`
 
-It is recommended to make translations per section, that is one file at the time, and verify the correctness of the translations in the GUI
-before proceeding with the next section.
+Рекомендується робити переклади на розділ, тобто по одному файлу за раз, і перевіряти правильність перекладів у графічному інтерфейсі.
+перш ніж перейти до наступного розділу.
 
-Keep in mind the length of the translations and try to make them similar length as the original text and avoid space issues in the GUI.
+Пам’ятайте про довжину перекладів і намагайтеся зробити їх такою ж довжиною, як і оригінальний текст, і уникайте проблем з простором у графічному інтерфейсі.
 
-### PART 2
+### ЧАСТИНА 2
 
-These are multi line entries used to translate multiple lines at once.
-Multi line translations have a unique opening and closing tag:
+Це багаторядкові записи, які використовуються для одночасного перекладу кількох рядків.
+Багаторядковий переклад має унікальний відкриваючий і закриваючий тег:
 
-**:unique_tag_name_plug:** - unique opening tag used for any multi line text section
+**:unique_tag_name_plug:** - унікальний початковий тег, який використовується для будь-якого багаторядкового текстового розділу
 
-**:end**    - closing tag
+**:end** - закриваючий тег
 
-Do not remove or alter these tags and only translate the text between the opening and closing tags!
+Не видаляйте і не змінюйте ці теги, а перекладайте лише текст між початковим і закриваючим тегами!
 
-### HELP TEXT
+### ТЕКСТ ДОПОМОГИ
 
-All help text of the GUI is stored in a single file *helptext.txt*.
+Весь текст довідки GUI зберігається в одному файлі *helptext.txt*.
 
-This file has multiple help text sections. Each section is enclosed by a unique opening tag and corresponding closing tag.
+Цей файл має кілька розділів довідкового тексту. Кожен розділ укладено унікальним відкриваючим тегом і відповідним закриваючим тегом.
 
-**:unique_tag_name_help:** - unique opening tag used for a help text section
+**:unique_tag_name_help:** - унікальний початковий тег, який використовується для текстового розділу довідки
 
-**:end**    - corresponding closing tag
+**:end** - відповідний закриваючий тег
 
-Do not remove or alter these tags and only translate the text between the opening and closing tags!
+Не видаляйте і не змінюйте ці теги, а перекладайте лише текст між початковим і закриваючим тегами!
 
-Be aware that Markdown styling syntax is used, this must be preserved.
+Майте на увазі, що використовується синтаксис стилю Markdown, його потрібно зберегти.
 
-### LOCAL TESTING
+### ЛОКАЛЬНЕ ТЕСТИРОВАННЯ
 
-Once the translations are complete and you want to test locally the (intermediate) results, the text files need to be zipped into a single ZIP file.
-Give the ZIP file the name of your language, e.g. French.zip.
+Коли переклади завершені, і ви хочете локально перевірити (проміжні) результати, текстові файли потрібно заархівувати в один ZIP-файл.
+Дайте файлу ZIP назву вашої мови, напр. French.zip.
 
-In the GUI go to: Tools -> webGUI -> Language (switch to Developer view)
+У графічному інтерфейсі перейдіть до: Інструменти -> webGUI -> Мова (перейдіть до перегляду розробника)
 
-- By default only the English language is installed (built-in)
-- Choose the ZIP file you have created earlier as the source file
-- If the language name is recognized, it will be automatically selected, otherwise chose the name of the language from the dropdown menu to install.
-- Click on "Upload" will add your translations to the GUI under the selected language name
+- За замовчуванням встановлюється лише англійська мова (вбудована)
+- Виберіть файл ZIP, який ви створили раніше, як вихідний файл
+- Якщо назва мови розпізнається, вона буде вибрана автоматично, в іншому випадку виберіть назву мови зі спадного меню для встановлення.
+- Натисніть «Завантажити», щоб додати ваші переклади до графічного інтерфейсу під назвою вибраної мови
 
-NOTE: If your language is not available from the dropdown menu, please make a request on the [Unraid forum](https://forums.unraid.net/forum/75-multi-language-section/)
+ПРИМІТКА. Якщо ваша мова недоступна у спадному меню, надішліть запит на [форумі Unraid](https://forums.unraid.net/forum/75-multi-language-section/)
 
-Now your language is available for local testing!
+Тепер ваша мова доступна для локального тестування!
 
-In the GUI go to: Settings -> Display Settings -> Language
+У графічному інтерфейсі перейдіть до: Налаштування -> Налаштування дисплея -> Мова
 
-- Select the preferred language from the dropdown menu. Note that only the available language choices are displayed here.
+- Виберіть бажану мову зі спадного меню. Зауважте, що тут відображаються лише доступні варіанти мов.
 
 ### GITHUB
 
-A language repository will be made available at [Github](https://github.com/unraid), where translators can create Pull Requests (PR) and submit their work.
+Репозиторій мов буде доступний на [Github](https://github.com/unraid), де перекладачі можуть створювати Pull Requests (PR) і надсилати свою роботу.
 
-Once you are satisfied with your results, use Github (an account is required) to fork the respective language repository and create a PR with your modifications.
+Як тільки ви будете задоволені своїми результатами, використовуйте Github (потрібен обліковий запис), щоб розділити відповідний репозиторій мов і створити PR зі своїми змінами.
 
-Limetech will review this and merge your work when approved.
+Limetech розгляне це та об’єднає вашу роботу після схвалення.
 
-### UPDATES
+### ОНОВЛЕННЯ
 
-When updated source text files in English become available in the future, these updates will be made available through Github.
+Коли оновлені вихідні текстові файли англійською мовою стануть доступними в майбутньому, ці оновлення стануть доступними через Github.
 
-Translators can use the Github system to see which changes are made and update their translations accordingly.
+Перекладачі можуть використовувати систему Github, щоб побачити, які зміни внесені, і відповідно оновити свої переклади.
 
-### CREDITS
+### КРЕДИТИ
 
-Your efforts are much welcomed and to show our appreciation, your name and language are credited on the Credits page under Tools in the GUI.
-Please let us know which credentials to use.
+Ми вітаємо ваші зусилля, і щоб показати нашу вдячність, ваше ім’я та мова вказано на сторінці «Кредити» в розділі «Інструменти» в графічному інтерфейсі.
+Будь ласка, повідомте нам, які облікові дані використовувати.
 
-Thank you very much!
+Дуже дякую!
