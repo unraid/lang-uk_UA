@@ -12,10 +12,8 @@ Day Of Month=День місяця
 Hour=Година
 Minute=Минута
 Custom cron expression=Спеціальний вираз cron
-Credits=
+Credits=Список Учасників
 Docker Must Be Enabled For This Module To Operate=Щоб цей модуль працював, потрібно ввімкнути Docker
-Time to wait for graceful stop before killing=
+Time to wait for graceful stop before killing=Час чекати витонченої зупинки, перш ніж вбивати
 Update All Docker Applications=Оновіть всі програми Docker
 Do not overlap with autoupdate=Не перекривайте автоматичне оновлення
-
-; Note: May 20, 2022 - 19 missing translations
