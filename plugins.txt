@@ -36,3 +36,5 @@ Update All Plugins=Оновити Всі Плагіни
 Update Plugin=Оновити Плагін
 Upgrade=Оновлення
 View Release Notes=Переглянути примітки до випуску
+
+; Note: May 26, 2022 - 1 missing translations

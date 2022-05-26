@@ -7,8 +7,6 @@ No file selected=Не вибрано жодного файлу
 Backup File=Файл резервної копії
 Editing=Редагування
 Generally, it is not recommended to change the format=Як правило, не рекомендується змінювати формат
-Credits=
+Credits=Список Учасників
 No Backup File Found=Файл резервної копії не знайдено
 File Format=Формат файлу
-
-; Note: May 20, 2022 - 12 missing translations

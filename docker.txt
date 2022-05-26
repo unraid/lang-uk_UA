@@ -109,7 +109,7 @@ starting up containers=запуск контейнерів
 Stop All=Зупинити ВСІ
 Stopping container=Зупинення контейнера
 Successfully removed container=Контейнер успішно вилучено
-Successfully removed orphan image=
+Successfully removed orphan image=Застарілий образ успішно видалено
 Successfully stopped container=Контейнер успішно зупинений
 Support Thread=Тема Підтримка
 Template URL=URL-адреса шаблону
@@ -131,3 +131,5 @@ Was this container created using this plugin=Цей контейнер ство�
 Web=Web
 WebUI=WebUI
 Writable=Можливий запис
+
+; Note: May 26, 2022 - 1 missing translations
