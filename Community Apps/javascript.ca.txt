@@ -12,5 +12,3 @@ Install Application=Встановлення додатока
 Install Applications=Встановлення додатоків
 Something really wrong went on during %s=Під час %s сталося щось справді не так
 Are you sure you want to delete %s applications from the previously installed list=Ви впевнені, що хочете видалити програму %s із попередньо встановленого списку
-
-; Note: May 20, 2022 - 14 missing translations

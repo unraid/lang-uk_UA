@@ -48,7 +48,7 @@ Convert to single mode=Перевести в одиночний режим
 Copying=Копіювання
 corrected=виправлений
 Create an empty file system on the disks shown as Unmountable discarding all data currently on the disks and update parity to reflect this=Створіть порожню файлову систему на дисках, які відображаються як **Незмонтовані**, відкидаючи всі дані на дисках, і оновіть паритет, щоб відобразити це
-Створення резервної копії Flash=
+Creating Flash backup=
 creating Flash backup zip file this may take several minutes=створення ZIP-файлу резервної копії Flash (це може зайняти кілька хвилин)
 Creation error=Помилка створення
 Critical disk temperature threshold=Критичний поріг температури диска
@@ -135,6 +135,7 @@ Missing Cache disk=Відсутній Кеш-Диск
 Missing disk=Відсутній диск
 Missing key=Відсутній ключ
 Missing=Відсутняій
+Mounted=
 Mover is running=Перенос запущений
 network settings=налаштування мережі
 next device=наступний пристрій
@@ -309,7 +310,7 @@ will resume the paused Clearing=відновить призупинене очи
 will resume the paused Parity-Check=відновить призупинену перевірку на Parity-Check
 will resume the paused Parity-SyncData-Rebuild=відновить призупинену Parity-Sync/Data-Rebuild
 will resume the paused Read-Check=відновить призупинену перевірку читання
-will resume Data-Rebuildвідновить відновлення даних
+will resume Data-Rebuild=
 will resume Disk-Clear=відновить Disk-Clear
 will resume Parity-Check=відновить перевірку паритету
 will resume Parity-Sync=відновить Parity-Sync
@@ -348,3 +349,5 @@ Sleeping=Сплячий
 System in sleep mode=Система в сплячому режимі
 This will put the system in sleep mode=Це переведе систему в сплячий режим
 wiki entry=wiki запис
+
+; Note: May 26, 2022 - 6 missing translations

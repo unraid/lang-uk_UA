@@ -18,7 +18,7 @@ need check=необхідна перевірка
 Next=Далі
 No plugins installed=Плагіни не встановлені
 No release notes available=Примітки до випуску відсутні
-No response , aborting=Немає відповіді, переривання
+No response, aborting=
 Plugin File=Файл Плагіна
 Plugin File Install Errors=Помилка встановлення файлу плагіна
 Plugin History=Історія плагіна
@@ -36,3 +36,5 @@ Update All Plugins=Оновити Всі Плагіни
 Update Plugin=Оновити Плагін
 Upgrade=Оновлення
 View Release Notes=Переглянути примітки до випуску
+
+; Note: May 26, 2022 - 1 missing translations

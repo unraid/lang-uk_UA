@@ -20,5 +20,3 @@ No USB devices=Немає пристроїв USB
 :libvirt_hot_plug:
 > Виберіть віртуальну машину для пристрою USB, який потрібно підключити/від’єднати, і пристрій USB для вибраної VM.
 :end
-
-; Note: May 20, 2022 - 16 missing translations
