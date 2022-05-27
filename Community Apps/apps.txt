@@ -1,7 +1,7 @@
 Cancel=
 
 ; My PSAs / banners
-Happy New Year=
+Happy New Year=Щасливого Нового Року
 Happy Holidays from Andrew, Tracey, and family=
 Please Enjoy Responsibly=
 Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=
