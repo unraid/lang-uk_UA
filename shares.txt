@@ -63,4 +63,4 @@ User Shares=
 Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
 
-; Note: May 26, 2022 - 8 missing translations
+; Note: May 29, 2022 - 8 missing translations

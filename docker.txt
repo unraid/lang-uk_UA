@@ -131,5 +131,3 @@ Was this container created using this plugin=Цей контейнер ство�
 Web=Web
 WebUI=WebUI
 Writable=Можливий запис
-
-; Note: May 26, 2022 - 1 missing translations
