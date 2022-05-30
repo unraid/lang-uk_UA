@@ -61,4 +61,4 @@ Volume=Об'єм
 > Вам все одно потрібно натиснути **Зберегти**, щоб зафіксувати зміну.
 :end
 
-; Note: May 29, 2022 - 25 missing translations
+; Note: May 30, 2022 - 25 missing translations
