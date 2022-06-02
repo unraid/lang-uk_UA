@@ -1,3 +1,3 @@
-Script Log=
+Script Log=Журнал Повідомлень
 
 ; Note: May 30, 2022 - 1 missing translations
