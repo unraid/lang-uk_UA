@@ -54,7 +54,7 @@ It will collect all of the system hardware information, remove any serial number
 Key file URL=URL-адреса ключового файлу
 Language support added=Додана мовна підтримка
 Language support deleted=Підтримку мов видалено
-Language=Мову
+Language=Мова
 Missing Key File=Відсутній ключовий файл
 Missing Language=Відсутня мова
 Network Settings=Мережеві налаштування
