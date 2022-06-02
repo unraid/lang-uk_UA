@@ -20,167 +20,167 @@ By using this software, you agree with our=Використовуючи це п�
 Cache slots=Слоти Кешу
 Cannot connect to key-server=Не вдається підключитися до сервера ключів
 Check for Updates=Перевірити наявність оновлень
-click Install Key=click <i>Install Key</i>
-collecting diagnostic information this may take several minutes=collecting diagnostic information (this may take several minutes)
-Component=
+click Install Key=натисніть <i>Встановити ключ</i>
+collecting diagnostic information this may take several minutes=збір діагностичної інформації (це може зайняти кілька хвилин)
+Component=Компонент
 Credits=
-Data slots=
-Delete all notifications=
-Delete notification=
-Developer=
-Diagnostics=
-Disks=
-Display Settings=
-Downloading=
-End-User License Agreement=
-Enter URL of language pack XML file=
-Error accessing your physical USB Flash boot device=
-EULA=
-Event=
-Expiration=
-Extend=
-extended=
-Get Trial Key=
-Hardware Profile=
-Hide Details=
-If you do not receive an email, please check your spam or junk-email folder=
-Importance=
-Important=
-Install Language=
-Install=
-Installed languages=
-Invalid Trial Installation=Invalid *Trial* Installation
-It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=
-Key file URL=
-Language support added=
-Language support deleted=
-Language=
-Missing Key File=
-Missing Language=
-Network Settings=
-New Config=
-New Permissions=
-Next=
-No notifications present=
-No personal information such as user names, passwords, or any other file contents is included in the hardware profile=No personal information such as user names, passwords, or any other file contents is included in the hardware profile
-normal=
-Only ZIP files are allowed=
-Page Map=
-Parity slots=
-Please check your=
-please configure=
-Please select a language before proceeding=
-Please=
-Pool slots=
-Preserve current assignments=
-previous=
-Privacy Policy=
-Processes=
-Purchase Key=
-Registered GUID=
-Registered on=
-Registered to=
-registering USB Flash GUID=
-Release has been withdrawn=
-Remove the installed language=
-Replaceable=
-Request Extension=
-Request Trial Extension=
-Restore=
-See=
-Select language file=
-Select language=
-Show Details=
-slots=
-Stable=
-Subject=
-System Devices=
-System Update Check=
-Text=
-Thank you for choosing Unraid OS=
-Thank you for registering USB Flash GUID=
-Thank you for trying Unraid OS=
-The registered GUID does not match the USB Flash boot device GUID=
-There is a physical problem accessing your USB Flash boot device=
-this may take several minutes=
-This release has been withdrawn for use with Trial keys=This release has been withdrawn for use with *Trial* keys
-This server has %s attached storage device=
-This server has %s attached storage devices=
-This utility is used for troubleshooting purposes=
-This will delete all notification files=
-This will update folder file permissions=This will update folder & file permissions
-Time=
-To install a registration key, paste the key file URL in the box below and click Install Key=To install a registration key, paste the key file URL in the box below and click **Install Key**
-to select your language=
-Trial key expires on=***Trial*** key expires on
-Trial=
-Update OS=
-Upgrade Key=
-Uploaded=
-uploading hardware information=
-Uploading=
-Use this to develop language packs=
-Use this to install official language packs=
+Data slots=Слоти Даних
+Delete all notifications=Видалити всі сповіщення
+Delete notification=Видалити сповіщення
+Developer=Розробник
+Diagnostics=Діагностика
+Disks=Диски
+Display Settings=Налаштування Дисплея
+Downloading=Завантаження
+End-User License Agreement=Ліцензійна угода кінцевого користувача
+Enter URL of language pack XML file=Введіть URL-адресу XML-файлу мовного пакету
+Error accessing your physical USB Flash boot device=Помилка доступу до вашого фізичного завантажувального пристрою USB Flash
+EULA=Ліцензійна Угода
+Event=Подія
+Expiration=Термін придатності
+Extend=Розширити
+extended=розширений
+Get Trial Key=Отримати пробний ключ
+Hardware Profile=Профіль обладнання
+Hide Details=Приховати деталі
+If you do not receive an email, please check your spam or junk-email folder=Якщо ви не отримали електронного листа, перевірте папку зі спамом або небажаною поштою
+Importance=Важливість
+Important=Важливо
+Install Language=Встановити мову
+Install=Встановити
+Installed languages=Встановлені мови
+Invalid Trial Installation=Недійсна *пробна* інсталяція
+It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=Він збере всю інформацію про апаратне забезпечення системи, видалить усі серійні номери та безпечно завантажить її в LimeTech
+Key file URL=URL-адреса ключового файлу
+Language support added=Додана мовна підтримка
+Language support deleted=Підтримку мов видалено
+Language=Мову
+Missing Key File=Відсутній ключовий файл
+Missing Language=Відсутня мова
+Network Settings=Мережеві налаштування
+New Config=Нова конфігурація
+New Permissions=Нові дозволи
+Next=Далі
+No notifications present=Немає сповіщень
+No personal information such as user names, passwords, or any other file contents is included in the hardware profile=Жодна особиста інформація, така як імена користувачів, паролі або будь-який інший вміст файлів, не включається в профіль обладнання
+normal=нормальний
+Only ZIP files are allowed=Дозволені лише файли ZIP
+Page Map=Карта сторінки
+Parity slots=Паритетні слоти
+Please check your=Будь ласка, перевірте свій
+please configure=будь ласка, налаштуйте
+Please select a language before proceeding=Будь ласка, виберіть мову, перш ніж продовжити
+Please=Будь ласка
+Pool slots=Пул слотів
+Preserve current assignments=Збережіть поточні завдання
+previous=Попередній
+Privacy Policy=Політика конфіденційності
+Processes=Процеси
+Purchase Key=Придбання Ключа
+Registered GUID=Зареєстрований GUID
+Registered on=Зареєстровано на
+Registered to=Зареєстровано на
+registering USB Flash GUID=реєстрація USB Flash GUID
+Release has been withdrawn=Реліз відкликано
+Remove the installed language=Видаліть встановлену мову
+Replaceable=Замінний
+Request Extension=Запит на розширення
+Request Trial Extension=Запит на продовження пробної версії
+Restore=Відновлення
+See=Побачити
+Select language file=Виберіть мовний файл
+Select language=Оберіть мову
+Show Details=Показати деталі
+slots=слоти
+Stable=Стабільний
+Subject=Тема
+System Devices=Системні пристрої
+System Update Check=Перевірка оновлення системи
+Text=Текст
+Thank you for choosing Unraid OS=Дякуємо, що вибрали Unraid OS
+Thank you for registering USB Flash GUID=Дякуємо за реєстрацію USB Flash GUID
+Thank you for trying Unraid OS=Дякую за спробу Unraid OS
+The registered GUID does not match the USB Flash boot device GUID=Зареєстрований GUID не відповідає GUID пристрою для завантаження USB Flash
+There is a physical problem accessing your USB Flash boot device=Виникла фізична проблема з доступом до завантажувального пристрою USB Flash
+this may take several minutes=це може зайняти кілька хвилин
+This release has been withdrawn for use with Trial keys=Цей випуск скасовано для використання з *Trial* ключами
+This server has %s attached storage device=Цей сервер має %s підключеного пристрою зберігання даних
+This server has %s attached storage devices=Цей сервер має %s підключених пристроїв зберігання даних
+This utility is used for troubleshooting purposes=Ця утиліта використовується для усунення несправностей
+This will delete all notification files=Це призведе до видалення всіх файлів сповіщень
+This will update folder file permissions=Це оновить права доступу до папок і файлів
+Time=Час
+To install a registration key, paste the key file URL in the box below and click Install Key=Щоб встановити реєстраційний ключ, вставте URL-адресу файлу ключа в поле нижче та натисніть **Встановити ключ**
+to select your language=щоб вибрати свою мову
+Trial key expires on=***Пробний*** ключ закінчується
+Trial=Пробний
+Update OS=Оновити ОС
+Upgrade Key=Ключ оновлення
+Uploaded=Завантажено
+uploading hardware information=завантаження інформації про обладнання
+Uploading=Завантаження
+Use this to develop language packs=Використовуйте це для розробки мовних пакетів
+Use this to install official language packs=Використовуйте це для встановлення офіційних мовних пакетів
 User Shares=
-User=
+User=Користувач
 Vars=
-VFIO-PCI Log=
-View VFIO-PCI Log=
-warning=
-webGUI=
-When received, please paste the URL into the Key file URL box and=When received, please paste the URL into the *Key file URL* box and
-Wrong File Extension=
-You havent sent Limetech your hardware profile yet=You haven't sent Limetech your hardware profile yet
-Your hardware profile was last submitted on=
-Your Trial key has expired=Your *Trial* key has expired
-Your Trial key requires an internet connection=Your *Trial* key requires an internet connection
+VFIO-PCI Log=Журнал VFIO-PCI
+View VFIO-PCI Log=Переглянути журнал VFIO-PCI
+warning=УВАГА
+webGUI=webGUI
+When received, please paste the URL into the Key file URL box and=Коли отримано, вставте URL-адресу в поле *URL-адреса ключового файлу* і
+Wrong File Extension=Неправильне розширення файлу
+You havent sent Limetech your hardware profile yet=Ви ще не надіслали Limetech свій профіль обладнання
+Your hardware profile was last submitted on=Ваш профіль обладнання востаннє було надіслано на
+Your Trial key has expired=Your *Trial* key has expiredТермін дії вашого *пробного* ключа закінчився
+Your Trial key requires an internet connection=Для вашого *пробного* ключа потрібне підключення до Інтернету
 
-; Sysdevs text - added May 18, 2020
-A reboot is required to apply changes=
-ALERT=
-Bind selected to VFIO at Boot=
-CPU Thread Pairings=
-Changes saved=
-Function Level Reset FLR supported=Function Level Reset (FLR) supported
-In use by Unraid=
-Kernel driver in use vfio-pci=Kernel driver in use: vfio-pci
-No changes=
-PCI Devices and IOMMU Groups=
-PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
-Reboot to take effect=
-SCSI Devices=
-The below list doesnt not reflect the way IOMMU would naturally group devices=The below list doesn't not reflect the way IOMMU would naturally group devices
-This controller is bound to vfio, connected USB devices are not visible=
-This controller is bound to vfio, connected drives are not visible=
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the [VM Manager] page and set the **PCIe ACS override** setting to **Disabled**
-USB Devices=
-Your system has booted with the PCIe ACS Override setting enabled=
+; Текст Sysdevs - додано 18 травня 2020 року
+A reboot is required to apply changes=Для застосування змін потрібне перезавантаження
+ALERT=ПОПЕРЕДЖЕННЯ
+Bind selected to VFIO at Boot=Під час завантаження вибрано прив’язування до VFIO
+CPU Thread Pairings=Потоків CPU
+Changes saved=Зміни збережено
+Function Level Reset FLR supported=Підтримується функція скидання рівня (FLR).
+In use by Unraid=Використовується Unraid
+Kernel driver in use vfio-pci=Використовуваний драйвер ядра: vfio-pci
+No changes=Без змін
+PCI Devices and IOMMU Groups=Пристрої PCI та групи IOMMU
+PCI Devices No IOMMU Groups Available=Пристрої PCI (Немає доступних груп IOMMU)
+Reboot to take effect=Перезавантажте, щоб набути чинності
+SCSI Devices=Пристрої SCSI
+The below list doesnt not reflect the way IOMMU would naturally group devices=Наведений нижче список не відображає того, як IOMMU, природно, згрупував би пристрої
+This controller is bound to vfio, connected USB devices are not visible=Цей контролер прив’язаний до vfio, підключені пристрої USB не 
+This controller is bound to vfio, connected drives are not visible=Цей контролер прив'язаний до vfio, підключені диски не видно
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=Щоб побачити природні групи IOMMU для вашого обладнання, перейдіть на сторінку [Диспетчер VM] і встановіть для параметра **PCIe ACS override** значення **Disabled**
+USB Devices=USB-пристрої
+Your system has booted with the PCIe ACS Override setting enabled=Ваша система завантажилася з увімкненим параметром PCIe ACS Override
 
 :diagnostics_1_plug:
-This utility is used for troubleshooting purposes. It will collect all of the system information and configuration files, and package these files in a single ZIP file which can be saved locally.
-Subsequently, this file can be included in your correspondence with Limetech or the Unraid forum.
+Ця утиліта використовується для усунення несправностей. Він збере всю системну інформацію та файли конфігурації та запакує ці файли в один ZIP-файл, який можна зберегти локально.
+Згодом цей файл можна включити до вашого листування з Limetech або форумом Unraid.
 
-This will help others to quickly get the inside information of your system and provide better support to your problem. The following information
-and configuration files are collected:
+Це допоможе іншим швидко отримати внутрішню інформацію про вашу систему та забезпечити кращу підтримку вашої проблеми. 
+Зібрано такі дані s файли налаштувань:
 :end
 
 :diagnostics_2_plug:
 + */config*
-  <br>copy all *\*.cfg files*, *go* file and the *super.dat* file. These are configuration files.
+  <br>скопіюйте всі файли *\*.cfg*, *go* та *super.dat*. Це файли конфігурації.
 + */config/shares*
-  <br>copy all *\*.cfg* files. These are user share settings files.
+  <br>скопіюйте всі файли *\*.cfg*. Це файли налаштувань спільного доступу користувача.
 + *Syslog file(s)*
-  <br>copy the current *syslog* file and any previous existing *syslog* files.
+  <br>скопіюйте поточний файл *syslog* та будь-які попередні існуючі файли *syslog*.
 + *System*
-  <br>save output of the following commands:
+  <br>збережіть результат наступних команд:
   <br>lsscsi, lspci, lsusb, free, lsof, ps, ethtool & ifconfig.
-  <br>display of iommu groups.
-  <br>display of command line parameters (e.g. pcie acs override, pci stubbing, etc).
-  <br>save system variables.
+  <br>відображення груп iommu.
+  <br>відображення параметрів командного рядка (наприклад, pcie acs override, pci stubbing тощо).
+  <br>збереження системних змінних.
 + *SMART reports*
-  <br>save a SMART report of each individual disk present in your system.
+  <br>збережіть звіт SMART для кожного окремого диска, наявного у вашій системі.
 + *Docker*
-  <br>save files *docker.log*, *libvirtd.log*, *libvirt/qemu/\*.log* and *vfio-pci*.
+  <br>збережіть файли *docker.log*, *libvirtd.log*, *libvirt/qemu/\*.log* та *vfio-pci*.
 :end
 
 :diagnostics_3_plug:
