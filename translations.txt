@@ -336,8 +336,8 @@ Sorry, this feature is not supported by MSIEEdge=На жаль, ця функц�
 Standby=Режим очікування
 standby=режим очікування
 Start=Почати
-Started=Почали
-started=почали
+Started=Запущений
+started=запущений
 Status=Статус
 status=статус
 Stop=СТОП
@@ -874,4 +874,4 @@ Local T2FA requires Unraid 610 or higher=Local T2FA requires Unraid 6.10 or high
 Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=Local T2FA requires Unraid 6.10 or higher and a *.myunraid.net certificate
 Local T2FA requires a myunraidnet certificate=Local T2FA requires a *.myunraid.net certificate
 
-; Note: June 6, 2022 - 766 missing translations
+; Note: May 29, 2022 - 765 missing translations
