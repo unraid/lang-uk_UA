@@ -263,54 +263,54 @@ as follows:
 :end
 
 :registration_4_plug:
-To continue using Unraid OS you may purchase a Registration key. Alternately, you may request a *Trial* extension key.
+Для продовження користування ОС Unraid ви можете придбати реєстраційний ключ. Крім того, ви можете надіслати запит на ключ розширення * Trial*.
 
-Most *Trial* extension requests are processed immediately but please allow up to one business day to receive your *Trial* extension key.
+Більшість запитів на розширення *Trial* обробляються негайно, але отримайти ключ розширення *Trial* можна протягом одного робочого дня.
 :end
 
 :registration_5_plug:
-It is not possible to use a *Trial* key with an existing Unraid OS installation.
+Неможливо використовувати ключ *Trial* з існуючою установкою Unraid OS.
 
-You may purchase a Registration key corresponding to this USB Flash device to continue using this installation.
+Для продовження використання цього пристрою можна придбати реєстраційний ключ, відповідний цьому USB-флеш-пристрою.
 
-For more information, please [Contact Support](https://lime-technology.com/contact).
+Для отримання додаткової інформації, будь ласка, [Contact Support](https://lime-technology.com/contact).
 :end
 
 :registration_6_plug:
-It appears that your Registration key file is corrupted or missing.  The key file should be located in the
-[config](/Registration/Browse?dir&#61;/boot/config) directory on your USB Flash boot device.
+Схоже, що ваш файл ключа реєстрації пошкоджено або відсутній. Ключовий файл повинен бути розташований у
+[config](/Registration/Browse?dir&#61;/boot/config) каталогу на вашому USB Flash-завантажувальному пристрої.
 
-If you do not have a backup copy of your Registration key file, [Contact Support](https://lime-technology.com/contact).
+Якщо у вас немає резервної копії файлу ключа реєстрації, [Contact Support](https://lime-technology.com/contact).
 
-If this was a *Trial* installation, you may purchase a Registration key.
+Якщо це була *Trial* інсталяція, ви можете придбати реєстраційний ключ.
 :end
 
 :registration_7_plug:
-*Trial* installations are only valid with the originally registered USB Flash device.
+*Пробне встановлення* дійсне лише з оригінально зареєстрованим USB-флеш-пристроєм.
 
-To continue using this installation with this USB Flash device, you may purchase a Registration key.
+Щоб продовжити використання цієї інсталяції з цим USB Flash-пристроєм, ви можете придбати ключ реєстрації.
 :end
 
 :registration_8_plug:
-The Registration key file does not correspond to the USB Flash boot device.
-Please copy the correct key file to the [config](/Registration/Browse?dir&#61;/boot/config) directory
-on your USB Flash boot device. If you do not have a backup copy of your key file, [Contact Support](https://lime-technology.com/contact).
+Файл ключа реєстрації не відповідає завантажувальному пристрою USB Flash.
+Будь ласка, скопіюйте правильний ключовий файл до [config](/Registration/Browse?dir&#61;/boot/config) directory
+на пристрої завантаження USB Flash. Якщо у вас немає резервної копії вашого ключового файлу, [Contact Support](https://lime-technology.com/contact).
 
-If you want to replace your Registration key with a new key bound to this USB Flash device, click Replace Key below. An original key may be
-replaced anytime. Thereafter, a replacement key may be replaced again after one year has passed.  If you require
-another replacement key sooner, [Contact Support](https://lime-technology.com/contact).
+Якщо ви хочете замінити ключ реєстрації новим ключем, прив’язаним до цього USB-флеш-пристрою, натисніть «Замінити ключ» нижче. Оригінальний ключ 
+можна замінити в будь-який час. Після цього новий ключ можна замінити знову через рік. Якщо вам потрібно
+інший ключ на заміну раніше, [Contact Support](https://lime-technology.com/contact).
 
-**Note:** Replacing a Registration key results in permanently *blacklisting* the previous USB Flash GUID.
+**Примітка.** Заміна ключа реєстрації призведе до постійного *чорного списку* попереднього USB Flash GUID.
 :end
 
 :registration_9_plug:
-This USB Flash boot device has been *blacklisted*. This can occur as a result of transfering your Registration key to
-a replacement USB Flash device, and you are currently booted from your old USB Flash device.
+Цей USB Flash-завантажувальний пристрій внесено до *чорного списку*. Це може статися в результаті передачі вашого реєстраційного ключа до
+замінний USB-флеш-пристрій, і ви зараз завантажуєтесь зі старого USB-флеш-пристрою.
 
-A USB Flash device may also be *blacklisted* if there is no serial number, or if we discover the serial number
-is not unique (this is common with USB card readers).
+USB-флеш-пристрій також може бути у *чорному списку*, якщо немає серійного номера або якщо ми виявимо серійний номер
+не є унікальним (це характерно для пристроїв зчитування карт USB).
 
-For more information, please [Contact Support](https://lime-technology.com/contact).
+Для отримання додаткової інформації, будь ласка [Contact Support](https://lime-technology.com/contact).
 :end
 
 ; Note: May 29, 2022 - 135 missing translations
