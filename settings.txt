@@ -164,6 +164,7 @@ Default Windows VirtIO driver ISO=ISO драйвер Windows VirtIO за зам�
 Define a TLS certificate=Визначте сертифікат TLS
 Delete directory=Видалити каталог
 Delete Image File=Видалити файл Образу
+Delete Image File=
 Delete Peer=
 Delete Tunnel=Видалити тунель
 Delete tunnel failed=Не вдалося видалити тунель
