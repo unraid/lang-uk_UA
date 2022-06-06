@@ -23,7 +23,7 @@ Check for Updates=Перевірити наявність оновлень
 click Install Key=натисніть <i>Встановити ключ</i>
 collecting diagnostic information this may take several minutes=збір діагностичної інформації (це може зайняти кілька хвилин)
 Component=Компонент
-Credits=Заслуга 
+Credits=Заслуга
 Data slots=Слоти Даних
 Delete all notifications=Видалити всі сповіщення
 Delete notification=Видалити сповіщення
@@ -135,7 +135,7 @@ Your hardware profile was last submitted on=Ваш профіль обладна
 Your Trial key has expired=Your *Trial* key has expiredТермін дії вашого *пробного* ключа закінчився
 Your Trial key requires an internet connection=Для вашого *пробного* ключа потрібне підключення до Інтернету
 
-; Текст Sysdevs - додано 18 травня 2020 року
+; Sysdevs text - added May 18, 2020
 A reboot is required to apply changes=Для застосування змін потрібне перезавантаження
 ALERT=ПОПЕРЕДЖЕННЯ
 Bind selected to VFIO at Boot=Під час завантаження вибрано прив’язування до VFIO
@@ -150,7 +150,7 @@ PCI Devices No IOMMU Groups Available=Пристрої PCI (Немає дост�
 Reboot to take effect=Перезавантажте, щоб набути чинності
 SCSI Devices=Пристрої SCSI
 The below list doesnt not reflect the way IOMMU would naturally group devices=Наведений нижче список не відображає того, як IOMMU, природно, згрупував би пристрої
-This controller is bound to vfio, connected USB devices are not visible=Цей контролер прив’язаний до vfio, підключені пристрої USB не 
+This controller is bound to vfio, connected USB devices are not visible=Цей контролер прив’язаний до vfio, підключені пристрої USB не
 This controller is bound to vfio, connected drives are not visible=Цей контролер прив'язаний до vfio, підключені диски не видно
 To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=Щоб побачити природні групи IOMMU для вашого обладнання, перейдіть на сторінку [Диспетчер VM] і встановіть для параметра **PCIe ACS override** значення **Disabled**
 USB Devices=USB-пристрої
@@ -313,4 +313,4 @@ is not unique (this is common with USB card readers).
 For more information, please [Contact Support](https://lime-technology.com/contact).
 :end
 
-; Note: May 29, 2022 - 135 missing translations
+; Note: June 6, 2022 - 2 missing translations

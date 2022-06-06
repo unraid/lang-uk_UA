@@ -52,9 +52,14 @@ Array Clearing=Очищення масиву
 Array Starting=Запуск масиву
 Array Stopping=Зупинка масиву
 Mounting disks=Монтаж дисків
+Retry unmounting user shares=Retry unmounting user share(s)
 Spinning up all drives=Розкручування всіх дисків
+Stale configuration=
 Starting services=Запуск сервісу
 Stopping services=Зупинка сервісу
+Starting Recycle Bin=
+Stopping Recycle Bin=
+Sync filesystems=
 Unmounting disks=Демонтування дисків
 Autostart disabled=Автозапуск вимкнено
 Missing encryption key=Відсутній ключ шифрування
@@ -66,3 +71,5 @@ Container Port=Контейнерний Порт
 Container Variable=Контейнерна Змінна
 Container Label=Мітка Контейнера
 Container Device=Контейнерний Пристрій
+
+; Note: June 6, 2022 - 5 missing translations

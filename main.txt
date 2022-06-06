@@ -349,5 +349,3 @@ Sleeping=Сплячий
 System in sleep mode=Система в сплячому режимі
 This will put the system in sleep mode=Це переведе систему в сплячий режим
 wiki entry=wiki запис
-
-; Note: May 29, 2022 - 4 missing translations
