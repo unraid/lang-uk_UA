@@ -335,6 +335,7 @@ Sorry, an error occurred=Вибачте, сталася помилка
 Sorry, this feature is not supported by MSIEEdge=На жаль, ця функція не підтримується MSIE/Edge
 Standby=Режим очікування
 standby=режим очікування
+Stale configuration=
 Start=Почати
 Started=Запущений
 started=запущений
@@ -874,4 +875,4 @@ Local T2FA requires Unraid 610 or higher=Local T2FA requires Unraid 6.10 or high
 Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=Local T2FA requires Unraid 6.10 or higher and a *.myunraid.net certificate
 Local T2FA requires a myunraidnet certificate=Local T2FA requires a *.myunraid.net certificate
 
-; Note: May 29, 2022 - 765 missing translations
+; Note: June 11, 2022 - 676 missing translations
