@@ -71,5 +71,3 @@ Container Port=Контейнерний Порт
 Container Variable=Контейнерна Змінна
 Container Label=Мітка Контейнера
 Container Device=Контейнерний Пристрій
-
-; Note: June 6, 2022 - 5 missing translations
