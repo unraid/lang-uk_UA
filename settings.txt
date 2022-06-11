@@ -112,6 +112,7 @@ CPU Isolation A reboot is required to apply changes=Ізоляція CPU: для
 CPU isolation is prohibited while system is running in SAFE MODE=Ізоляція CPU заборонена, коли система працює в БЕЗПЕЧНОМУ РЕЖИМІ
 CPU Isolation=Ізоляція CPU
 CPU Pinning Docker=Закріплення CPU в Docker
+CPU Pinning VM=
 CPU Pinning=Закріплення CPU
 CRAM-MD5=CRAM-MD5
 Cumulative parity check=Кумулятивна перевірка на парність
@@ -163,7 +164,6 @@ Default warning disk utilization threshold=Типовий поріг заван�
 Default Windows VirtIO driver ISO=ISO драйвер Windows VirtIO за замовчуванням
 Define a TLS certificate=Визначте сертифікат TLS
 Delete directory=Видалити каталог
-Delete Image File=Видалити файл Образу
 Delete Image File=Видалити файл Образу
 Delete Peer=Видалити Вузол
 Delete Tunnel=Видалити тунель
@@ -760,4 +760,4 @@ Transient errors in this log can be ignored unless you are having issues=Тим�
 Unraid API extra origins=Додаткові джерела API Unraid
 View Flash Backup Error Log=Переглянути журнал помилок Flash Backup
 
-; Note: June 6, 2022 - 615 missing translations
+; Note: June 11, 2022 - 274 missing translations
