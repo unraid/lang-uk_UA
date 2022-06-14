@@ -350,7 +350,7 @@ Submission of this bug report will automatically send your system diagnostics to
 Submit=Відправити
 Successfully logged out=Вийшов успішно
 System Information=Системна інформація
-System is going down=Система виходить з ладу
+System is going down=Система вимикається
 System is offline=Система офлайн
 System is powered off=Система вимкнена
 System is rebooting=Система перезавантажується
@@ -400,7 +400,7 @@ Upgrade Key=
 Upload error=
 Upload=
 Uptime=
-up-to-date=
+up-to-date=актуальний
 User Access=
 Username=
 Username not changeable=
