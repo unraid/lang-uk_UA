@@ -1,6 +1,6 @@
 Any=Будь-який
 Daily schedule=Щоденний розклад
-Day Date=Day / Date
+Day Date=День / Дата
 Hour=Годину
 Hourly schedule=Погодинний графік
 Minute=Хвилина
@@ -15,7 +15,7 @@ Every 4 hours=Кожні 4 години
 Every 6 hours=Кожні 6 години
 Every 8 hours=Кожні 8 години
 Every hour=Щогодини
-HHMM=HH:MM
+HHMM=ЧЧ:ММ
 SSD TRIM schedule=Розклад SSD TRIM
 Time of the day=Час доби
 
