@@ -1,6 +1,6 @@
-Enhanced System Log=
-Minor Issues=
-File System=
-Drive Related=
+Enhanced System Log=Розширений системний журнал
+Minor Issues=Незначні проблеми
+File System=Файлова Система
+Drive Related=Диск пов'язаних
 
 ; Note: June 6, 2022 - 4 missing translations
