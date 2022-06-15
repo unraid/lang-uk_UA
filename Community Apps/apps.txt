@@ -148,7 +148,7 @@ One or more ports used by this application are already in use by another service
 
 ; CA Sections Keep the length reasonable
 Home=Головна
-Installed Apps=Встановленя Додатків
+Installed Apps=Встановлені Додатки
 Previous Apps=Попередні Додатки
 Pinned Apps=Закріплені Додатки
 Favourite Repo=Улюблене репо
@@ -223,7 +223,7 @@ An assortment of randomly chosen apps=
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
 Backup=Резервне Копіювання
-Cloud=Хмара
+Cloud=Cloud
 Crypto Currency=
 Downloaders=Завантажувачі
 Drivers=Драйвери
