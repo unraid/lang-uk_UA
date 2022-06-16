@@ -1,24 +1,24 @@
-Process=
-Kill Process=
-Process ID=
-Open Files=
-Files that may prevent shutdown=
-File Name and Path=
-An entry for bash means you have a terminal session open with the working directory on the array=
-If smbd is listed, it means that another computer has a samba share mounted=
-Files open by Samba usually wont prevent array shutdown=
-No open files=
-Kill=
-Command timed out=
-Cannot get list of open files=
+Process=Процес
+Kill Process=Вбити процеси
+Process ID=ID процесу
+Open Files=Відкрийте файли
+Files that may prevent shutdown=Файли, які можуть перешкодити вимкненню
+File Name and Path=Ім'я файлу та шлях
+An entry for bash means you have a terminal session open with the working directory on the array=Запис для bash означає, що у вас відкритий термінальний сеанс із робочим каталогом у масиві
+If smbd is listed, it means that another computer has a samba share mounted=Якщо smbd є в списку, це означає, що на іншому комп’ютері змонтовано спільну папку samba
+Files open by Samba usually wont prevent array shutdown=Файли, відкриті Samba, зазвичай не запобігають вимкненню масиву
+No open files=Немає відкритих файлів
+Kill=Вбити
+Command timed out=Час очікування команди минув
+Cannot get list of open files=Не вдається отримати список відкритих файлів
 ;
 ; Help
 ;
 :open_files_help_plug:
-> Click on the 'Kill' button to stop the process that is holding the files open.
->  A dialog box will open showing you the progress of killing the process holding those files open.
+> Натисніть кнопку «Убити», щоб зупинити процес, який утримує файли відкритими.
+>  Відкриється діалогове вікно, яке показує хід завершення процесу, який утримує ці файли відкритими.
 >
->Click on 'Program', Process ID', or 'File Name and Path' to change the sort order.
+>Натисніть «Програма», ідентифікатор процесу або «Ім’я та шлях файлу», щоб змінити порядок сортування.
 :end
 
 ; Note: June 6, 2022 - 13 missing translations
