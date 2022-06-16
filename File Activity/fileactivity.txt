@@ -1,41 +1,41 @@
-File Activity=
-File Activity Monitoring=
-Start File Activity=
-Stop File Activity Monitoring=
-Clear the File Activity log=
-Refresh log=
-Enable File Activity Monitoring=
-Enable for Unassigned Devices=
-Enable for Cache and Pool Disks=
+File Activity=Діяльність файлів
+File Activity Monitoring=Відстеження активності файлів
+Start File Activity=Почніть дію з файлами
+Stop File Activity Monitoring=Зупинити моніторинг активності файлів
+Clear the File Activity log=Очистіть журнал дії файлів
+Refresh log=Оновити журнал
+Enable File Activity Monitoring=Увімкнути моніторинг активності файлів
+Enable for Unassigned Devices=Увімкнути для непризначених пристроїв
+Enable for Cache and Pool Disks=Увімкнути для дисків кешу та пулу
 ;
 ; Help
 ;
 :file_activity_loggging_plug:
-> File Activity Logging:
+> Журнал активності файлу:
 >
-> File read/write/modify activity is monitored and logged on the array using inotify and is displayed by disk, UD disks, and cache.
-> You need to start the File Activity in order to log the disk activity.
-> File Activity is intended to be running for short periods so you can check disk activity.
-> A server with a lot of file activity can fill the log space.
-> The 'appdata' directory is excluded.
+> Активність читання/запису/змінювання файлів відстежується та реєструється в масиві за допомогою inotify та відображається на диску, дисках UD та кеші.
+> Щоб зареєструвати активність на диску, потрібно запустити активність файлів.
+> File Activity призначено для роботи протягом короткого періоду часу, щоб ви могли перевірити активність диска.
+> Сервер із великою активністю файлів може заповнити простір журналу.
+> Каталог 'appdata' виключено.
 >
-> Note: File Activity logging is stopped if the array is stopped.
+> Примітка: ведення журналу активності файлів припиняється, якщо зупинено масив.
 :end
 
 :file_activity_enable_logging_plug:
-> Set to 'Yes' to enable File Activity logging when the server is started.
+> Встановіть «Так», щоб увімкнути ведення журналу активності файлів під час запуску сервера.
 :end
 
 :file_activity_enable_ud_plug:
-> Set to 'Yes' to enable File Activity logging for Unassigned Devices if the Unassigned Devices plugin is installed.
+> Установіть значення «Так», щоб увімкнути ведення журналу активності файлів для непризначених пристроїв, якщо встановлено плагін «Непризначені пристрої».
 :end
 
 :file_activity_enable_cache_plug:
-	> Set to 'Yes' to enable File Activity logging for the Cache and Pool Disks.  Pool disks only apply in Unraid 6.9.
+	> Встановіть «Так», щоб увімкнути ведення журналу активності файлів для дисків кешу та пулу. Диски пулу застосовуються лише в Unraid 6.9.
 :end
 
 :file_activity_log_by_plug:
-> Set to **Disk** to log disk activity.  Set to **Share** to log share activity.
+> Установіть значення **Disk**, щоб реєструвати активність на диску. Установіть **Share**, щоб реєструвати активність спільного доступу.
 :end
 
 ; Note: June 6, 2022 - 9 missing translations
