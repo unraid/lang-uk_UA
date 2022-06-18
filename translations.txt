@@ -78,7 +78,7 @@ containing your key file URL=
 Copy=
 Copying=
 CPU=
-Create Unraid.net Account=Створіть обліковий запис Unraid.net
+Create Unraidnet Account=Create Unraid.net Account
 Dashboard=Панель Управління
 Data-Rebuild=
 day=день
@@ -875,4 +875,4 @@ Local T2FA requires Unraid 610 or higher=Local T2FA requires Unraid 6.10 or high
 Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=Local T2FA requires Unraid 6.10 or higher and a *.myunraid.net certificate
 Local T2FA requires a myunraidnet certificate=Local T2FA requires a *.myunraid.net certificate
 
-; Note: June 11, 2022 - 676 missing translations
+; Note: June 19, 2022 - 658 missing translations

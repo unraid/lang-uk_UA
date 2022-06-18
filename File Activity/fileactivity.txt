@@ -37,5 +37,3 @@ Enable for Cache and Pool Disks=Увімкнути для дисків кешу 
 :file_activity_log_by_plug:
 > Установіть значення **Disk**, щоб реєструвати активність на диску. Установіть **Share**, щоб реєструвати активність спільного доступу.
 :end
-
-; Note: June 6, 2022 - 9 missing translations

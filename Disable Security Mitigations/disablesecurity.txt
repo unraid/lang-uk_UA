@@ -9,5 +9,3 @@ Disable Security Mitigations A Reboot Is Required For Changes To Take Effect=В�
 A Reboot Is Required For Changes To Take Effect=Щоб зміни вступили в силу, потрібне перезавантаження
 Mitigations will be enabled after a reboot=Пом’якшення стануть увімкненими після перезавантаження
 Mitigations will be disabled after a reboot=Пом’якшення буде вимкнено після перезавантаження
-
-; Note: June 6, 2022 - 11 missing translations
