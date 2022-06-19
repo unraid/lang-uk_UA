@@ -12,8 +12,8 @@ Community Applications works best when cookies are enabled in your browser Certa
 Backup Server Active Some icons may not appear, and plugin installations may be affected=Сервер резервного копіювання активний Деякі піктограми можуть не відображатися, і це може вплинути на встановлення плагінів
 Debugging enabled This significantly increases the memory used by your browser=Увімкнено налагодження. Це значно збільшує обсяг пам’яті, який використовує ваш браузер
 Browser translation detected Display issues may result=Виявлено переклад браузера. Можуть виникнути проблеми з відображенням
-Running Background Application Tests=
-Action Centre Enabled=
+Running Background Application Tests=Запуск тестів фонової програми
+Action Centre Enabled=Центрі Підтримки увімкнено
 
 ; Sorting Options
 Sort By=Сортувати за
