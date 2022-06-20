@@ -1,4 +1,4 @@
-Cancel=
+Cancel=Скасувати
 
 ; My PSAs / banners
 Happy New Year=Щасливого Нового Року
