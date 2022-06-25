@@ -320,7 +320,7 @@ Self-Test=Самотестування
 Server=Сервер
 Set Password=Встановити пароль
 Settings=Налаштування
-Share name=
+Share name=ім'я Спільного Доступу
 Share=
 Shares List=
 Shares=
@@ -684,7 +684,7 @@ Ignore this message if you are currently connected via Remote Access or VPN=Іг
 
 Automated flash backups will be disabled until you sign in again=Автоматичне резервне копіювання Flash буде вимкнено, доки ви не ввійдете знову
 Click to copy LAN IP %s=Натисніть, щоб скопіювати LAN IP %s
-DNS issue, unable to resolve wanip4unraidnet=Проблема DNS, не вдається вирішити wanip4.unraid.net
+DNS issue, unable to resolve wanip4unraidnet=DNS issue, unable to resolve wanip4.unraid.net
 Download latest backup from My Servers Dashboard=Завантажте останню резервну копію з панелі керування моїми серверами
 Have the code now Go Back=Маєте код зараз? Повертайся
 LAN IP Copied=LAN IP Скопійовано
@@ -874,5 +874,10 @@ Local T2FA requires Use SSLTLS to be Strict and a myunraidnet certificate=Local 
 Local T2FA requires Unraid 610 or higher=Local T2FA requires Unraid 6.10 or higher
 Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=Local T2FA requires Unraid 6.10 or higher and a *.myunraid.net certificate
 Local T2FA requires a myunraidnet certificate=Local T2FA requires a *.myunraid.net certificate
+Key file not valid=
+My Servers plugin install failed=
+The My Servers plugin install is incomplete=
+Please uninstall and reinstall the My Servers plugin=
+Be sure to let the install complete before you close the window=
 
-; Note: June 19, 2022 - 658 missing translations
+; Note: June 25, 2022 - 188 missing translations
