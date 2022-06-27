@@ -412,17 +412,17 @@ Unraid Staff=
 ; Page Navigation
 Displaying %s - %s of %s=Displaying %1$s - %2$s (of %3$s)
 
-Updating Content=
-Language=
-Switch to this language=
-Country Code=
-Install Language Pack=
-Remove Language Pack=
-Update Language Pack=
-Installed Version=
-A note about translations=
-Click here to view the language changelog=
-View Missing Translations=
+Updating Content=Оновлення вмісту
+Language=Мова
+Switch to this language=Перейти на цю мову
+Country Code=Код Країни
+Install Language Pack=Встановити мовний пакет
+Remove Language Pack=Видалити мовний пакет
+Update Language Pack=Оновити мовний пакет
+Installed Version=Встановлена ​​версія
+A note about translations=Примітка про переклади
+Click here to view the language changelog=Натисніть тут, щоб переглянути журнал змін мови
+View Missing Translations=Переглянути відсутні переклади
 
 ; Update Checks
 Check For Updates=
