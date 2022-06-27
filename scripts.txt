@@ -2,4 +2,4 @@ A new version of %s is available=Доступна нова версія %s
 Docker=Docker
 Language=Мова
 Notice %s - Version update %s=Примітка [%s] - Оновлення версії %s
-Plugin=Plugin
+Plugin=Плагін
