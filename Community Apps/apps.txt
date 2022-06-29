@@ -34,8 +34,8 @@ Click here=Натисніть тут
 Results Per Page: %s=Результатів на сторінку: %s
 
 ; Plugin Disclaimer
-Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=
-Plugin Note=
+Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Програми спільноти містять як контейнери докерів, так і додатки плагінів. Плагіни розроблені для покращення ОС і працюють з повними привілеями у вашій системі та чітко визначені в CA
+Plugin Note=Примітка Плагіна
 
 ; Multi Install
 Install Plugin Applications=Встановити додатки плагінів
@@ -52,46 +52,46 @@ Click Here To Get More Results From DockerHub=Натисніть тут, щоб 
 No Matching Applications Found=Не знайдено відповідних програм
 
 ; Repository Related
-%s removed as favourite repository=
-%s set as favourite repository=
-Click to remove favourite repository=
-Click to set %s as favourite repository=
-Search for apps in repository=
-No description present=
-Go to the forum page=
-Go to the webpage=
-Go to reddit=
-Go to facebook=
-Go to discord=
-Go to forum profile=
-Show Profile=
-SHOW MORE=
-SHOW LESS=
-Read more=
-Total Applications=
-Total Known Downloads=
-Total Docker Applications=
-Total Plugin Applications=
-Total Languages=
-Average Downloads Per App=
-Web Page=
-Forum=
-Forum Profile=
-Profile=
-Facebook=
-Reddit=
-Twitter=
-Discord=
-Search Apps=
-Registry=
-Details=
-Added=
+%s removed as favourite repository=%s видалено як улюблений репозиторій
+%s set as favourite repository=%s встановлено як улюблений репозиторій
+Click to remove favourite repository=Натисніть, щоб видалити улюблений репозиторій
+Click to set %s as favourite repository=Натисніть, щоб встановити %s як улюблений репозиторій
+Search for apps in repository=Пошук програм у репозиторії
+No description present=Немає опису
+Go to the forum page=Перейдіть на сторінку форуму
+Go to the webpage=Перейти на веб-сторінку
+Go to reddit=Перейти до reddit
+Go to facebook=Перейти до facebook
+Go to discord=Перейти до discord
+Go to forum profile=Перейти до профілю форуму
+Show Profile=Показати профіль
+SHOW MORE=ПОКАЗАТИ БІЛЬШЕ
+SHOW LESS=ПОКАЗАТИ МЕНШЕ
+Read more=Детальніше
+Total Applications=Всього заявок
+Total Known Downloads=Загальна кількість відомих завантажень
+Total Docker Applications=Всього програм Docker
+Total Plugin Applications=Всього Додатків Плагінів
+Total Languages=Всього мов
+Average Downloads Per App=Середня кількість завантажень на додаток
+Web Page=Веб-сторінка
+Forum=Форум
+Forum Profile=Профіль Форуму
+Profile=Профіль
+Facebook=Facebook
+Reddit=Reddit
+Twitter=Twitter
+Discord=Discord
+Search Apps=Пошук Додатків
+Registry=Реєстр
+Details=Деталі
+Added=Додати
 ; Install Plugin title of openbox
-Install Plugin=
-Update Plugin=
+Install Plugin=Установити плагін
+Update Plugin=Оновити плагін
 
-Requirements not met=
-The requirements for this upgrade have not been met on your system=
+Requirements not met=Вимоги не виконані
+The requirements for this upgrade have not been met on your system=Вимоги для цього оновлення не були виконані у вашій системі
 
 BACK=НАЗАД
 
@@ -123,12 +123,12 @@ Install Selected Applications=Встановіть вибрані Додатки
 Yes, install it=Так, встановіть його
 
 ; Multi-install popup
-Yes, install them=
-Cookies not enabled Plugins must be separately installed from docker applications=
-Docker applications will be installed utilizing the most recently saved template with no user input on your part=
-Updating Support Links=
-Downloading docker icons=
-Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=
+Yes, install them=Так, встановити їх
+Cookies not enabled Plugins must be separately installed from docker applications=Файли cookie не ввімкнені. Плагіни необхідно встановлювати окремо від програм Docker
+Docker applications will be installed utilizing the most recently saved template with no user input on your part=Програми Docker будуть встановлені з використанням останнього збереженого шаблону без введення з вашого боку
+Updating Support Links=Оновлення посилань підтримки
+Downloading docker icons=Завантаження іконок докерів
+Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=Встановлення завершено Якщо кнопка ГОТОВО не з'явилася, вам потрібно буде натиснути червоний X у верхньому правому куті
 
 ; error messages
 No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=
@@ -181,23 +181,23 @@ Translation=Переклад
 
 ; Statistics page
 
-unknown=
-Last Change To Application Feed=
-Docker Applications=
-Plugin Applications=
-Templates=
-Official Containers=
-Repositories=
-Private Docker Applications=
-Invalid Templates=
-Template Errors=
-Blacklisted Apps=
-Incompatible Applications=
-Deprecated Applications=
-Moderation Entries=
-Primary Server=
-Backup Server=
-Installs not allowed from this page=
+unknown=невідомо
+Last Change To Application Feed=Остання зміна каналу програми
+Docker Applications=Програми Docker
+Plugin Applications=Додатки Плагінів
+Templates=Шаблони
+Official Containers=Офіційні Контейнери
+Repositories=Репозиторії
+Private Docker Applications=Приватні програми Docker
+Invalid Templates=Недійсні Шаблони
+Template Errors=Помилки шаблону
+Blacklisted Apps=Додатки з чорного списку
+Incompatible Applications=Несумісні програми
+Deprecated Applications=Застарілі програми
+Moderation Entries=Модерація записів
+Primary Server=Основний сервер
+Backup Server=Сервер резервного копіювання
+Installs not allowed from this page=Встановлення з цієї сторінки заборонено
 
 ; Statistics Popup
 No invalid templates found=
@@ -214,13 +214,13 @@ Applied to all applications=(Applied to all applications)
 Individual Application Moderation=
 
 ; Misc
-Community Applications Changelog=
+Community Applications Changelog=Журнал змін додатків спільноти
 
-Each month we highlight some of the amazing work from our community=
-Check out these newly added applications from our awesome community=
-Check out these up and coming apps=
-These apps have the highest percentage of new installs=
-An assortment of randomly chosen apps=
+Each month we highlight some of the amazing work from our community=Щомісяця ми висвітлюємо деякі дивовижні роботи нашої спільноти
+Check out these newly added applications from our awesome community=Перегляньте ці нещодавно додані програми від нашої чудової спільноти
+Check out these up and coming apps=Перегляньте ці нові програми
+These apps have the highest percentage of new installs=Ці програми мають найвищий відсоток нових встановлень
+An assortment of randomly chosen apps=Асортимент випадково вибраних програм
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
@@ -349,15 +349,15 @@ Favourite=
 Application Type=
 
 ; Graphs
-Trend Per Month=
-Downloads Per Month=
+Trend Per Month=Тенденція за місяць
+Downloads Per Month=Завантаження на місяць
 
 ; Multi install script
-Installing docker applications %s=
-Starting %s=
-%s failed to start You should install it by itself to fix the errors=
-Setting installed applications to autostart=
-Docker Application Installation finished=
+Installing docker applications %s=Встановлення docker-програм %s
+Starting %s=Запуск %s
+%s failed to start You should install it by itself to fix the errors=Не вдалося запустити %s. Ви повинні встановити його самостійно, щоб виправити помилки
+Setting installed applications to autostart=Налаштування встановлених програм на автозапуск
+Docker Application Installation finished=Встановлення програми Docker завершено
 
 ; Application Cards
 Actions=
@@ -410,7 +410,7 @@ Application Spotlight %s=
 Unraid Staff=
 
 ; Page Navigation
-Displaying %s - %s of %s=Displaying %1$s - %2$s (of %3$s)
+Displaying %s - %s of %s=Відображення %1$s - %2$s (з %3$s)
 
 Updating Content=Оновлення вмісту
 Language=Мова
@@ -425,12 +425,12 @@ Click here to view the language changelog=Натисніть тут, щоб пе
 View Missing Translations=Переглянути відсутні переклади
 
 ; Update Checks
-Check For Updates=
-Check for updates already running=
-Checking for docker container updates=
-Checking for plugin updates=
-Checking for language updates=
-Checking %s=
+Check For Updates=Перевірити наявність Оновлень
+Check for updates already running=Перевірте, чи вже запущені оновлення
+Checking for docker container updates=Перевірка оновлень контейнера Docker
+Checking for plugin updates=Перевірка наявності оновлень Плагінів
+Checking for language updates=Перевірка оновлень Мови
+Checking %s=Перевірка %s
 
 ; dockerHub conversions
 Determine configuration=

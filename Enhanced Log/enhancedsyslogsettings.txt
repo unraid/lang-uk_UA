@@ -1,45 +1,45 @@
-Configuration=
-Colors=
-Syslog Colors=
-Custom Match=
-Custom Syslog Match Strings=
-Syslog Filter=
-Syslog Configuration=
-Syslog Filter Strings=
-Show All Lines in Log=
-Number of Lines to Display=
-Enable Error Highlighting=
-Enable Minor Issues Highlighting=
-Enable Lime Tech Highlighting=
-Enable Array Highlighting=
-Enable System Highlighting=
-Enable File System Highlighting=
-Enable Drive Related Highlighting=
-Enable Network Highlighting=
-Enable Login Highlighting=
-Enable emhttp Highlighting=
-Enable Other Highlighting=
-Color Selection Chart=
-Error Highlight Color=
-Minor Issues Highlight Color=
-Lime Tech Highlight Color=
-Array Highlight Color=
-System Highlight Color=
-File System Highlight Color=
-Drive Related Highlight Color=
-Network Highlight Color=
-Login Highlight Color=
-emhttp Highlight Color=
-Other Highlight Color=
+Configuration=Конфігурація
+Colors=Кольори
+Syslog Colors=Кольори системного журналу
+Custom Match=Спеціальна відповідність
+Custom Syslog Match Strings=Спеціальні рядки відповідності системного журналу
+Syslog Filter=Фільтр системного журналу
+Syslog Configuration=Конфігурація системного журналу
+Syslog Filter Strings=Рядки фільтра системного журналу
+Show All Lines in Log=Показати всі рядки в журналі
+Number of Lines to Display=Кількість рядків для відображення
+Enable Error Highlighting=Увімкнути підсвічування помилок
+Enable Minor Issues Highlighting=Увімкнути виділення дрібних проблем
+Enable Lime Tech Highlighting=Увімкнути підсвічування Lime Tech
+Enable Array Highlighting=Увімкнути підсвічування масиву
+Enable System Highlighting=Увімкнути підсвічування системи
+Enable File System Highlighting=Увімкнути підсвічування файлової системи
+Enable Drive Related Highlighting=Увімкнути підсвічування, пов’язане з Диском
+Enable Network Highlighting=Увімкнути підсвічування мережі
+Enable Login Highlighting=Увімкнути підсвічування входу
+Enable emhttp Highlighting=Увімкнути підсвічування emhttp
+Enable Other Highlighting=Увімкнути інше підсвічування
+Color Selection Chart=Таблиця вибору кольору
+Error Highlight Color=Колір підсвічування помилки
+Minor Issues Highlight Color=Незначні проблеми Колір підсвічування
+Lime Tech Highlight Color=Колір підсвічування Lime Tech
+Array Highlight Color=Колір підсвічування масиву
+System Highlight Color=Колір підсвічування системи
+File System Highlight Color=Колір підсвічування файлової системи
+Drive Related Highlight Color=Колір підсвічування, пов’язаний із диском
+Network Highlight Color=Колір підсвічування мережі
+Login Highlight Color=Login Highlight Color
+emhttp Highlight Color=emhttp Колір підсвічування
+Other Highlight Color=Інший колір підсвічування
 ;
 ; Help
 ;
 :enhanced_syslog_show_all_lines_plug:
-> Set to 'Yes' to show all lines in the enhanced log.  Set to 'No' to show only highlighted lines.
+> Встановіть "Так", щоб відображати всі рядки в розширеному журналі. Установіть «Ні», щоб показувати лише виділені рядки.
 :end
 
 :enhanced_log_number_of_lines_plug:
-> Number of lines to display in the Enhanced Syslog.  Default is 1000.
+> Кількість рядків для відображення в розширеному системному журналі. За замовчуванням 1000.
 :end
 
 :enhanced_log_enable_error_plug:

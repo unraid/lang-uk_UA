@@ -153,7 +153,7 @@ The below list doesnt not reflect the way IOMMU would naturally group devices=Н
 This controller is bound to vfio, connected USB devices are not visible=Цей контролер прив’язаний до vfio, підключені пристрої USB не відображаються
 This controller is bound to vfio, connected drives are not visible=Цей контролер прив'язаний до vfio, підключені диски не видно
 To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=Щоб побачити природні групи IOMMU для вашого обладнання, перейдіть на сторінку [Диспетчер VM] і встановіть для параметра **PCIe ACS override** значення **Disabled**
-USB Devices=USB-пристрої
+USB Devices=USB-Пристрої
 Your system has booted with the PCIe ACS Override setting enabled=Ваша система завантажилася з увімкненим параметром PCIe ACS Override
 
 :diagnostics_1_plug:
