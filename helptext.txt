@@ -513,27 +513,26 @@ We highly recommend to make your life easier and avoid special characters.
 :end
 
 :share_edit_comments_help:
-Anything you like, up to 256 characters.
+Все, що вам подобається, до 256 символів.
 :end
 
 :share_edit_allocation_method_help:
-This setting determines how Unraid OS will choose which disk to use when creating a new file or directory:
+Цей параметр визначає, як Unraid OS вибиратиме, який диск використовувати під час створення нового файлу чи каталогу:
 
 **High-water**
-Choose the lowest numbered disk with free space still above the current *high water mark*.  The
-*high water mark* is initialized with the size of the largest data disk divided by 2.  If no disk
-has free space above the current *high water mark*, divide the *high water mark* by 2 and choose again.
+Виберіть диск з найнижчим номером із вільним місцем, яке все ще перевищує поточну позначку *Найвищого рівня*.
+*Мітка найвищого рівня* ініціалізується розміром найбільшого диска з даними, поділеним на 2.  Якщо жоден 
+диск не має вільного місця вище поточної *Мітки Найвищого рівня*, розділіть *Мітки найвищого рівня* на 2 і виберіть ще раз.
 
-The goal of **High-water** is to write as much data as possible to each disk (in order to minimize
-how often disks need to be spun up), while at the same time, try to keep the same amount of free space on
-each disk (in order to distribute data evenly across the array).
+Мета **Найвищого рівня** полягає в тому, щоб записати якомога більше даних на кожен диск (щоб звести 
+до мінімуму частоту обертання дисків), і в той же час намагатися зберегти однакову кількість вільного місця 
+на кожному диску (щоб рівномірно розподілити дані по масиву).
 
 **Fill-up**
-Choose the lowest numbered disk that still has free space above the current **Minimum free space**
-setting.
+Виберіть диск з найменшим номером, на якому ще є вільне місце вище поточного параметра **Мінімальний вільний простір**.
 
 **Most-free**
-Choose the disk that currently has the most free space.
+Виберіть диск, на якому зараз найбільше вільного місця.
 :end
 
 :share_edit_free_space_help:
