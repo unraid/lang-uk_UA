@@ -43,122 +43,122 @@ Other Highlight Color=Інший колір підсвічування
 :end
 
 :enhanced_log_enable_error_plug:
-> Set to 'Yes' to enable 'Errors' highlighting in the enhanced log.
+> Установіть значення «Так», щоб увімкнути підсвічування «Помилки» в розширеному журналі.
 :end
 
 :enhanced_log_enable_minor_plug:
-> Set to 'Yes' to enable 'Minor Issues' highlighting in the enhanced log.
+> Установіть значення «Так», щоб увімкнути виділення «Дрібних проблем» у розширеному журналі.
 :end
 
 :enhanced_log_enable_limetch_plug:
-> Set to 'Yes' to enable 'Lime Tech' highlighting in the enhanced log.
+> Виберіть «Так», щоб увімкнути підсвічування «Lime Tech» у розширеному журналі.
 :end
 
 :enhanced_log_enable_array_plug:
-> Set to 'Yes' to enable 'Array' highlighting in the enhanced log.
+> Установіть значення «Так», щоб увімкнути підсвічування «Масиву» в розширеному журналі.
 :end
 
 :enhanced_log_enable_system_plug:
-> Set to 'Yes' to enable 'System' highlighting in the enhanced log.
+> Виберіть «Так», щоб увімкнути підсвічування «Система» в розширеному журналі.
 :end
 
 :enhanced_log_enable_file_system_plug:
-> Set to 'Yes' to enable 'File System' highlighting in the enhanced log.
+> Установіть значення «Так», щоб увімкнути виділення «Файлова система» в розширеному журналі.
 :end
 
 :enhanced_log_enable_drive_plug:
-> Set to 'Yes' to enable 'Drive Related' highlighting in the enhanced log.
+> Установіть значення «Так», щоб увімкнути підсвічування «Пов’язані з приводом» у розширеному журналі.
 :end
 
 :enhanced_log_enable_network_plug:
-> Set to 'Yes' to enable 'Network' highlighting in the enhanced log.
+> Виберіть «Так», щоб увімкнути підсвічування «Мережі» в розширеному журналі.
 :end
 
 :enhanced_log_enable_login_plug:
-> Set to 'Yes' to enable 'Login' highlighting in the enhanced log.
+> Виберіть «Так», щоб увімкнути підсвічування «Вхід» у розширеному журналі.
 :end
 
 :enhanced_log_enable_emhttp_plug:
-> Set to 'Yes' to enable 'emhttp' highlighting in the enhanced log.
+> Установіть значення «Так», щоб увімкнути підсвічування «emhttp» у розширеному журналі.
 :end
 
 :enhanced_log_enable_other_plug:
-> Set to 'Yes' to enable 'Other' highlighting in the enhanced log.
+> Виберіть «Так», щоб увімкнути виділення «Інше» в розширеному журналі.
 :end
 
 :enhancd_log_default_plug:
-> 'Default' resets the Configuration and Colors.  Click 'Apply' to save your changes.  Click 'Done' when you are finished with your changes.
+> «За замовчуванням» скидає конфігурацію та кольори. Натисніть «Застосувати», щоб зберегти зміни. Натисніть «Готово», коли ви закінчите вносити зміни.
 :end
 
 :enhanced_log_color_error_plug:
-> Color to use for 'Error' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення "Помилка". Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_minor_plug:
-> Color to use for 'Minor Issues' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення «незначних проблем». Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_limetech_plug:
-> Color to use for 'Lime Tech' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для підсвічування «Lime Tech». Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_array_plug:
-> Color to use for 'Array' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення масиву. Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_system_plug:
-> Color to use for 'System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення "Система". Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_file_system_plug:
-> Color to use for 'File System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення "Файлової системи". Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_drive_plug:
-> Color to use for 'Drive Related' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення "Пов’язане з Диском". Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_network_plug:
-> Color to use for 'Network' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення «Мережі». Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_login_plug:
-> Color to use for 'Login' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення «Вхід». Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_emhttp_plug:
-> Color to use for 'emhttp' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення 'emhttp'. Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_color_other_plug:
-> Color to use for 'Other' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Колір для виділення «Інше». Ви можете використовувати назву або номер кольору. Номер кольору починається з «#».
 :end
 
 :enhanced_log_custom_plug:
-> Enter any custom events you want highlighted in the log.  Any custom events you enter will be processed after the built in events.
-> The events are entered as: "search string", "event" 
-> Case is ignored in the search string and wild cards are allowed.
-> Examples:
-> "found.*chip" will match any string with 'found' and 'chip' with any text in between,
-> "(spinup|spindown)" will match any string with either 'spinup' or 'spindown'. 
-> The search string and event are quoted, and each line contains one match string and event combination.  Errors in the strings can cause php errors.
-> Events are: "error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other".
+> Введіть будь-які спеціальні події, які потрібно виділити в журналі. Будь-які настроювані події, які ви введете, будуть оброблені після вбудованих подій.
+> Події вводяться як: "рядок пошуку", "подія"
+> Регістр у рядку пошуку ігнорується, а символи підстановки дозволені.
+> Приклади:
+> "found.*chip" відповідатиме будь-якому рядку з "found" і "chip" з будь-яким текстом між ними,
+> "(spinup|spindown)" відповідатиме будь-якому рядку з "spinup" або "spindown".
+> Рядок пошуку та подія взяті в лапки, і кожен рядок містить одну комбінацію рядка відповідності та події. Помилки в рядках можуть викликати помилки php.
+> Події: "error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other".
 :end
 
 :enhanced_log_custom_buttons_plug:
-> Click the **Apply** button to save your custom events.  Click **Reset** to
-> undo any changes you make before you have saved the custom events. Click **Done** to exit this page.
+> Натисніть кнопку **Застосувати**, щоб зберегти власні події. Натисніть **Скинути**, щоб
+> скасувати будь-які внесені вами зміни до того, як ви збережете спеціальні події. Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
 
 :enhanced_log_filter_plug:
-> You can filter out log entries to keep your Syslog from being overwhelmed with debig or redundant log entries.  You should only filter out log entries that you know are unnecessary or redundant.
-> Because the Syslog is very important for debugging issues, don't filter out entries unnecessarily.
-> Enter the log strings you want to filtered from the Syslog.  Each entry is on a separate line with leading and trailing quotes.
+> Ви можете відфільтрувати записи журналу, щоб ваш системний журнал не був переповнений дебіґовими або надлишковими записами журналу. Слід відфільтрувати лише ті записи журналу, які, як ви знаєте, є непотрібними або зайвими.
+> Оскільки системний журнал дуже важливий для вирішення проблем з налагодженням, не відфільтровуйте записи без потреби.
+> Введіть рядки журналу, які потрібно відфільтрувати з системного журналу. Кожен запис знаходиться в окремому рядку з початковими та кінцевими лапками.
 :end
 
 :enhanced_log_filter_buttons_plug:
-> Click the **Apply** button to Apply the Syslog filter. Click **Reset** to
-> undo any changes you make before you have saved the Syslog filter. Click **Done** to exit this page.
+> Натисніть кнопку **Застосувати**, щоб застосувати фільтр Syslog. Натисніть **Скинути**, щоб
+> скасуйте будь-які зміни, які ви внесли до того, як збережете фільтр Syslog. Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
 
 ; Note: June 6, 2022 - 33 missing translations
