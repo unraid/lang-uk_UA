@@ -15,7 +15,7 @@ Every 4 hours=Кожні 4 години
 Every 6 hours=Кожні 6 години
 Every 8 hours=Кожні 8 години
 Every hour=Щогодини
-HHMM=ЧЧ:ММ
+HHMM=ГГ:ММ
 SSD TRIM schedule=Розклад SSD TRIM
 Time of the day=Час доби
 
