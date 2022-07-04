@@ -1,46 +1,46 @@
-Age Days=
-Array=
-Array is stopped=
-Browse the Share Recycle Bin=
-Deleted Files=
-Deleted Files Log=
-Empty=
-Empty the=
-Empty All Trash=
-Empty Trash=
-Enable on Unassigned Devices=
-Enable Recycle Bin=
-Excluded Directories=
-Excluded Files=
-Excluded Shares=
-Log Deleted Files=
-Recycle Bin=
-Recycle Bin is empty=
-Recycle Bin Log=
-Recycle Bin parameters=
-Recycle Bin permissions=
-Recycle Bin Total Size=
-Refresh the Recycle Bin page=
-Remove Aged Files=
-Remove aged files from the Recycle Bin=
-Remove Aged Files Notification=
-Remove Aged Files on Schedule=
-Remove all files from the Recycle Bin=
-Restart the Recycle Bin=
-Share Type=
-SMB Share=
-Start the Recycle Bin=
-Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=
-Stop the Recycle Bin=
-These actions apply to all shares=
-Trash Size=
-Update Recycle Bin Size in Background=
+Age Days=Вік Днів
+Array=Масив
+Array is stopped=Масив зупинено
+Browse the Share Recycle Bin=Переглянути Кошик спільного використання
+Deleted Files=Видалені файли
+Deleted Files Log=Журнал видалених файлів
+Empty=Порожній
+Empty the=Очистити
+Empty All Trash=Очистити Весь Кошик
+Empty Trash=Очистити Кошик
+Enable on Unassigned Devices=Увімкнути на непризначених пристроях
+Enable Recycle Bin=Увімкнути кошик
+Excluded Directories=Виключені каталоги
+Excluded Files=Виключені файли
+Excluded Shares=Виключені Спільні Доступи
+Log Deleted Files=Журнал видалених файлів
+Recycle Bin=Сміттєва корзина
+Recycle Bin is empty=Кошик порожній
+Recycle Bin Log=Журнал кошика
+Recycle Bin parameters=Параметри кошика
+Recycle Bin permissions=Дозволи корзини
+Recycle Bin Total Size=Загальний розмір кошика
+Refresh the Recycle Bin page=Оновіть сторінку кошика
+Remove Aged Files=Видаліть застарілі файли
+Remove aged files from the Recycle Bin=Видаліть застарілі файли з кошика
+Remove Aged Files Notification=Видалити сповіщення про старі файли
+Remove Aged Files on Schedule=Видаляйте застарілі файли за розкладом
+Remove all files from the Recycle Bin=Видаліть усі файли з кошика
+Restart the Recycle Bin=Перезапустіть кошик
+Share Type=Тип спільного доступу
+SMB Share=Спільний Доступ SMB
+Start the Recycle Bin=Запустити кошик
+Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=Запуск і зупинка кошика може призвести до того, що спільні ресурси SMB перестануть працювати на короткий період
+Stop the Recycle Bin=Зупинити кошик
+These actions apply to all shares=Ці дії стосуються всіх спільних ресурсів
+Trash Size=Розмір Кошика
+Update Recycle Bin Size in Background=Оновити розмір кошика у фоновому режимі
 ;
 ; Help
 ;
 :recycle_bin_shares_plug:
-Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period.
-These actions apply to all shares:
+Запуск і зупинка кошика може призвести до того, що спільні ресурси SMB перестануть працювати на короткий період.
+Ці дії застосовуються до всіх спільних ресурсів:
 > Recycle Bin Shares:
 >
 > The shares with Recycle Bin contents will be displayed along with the size of the share's Trash Bin.
