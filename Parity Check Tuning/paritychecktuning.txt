@@ -4,20 +4,20 @@
 
 ; Parity Check Settings Page
 
-Parity Check Tuning=
-automatic=
-Basic=
-below critical disk temperature threshold=
-below warning disk temperature threshold=
-CAUTION=
-Click to show parity-check history=
-Data Rebuild=
-Debug=
-Disk Clear=
-Donate to plugin author=DONATE
-entry in %s format=
-High disk temperatures can shutdown server=
-Increment frequency=
+Parity Check Tuning=Налаштування Перевірки Парності
+automatic=автоматичний
+Basic=Базовий
+below critical disk temperature threshold=нижче критичного порогу температури диска
+below warning disk temperature threshold=нижче попереджувального порогу температури диска
+CAUTION=УВАГА
+Click to show parity-check history=Натисніть, щоб показати історію перевірки парності
+Data Rebuild=Відновлення даних
+Debug=Відлагоджувати
+Disk Clear=Очистити Диск
+Donate to plugin author=ПОЖЕРТВУВАТИ
+entry in %s format=запис у форматі %s
+High disk temperatures can shutdown server=Висока температура диска може вимкнути сервер
+Increment frequency=Збільшити частоту
 Increment pause time=
 Increment resume time=
 No parity check entries found in syslog=
