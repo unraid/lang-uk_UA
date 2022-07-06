@@ -59,7 +59,7 @@ There are no exportable user shares=Немає спільних користув
 Time Machine volume size limit=Обмеження розміру обсягу Time Machine
 Unknown encryption state=Невідомий стан шифрування
 Use cache pool for new filesdirectories=Використовувати пул кешу (для нових файлів/каталогів)
-User Shares=Спільні доступи користувачів
+User Shares=Спільні ресурси користувачів
 Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
 
