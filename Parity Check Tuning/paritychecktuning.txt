@@ -79,35 +79,35 @@ Write Corrections to Parity=Записати виправлення парнос
 
 ; PHP file messages
 
-Analyze results from an array operation=
-Array being shutdown due to drive overheating=
-Array operation will not be restarted=
-Array operation restarted=
-Array shutdown=
-Cancel a running parity check=
-Correcting=
-Detected a change to the disk configuration=
-Drives cooled down=
-Elapsed Time=
-ERROR=
-Following drives overheated=
-IMPORTANT=
+Analyze results from an array operation=Аналіз результатів операції з масивом
+Array being shutdown due to drive overheating=Масив відключається через перегрів накопичувача
+Array operation will not be restarted=Робота з масивом не буде перезапущена
+Array operation restarted=Операцію з масивом перезапущено
+Array shutdown=Вимкнення масиву
+Cancel a running parity check=Скасувати поточну перевірку парності
+Correcting=Виправлення
+Detected a change to the disk configuration=Виявлено зміну конфігурації диска
+Drives cooled down=Диски охололи
+Elapsed Time=Витрачений Час
+ERROR=ПОМИЛКА
+Following drives overheated=Наступні диски перегрілися
+IMPORTANT=ВАЖЛИВО
 Increments=
-Non-Correcting=
-Pause a running array operation=
-Resume a paused array operation=
-Sent notification=
+Non-Correcting=Невиправний
+Pause a running array operation=Призупинити запущену операцію з масивом
+Resume a paused array operation=Відновити призупинену операцію з масивом
+Sent notification=Надіслано сповіщення
 Show the status of a running parity check=
-Shutdown=
-Start a correcting parity check=
-Start a correcting parity check=
-Start a parity check with scheduled settings=
-Starting Shutdown=
-Unclean shutdown detected=
-Unknown action=
-Unrecognized option=
-Usage=
-where action is one of=
+Shutdown=Вимкнути
+Start a correcting parity check=Почніть коригувальну перевірку парності
+Start a correcting parity check=Почніть коригувальну перевірку парності
+Start a parity check with scheduled settings=Почніть перевірку парності із запланованими налаштуваннями
+Starting Shutdown=Початок Вимкнення
+Unclean shutdown detected=Виявлено нечисте завершення роботи
+Unknown action=Невідома дія
+Unrecognized option=Нерозпізнаний варіант
+Usage=Використання
+where action is one of=де дія є одним із
 
 ; Notifications
 
