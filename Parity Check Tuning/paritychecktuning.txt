@@ -4,110 +4,110 @@
 
 ; Parity Check Settings Page
 
-Parity Check Tuning=
-automatic=
-Basic=
-below critical disk temperature threshold=
-below warning disk temperature threshold=
-CAUTION=
-Click to show parity-check history=
-Data Rebuild=
-Debug=
-Disk Clear=
-Donate to plugin author=DONATE
-entry in %s format=
-High disk temperatures can shutdown server=
-Increment frequency=
-Increment pause time=
-Increment resume time=
-No parity check entries found in syslog=
-ParityRead-Check History=Parity/Read-Check History=
-Parity Check=
-Parity Check Tuning logging=
-Parity Sync=
-Pause an array operation at=
-Pause and Resume array operations if disks overheat=
-Read Check=
-Requires unRaid 67 or later=Requires unRaid 6.7 or later=
-Resume an array operation at=
-Resume parity checks on next array start=
-Resume running Array operations on next array start=
-Run %s %s in increments=
-scheduled=
-Send notifications for Pause or Resume of increments=
-Send notifications for temperature related Pause or Resume=
-Shutdown server at=
-Syslog only=
-Syslog and Flash=
-Flash only=
-Testing=
-Unscheduled=
-Use increments for %s %s=
-Use increments for disk Clear operations=
-Use increments for Parity-SyncData Rebuild operations=Use increments for Parity-Sync/Data Rebuild operations
-You require a parity disk present for this option to be relevant=
+Parity Check Tuning=Налаштування Перевірки Парності
+automatic=автоматичний
+Basic=Базовий
+below critical disk temperature threshold=нижче критичного порогу температури диска
+below warning disk temperature threshold=нижче попереджувального порогу температури диска
+CAUTION=УВАГА
+Click to show parity-check history=Натисніть, щоб показати історію перевірки парності
+Data Rebuild=Відновлення даних
+Debug=Відлагоджувати
+Disk Clear=Очистити Диск
+Donate to plugin author=ПОЖЕРТВУВАТИ
+entry in %s format=запис у форматі %s
+High disk temperatures can shutdown server=Висока температура диска може вимкнути сервер
+Increment frequency=Збільшити частоту
+Increment pause time=Збільшити час паузи
+Increment resume time=Збільшити час відновлення
+No parity check entries found in syslog=У системному журналі не знайдено записів перевірки парності
+ParityRead-Check History=Журнал парності/перевірки читання
+Parity Check=Перевірка парності
+Parity Check Tuning logging=Журнал налаштування перевірки парності
+Parity Sync=Синхронізація парності
+Pause an array operation at=Призупинити операцію з масивом в
+Pause and Resume array operations if disks overheat=Призупинити та відновити операції з масивом, якщо диски перегріваються
+Read Check=Прочитайте перевірку
+Requires unRaid 67 or later=Потрібен unRaid 6.7 або новішої версії
+Resume an array operation at=Відновити операцію з масивом в
+Resume parity checks on next array start=Відновити перевірку парності під час наступного запуску масиву
+Resume running Array operations on next array start=Відновити виконання операцій з масивом під час наступного запуску масиву
+Run %s %s in increments=Запустіть %s %s з кроком
+scheduled=заплановано
+Send notifications for Pause or Resume of increments=Надсилати сповіщення про призупинення або відновлення кроків
+Send notifications for temperature related Pause or Resume=Надсилайте сповіщення про призупинення або відновлення, пов’язане з температурою
+Shutdown server at=Вимкнути сервер в
+Syslog only=Тільки системний журнал
+Syslog and Flash=Системний журнал і Flash
+Flash only=Тільки Flash
+Testing=Тестування
+Unscheduled=Позаплановий
+Use increments for %s %s=Використовуйте збільшення для %s %s
+Use increments for disk Clear operations=Використовуйте прирости для операцій очищення диска
+Use increments for Parity-SyncData Rebuild operations=Використовуйте прирости для операцій Синхронізації-Парності/Перебудови-Даних
+You require a parity disk present for this option to be relevant=Вам потрібен диск перевірки парності, щоб цей параметр був актуальним
 
 ; Parity Problems Assistant page
-Parity Problems Assistant=
+Parity Problems Assistant=Помічник із проблем парності
 ; page intro text
 :parityProblems_intro_plug:
-The **Parity Problems Assistant** is part of the **Parity Check Tuning** plugin.<p/>
-The current status is **EXPERIMENTAL** and it is always possible that this assistant may be removed in the future).  
-**(feedback is welcomed on the basic concept and ideas for improvement)**.<p/>
-The idea is that this assistant can be used after a parity check or read check has reported problems and logged the details of any problem sectors to the syslog.  
-In many cases such errors can be due to external factors such as cabling or the power supply rather than the actual disks.<p/>
-It is also not uncommon, particularly on **Ryzen/ThreadRipper** based systems, to get random parity errors if the RAM is overclocked
-(an XMP profile **is** an overclock),  
-and the motherboard/CPU combination may also impose limits that are lower than the RAM is capable of supporting.<p/>
-If you think you have rectified whatever caused the problems to occur then you can use this assistant to run a partial check over a narrow range to see if the problem still occurs.  
-This can be much faster than having to run a full parity check or read check to see if you have resolved the issue or to run a disk extended SMART test to test the actual disk.<p/>
-**IMPORTANT**:  This assistant should never be used as an alternative to running a full parity check once you think the problem has been resolved.
+**Помічник з проблем парності** є частиною плагіна **Налаштування перевірки парності**.<p/>
+Поточний статус – **ЕКСПЕРИМЕНТАЛЬНИЙ**, і завжди можливо, що цього помічника буде видалено в майбутньому). 
+**(вітаються відгуки про основну концепцію та ідеї щодо вдосконалення)**.<p/>
+Ідея полягає в тому, що цей помічник можна використовувати після того, як перевірка парності або перевірка читання повідомили про проблеми та занесли деталі будь-яких проблемних секторів до системного журналу. 
+У багатьох випадках такі помилки можуть бути викликані зовнішніми факторами, такими як кабелі чи джерело живлення, а не фактичними дисками.<p/>
+Також нерідко, особливо в системах на базі **Ryzen/ThreadRipper**, випадкові помилки парності, якщо оперативна пам’ять розігнана.
+(профіль XMP **є** розгоном), 
+і комбінація материнська плата/ЦП також може накладати обмеження, нижчі за оперативну пам’ять, яку здатна підтримувати.<p/>
+Якщо ви вважаєте, що усунули те, що спричинило проблеми, ви можете скористатися цим помічником, щоб запустити часткову перевірку у вузькому діапазоні, щоб побачити, чи проблема все ще виникає.  
+Це може бути набагато швидше, ніж виконувати повну перевірку парності чи перевірку читання, щоб побачити, чи ви вирішили проблему, або запускати розширений тест SMART диска, щоб перевірити фактичний диск.<p/>
+**ВАЖЛИВО**: цей помічник ніколи не повинен використовуватися як альтернатива запуску повної перевірки парності, якщо ви вважаєте, що проблему вирішено.
 :end
 ; fields
-Click to show Error Sectors from syslog=
-End point for check=
-Method used to specify start and stop points=
-Only read checks can be performed=
-percent=
-Percentage=
-sector=
-Sector Numbers=
-Show Sector Numbers=
-Start Check=
-Start point for check=
-Write Corrections to Parity=
+Click to show Error Sectors from syslog=Натисніть, щоб показати сектори помилок із системного журналу
+End point for check=Кінцева точка для перевірки
+Method used to specify start and stop points=Метод, який використовується для визначення точок початку та зупинки
+Only read checks can be performed=Можна виконувати лише перевірки читання
+percent=відсотки
+Percentage=Відсоток
+sector=сектор
+Sector Numbers=Номери Секторів
+Show Sector Numbers=Показати номери секторів
+Start Check=Розпочати перевірку
+Start point for check=Початкова точка для перевірки
+Write Corrections to Parity=Записати виправлення парності
 
 ; PHP file messages
 
-Analyze results from an array operation=
-Array being shutdown due to drive overheating=
-Array operation will not be restarted=
-Array operation restarted=
-Array shutdown=
-Cancel a running parity check=
-Correcting=
-Detected a change to the disk configuration=
-Drives cooled down=
-Elapsed Time=
-ERROR=
-Following drives overheated=
-IMPORTANT=
+Analyze results from an array operation=Аналіз результатів операції з масивом
+Array being shutdown due to drive overheating=Масив відключається через перегрів накопичувача
+Array operation will not be restarted=Робота з масивом не буде перезапущена
+Array operation restarted=Операцію з масивом перезапущено
+Array shutdown=Вимкнення масиву
+Cancel a running parity check=Скасувати поточну перевірку парності
+Correcting=Виправлення
+Detected a change to the disk configuration=Виявлено зміну конфігурації диска
+Drives cooled down=Диски охололи
+Elapsed Time=Витрачений Час
+ERROR=ПОМИЛКА
+Following drives overheated=Наступні диски перегрілися
+IMPORTANT=ВАЖЛИВО
 Increments=
-Non-Correcting=
-Pause a running array operation=
-Resume a paused array operation=
-Sent notification=
+Non-Correcting=Невиправний
+Pause a running array operation=Призупинити запущену операцію з масивом
+Resume a paused array operation=Відновити призупинену операцію з масивом
+Sent notification=Надіслано сповіщення
 Show the status of a running parity check=
-Shutdown=
-Start a correcting parity check=
-Start a correcting parity check=
-Start a parity check with scheduled settings=
-Starting Shutdown=
-Unclean shutdown detected=
-Unknown action=
-Unrecognized option=
-Usage=
-where action is one of=
+Shutdown=Вимкнути
+Start a correcting parity check=Почніть коригувальну перевірку парності
+Start a correcting parity check=Почніть коригувальну перевірку парності
+Start a parity check with scheduled settings=Почніть перевірку парності із запланованими налаштуваннями
+Starting Shutdown=Початок Вимкнення
+Unclean shutdown detected=Виявлено нечисте завершення роботи
+Unknown action=Невідома дія
+Unrecognized option=Нерозпізнаний варіант
+Usage=Використання
+where action is one of=де дія є одним із
 
 ; Notifications
 
