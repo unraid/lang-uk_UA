@@ -203,4 +203,4 @@ You will need to enter credentials to list the shares=
 > Be careful using the /dev/sdX designation because it can change after a reboot.
 :end
 
-; Note: June 19, 2022 - 136 missing translations
+; Note: July 10, 2022 - 128 missing translations

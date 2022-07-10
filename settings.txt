@@ -759,5 +759,3 @@ to the Unraid server at=на сервер Unraid за адресою
 Transient errors in this log can be ignored unless you are having issues=Тимчасові помилки в цьому журналі можна ігнорувати, якщо у вас не виникли проблеми
 Unraid API extra origins=Додаткові джерела API Unraid
 View Flash Backup Error Log=Переглянути журнал помилок Flash Backup
-
-; Note: June 19, 2022 - 3 missing translations

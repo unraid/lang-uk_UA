@@ -12,7 +12,6 @@ Community Applications works best when cookies are enabled in your browser Certa
 Backup Server Active Some icons may not appear, and plugin installations may be affected=Сервер резервного копіювання активний Деякі піктограми можуть не відображатися, і це може вплинути на встановлення плагінів
 Debugging enabled This significantly increases the memory used by your browser=Увімкнено налагодження. Це значно збільшує обсяг пам’яті, який використовує ваш браузер
 Browser translation detected Display issues may result=Виявлено переклад браузера. Можуть виникнути проблеми з відображенням
-Running Background Application Tests=Запуск тестів фонової програми
 Action Centre Enabled=Центрі Підтримки увімкнено
 
 ; Sorting Options
@@ -290,8 +289,8 @@ OtherUncategorized=Інше:Без категорії
 and %s more=і ще %s
 
 ; App Popup Related
-This application template has been blacklisted=Цю програму / шаблон занесено до чорного списку
-This application template has been deprecated=Цю програму / шаблон застарілий
+This application template has been blacklisted=Цей шаблон програми внесено до чорного списку
+This application template has been deprecated=Цей шаблон програми застарів
 This application has additional requirements=Ця програма має додаткові вимоги
 Additional Requirements=Додаткові вимоги
 Donate To Author=Пожертвувати автору
@@ -361,6 +360,7 @@ Docker Application Installation finished=Встановлення програм
 
 ; Application Cards
 Actions=Дії
+Pending=
 This application is a driver plugin=Ця програма є драйвером (плагіном)
 This is a language pack=Це мовний пакет
 This application is a docker container=Ця програма є docker-контейнером
@@ -440,4 +440,4 @@ An error occurred - Could not determine configuration=Сталася помил�
 Click Install to download and install the Community Applications plugin=Натисніть **Встановити**, щоб завантажити та інсталювати плагін **Програми спільноти**
 
 
-; Note: June 25, 2022 - 220 missing translations
+; Note: July 10, 2022 - 2 missing translations
