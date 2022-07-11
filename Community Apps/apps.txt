@@ -360,7 +360,7 @@ Docker Application Installation finished=Встановлення програм
 
 ; Application Cards
 Actions=Дії
-Pending=
+Pending=В очікуванні
 This application is a driver plugin=Ця програма є драйвером (плагіном)
 This is a language pack=Це мовний пакет
 This application is a docker container=Ця програма є docker-контейнером
