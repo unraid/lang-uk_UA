@@ -337,133 +337,133 @@ Method used to specify start and stop points=Метод, який викорис
 >* Масив був акуратно закритий 
 >* Користувач не повинен вносити жодних змін у конфігурацію масиву.
 >
->As long as these criteria are met then when the array is next started the operation is resumed from the point previously reached.
+>Якщо ці критерії виконуються, то при наступному запуску масиву операція відновлюється з точки, досягнутої раніше.
 >
->**NOTES:**  
->* If the array operation was within the time set for a scheduled increment to be running then on restarting the array operation it will be set to be paused if now outside the time set for running increments.  
->* If the array operation was manually paused then the restarted array operation will also be paused  
->* If you want to use this feature by simply stopping the array without immediately using the **Reboot** or **Shutdown** buttons then you first need to manually **Pause** the array operation before using the **Stop** button.  If you to this and successfully stop the array then the array operation will now be resumed if you simply **Start** the array again, and also on the next array start after **Reboot** or **Shutdown**.
+>**ПРИМІТКИ:**  
+>* Якщо операція з масивом була в межах часу, встановленого для виконання запланованого приросту, тоді після перезапуску операції з масивом буде встановлено на паузу, якщо тепер виходить за межі часу, встановленого для виконання приростів.  
+>* Якщо операцію з масивом було призупинено вручну, перезапущену операцію з масивом також буде призупинено  
+>* Якщо ви хочете скористатися цією функцією, просто зупинивши масив без негайного використання кнопок **Перезавантажити** або **Вимкнути**, тоді вам спочатку потрібно вручну **Призупинити** роботу масиву перед використанням **Зупинити** кнопку. Якщо ви виконаєте це та успішно зупините роботу масиву, тоді роботу масиву буде відновлено, якщо ви просто **Запустити** масив знову, а також під час наступного запуску масиву після **Перезавантаження** або **Вимкнення**.
 :end
 
 :parity_tune_hot_plug:
-> Pause an array operation(Parity Check, Parity-Sync/Disk Rebuild, disk Clear)if the disk temperatures exceeds the limits you have set. 
+> Призупиніть операцію з масивом (перевірка парності, синхронізація парності/відновлення диска, очищення диска), якщо температура диска перевищує встановлені вами обмеження.
 >
->The temperatures are checked against the thresholds set for the Warning disk temperature levels. If a threshold has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (set via *Settings->Display Settings*) will be used.  It is assumed that normally you would want the array operation to be paused before the value set at the unRaid level as the Warning Threshold.
+>Температури перевіряються на відповідність пороговим значенням, встановленим для рівнів температури диска попередження. Якщо порогове значення було визначено для окремого диска (до якого можна отримати доступ, клацнувши на диску на вкладці «Головна»), тоді використовується це значення. Якщо не буде використано глобальне налаштування (встановлене через *Налаштування->Налаштування дисплея*). Передбачається, що зазвичай ви хочете, щоб операція з масивом була призупинена до того, як значення, встановлене на рівні unRaid як Порогове значення попередження.
 >
->A much better solution is to improve the cooling in your case so that the disks never overheat.   In practice this may not always prove practical.
+>Набагато краще рішення - покращити охолодження у вашому корпусі, щоб диски ніколи не перегрівалися. На практиці це не завжди може бути практичним.
 >
->If the array operation was part of running an increment then it will not be resumed outside the time allotted for the increment.   If the array operation was initiated for any other reason then the Pause/Resume behavior on temperature is always active.
+>Якщо операція з масивом була частиною запуску інкременту, вона не буде відновлена ​​поза межами часу, відведеного для інкременту. Якщо операція з масивом була ініційована з будь-якої іншої причини, тоді поведінка призупинення/відновлення для температури завжди активна.
 :end
 
 :parity_tune_warn_plug:
-> This value indicates how close to the value set for the Warning Disk Temperature Threshold a disks temperature is allowed to reach before a **pause** of a running array operation is triggered. If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.
+> Це значення вказує на те, наскільки близько до значення, встановленого для Порогового значення температури диска для попередження, може досягати температура дисків, перш ніж активується **пауза** виконання операції з масивом. Якщо для окремого накопичувача було визначено явне порогове значення, використовується це значення. Якщо ні, буде використано глобальне налаштування.
 >
-> You normally want a small positive value to trigger the pause before Unraid gets around to sending you a notification that the temperature warning threshold has been reached for a disk.
+> Зазвичай потрібно, щоб невелике позитивне значення викликало паузу, перш ніж Unraid надішле вам сповіщення про те, що для диска досягнуто порогового значення температури.
 >
-> As an example if the Warning threshold for a drive is 50C then setting a pause value of 5 would cause the plugin to pause the operation if that drive reached 45C (50-5).
+> Наприклад, якщо поріг попередження для диска становить 50C, тоді встановлення значення паузи 5 призведе до того, що плагін призупинить роботу, якщо диск досягне 45C (50-5).
 >
->If there is no active array operation then no action will be taken even if disk temperatures exceed the specified threshold.
+>Якщо активна операція з масивом відсутня, жодних дій не буде виконано, навіть якщо температура диска перевищить вказаний поріг.
 >
-> If there is no running array operation then no action will be taken.
+> Якщо запущена операція масиву не виконується, жодних дій не буде виконано.
 :end
 
 :parity_tune_low_plug:
-> This value indicates how much below the Warning temperature threshold of a drive must reach before a **resume** of an array operation is issued.
+> Це значення вказує, скільки нижче порогової температури попередження накопичувач повинен досягти, перш ніж буде видано **відновлення** роботи масиву.
 >
->You need to get a good balance between array operations being resumed too soon (and thus quickly reaching the level to initiate another pause) and wasting a lot of time.
+>Вам потрібно знайти хороший баланс між надто раннім відновленням операцій із масивом (і таким чином швидким досягненням рівня, щоб ініціювати нову паузу) і втратою багато часу.
 >
->If a disk ever gets spun down the temperature is not readily available so it will be assumed that this criteria has been met
+>Якщо диск коли-небудь закрутиться, температура недоступна, тому вважатиметься, що цей критерій виконано
 >
->If there is no paused array operation then no action will be taken. 
+>Якщо немає призупиненої операції масиву, то жодних дій не буде виконано. 
 :end
 
 :parity_tune_temp_notify_plug:
-> Setting this option to **Yes** means that you will be sent a notification every time the plugin Pauses or Resumes an array operation due to the temperature of your drives.<br>If you would rather not get such notifications then leave this option set to **No**.    The notification is sent as a **Notice** category message to the targets specified under *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
-> Setting this option to **Yes** means that you will be sent a notification every time the plugin Pauses or Resumes an array operation due to the temperature of your drives.<br>If you would rather not get such notifications then leave this option set to **No**.    The notification is sent as a **Notice** category message to the targets specified under *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
+> Якщо встановити для цього параметра значення **Так**, ви отримуватимете сповіщення кожного разу, коли плагін призупиняє або відновлює роботу масиву через температуру ваших дисків.<br>Якщо ви не хочете отримувати такі сповіщення, залиште цей параметр встановити **Ні**. Сповіщення надсилається як повідомлення категорії **Notice** до цілей, указаних у *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
+> Якщо встановити для цього параметра значення **Так**, ви отримуватимете сповіщення кожного разу, коли плагін призупиняє або відновлює роботу масиву через температуру ваших дисків.<br>Якщо ви не хочете отримувати такі сповіщення, залиште цей параметр встановити **Ні**. Сповіщення надсилається як повідомлення категорії **Notice** до цілей, указаних у *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
 :end
 
 :parity_tune_shutdown_plug:
-> If set to **Yes** then automatically start a tidy shutdown of the server if any disk in the array or a cache pool reach the defined temperature threshold.
-> The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) will be used.
+> Якщо встановлено значення **Так**, тоді автоматично запускатиметься акуратне завершення роботи сервера, якщо будь-який диск у масиві чи пулі кешу досягає визначеного порогу температури.
+> Температури перевіряються на відповідність пороговим значенням, встановленим для **Критичних** рівнів температури диска. Якщо критичну температуру було визначено для окремого диска (до якого можна отримати доступ, клацнувши диск на вкладці «Головна»), тоді використовується це значення. Якщо ні, буде використано глобальне налаштування (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>).
 >
->This option intended to be triggered if for some reason the system's cooling system is insufficient or if it has failed in some way. The idea is that you want to do a tidy shutdown before the disks become damaged due to overheating badly.   The shutdown that is triggered is functionally the same as would be the case of pressing the Shutdown button on the Main page of the unRaid GUI.  If notifications are enabled then you are sent one to indicate that this has happened.
+>Ця опція призначена для запуску, якщо з якоїсь причини система охолодження системи недостатня або якщо вона якимось чином вийшла з ладу. Ідея полягає в тому, що ви хочете акуратно завершити роботу до того, як диски пошкодяться через перегрів. Вимкнення, яке запускається, функціонально таке ж, як і у випадку натискання кнопки Завершення роботи на головній сторінці графічного інтерфейсу користувача unRaid. Якщо сповіщення ввімкнено, вам буде надіслано сповіщення про те, що це сталося.
 >
->When the server is started up again after such a shutdown then when the array is started you will be notified that a temperature related shutdown happened in case you were not aware of the reason.
+>Коли сервер буде запущено знову після такого вимкнення, то під час запуску масиву ви отримаєте сповіщення про те, що відбулося вимкнення, пов’язане з температурою, якщо ви не знали причини.
 >
->**CAUTION:**  If the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.
-> The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) will be used.
+>**ОБЕРЕЖНО:** Якщо масив зупинено, коли операція з масивом не завершена, поточний прогрес буде втрачено, і його можна буде перезапустити лише з початку.
+> Температури перевіряються на відповідність пороговим значенням, встановленим для **Критичних** рівнів температури диска. Якщо критичну температуру було визначено для окремого диска (до якого можна отримати доступ, клацнувши диск на вкладці «Головна»), тоді використовується це значення. Якщо ні, буде використано глобальне налаштування (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>).
 :end
 
 :parity_tune_critical_plug:
-> This value indicates how close to the value set for the Critical Disk Temperature Threshold a disks temperature is allowed to reach before a shutdown of the server is triggered.
-> You may want a small positive value to trigger the pause before unRaid gets around to sending you a notification that the temperature critical threshold has been reached for a disk.
+> Це значення вказує, наскільки близько до значення, встановленого для критичного порогу температури диска, може досягати температура дисків, перш ніж ініціюється завершення роботи сервера.
+> Можливо, вам знадобиться невелике позитивне значення, щоб ініціювати паузу, перш ніж unRaid надішле вам сповіщення про досягнення критичного порогу температури для диска.
 >
->If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.
+>Якщо для окремого накопичувача було визначено явне порогове значення, використовується це значення. Якщо ні, буде використано глобальне налаштування.
 :end
 
 :parity_tune_logging_plug:
-> Control the level of detail in entries.  The level of detail can be increased to help with debugging any problems using this plugin might encounter.
+> Контролюйте рівень деталізації записів. Рівень деталізації можна збільшити, щоб допомогти з усуненням будь-яких проблем, які можуть виникнути під час використання цього плагіна.
 >
->Messages by this plugin are identified by the fact that they are shown as coming from  
->* **Parity Check Tuning**  
->* **Parity Problems Assistant**  
->depending on which part of the plugin generated the messages
+>Повідомлення від цього плагіна ідентифікуються за тим фактом, що вони надходять від  
+>* **Налаштування перевірки парності** 
+>* **Помічник із проблем парності**  
+>залежно від того, яка частина плагіна згенерувала повідомлення
 >
->With the **Basic** option set these will only be a small number of messages indicating that this plugin has taken some action.
+>Якщо встановлено параметр **Базовий**, це буде лише невелика кількість повідомлень, які вказуватимуть на те, що цей плагін виконав певну дію.
 >
->Setting this option to **Debug** will result in additional entries being written to the syslog that give more information on what is happening when this plugin is running. They show how some of the internal operation of how the plugin is functioning. These additional entries are identified by the fact that they will have the word **DEBUG** added to the start of messages.  Some users (particularly those who have not used this plugin before) may like to use it to see more detail on how this plugin operates, but it is not expected that this option will be left enabled in normal running.
+>Якщо встановити для цього параметра значення **Відлагодження**, у системний журнал будуть записані додаткові записи, які нададуть більше інформації про те, що відбувається під час роботи цього плагіна. Вони показують, як деякі з внутрішніх операцій, як функціонує плагін. Ці додаткові записи ідентифікуються тим фактом, що до них на початку повідомлень буде додано слово **ВІДЛАГОДЖЕННЯ**. Деякі користувачі (особливо ті, хто раніше не використовував цей плагін) можуть захотіти використовувати його, щоб дізнатися більше про те, як цей плагін працює, але не очікується, що цей параметр залишиться ввімкненим під час нормальної роботи.
 >
->Finally there is an additional setting of **Testing** that is only intended for use by the developer but is left here for convenience.  It will write even more verbose messages to the syslog but these are not likely to be interesting (or even meaningful) to the average user.  These messages will have the word **TESTING** added to the start of messages. You should only run this level of logging if you have been asked to as it can quickly fill up your syslog if you are not careful.
+>Нарешті, є додатковий параметр **Тестування**, який призначений лише для використання розробником, але залишився тут для зручності. Він записуватиме ще більш докладні повідомлення до системного журналу, але вони навряд чи будуть цікавими (або навіть значущими) для середнього користувача. На початку цих повідомлень буде додано слово **ТЕСТУВАННЯ**. Ви повинні запускати цей рівень журналювання, лише якщо вас попросили, оскільки він може швидко заповнити ваш системний журнал, якщо ви не будете обережні.
 >
->Feedback is welcome as to whether it is worth introducing any intermediate option that outputs information type messages on the plugin's activity, while omitting some of the lower level detail that is aimed at diagnosing any problems that might be encountered while the plugin is running. 
+>Вітається відгук щодо того, чи варто запроваджувати будь-який проміжний параметр, який виводить повідомлення інформаційного типу про діяльність плагіна, опускаючи при цьому деякі деталі нижчого рівня, які спрямовані на діагностику будь-яких проблем, які можуть виникнути під час роботи плагіна. 
 >
->If you have Testing mode set for the logging then you can choose where you want log messages to be recorded.  The default is the standard system syslog and this is the inly option allowed in Basic mode.  The syslog is held in RAM so does not cause excessive writes to the flash drive. 
->To facilitate with debugging problems then in Testing mode you can log the messages to the flash drive either instead of the syslog or in addition to the syslog. The resulting parityTuning.log file will be stored in the plugin's folder on the flash drive and providing this file to the developer will help with diagnosing any unexpected behaviour you encounter.
+>Якщо для журналювання встановлено режим тестування, ви можете вибрати, куди потрібно записувати повідомлення журналу. За замовчуванням використовується стандартний системний журнал, і це внутрішня опція, дозволена в базовому режимі. Системний журнал зберігається в оперативній пам’яті, тому не викликає надмірних записів на flash-пам’ять. 
+>Щоб полегшити проблеми з налагодженням, у режимі тестування ви можете записувати повідомлення на flash-пам’ять замість системного журналу або на додаток до системного журналу. Отриманий файл parityTuning.log буде збережено в папці плагіна на flash-пам’яті, і надання цього файлу розробнику допоможе діагностувати будь-яку несподівану поведінку, з якою ви зіткнетеся.
 :end
 
 :parityProblems_type_plug:
-> Select the way you want to specify the start and end points.
+> Виберіть спосіб, у який ви бажаєте вказати початкову і кінцеву точки.
 >
-> You are likely to want to use absolute sector numbers if there are ones that have previously been listed in the syslog as being an error.
-> Using absolute sector numbers tends to be more precise and lead to shorter tests but can be more effort to set up.
+> Ймовірно, ви захочете використати абсолютні номери секторів, якщо є ті, які раніше були зазначені в системному журналі як помилкові.
+> Використання абсолютних номерів секторів, як правило, є більш точним і призводить до коротших тестів, але може потребувати більше зусиль для налаштування.
 >
-> The alternative is to use percentages.  When using percentages then the sector numbers these represent are calculated as percentages of the largest parity disk.
+> Альтернативою є використання відсотків. Якщо використовувати відсотки, то номери секторів, які вони представляють, обчислюються як відсотки від найбільшого диска парності.
 :end
 
 :parityProblems_start_plug:
-> Select where you want the check to be started from.  You can specify the start point as either a sector number or as a percentage of the size of the largest parity disk.
+> Виберіть, звідки потрібно почати перевірку. Ви можете вказати початкову точку як номер сектора або як відсоток від розміру найбільшого диска парності.
 >
-> Specifying absolute sectors is likely to be of particular use when you have extracted the sector numbers from the *syslog* when the original parity check reported errors on those sectors. In a future version of this plugin the plugin may be enhanced to automatically extract such sectors from the *syslog* and give you a drop down list but this feature is not yet implemented.
+> Зазначення абсолютних секторів, ймовірно, буде особливо корисним, якщо ви вилучили номери секторів із *syslog*, коли вихідна перевірка парності повідомила про помилки в цих секторах. У майбутній версії цього плагіна плагін може бути вдосконалений для автоматичного вилучення таких секторів із *syslog* і надання вам спадного списку, але ця функція ще не реалізована.
 >
-> In practice for technical reasons the check may start slightly earlier than the point you specify, but this will only be by a small amount.
+> На практиці з технічних причин перевірка може розпочатися трохи раніше, ніж ви вкажете, але це буде лише незначна сума.
 :end
 
 :parityProblems_end_plug:
-> Select where you want the check to be ended.  You can specify the start point as either a sector number or as a percentage of the size of the largest parity disk.
+> Виберіть місце завершення перевірки. Ви можете вказати початкову точку як номер сектора або як відсоток від розміру найбільшого диска парності.
 >
-> In practice for technical reasons the check may end later than the point you specify as a check is only made once a minute to see if the end point has been reached.
+> На практиці з технічних причин перевірка може закінчитися пізніше вказаної вами точки, оскільки перевірка виконується лише раз на хвилину, щоб побачити, чи досягнуто кінцевої точки.
 :end
 
 :parityProblems_correct_plug:
-> Specify whether you want to attempt to update parity to correct any error found,
-> or just do a read test to see if any parity errors are reported.
+> Укажіть, чи бажаєте ви спробувати оновити парність, щоб виправити знайдені помилки,
+> або просто виконайте перевірку читання, щоб побачити, чи повідомляються про помилки парності.
 :end
 
 :parityProblems_correct_plug:
-> Specify whether you want to attempt to update parity to correct any error found,
-> or just do a read test to see if any parity errors are reported.
+> Укажіть, чи бажаєте ви спробувати оновити парність, щоб виправити знайдені помилки,
+> або просто виконайте перевірку читання, щоб побачити, чи повідомляються про помилки парності.
 :end
 
 :parityProblems_check_plug:
-> When you click on the option to **Start Check** then a partial check is initiated that
-> will cover the start and end points that you have specified.  It will be a correcting check 
-> if the option to **Write Corrections** is set to **Yes**, and a read-check otherwise.
+> Коли ви натискаєте опцію **Почати перевірку**, запускається часткова перевірка
+> охоплюватиме початкову та кінцеву точки, які ви вказали. Це буде виправна перевірка
+> якщо для параметра **Записати виправлення** встановлено значення **Так**, і перевірка читання в іншому випадку.
 :end
 
 :parityProblems_sectors_plug:
-> When you click on the option to **Show Sector Numbers** then the a dialog will be shown
-> that extracts entries from the syslog that have shown any sectors for which any parity
-> sector is displayed and whether the it was being corrected or is a parity error.
+> Якщо натиснути опцію **Показати номери секторів**, буде показано діалогове вікно
+> який витягує записи із системного журналу, які показують будь-які сектори, для яких є будь-який паритет
+> відображається сектор і чи він виправлявся, чи це помилка парності.
 :end
 
 ; Note: June 6, 2022 - 178 missing translations
