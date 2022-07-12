@@ -253,89 +253,89 @@ Method used to specify start and stop points=Метод, який викорис
 :end
 
 :parity_tune_increments_plug:
->Setting this option to **Yes** specifies that parity checks should be run in increments spread over several days.
+>Встановлення для цього параметра значення **Так** вказує на те, що перевірки парності мають виконуватися поетапно протягом кількох днів.
 >
->If you have set this to **No** then you get the default system behavior of parity checks running without a break to completion unless you manually stop/pause/cancel them.
+>Якщо ви встановили для цього значення **Ні**, тоді ви отримаєте поведінку системи за замовчуванням, коли перевірки парності виконуються без перерви до завершення, якщо ви вручну не зупините/призупините/скасуєте їх.
 >
->**CAUTION:**  The default unRaid behavior is that if the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.  
+>**ОБЕРЕЖНО:** Поведінка unRaid за замовчуванням полягає в тому, що якщо масив зупиняється, коли операція масиву не завершена, поточний прогрес втрачається, і його можна перезапустити лише з початку. 
 :end
 
 :parity_tune_frequency_plug:
-> The frequency at which parity check increments should be run.
+> Частота, з якою слід запускати прирости перевірки парності.
 >
->In normal operation it is expected that the **Daily** option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up **Custom** schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility.   
->In normal operation it is expected that the **Daily** option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up **Custom** schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility.   
+>У нормальній роботі очікується, що більшість користувачів захочуть використовувати опцію **Щодня**, тому це типово. Щоб підтримати будь-якого користувача, який шукає інші частоти, існує можливість налаштувати **Користувацькі** розклади, які дозволять створювати складніші розклади для часу паузи та відновлення. Коли ви використовуєте цей параметр, ви можете вказати час, який використовується <a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a > корисність.   
+>У нормальній роботі очікується, що більшість користувачів захочуть використовувати опцію **Щодня**, тому це типово. Щоб підтримати будь-якого користувача, який шукає інші частоти, існує можливість налаштувати **Користувацькі** розклади, які дозволять створювати складніші розклади для часу паузи та відновлення. Коли ви використовуєте цей параметр, ви можете вказати час, який використовується <a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a > корисність.   
 :end
 
 :parity_tune_manual_plug:
-> Should parity checks that are started manually also be run in increments?
+> Чи перевірки парності, запущені вручну, також слід запускати з кроком?
 >
-> It is quite likely that you will want such a check to run to completion without interruption and if so leave this option set to **No**.
-> With this option set to **Yes** then if you manually start a Parity Check from the Main page and then manually Pause the check, this will result in the check being run in increments between the scheduled times until the Parity Check completes.
+> Цілком ймовірно, що ви захочете, щоб така перевірка завершилася без перерв, і якщо це так, залиште для цього параметра значення **Ні**.
+> Якщо для цього параметра встановлено значення **Так**, то якщо ви вручну запустите перевірку парності з головної сторінки, а потім вручну призупините перевірку, це призведе до того, що перевірка виконуватиметься з кроком між запланованими часами, доки перевірка парності не завершиться.
 :end
 
 :parity_tune_automatic_plug:
-> if the unRaid system is not shutdown cleanly then the next time the array is started unRaid will automatically start a non-correcting parity check (or a read check if you have no parity disk). This can happen for a wide variety of reasons ranging from power loss; hardware issues; and software issues.  The automatic check is run because if there are any parity errors this can compromise the ability to recover from an array drive failure at a later date so you want to get back to having valid parity as soon as is practical.
+> якщо система unRaid не вимикається належним чином, то під час наступного запуску масиву unRaid автоматично розпочне перевірку парності без коригування (або перевірку читання, якщо у вас немає диска парності). Це може статися з багатьох причин, починаючи від втрати електроенергії; апаратні проблеми; і проблеми з програмним забезпеченням. Автоматична перевірка запускається, оскільки якщо є будь-які помилки парності, це може поставити під загрозу можливість відновлення після збою диска масиву пізніше, тому ви хочете повернутися до правильного паритету якомога швидше.
 > 
-> If this option is set then the check will be allowed to run for a few minutes (as any errors after an unclean shutdown are most likely to be at the start of the disks as they were not unmounted cleanly) and then automatically put the check into a paused state (if outside the time specified for running increments) and then the  remainder of the check subsequently run in increments according to the time slots specified for running increments.
+> Якщо цей параметр встановлено, перевірку буде дозволено виконувати протягом кількох хвилин (оскільки будь-які помилки після нечистого завершення роботи, швидше за все, будуть на початку дисків, оскільки вони не були відмонтовані належним чином), а потім автоматично помістить перевірку в стан паузи (якщо виходить за межі часу, указаного для запуску приростів), а потім решту перевірки згодом виконується приростами відповідно до часових проміжків, указаних для виконання приростів.
 :end
 
 :parity_tune_frequency_plug:
-> The frequency at which parity check increments should be run.
+> Частота, з якою слід запускати прирости перевірки парності.
 >
->In normal operation it is expected that the **Daily** option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up **Custom** schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility.   
->In normal operation it is expected that the **Daily** option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up **Custom** schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility.   
+>У нормальній роботі очікується, що більшість користувачів захочуть використовувати опцію **Щодня**, тому це типово. Щоб підтримати будь-якого користувача, який шукає інші частоти, існує можливість налаштувати **Користувацькі** розклади, які дозволять створювати складніші розклади для часу паузи та відновлення. Коли ви використовуєте цей параметр, ви можете вказати час, який використовується <a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a > корисність.   
+>У нормальній роботі очікується, що більшість користувачів захочуть використовувати опцію **Щодня**, тому це типово. Щоб підтримати будь-якого користувача, який шукає інші частоти, існує можливість налаштувати **Користувацькі** розклади, які дозволять створювати складніші розклади для часу паузи та відновлення. Коли ви використовуєте цей параметр, ви можете вказати час, який використовується <a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a > корисність.   
 :end
 
 :parity_tune_resume_plug:
-> The time at which a paused parity check should be resumed.<br>If no parity check is currently paused when this time comes around then no action will be taken.
+> Час, коли потрібно відновити призупинену перевірку парності.<br>Якщо перевірка парності наразі не призупинена, коли цей час настане, жодних дій не буде вжито.
 >
->Typically this time would be set to be the start of an idle period overnight.   An appropriate value might be to use the same time that you have specified for a scheduled parity check to start.
+>Зазвичай цей час встановлюється як початок періоду простою протягом ночі. Відповідним значенням може бути використання того самого часу, який ви вказали для початку запланованої перевірки парності.
 >
->If the increment period has been set to **Custom** then the hours/minutes fields are hidden and you are instead given the option to set the time in <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> format.
->If the increment period has been set to **Custom** then the hours/minutes fields are hidden and you are instead given the option to set the time in <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> format.
+>Якщо для періоду збільшення встановлено значення **Custom**, тоді поля годин/хвилин приховано, і замість цього ви зможете встановити час у <a href="https://en.wikipedia.org/wiki/ Формат Cron#Overview" target="_blank">crontab</a>.
+>Якщо для періоду збільшення встановлено значення **Custom**, тоді поля годин/хвилин приховано, і замість цього ви зможете встановити час у <a href="https://en.wikipedia.org/wiki/ Формат Cron#Overview" target="_blank">crontab</a>.
 :end
 
 :parity_tune_pause_plug:
-> The time at which a running parity check should be paused. Typically, this would be set to be a time when you want other activity to not be affected by a running parity check.
->If no parity check is actively running when this time comes around then no action will be.
+> Час, коли запущену перевірку парності слід призупинити. Як правило, це час, коли ви хочете, щоб перевірка парності не впливала на іншу діяльність.
+>Якщо в цей час перевірка парності не виконується, жодних дій не буде.
 >
->Normally you want to make sure that this time is set to be after the time that you schedule regular parity checks to run.  The first increment will then be from when the regular parity check is scheduled to start up to the time you have specified for the increment to end.
+>Зазвичай ви хочете переконатися, що цей час встановлено після часу, коли ви запланували регулярні перевірки парності. Тоді перше збільшення буде від моменту, коли заплановано початок звичайної перевірки парності, до часу, який ви вказали для завершення збільшення.
 >
->If the increment period has been set to **Custom** then the hours/minutes fields are hidden and you are instead given the option to set the time in <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> format.
+>Якщо для періоду збільшення встановлено значення **Custom**, тоді поля годин/хвилин приховано, і замість цього ви зможете встановити час у <a href="https://en.wikipedia.org/wiki/ Формат Cron#Overview" target="_blank">crontab</a>.
 >
->You also want to make sure that the time allocated to running increments is sufficient to expect the parity check to run to completion before the next check is scheduled to start.   Since most people only schedule parity checks to run infrequently (e.g. Monthly or Quarterly) then this is unlikely to be an issue but it is something to take into consideration.  
->If the increment period has been set to **Custom** then the hours/minutes fields are hidden and you are instead given the option to set the time in <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> format.
+>Ви також хочете переконатися, що часу, виділеного для запуску інкрементів, достатньо, щоб очікувати завершення перевірки парності до запланованого початку наступної перевірки. Оскільки більшість людей планує перевірку парності лише на нечастий запуск (наприклад, щомісяця чи щокварталу), це навряд чи буде проблемою, але це потрібно взяти до уваги.  
+>Якщо для періоду збільшення встановлено значення **Custom**, тоді поля годин/хвилин приховано, і замість цього ви зможете встановити час у <a href="https://en.wikipedia.org/wiki/ Формат Cron#Overview" target="_blank">crontab</a>.
 :end
 
 :parity_tune_notify_plug:
-> Setting this option to <strong>Yes</strong> means that you will be sent a notification every time the plugin Pauses or Resumes an array operation.
->If you would rather not get such notifications then leave this option set to **No**.
->The notification is sent as a **Notice** category message to the targets specified under *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
->The notification is sent as a **Notice** category message to the targets specified under *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
+> Якщо встановити для цього параметра значення <strong>Так</strong>, ви отримуватимете сповіщення кожного разу, коли плагін призупиняє або відновлює операцію з масивом.
+>Якщо ви не хочете отримувати такі сповіщення, залиште для цього параметра значення **Ні**.
+>Сповіщення надсилається як повідомлення категорії **Notice** до цілей, указаних у *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
+>Сповіщення надсилається як повідомлення категорії **Notice** до цілей, указаних у *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
 :end
 
 :parity_tune_allops_plug:
-> Should operations that involve building new parity or rebuilding a failed disk be run using increments?
+> Чи слід виконувати операції, які передбачають створення нового паритету або відновлення несправного диска, з приростами?
 >
->This type of check will only be run if there is potentially some issue with your array and action is being taken to get it back into a protected state.
+>Цей тип перевірки буде запущено, лише якщо потенційно є якась проблема з вашим масивом і вживаються дії, щоб повернути його в захищений стан.
 >
->**IMPORTANT**: Until this operation completes your array is not fully protected so it is assumed that most people will want this option left at **No**.
-> Do not select **Yes** unless you are absolutely certain that is what you want.
+>**ВАЖЛИВО**: доки ця операція не завершиться, ваш масив не буде повністю захищений, тому припускається, що більшість людей захочуть залишити цей параметр **Ні**.
+> Не вибирайте **Так**, якщо ви не впевнені, що саме цього хочете.
 :end
 
 
 :parity_tune_clear_plug:
-> Should disk Clear operations be run using increments.<br><br>A disk Clear operation occurs when you add a new drive (that has not been pre-cleared (using the Pre-Clear plugin) to an array that is parity protected.  The Clear process writes zeroes to every sector on the new disk so that it can be added to the array without affecting the existing parity. Until the Clear operation has completed you are not able to format the disk in unRaid and start using it for storing data.
+> Чи слід виконувати операції очищення диска з приростами.<br><br>Операція очищення диска відбувається, коли ви додаєте новий диск (який не був попередньо очищений (за допомогою модуля Pre-Clear) до масиву, захищеного паритетом. Процес очищення записує нулі в кожен сектор на новому диску, щоб його можна було додати до масиву, не впливаючи на існуючу парність. Поки операція очищення не завершиться, ви не зможете відформатувати диск в unRaid і почати використовувати його для зберігання даних .>
 >
->Since until the Clear operation completes the disk will not be available for use it is likely that most people will want this option left at **No**.   In addition, a Clear operation tends not to put much of a load on the system so is less likely to impact performance in normal daily use.
+>Оскільки до завершення операції очищення диск не буде доступним для використання, ймовірно, більшість людей захочуть залишити цей параметр **Ні**. Крім того, операція Clear зазвичай не сильно навантажує систему, тому менш імовірно вплине на продуктивність під час звичайного щоденного використання.
 :end
 
 :parity_tune_restart_plug:
-> Unraid will normally abandon a parity check if the system is shutdown, rebooted  or the array is stopped (with the only option being to restart the parity check from the beginning).  
-> Setting this option allows parity checks to be restarted by this plugin from the point they had reached as long as the following criteria are met:  
->* The array was shutdown tidily  
->* The user must not have made any changes to the array configuration.
+> Зазвичай Unraid відмовляється від перевірки парності, якщо систему вимкнуто, перезавантажено або масив зупинено (єдина можливість – перезапустити перевірку парності з самого початку).  
+> Встановлення цього параметра дозволяє перезапускати перевірку парності за допомогою цього додатка з точки, яку вони досягли, за умови виконання таких критеріїв: 
+>* Масив був акуратно закритий 
+>* Користувач не повинен вносити жодних змін у конфігурацію масиву.
 >
 >As long as these criteria are met then when the array is next started the operation is resumed from the point previously reached.
 >
