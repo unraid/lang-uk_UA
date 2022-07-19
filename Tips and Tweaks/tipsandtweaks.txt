@@ -1,146 +1,146 @@
-Tips=
-Tweaks=
-The Tips below are suggestions, workarounds for known problems, and potential fixes=
-It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=
-Support for older versions of Unraid is being phased out=
-Many plugins are no longer compatible with older Unraid versons=
-Install the Fix Common Problems plugin and resolve any Unraid configuration problems=
-Use the Update Assistant that is part of the Fix Common Problems plugin=
-This will identify potential problems to be solved before you upgrade the Unraid OS=
-Check the=
-Tips and Tweaks wiki=
-for additional ideas on improving your Unraid performance and solving problems=
-Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=
-post=
-Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=
-If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=
-Read this=
-for information on the issue=
-If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=
-It is recommended you use the 'Performance' Governor for best performance and power savings=
-It is recommended to use the pstate driver on Intel processors if you want the most performance=
-Note=
-You can check CPU frequencies on the command line with=
-The dashboard shows CPU loading and not CPU frequency=
-If you configure VLANs on Unraid, you should make Unraid the Master Browser=
-If you dont Unraid may not detect the Master Browser for all network interfaces correctly=
-Some people are reporting OOM out of memory errors=
-This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=
-If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=
-There is a very cool feature in Unraid 6 and up that can be used to capture your logs and help in troubleshooting a situation where your server locks up or becomes unresponsive=
-Go to Settings->Syslog Server and enable the Syslog Server=
-Put the IP address of your server in the Remote syslog server field=
-This will log all your server log enries to the Syslog Server and save the log to an array share=
-After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=
-The first thing you should do is to install the Fix Common Problems plugin to find and fix common problems=
-Correct any problems that are identified before doing any tweaking=
-You may actually cause more problems than you solve if there are problems with your Unraid configuration=
-Make one change at a time and verify if it improves your situation=
-Make changes slowly=
-Making changes here can briefly interrupt your network operation=
-Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=
-Click on Help for more information=
-Disable NIC Flow Control=
-Disable NIC Offload=
-Ethernet NIC Rx Buffer=
-Ethernet NIC Tx Buffer=
-Ethernet NICS=
-Dont change the Disk Cache settings until you read and understand this=
-Guide=
-Disk Cache=
-Max Watches=
-CPU Scaling Governor=
-Enable Intel TurboAMD Performance Boost=
-Time to set=
-Enable syslog Archiving=
-Number of syslogs to Archive=
-Processes to kill before Array is Stopped=
-Current NIC settings=
-Current Disk Cache Settings=
-Current Inotify Settings=
-CPU Frequency Scaling=
-Flow Control=
-NIC Offload=
-NIC Rx Buffer=
-NIC Tx Buffer=
-The feature is not available on any of your NICs=
-Current Disk Cache Settings=
-Current Inotify Settings=
-Driver=
-Governor=
+Tips=Поради
+Tweaks=Твіки
+The Tips below are suggestions, workarounds for known problems, and potential fixes=У наведених нижче порадах наведено пропозиції, обхідні шляхи вирішення відомих проблем і можливі способи їх вирішення
+It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Рекомендовано оновити Unraid до останньої стабільної версії, щоб отримати найновіші функції, виправлення помилок і оновлення безпеки
+Support for older versions of Unraid is being phased out=Підтримка старих версій Unraid поступово припиняється
+Many plugins are no longer compatible with older Unraid versons=Багато плагінів більше не сумісні зі старими версіями Unraid
+Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Встановіть плагін Fix Common Problems і вирішіть будь-які проблеми конфігурації Unraid
+Use the Update Assistant that is part of the Fix Common Problems plugin=Встановіть плагін Fix Common Problems і вирішіть будь-які проблеми конфігурації Unraid
+This will identify potential problems to be solved before you upgrade the Unraid OS=Це дозволить визначити потенційні проблеми, які необхідно вирішити перед оновленням Unraid OS
+Check the=Перевірте
+Tips and Tweaks wiki=Поради та налаштування wiki
+for additional ideas on improving your Unraid performance and solving problems=для отримання додаткових ідей щодо покращення продуктивності Unraid і вирішення проблем
+Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=Деякі повідомляють про кращу продуктивність віртуальної машини з потоковим медіа та ігровими віртуальними машинами з пропозиціями щодо цього
+post=пост
+Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=Деякі повідомляють про швидшу та стабільнішу продуктивність мережі, вносячи зміни в параметри мережі на вкладці Tweaks цього плагіна
+If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Якщо у вас є процесор Intel, може здатися, що всі процесори постійно працюють на повній швидкості
+Read this=Прочитай це
+for information on the issue=для інформації з питання
+If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Якщо ви встановите 'Економія енергії' CPU маштабування, ви можете побачити, що ваші процесори застрягли на 800 МГц
+It is recommended you use the 'Performance' Governor for best performance and power savings=Рекомендовано використовувати 'Регулювальник продуктивності' маштабування для найкращої продуктивності та економії енергії
+It is recommended to use the pstate driver on Intel processors if you want the most performance=Рекомендується використовувати драйвер pstate на процесорах Intel, якщо вам потрібна найбільша продуктивність
+Note=Примітка
+You can check CPU frequencies on the command line with=Ви можете перевірити частоти процесора в командному рядку за допомогою
+The dashboard shows CPU loading and not CPU frequency=Інформаційна панель показує завантаження CPU, а не частоту CPU
+If you configure VLANs on Unraid, you should make Unraid the Master Browser=Якщо ви налаштовуєте VLAN на Unraid, вам слід зробити Unraid головним браузером
+If you dont Unraid may not detect the Master Browser for all network interfaces correctly=Якщо ви цього не зробите, Unraid може неправильно визначити головний браузер для всіх мережевих інтерфейсів
+Some people are reporting OOM out of memory errors=Деякі люди повідомляють про помилки браку пам’яті OOM
+This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=Здається, зараз це відбувається частіше через великий обсяг пам’яті, встановленої в Unraid, і занадто високі налаштування дискового кешу за замовчуванням
+If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=Якщо у вас виникають помилки OOM, спробуйте налаштувати параметри дискового кешу на сторінці налаштувань
+There is a very cool feature in Unraid 6 and up that can be used to capture your logs and help in troubleshooting a situation where your server locks up or becomes unresponsive=В Unraid 6 і новіших версіях є дуже цікава функція, яку можна використовувати для запису ваших журналів і допомоги у вирішенні ситуації, коли ваш сервер блокується або перестає відповідати
+Go to Settings->Syslog Server and enable the Syslog Server=Перейдіть до Налаштування ->Сервер Syslog і ввімкніть Сервер системного журналу
+Put the IP address of your server in the Remote syslog server field=Введіть IP-адресу вашого сервера в полі Віддалений сервер системного журналу
+This will log all your server log enries to the Syslog Server and save the log to an array share=Це зареєструє всі записи журналу вашого сервера на Сервер Syslog і збереже журнал у спільному масиві
+After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Після перезавантаження із заблокованого або завислого сервера ви можете переглянути збережений журнал за допомогою засобу перегляду Syslog
+The first thing you should do is to install the Fix Common Problems plugin to find and fix common problems=Перше, що вам слід зробити, це встановити плагін Fix Common Problems, щоб знаходити та виправляти типові проблеми
+Correct any problems that are identified before doing any tweaking=Виправте будь-які виявлені проблеми, перш ніж робити будь-які налаштування
+You may actually cause more problems than you solve if there are problems with your Unraid configuration=Ви можете створити більше проблем, ніж вирішити, якщо є проблеми з конфігурацією Unraid
+Make one change at a time and verify if it improves your situation=Робіть одну зміну за раз і перевіряйте, чи це покращить вашу ситуацію
+Make changes slowly=Вносьте зміни повільно
+Making changes here can briefly interrupt your network operation=Внесення змін тут може призвести до короткого переривання роботи мережі
+Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=Деякі параметри споживатимуть оперативну пам’ять і можуть призвести до того, що Linux завершить деякі процеси, щоб звільнити оперативну пам’ять
+Click on Help for more information=Щоб отримати додаткову інформацію, натисніть «Довідка».
+Disable NIC Flow Control=Вимкніть керування потоком мережевого NIC
+Disable NIC Offload=Вимкніть розвантаження NIC
+Ethernet NIC Rx Buffer=Ethernet NIC Rx буфер
+Ethernet NIC Tx Buffer=Ethernet NIC Tx буфер
+Ethernet NICS=Ethernet NICS
+Dont change the Disk Cache settings until you read and understand this=Не змінюйте налаштування дискового кешу, доки не прочитаєте та не зрозумієте це
+Guide=Гід
+Disk Cache=Дисковий кеш
+Max Watches=Максимум Годин
+CPU Scaling Governor=Регулятор масштабування CPU
+Enable Intel TurboAMD Performance Boost=Увімкніть Intel TurboAMD Performance Boost
+Time to set=Час встановити
+Enable syslog Archiving=Увімкнути архівацію системного журналу
+Number of syslogs to Archive=Кількість системних журналів для архіву
+Processes to kill before Array is Stopped=Процеси, які потрібно знищити перед зупинкою масиву
+Current NIC settings=Поточні налаштування мережевої карти
+Current Disk Cache Settings=Поточні налаштування дискового кешу
+Current Inotify Settings=Поточні налаштування Inotify
+CPU Frequency Scaling=Масштабування частоти CPU
+Flow Control=Управління потоком
+NIC Offload=Розвантаження NIC
+NIC Rx Buffer=NIC Rx буфер
+NIC Tx Buffer=NIC Tx буфер
+The feature is not available on any of your NICs=Ця функція недоступна на жодній із ваших мережевих NICs
+Current Disk Cache Settings=Поточні налаштування дискового кешу
+Current Inotify Settings=Поточні налаштування Inotify
+Driver=Драйвер
+Governor=Маштабування
 ;
 ; Help
 ;
 :tips_tweaks_general_plug:
 > Some General Recommendations:
 >
-> + Use of a static IP address can help in certain cases.  NFS shares are referenced by IP address.  Be sure you reserve the IP address on your router, or set a very high IP address to prevent conflicts.
-> + Use of Jumbo Frames is discouraged.  Jumbo Frames have been known to cause issues with some Dockers.
-> + Don't set vm.dirty.ratio above 20% unless you have a UPS backup for your Unraid.  You may lose data that has not been written to disk on a power failure.
-> + A value of vm.dirty_background_ratio over 1/2 of vm.dirty_ratio is not recommended unless using single digits for both values.
+> + У деяких випадках може допомогти використання статичної IP-адреси. Спільні ресурси NFS посилаються за IP-адресою. Обов’язково зарезервуйте IP-адресу на своєму маршрутизаторі або встановіть дуже високу IP-адресу, щоб запобігти конфліктам.
+> + Використання Jumbo Frames не рекомендується. Відомо, що Jumbo Frames викликають проблеми з деякими докерами.
+> + Не встановлюйте vm.dirty.ratio вище 20%, якщо у вас немає резервної копії UPS для Unraid. Ви можете втратити дані, які не були записані на диск, у разі збою живлення.
+> + Значення vm.dirty_background_ratio, що перевищує 1/2 vm.dirty_ratio, не рекомендується, якщо для обох значень не використовуються окремі цифри.
 :end
 
 :tips_tweaks_nic_flow_control_plug:
-> Set to 'Yes' to disable NIC Flow Control.  NIC Flow Control was originally implemented to help in
-> networks with mixed speed devices.  It doesn't seem to be as necessary on today's networks.  If you
-> have a managed switch, flow control can generally be turned on and off on the switch.  If you have
-> a consumer grade switch, you won't have that level of control.  Flow Control has been known to create
-> network issues in certain circumstances.  It is recommended to disable Flow Control if you experience network issues.
-> Changing from any setting to 'Default' requires a reboot.
+> Установіть значення 'Так', щоб вимкнути керування потоком мережевої карти. Керування потоком NIC спочатку було реалізовано, щоб допомогти в
+> мережі з пристроями різної швидкості. Здається, це не так необхідно в сучасних мережах. Якщо ти
+> маеш керований комутатор, керування потоком зазвичай можна вмикати та вимикати на комутаторі. Якщо у вас є
+> перемикач споживчого рівня, ви не матимете такого рівня контролю. Flow Control, як відомо, створює
+> проблеми з мережею за певних обставин. Рекомендується вимкнути керування потоком, якщо виникають проблеми з мережею.
+> Щоб змінити будь-яке налаштування на «За замовчуванням», потрібно перезавантажити систему.
 :end
 
 :tips_tweaks_nic_offload_plug:
-> Set to 'Yes' to disable NIC offloads.  Offloads were developed to offload some network processing
-> to the NIC and off the main CPU and deal with large packets.  This was intended to save some CPU processing
-> load and increase network throughput.  TSO offload has been known to cause network issues in certain circumstances.
-> It is recommended to disable NIC Offloads if you experience network issues.
-> Changing from any setting to 'Default' requires a reboot.
+> Установіть 'Так', щоб вимкнути розвантаження NIC. Розвантаження були розроблені, щоб розвантажити деяку мережеву обробку
+> до мережевої карти та від основного CPU і працювати з великими пакетами. Це було призначено для економії процесора
+> навантаження та підвищення пропускної здатності мережі. Відомо, що розвантаження TSO викликає проблеми з мережею за певних обставин.
+> Рекомендується вимкнути розвантаження NIC, якщо виникають проблеми з мережею.
+> Щоб змінити будь-яке налаштування на 'За замовчуванням', потрібно перезавантажити систему.
 :end
 
 :tips_tweaks_rx_buffer_plug:
-> Select the size of the NIC Rx ring buffer.  Some NICs have a limit on the size of the Rx ring buffer.  The default value of 256 is recommended.
-> Changing from any setting to 'Default' requires a reboot.
+> Виберіть розмір кільцевого буфера NIC Rx. Деякі мережеві карти мають обмеження на розмір кільцевого буфера Rx. Рекомендується значення за замовчуванням 256.
+> Щоб змінити будь-яке налаштування на 'За замовчуванням', потрібно перезавантажити систему.
 :end
 
 :tips_tweaks_tx_buffer_plug:
-> Select the size of the NIC Tx ring buffer.  Some NICs have a limit on the size of the Tx ring buffer.  The default value of 256 is recommended.
-> Changing from any setting to 'Default' requires a reboot.
+> Виберіть розмір кільцевого буфера NIC Tx. Деякі мережеві карти мають обмеження на розмір кільцевого буфера Tx. Рекомендується значення за замовчуванням 256.
+> Щоб змінити будь-яке налаштування на 'За замовчуванням', потрібно перезавантажити систему.
 :end
 
 :tips_tweaks_nics_plug:
-> List the NICs to apply the above settings separated by commas.  If you have multiple NICs that are bonded, be sure to include all of them.  Flow Control, TSO, and NIC buffer settings will
-> be applied to these NICs.
+> Перелічіть мережеві карти, щоб застосувати наведені вище налаштування, розділивши їх комами. Якщо у вас є кілька об’єднаних мережевих карт, обов’язково включіть їх усі. Налаштування буфера Flow Control, TSO та NIC
+> застосовувати до цих мережевих карток.
 :end
 
 :tips_tweaks_dirty_background_plug:
-> For streaming and gaming VMs, set the values low in the single digits.  Recommended values are: vm.dirty_background_ratio=2% and vm.dirty_ratio=3%.
-> If you have large amounts of RAM, smaller is better.
-> Caution: Don't increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
+> Для потокових і ігрових VMs встановіть низькі однозначні значення. Рекомендовані значення: vm.dirty_background_ratio=2% і vm.dirty_ratio=3%.
+> Якщо у вас великий обсяг оперативної пам’яті, краще менше.
+> Застереження: не збільшуйте ці значення понад налаштування за замовчуванням, якщо у вас немає UPS , який надійно вимкне Unraid.
 >
-> Set the 'vm.dirty_background_ratio' as a percentage of total RAM memory.
-> The default setting of 10% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 2%.  If you experience OOM errors, it is recommended you set this to 1%.
-:end
+> Встановіть 'vm.dirty_background_ratio' як відсоток загальної пам’яті RAM.
+> У більшості випадків рекомендується значення за замовчуванням 10%. Якщо у вас є віртуальна машина для потокового мультимедіа або ігрова віртуальна машина, використовуйте значення 2%. Якщо виникають помилки OOM, рекомендується встановити значення 1%.
+:кінець
 
 :tips_tweaks_dirty_ratio_plug:
-> Set the 'vm.dirty_ratio' as a percentage of total RAM memory.
-> Setting this too high may cause Linux to terminate some processes to gain more memory.  The default setting of 20% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 3%.  If you experience OOM errors, it is recommended you set this to 2%.
+> Встановіть 'vm.dirty_ratio' як відсоток загальної пам’яті RAM.
+> Занадто високе значення може призвести до того, що Linux завершить деякі процеси, щоб отримати більше пам’яті. У більшості випадків рекомендовано значення за замовчуванням 20%. Якщо у вас є віртуальна машина для потокового мультимедіа або ігрова VM, використовуйте значення 3%. Якщо виникають помилки OOM, рекомендується встановити значення 2%.
 :end
 
 :tips_tweaks_max_watches_plug:
-> If inotify fails to start because there are not enough user watches, increase the max_user_watches.
+> Якщо inotify не запускається через недостатню кількість спостережень користувачів, збільште max_user_watches.
 >
-> The default is 524288.
+> Типовим значенням є 524288.
 :end
 
 :tips_tweaks_cpu_governor_plug:
-> Select the CPU Scaling Governor you want to use.
+> Виберіть регулятор масштабування CPU , який ви хочете використовувати.
 >
-> + "Power Save" - Default for the Intel Pstate driver.  Scales CPU frequency based on load.
-> + "On Demand" - Default for ACPI CPU Freq driver.  Scales CPU frequency based on load.  Frequency stepping is aggressive.
-> + "Conservative" - Scales CPU frequency based on load.  Frequency stepping is gentler.  Can cause some latency.
-> + "Performance" - Set all CPUs at full frequency regardless of load.  This can have a positive influence on performance and latency.
-> + "Schedutil" - Set all CPUs frequency scaling to schedutil.  This sets CPU frequency based on the Linux scheduler.  Note: This is still in development.
-> + "Scheduled" - At start time set governor to "Performance".  At stop time set governor to "Powersave" or "On Demand" depending on driver used.
+> + "Економія енергії" - Типове значення для драйвера Intel Pstate. Масштабує частоту ЦП залежно від навантаження.
+> + "За Вимогою" - За замовчуванням для драйвера ACPI CPU Freq. Масштабує частоту ЦП залежно від навантаження. Зміна частоти агресивна.
+> + "Консервативний" - Масштабує частоту CPU залежно від навантаження. Перехід частоти м'який. Може викликати деяку затримку.
+> + "Продуктивний" - Встановити усі CPU на повну частоту незалежно від навантаження. Це може позитивно вплинути на продуктивність і затримку.
+> + "Schedutil" - Установити масштабування частоти всіх CPU на schedutil. Це встановлює частоту процесора на основі планувальника Linux. Примітка: це все ще в розробці.
+> + "Заплановано" - Під час запуску встановіть регулятор на 'Продуктивний'. Під час зупинки встановіть регулятор на «Енергозбереження» або 'За Вимогою»' залежно від використовуваного драйвера.
 >
 > You can now set the CPU governor with the rc.tweaks script.  Use the command:
 > /usr/local/sbin/rc.tweaks set_governor 'governor'
