@@ -1,63 +1,63 @@
 :main_array_devices_help:
-**Colored Status Indicator** the significance of the color indicator at the beginning of each line in *Array Devices* is as follows:
+**Кольоровий індикатор стану** значення кольорового індикатора на початку кожного рядка в *Пристроях масиву* таке:
 
-<i class='fa fa-circle orb green-orb'></i>Normal operation, device is active.
+<i class='fa fa-circle orb green-orb'></i>Нормальна робота, пристрій активний.
 
-<i class='fa fa-circle orb grey-orb'></i>Device is in standby mode (spun-down).
+<i class='fa fa-circle orb grey-orb'></i>Пристрій знаходиться в режимі очікування (відключений).
 
-<i class='fa fa-warning orb yellow-orb'></i>Device contents emulated.
+<i class='fa fa-warning orb yellow-orb'></i>Вміст пристрою емульований.
 
-<i class='fa fa-times orb red-orb'></i>Device is disabled, contents emulated.
+<i class='fa fa-times orb red-orb'></i>Пристрій вимкнено, вміст емульовано.
 
-<i class='fa fa-square orb blue-orb'></i>New device.
+<i class='fa fa-square orb blue-orb'></i>Новий пристрій.
 
-<i class='fa fa-square orb grey-orb'></i>No device present, position is empty.
+<i class='fa fa-square orb grey-orb'></i>Пристрою немає, позиція порожня.
 
-**Identification** is the *signature* that uniquely identifies a storage device. The signature
-includes the device model number, serial number, linux device id, and the device size.
+**Ідентифікація** — це *підпис*, який унікально ідентифікує пристрій зберігання. Підпис
+містить номер моделі пристрою, серійний номер, ідентифікатор пристрою Linux і розмір пристрою.
 
-**Temp.** (temperature) is read directly from the device. You configure which units to use on
-the [Display Preferences](Settings/DisplaySettings) page.  We do not read the temperature of spun-down hard
-drives since this typically causes them to spin up; instead we display the `*` symbol.  We also
-display the `*` symbol for SSD and Flash devices, though sometimes these devices do report a valid
-temperature, and sometimes they return the value `0`.
+**Темп.** (температура) зчитується безпосередньо з пристрою. Ви налаштовуєте, на яких одиницях використовувати
+сторінку [Параметри відображення](Settings/DisplaySettings). Ми не зчитуємо температуру жорсткого обертання
+накопичувачі, оскільки це зазвичай спричиняє їх обертання; замість цього ми відображаємо символ `*`. Ми також
+відображати символ `*` для SSD і флеш-пристроїв, хоча іноді ці пристрої повідомляють про дійсність
+температури, а іноді вони повертають значення `0`.
 
-**Size, Used, Free** reports the total device size, used space, and remaining space for files.  These
-units are also configured on the [Display Preferences](Settings/DisplaySettings) page.  The
-amount of space used will be non-zero even for an empty disk due to file system overhead.
+**Розмір, Використано, Вільно** повідомляє про загальний розмір пристрою, використаний простір і залишок місця для файлів. Ці
+одиниці також налаштовуються на сторінці [Параметри відображення](Налаштування/Параметри відображення). The
+обсяг використаного простору буде відмінним від нуля навіть для порожнього диска через навантаження на файлову систему.
 
-*Note: for a multi-device cache pool, this data is for the entire pool as returned by btrfs.*
+*Примітка: для кеш-пулу з кількома пристроями ці дані стосуються всього пулу, які повертає btrfs.*
 
-**Reads, Writes** are a count of I/O requests sent to the device I/O drivers.  These statistics may
-be cleared at any time, refer to the Array Status section below.
+**Читання, запис** – це кількість запитів вводу-виводу, надісланих драйверам вводу-виводу пристрою. Ця статистика може
+скинути в будь-який час, зверніться до розділу Статус масиву нижче.
 
-**Errors** counts the number of *unrecoverable* errors reported by the device
-I/O drivers. Missing data due to unrecoverable array read errors is filled in on-the-fly using parity
-reconstruct (and we attempt to write this data back to the sector(s) which failed). Any unrecoverable
-write error results in *disabling* the disk.
+**Помилки** підраховує кількість *невиправних* помилок, про які повідомляє пристрій
+Драйвери введення/виведення. Відсутні дані через невиправні помилки читання масиву заповнюються на льоту за допомогою паритету
+реконструювати (і ми намагаємося записати ці дані назад у сектор(и), який не вдався). Будь-який невиправний
+помилка запису призводить до *вимкнення* диска.
 
-**FS** indicates the file system detected in partition 1 of the device.
+**FS** вказує на файлову систему, виявлену в розділі 1 пристрою.
 
-**View** column contains a folder icon indicating the device is *mounted*. Click the icon to
-browse the file system.
+Стовпець **Перегляд** містить піктограму папки, яка вказує на те, що пристрій *підключено*. Натисніть піктограму, щоб
+переглядати файлову систему.
 
-If "Display array totals" is enable on the [Display Preferences](Settings/DisplaySettings) page, a
-**Total** line is included which provides a tally of the device statistics, including the average temperature
-of your devices.
+Якщо на сторінці [Параметри відображення] (Налаштування/Параметри відображення) увімкнено параметр «Відображати підсумки масиву»,
+Включено рядок **Загальний**, який містить статистичні дані пристрою, включаючи середню температуру
+ваших пристроїв.
 
-The Array must be Stopped in order to change Array device assignments.
+Масив потрібно зупинити, щоб змінити призначення пристрою масиву.
 
-An Unraid array consists of one or two Parity disks and a number of Data disks. The Data
-disks are exclusively used to store user data, and the Parity disk(s) provides the redundancy necessary
-to recover from disk failures.
+Масив Unraid складається з одного або двох дисків Parity та кількох дисків Data. Дані
+диски використовуються виключно для зберігання даних користувача, а диск(и) Parity забезпечує необхідну надмірність
+для відновлення після збою диска.
 
-Since data is not striped across the array, the Parity disk(s) must be as large, or larger than the largest Data
-disk.  Parity should also be your highest performance drive.
+Оскільки дані не розрізняються по масиву, диск(и) Parity має бути таким же великим або більшим, ніж найбільші дані
+диск. Парність також має бути вашою найкращою продуктивністю.
 
-Each Data disk has its own file system and can be exported as a
-separate share.
+Кожен диск даних має власну файлову систему і може бути експортований як
+окрема частка.
 
-Click on the Device name to configure individual device settings and launch certain utilities.
+Натисніть назву пристрою, щоб налаштувати окремі параметри пристрою та запустити певні утиліти.
 :end
 
 :main_slots_help:
