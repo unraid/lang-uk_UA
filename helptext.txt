@@ -61,111 +61,111 @@
 :end
 
 :main_slots_help:
-**Slots** select the number of device slots in your server designated for Array devices.
-The minimum number of Array slots is 2, and you must have at least one device assigned to the array.
+**Слоти** Виберіть кількість слотів для пристроїв на вашому сервері, призначених для пристроїв Array.
+Мінімальна кількість слотів масиву становить 2, і ви повинні мати принаймні один пристрій, призначений масиву.
 :end
 
 :cache_devices_help:
-**Colored Status Indicator** the significance of the color indicator at the beginning of each line in *Pool Devices* is as follows:
+**Кольоровий індикатор стану** Значення кольорового індикатора на початку кожного рядка в *Пристроях пулу* значать таке:
 
-<i class='fa fa-circle orb green-orb'></i>Normal operation, device is active.
+<i class='fa fa-circle orb green-orb'></i>Нормальна робота, пристрій активний.
 
-<i class='fa fa-circle orb grey-orb'></i>Device is in standby mode (spun-down).
+<i class='fa fa-circle orb grey-orb'></i>Пристрій знаходиться в режимі очікування (відключений).
 
-<i class='fa fa-square orb blue-orb'></i>New device.
+<i class='fa fa-square orb blue-orb'></i>Новий пристрій.
 
-<i class='fa fa-square orb grey-orb'></i>No device present, position is empty.
+<i class='fa fa-square orb grey-orb'></i>Пристрою немає, позиція порожня.
 
-**Pool Devices** is a single device, or pool of multiple devices, *outside* the Unraid array.  It may be exported for network access just
-like an Array device.  Being outside the Unraid array results in significantly faster write access.
+**Пул пристроїв** — це один пристрій або пул із кількох пристроїв *за межами* масиву Unraid. Його можна експортувати лише для доступу до мережі
+як пристрій Array. Перебування за межами масиву Unraid призводить до значно швидшого доступу до запису.
 
-There are two ways to configure the Pool devices:
+Існує два способи налаштування пристроїв Pool:
 
-1. As a single device, or
-2. As a multi-device pool.
+1. Як єдиний пристрій, або
+2. Як пул із кількома пристроями.
 
-When configured as a single device you may format the device using any supported file system (btrfs, reiserfs,
-or xfs).  This configuration offers the highest performance, but at the cost of no data protection - if the
-single pool device fails all data contained on it may be lost.
+Якщо налаштовано як один пристрій, ви можете відформатувати пристрій за допомогою будь-якої підтримуваної файлової системи (btrfs, reiserfs,
+або xfs). Ця конфігурація забезпечує найвищу продуктивність, але ціною відсутності захисту даних - якщо
+один пристрій пулу виходить з ладу, усі дані, що містяться на ньому, можуть бути втрачені.
 
-When configured as a multi-device pool, Unraid OS will automatically select *btrfs-raid1* format (for both data
-and meta-data).  btrfs permits any number of devices to be added to the pool and each copy of data is guaranteed
-to be written to two different devices.  Hence the pool can withstand a single-disk failure without losing data.
+Якщо налаштовано як пул кількох пристроїв, Unraid OS автоматично вибере формат *btrfs-raid1* (для обох даних
+і метадані). btrfs дозволяє додавати до пулу будь-яку кількість пристроїв, і кожна копія даних гарантується
+для запису на два різні пристрої. Таким чином, пул може витримати збій одного диска без втрати даних.
 
-When [User Shares](/Settings/ShareSettings) are enabled, user shares may be configured to
-automatically make use of the Pool device in order to
-speed up writes.  A special background process called the *mover* can be scheduled to run
-periodically to move user share files off the Cache and onto the Array.
+Якщо [User Shares](/Settings/ShareSettings) увімкнено, спільні користувачі можуть бути налаштовані на
+автоматично використовувати пристрій Pool, щоб
+прискорити запис. Можна запланувати запуск спеціального фонового процесу, який називається *Перемістити*
+періодично переміщувати спільні файли користувача з кешу в масив.
 :end
 
 :cache_slots_help:
-**Slots** select the number of device slots in your server designated for Cache devices.
+**Слоти** виберіть кількість слотів пристроїв на вашому сервері, призначених для кеш-пристроїв.
 :end
 
 :boot_device_help:
-Vital array configuration is maintained on the USB Flash device; for this reason, it must remain
-plugged in to your server.  Click on [Flash](/Main/Flash?name=flash) to see the GUID and registration
-information, and to configure export settings.  Since the USB Flash device is formatted using FAT file system,
-it may only be exported using SMB protocol.
+Важлива конфігурація масиву підтримується на USB-Flash-пристрої; з цієї причини він повинен залишатися
+підключено до вашого сервера. Натисніть [Flash](/Main/Flash?name=flash), щоб побачити GUID і реєстрацію
+інформацію та налаштувати параметри експорту. Оскільки USB-Flash-пристрій відформатовано за допомогою файлової системи FAT,
+його можна експортувати лише за допомогою протоколу SMB.
 :end
 
 :array_status_help:
-**Colored Status Indicator** the significance of the color indicator of the *Array* is as follows:
+**Кольоровий індикатор стану** значення кольорового індикатора *Масиву* значить таке:
 
-<i class='fa fa-circle orb green-orb'></i>Array is Started and Parity is valid.
+<i class='fa fa-circle orb green-orb'></i>Масив запущено, а парність дійсна.
 
-<i class='fa fa-circle orb grey-orb'></i>Array is Stopped, Parity is valid.
+<i class='fa fa-circle orb grey-orb'></i>Масив зупинено, парність дійсна.
 
-<i class='fa fa-warning orb yellow-orb'></i>Array is Started, but Parity is invalid.
+<i class='fa fa-warning orb yellow-orb'></i>Масив запущено, але парність недійсна.
 
-<i class='fa fa-warning orb grey-orb'></i>Array is Stopped, Parity is invalid.
+<i class='fa fa-warning orb grey-orb'></i>Масив зупинено, парність недійсна.
 
 :end
 
 :array_devices_help:
-#### Assigning Devices
+#### Призначення пристроїв
 
-An unRAID disk array consists of a single parity disk and a number of data disks. The data
-disks are exclusively used to store user data, and the parity disk provides the redundancy necessary
-to recover from any single disk failure.
+Дисковий масив unRAID складається з одного диска парності та кількох дисків із даними. Дані
+диски використовуються виключно для зберігання даних користувача, а диск парності забезпечує необхідну надмірність
+для відновлення після будь-якої відмови окремого диска.
 
-Note that we are careful to use the term *disk* when referring to an array storage device.  We
-use the term *hard drive* (or sometimes just *drive*) when referring to an actual hard disk drive (HDD)
-device. This is because in a RAID system it is possible to read/write an array disk whose corresponding
-hard drive is disabled or even missing! In addition, it is useful to be able to ask, "which device is
-assigned to be the parity disk?"; or, "which device corresponds to disk2?".
+Зауважте, що ми обережно використовуємо термін *диск*, коли йдеться про накопичувальний пристрій масиву. Ми
+використовуемо термін *жорсткий диск* (або іноді просто *диск*), коли йдеться про справжній жорсткий диск (HDD)
+пристрій. Це пояснюється тим, що в системі RAID можна читати/записувати дисковий масив, відповідний
+жорсткий диск вимкнено або навіть відсутній! Крім того, корисно вміти запитати, «який прилад
+призначений як диск парності?"; або, "який пристрій відповідає диску2?".
 
-We therefore need a way to assign hard drives to array disks. This is accomplished here on the
-Main page when the array is stopped. There is a drop-down box for each array disk which lists all the
-unassigned devices. To assign a device simply select it from the list. Each time a device
-assignment is made, the system updates a configuration file to record the assignment.
+Тому нам потрібен спосіб призначити жорсткі диски дискам-масивам. Це досягається тут, на
+Головній сторінці, коли масив зупинено. Для кожного диска масиву є спадне вікно, у якому перераховано всі
+непризначені пристрої. Щоб призначити пристрій, просто виберіть його зі списку. Кожного разу, коли виконується
+призначення пристрою, система оновлює файл конфігурації для запису призначення.
 
-#### Requirements
+#### Вимоги
 
-Unlike traditional RAID systems which stripe data across all the array devices, an unRAID server
-stores files on individual hard drives. Consequently, all file write operations will involve both the
-data disk the file is being written to, and the parity disk. For these reasons,
+На відміну від традиційних систем RAID, які розподіляють дані на всіх пристроях масиву, сервер unRAID
+зберігає файли на окремих жорстких дисках. Отже, усі операції запису файлу включатимуть обидва
+диск даних, на який записується файл, і диск парності. З цих причин,
 
-* the parity disk size must be as large or larger than any of the data disks,
+* розмір диска парності має бути таким же чи більшим, ніж будь-який диск із даними,
 
-and
+і
 
-* given a choice, the parity disk should be the fastest disk in your collection.
+* за наявності вибору диск парності має бути найшвидшим диском у вашій колекції.
 
-#### Guidelines
+#### Настанови
 
-Here are the steps you should follow when designing your unRAID disk array:
+Нижче наведено кроки, які слід виконувати під час проектування дискового масиву unRAID.
 
-1. Decide which hard drive you will use for parity, and which hard drives you will use for
-data disk1, disk2, etc., and label them in some fashion. Also, find the serial number of each hard
-drive and jot it down somewhere; you will need this information later.
+1. Вирішіть, який жорсткий диск ви будете використовувати для паритету, а які жорсткі диски 
+ви будете використовувати для даних disk1, disk2 тощо, і позначте їх певним чином. Крім того, знайдіть 
+серійний номер кожного жорсткого диска та запишіть його десь; ця інформація вам знадобиться пізніше.
 
-2. Install your hard drive devices, boot unRAID Server and bring up the webGui. If this is a fresh system
-build, then the Main page will show no disks installed. This doesn't mean the system can't detect your
-hard drives; it just means that none have been assigned yet.
+2. Встановіть жорсткі диски, завантажте сервер unRAID і відкрийте веб-інтерфейс. Якщо це нова 
+збірка системи, на головній сторінці буде показано відсутність встановлених дисків. Це не означає, 
+що система не може виявити ваші жорсткі диски; це просто означає, що жодного ще не було призначено.
 
-3. Remember the serial numbers you recorded back in step 1? For parity and each data disk, select the
-proper hard drive based on its serial number from the drop down list.
+3. Пам’ятаєте серійні номери, які ви записали на кроці 1? Для парності та кожного диска даних виберіть
+правильний жорсткий диск на основі його серійного номера зі випадаючого списку.
 
 #### Hot Plug
 
