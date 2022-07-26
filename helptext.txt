@@ -2222,87 +2222,87 @@ When the peer is another server or router with additional networks, then their s
 :end
 
 :wg_peer_dns_server_help:
-Use this entry to overwrite the current DNS server assignment of the Peer
+Використовуйте цей запис, щоб перезаписати поточне призначення сервера DNS однорангового вузла
 :end
 
 :wg_persistent_keepalive_help:
-By default a WireGuard tunnel stays silent when no traffic is present, which may cause the connection to drop.
-Normally this isn't a problem since a WireGuard tunnel is automatically re-established when it is needed.<br>
-A keepalive timer will hold the connection open, for most situations a timer value of 20 seconds is suitable.
+За замовчуванням тунель WireGuard мовчить, коли немає трафіку, що може спричинити розрив з’єднання.
+Зазвичай це не проблема, оскільки тунель WireGuard автоматично відновлюється, коли це необхідно.<br>
+Таймер підтримки активності утримуватиме з’єднання відкритим, для більшості ситуацій підходить значення таймера 20 секунд.
 
-Note that for mobile devices this will use more data and drain your battery faster.
+Зауважте, що для мобільних пристроїв це споживатиме більше даних і швидше розряджатиме акумулятор.
 :end
 
 ; New entries (1) - 2021-09-18
 
 :docker_client_additional_requirements_help:
-Any additional requirements the container has.  Supports basic HTML mark-up.
+Будь-які додаткові вимоги до контейнера. Підтримує базову розмітку HTML.
 :end
 
 ; New entries (1) - 2021-11-07
 
 :docker_client_readme_help:
-Link to a readme file or page
+Посилання на файл чи сторінку readme
 :end
 
 ; New entries (3) - 2021-12-16
 
 :parity_cumulative_check_help:
-Change this setting to **Yes** to divide long duration parity checks over multiple periods. This is useful the system needs to be available and a parity check runs only during off hours.
+Змініть цей параметр на **Так**, щоб розділити довготривалі перевірки парності на кілька періодів. Це корисно, оскільки система має бути доступною, а перевірка парності виконується лише у неробочий час.
 :end
 
 :parity_accumulation_frequency_help:
-Specifies how accumulation periods are executed.
+Визначає, як виконуються періоди накопичення.
 
-**Daily** means every subsequent day the parity check continuous until finished
+**Щоденно** означає, що перевірка парності триває кожного наступного дня до завершення
 
-**Weekly** means every subsequent week the parity check continuous until finished
+**Щотижня** означає, що кожен наступний тиждень перевірка парності триває до завершення
 :end
 
 :parity_accumulation_duration_help:
-Specifies how long each accumulated period runs, expressed in hours. The **Time of the day** speficies the start time of the period.
+Визначає тривалість кожного накопиченого періоду, виражену в годинах. **Час дня** вказує час початку періоду.
 :end
 
 ; New entries (7) - 2022-02-19
 
 :display_tty_size_help:
-Changes the font size of terminal windows.
+Змінює розмір шрифту вікон терміналу.
 :end
 
 :display_page_view_help:
-Changes how certain pages are displayed. In **Tabbed** mode different sections will be displayed in different tabs,
-while in **Non-tabbed** mode sections are displayed under each other.
+Змінює спосіб відображення певних сторінок. У режимі **З вкладками** різні розділи відображатимуться на різних вкладках,
+а в режимі **Без вкладок** розділи відображаються один під одним.
 :end
 
 :display_users_menu_help:
-The Users Menu can be part of the header or part of the Settings menu.
-You can move the Users Menu if insufficient space in the header is available to display all menus.
+Меню користувачів може бути частиною заголовка або частиною меню налаштувань.
+Ви можете перемістити меню користувача, якщо в заголовку недостатньо місця для відображення всіх меню.
 :end
 
 :display_listing_height_help:
-**Automatic** : long listings are displayed as is, and the user needs to scroll the whole page to see the bottom
+**Автоматично**: довгі списки відображаються як є, і користувачеві потрібно прокрутити всю сторінку, щоб побачити нижню частину
 
-**Fixed** : long listings are displayed in a window with a fixed size, user can scroll this window to see the bottom
+**Виправлено**: довгі списки відображаються у вікні з фіксованим розміром, користувач може прокручувати це вікно, щоб побачити низ
 :end
 
 :unraidnet_extraorigins_help:
-Provide a comma separated list of urls that are allowed to access the unraid-api (https://abc.myreverseproxy.com,https://xyz.rvrsprx.com,…)
+Надайте розділений комами список URL-адрес, яким дозволено доступ до unraid-api (https://abc.myreverseproxy.com,https://xyz.rvrsprx.com,…)
 :end
 
 :myservers_remote_t2fa_help:
-When Transparent 2FA for Remote Access is enabled, you will access your server by clicking the "Remote Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Remote Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
+Коли прозорий 2FA для віддаленого доступу ввімкнено, ви отримаєте доступ до свого сервера, натиснувши посилання «Віддалений доступ» на <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. Система прозоро запитає маркер 2FA від вашого сервера та вбудує його у форму входу на сервер. Ваш сервер відхилить будь-яку спробу входу в систему віддаленого доступу, яка не містить дійсний маркер. Кожен жетон можна використати лише один раз і дійсний лише п’ять хвилин.
 :end
 
 :myservers_local_t2fa_help:
-When Transparent 2FA for Local Access is enabled, you will access your server by clicking the "Local Access" link on the <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. The system will transparently request a 2FA token from your server and embed it in the server's login form. Your server will deny any Local Access login attempt that does not include a valid token. Each token can be used only once, and is only valid for five minutes.
+Коли прозорий 2FA для локального доступу ввімкнено, ви отримаєте доступ до свого сервера, натиснувши посилання «Локальний доступ» на <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. Система прозоро запитає маркер 2FA від вашого сервера та вбудує його у форму входу на сервер. Ваш сервер відхилить будь-яку спробу входу в локальний доступ, яка не містить дійсний маркер. Кожен жетон можна використати лише один раз і дійсний лише п’ять хвилин.
 
-This is fairly extreme for Local Access, and in most cases is not needed. It requires a solid Internet connection. If you need to access the webgui while the Internet is down, SSH to the server and run 'use_ssl no', this will give you access via http://<?=['NGINX_LANIP']?><?=['NGINX_PORT'] !== '80' ? ':'.['NGINX_PORT'] : '' ?>
+Це досить екстремально для локального доступу, і в більшості випадків не потрібно. Для цього потрібне надійне підключення до Інтернету. Якщо вам потрібно отримати доступ до веб-інтерфейсу, коли Інтернет не працює, підключіться SSH до сервера та запустіть «use_ssl no», це дасть вам доступ через http://<?=['NGINX_LANIP']?><?=['NGINX_PORT'] !== '80' ? ':'.['NGINX_PORT'] : '' ?>
 :end
 
 ; New entries (1) - 2022-05-07
 
 :smb_multi_channel_help:
-When set to 'Yes' enables SMB Multi Channel support in the server. From
+Якщо встановлено значення «Так», увімкнеться багатоканальна підтримка SMB на сервері. Від
 [microsoft](https://docs.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel):
-"SMB Multichannel enables file servers to use multiple network connections simultaneously." 
+"SMB Multichannel дозволяє файловим серверам використовувати кілька мережевих підключень одночасно." 
 :end
