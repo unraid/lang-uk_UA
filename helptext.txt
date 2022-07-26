@@ -167,35 +167,35 @@
 3. Пам’ятаєте серійні номери, які ви записали на кроці 1? Для парності та кожного диска даних виберіть
 правильний жорсткий диск на основі його серійного номера зі випадаючого списку.
 
-#### Hot Plug
+#### Гаряче підключення
 
-You may also *hot plug* hard drives into your server if your hardware supports it. For example,
-if you are using hard drive cages, you may simply plug them into your server while powered on and
-with array Stopped. Refresh the Main page to have new unassigned devices appear in the assignment
-dropdown lists.
+Ви також можете *На Гарячу підключити* жорсткі диски до свого сервера, якщо ваше обладнання це підтримує. Наприклад,
+якщо ви використовуєте каркаси для жорстких дисків, ви можете просто підключити їх до увімкненого сервера
+з Зупиненим масивом. Оновіть головну сторінку, щоб у призначенні з’явилися нові непризначені пристрої
+випадаючі списки.
 
-#### Next Steps
+#### Наступні кроки
 
-Once you have assigned all of your hard drives, refer to the Array Status section below
-and Start the array.
+Після того, як ви призначите всі свої жорсткі диски, зверніться до розділу «Стан масиву» нижче
+і Запустіть масив.
 :end
 
 :encryption_help:
-#### Encryption input
+#### Введення шифрування
 
-With array Stopped, the user can specify a new encryption key. Note that once a device
-is formatted with a particular key it may only be opened using that same key. Changing the encryption key requires
-encrypted devices to be reformatted **resulting in permanent loss of all existing data on those devices.**
+З Зупиненим масивом користувач може вказати новий ключ шифрування. Зверніть увагу, що як тільки пристрій
+відформатований за допомогою певного ключа, його можна відкрити лише за допомогою того самого ключа. Зміна ключа шифрування вимагає
+зашифровані пристрої, які потрібно переформатувати, **що призведе до остаточної втрати всіх існуючих даних на цих пристроях.**
 
-#### Passphrase
+#### Парольна фраза
 
-Enter a passphrase of up to 512 characters. It is highly advisable to only use the 95 printable characters from the
-first 128 characters of the [ASCII table](https://en.wikipedia.org/wiki/ASCII), as they will always have the same binary
-representation. Other characters may have different encoding depending on system configuration and your passphrase will
-not work with a different encoding. If you want a longer passphrase or to include binary data, upload a keyfile instead.
+Введіть парольну фразу довжиною до 512 символів. Настійно рекомендується використовувати лише 95 друкованих символів із
+перших 128 символів [таблиці ASCII](https://en.wikipedia.org/wiki/ASCII), оскільки вони завжди матимуть однаковий двійковий код
+представництво. Інші символи можуть мати інше кодування залежно від конфігурації системи, і ваша парольна фраза
+не працюватиме з іншим кодуванням. Якщо ви бажаєте довшу парольну фразу або включити двійкові дані, замість цього завантажте файл ключа.
 
-Please refer to the [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
-for what constitutes a *secure* passphrase.
+Будь ласка, зверніться до [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
+для того, що становить *безпечну* парольну фразу.
 
 **Memorize** this passphrase. **IF LOST, ENCRYPTED CONTENT CANNOT BE RECOVERED!**
 
@@ -2217,8 +2217,8 @@ When an IP address is entered to connect to the peer, the server operates in *ac
 :end
 
 :wg_peer_allowed_ips_help:
-This field is automatically filled in with the tunnel address of the peer. This allows the server to reach the peer over the tunnel.<br>
-When the peer is another server or router with additional networks, then their subnets can be added here to make these networks reachable over the tunnel.
+Це поле автоматично заповнюється адресою тунелю вузла. Це дозволяє серверу зв’язуватися з одноранговим вузлом через тунель.<br>
+Якщо партнером є інший сервер або маршрутизатор з додатковими мережами, їх підмережі можна додати сюди, щоб зробити ці мережі доступними через тунель.
 :end
 
 :wg_peer_dns_server_help:
