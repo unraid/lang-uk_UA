@@ -536,53 +536,53 @@ We highly recommend to make your life easier and avoid special characters.
 :end
 
 :share_edit_free_space_help:
-The *minimum free space* available to allow writing to any disk belonging to the share.<br>
+*Мінімальний вільний простір*, доступний для запису на будь-який диск, що належить спільному ресурсу.<br>
 
-Choose a value which is equal or greater than the biggest single file size you intend to copy to the share.
-Include units KB, MB, GB and TB as appropriate, e.g. 10MB.
+Виберіть значення, яке дорівнює або перевищує найбільший розмір окремого файлу, який ви збираєтеся скопіювати на спільний ресурс.
+Включіть відповідні одиниці KBБ, MБ, ГБ і TБ, напр. 10 МБ.
 :end
 
 :share_edit_split_level_help:
-Determines whether a directory is allowed to expand onto multiple disks.
+Визначає, чи дозволено каталогу розгортатися на кілька дисків.
 
-**Automatically split any directory as required**
-When a new file or subdirectory needs to be created in a share, Unraid OS first chooses which disk
-it should be created on, according to the configured *Allocation method*.  If the parent directory containing
-the new file or subdirectory does not exist on this disk, then Unraid OS will first create all necessary
-parent directories, and then create the new file or subdirectory.
+**Автоматично розділяйти будь-який каталог за потреби**
+Коли потрібно створити новий файл або підкаталог у спільному ресурсі, Unraid OS спочатку вибирає, на якому диску
+його слід створити, відповідно до налаштованого *Методу розподілу*. Якщо батьківський каталог містить
+новий файл або підкаталог, не існує на цьому диску, тоді Unraid OS спочатку створить усі необхідні
+батьківські каталоги, а потім створіть новий файл або підкаталог.
 
-**Automatically split only the top level directory as required**
-When a new file or subdirectory is being created in the first level subdirectory of a share, if that first
-level subdirectory does not exist on the disk being written, then the subdirectory will be created first.
-If a new file or subdirectory is being created in the second or lower level subdirectory of a share, the new
-file or subdirectory is created on the same disk as the new file or subdirectory's parent directory.
+**Автоматично розділяти лише каталог верхнього рівня за потреби**
+Коли створюється новий файл або підкаталог у підкаталозі першого рівня спільного ресурсу, якщо це перший
+на диску, який записується, не існує підкаталогу рівня, тоді спочатку буде створено підкаталог. Якщо новий 
+файл або підкаталог створюється в підкаталозі другого або нижчого рівня спільного ресурсу, новий файл або підкаталог 
+створюється на тому самому диску, що й батьківський каталог нового файлу або підкаталогу.
 
-**Automatically split only the top "N" level directories as required**
-Similar to previous: when a new file or subdirectory is being created, if the parent directory is at level "N",
-and does not exist on the chosen disk, Unraid OS will first create all necessary parent directories.  If the
-parent directory of the new file or subdirectory is beyond level "N", then the new file or subdirectory is
-created on the same disk where the parent directory exists.
+**За потреби автоматично розділяти лише каталоги верхнього рівня "N"**
+Подібно до попереднього: коли створюється новий файл або підкаталог, якщо батьківський каталог знаходиться на рівні "N",
+і не існує на вибраному диску, Unraid OS спочатку створить усі необхідні батьківські каталоги.  Якщо
+батьківський каталог нового файлу або підкаталогу перевищує рівень "N", тоді новий файл або підкаталог є
+створений на тому ж диску, де існує батьківський каталог.
 
-**Manual: do not automatically split directories**
-When a new file or subdirectory needs to be created in a share, Unraid OS will only consider disks where the
-parent directory already exists.
+**Інструкція: Не розділяти каталоги автоматично**
+Коли потрібно створити новий файл або підкаталог у спільному ресурсі, Unraid OS розглядатиме лише диски, на яких уже
+існує батьківський каталог.
 :end
 
 :share_edit_included_disks_help:
-Specify the disks which can be used by the share. By default all disks are included; that is, if specific
-disks are not selected here, then the share may expand into *all* array disks.
+Укажіть диски, які можуть використовуватися спільною папкою. За замовчуванням включено всі диски; тобто якщо конкретно
+диски тут не вибрано, тоді спільний доступ може розширюватися на *всі* диски масиву.
 :end
 
 :share_edit_excluded_disks_help:
-Specify the disks which can *not* be used by the share. By default no disks are excluded.
+Укажіть диски, які *не* можуть бути використані спільним ресурсом. За замовчуванням диски не виключаються.
 :end
 
 :share_edit_cache_pool_help:
-Specify whether new files and directories written on the share can be written onto the Cache disk/pool if present.
-This setting also affects *mover* behavior.
+Укажіть, чи можна нові файли та каталоги, записані на спільному ресурсі, записувати на кеш-диск/пул, якщо він є.
+Цей параметр також впливає на поведінку *Переміщення*.
 
-**No** prohibits new files and subdirectories from being written onto the Cache disk/pool.
-*Mover* will take no action so any existing files for this share that are on the cache are left there.
+**Ні** забороняє запис нових файлів і підкаталогів на кеш-диск/пул.
+*Переміщення* не виконуватиме жодних дій, тож усі існуючі файли для цього спільного ресурсу, які знаходяться в кеші, залишатимуться там.
 
 **Yes** indicates that all new files and subdirectories should be written to the Cache disk/pool, provided
 enough free space exists on the Cache disk/pool.
