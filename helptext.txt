@@ -584,23 +584,23 @@ We highly recommend to make your life easier and avoid special characters.
 **Ні** забороняє запис нових файлів і підкаталогів на кеш-диск/пул.
 *Переміщення* не виконуватиме жодних дій, тож усі існуючі файли для цього спільного ресурсу, які знаходяться в кеші, залишатимуться там.
 
-**Yes** indicates that all new files and subdirectories should be written to the Cache disk/pool, provided
-enough free space exists on the Cache disk/pool.
-If there is insufficient space on the Cache disk/pool, then new files and directories are created on the array.
-When the *mover* is invoked, files and subdirectories are transferred off the Cache disk/pool and onto the array.
+**Так** означає, що всі нові файли та підкаталоги мають бути записані на кеш-диск/пул, якщо
+достатньо вільного місця на кеш-диску/пулі.
+Якщо на кеш-диску/пулі недостатньо місця, у масиві створюються нові файли та каталоги.
+Коли викликається *mover*, файли та підкаталоги переносяться з кеш-диска/пулу в масив.
 
-**Only** indicates that all new files and subdirectories must be written to the Cache disk/pool.
-If there is insufficient free space on the Cache disk/pool, *create* operations will fail with *out of space* status.
-*Mover* will take no action so any existing files for this share that are on the array are left there.
+**Тільки** вказує на те, що всі нові файли та підкаталоги мають бути записані на кеш-диск/пул.
+Якщо на кеш-диску/пулі недостатньо вільного місця, операції *створення* завершаться помилкою зі статусом *недостатньо місця*.
+*Mover* не виконуватиме жодних дій, тож усі існуючі файли для цього спільного ресурсу, які знаходяться в масиві, залишатимуться там.
 
-**Prefer** indicates that all new files and subdirectories should be written to the Cache disk/pool, provided
-enough free space exists on the Cache disk/pool.
-If there is insufficient space on the Cache disk/pool, then new files and directories are created on the array.
-When the *mover* is invoked, files and subdirectories are transferred off the array and onto the Cache disk/pool.
+**Перевага** вказує, що всі нові файли та підкаталоги мають бути записані на кеш-диск/пул, якщо
+достатньо вільного місця на кеш-диску/пулі.
+Якщо на кеш-диску/пулі недостатньо місця, у масиві створюються нові файли та каталоги.
+Коли викликається *mover*, файли та підкаталоги переносяться з масиву на кеш-диск/пул.
 
-**NOTE:** Mover will never move any files that are currently in use.
-This means if you want to move files associated with system services such as Docker or VMs then you need to
-disable these services while mover is running.
+**ПРИМІТКА:** Mover ніколи не переміщуватиме файли, які зараз використовуються.
+Це означає, що якщо ви хочете перемістити файли, пов’язані із системними службами, такими як Docker або віртуальні машини, вам це потрібно
+вимкніть ці служби під час роботи Mover.
 :end
 
 :share_edit_copy_on_write_help:
