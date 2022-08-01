@@ -504,12 +504,12 @@ Select the desired destinations and press **Write** to copy the settings to the 
 :end
 
 :share_edit_name_help:
-The share name can be up to 40 characters, and is case-sensitive with these restrictions:
+Назва спільного ресурсу може містити до 40 символів і чутлива до регістру з такими обмеженнями:
 
-* cannot contain a double-quote character (") or the following characters: / \ * < > |
-* cannot be one of the reserved share names: flash, cache, cache2, .., disk1, disk2, ..
+* не може містити символ подвійних лапок (") або такі символи: / \ * < > |
+* не може бути одним із зарезервованих імен спільних ресурсів: flash, cache, cache2, .., disk1, disk2, ..
 
-We highly recommend to make your life easier and avoid special characters.
+Ми настійно рекомендуємо полегшити ваше життя та уникати спеціальних символів.
 :end
 
 :share_edit_comments_help:
@@ -604,13 +604,13 @@ We highly recommend to make your life easier and avoid special characters.
 :end
 
 :share_edit_copy_on_write_help:
-Set to **No** to cause the *btrfs* NOCOW (No Copy-on-Write) attribute to be set on the share directory
-when created on a device formatted with *btrfs* file system.  Once set, newly created files and
-subdirectories on the device will inherit the NOCOW attribute.  We recommend this setting for shares
-used to store vdisk images, including the Docker loopback image file.  This setting has no effect
-on non-btrfs file systems.
+Установіть значення **Ні**, щоб атрибут *btrfs* NOCOW (No Copy-on-Write) встановлювався в загальному каталозі 
+під час створення на пристрої, відформатованому за допомогою файлової системи *btrfs*. Після встановлення 
+новостворені файли та підкаталоги на пристрої успадковуватимуть атрибут NOCOW. Ми рекомендуємо цей параметр 
+для спільних ресурсів, які використовуються для зберігання образів vdisk, включаючи файл зображення Docker. 
+Цей параметр не впливає на файлові системи без btrfs.
 
-Set to **Auto** for normal operation, meaning COW **will** be in effect on devices formatted with *btrfs*.
+Установіть значення **Авто** для нормальної роботи, тобто COW **буде** діяти на пристроях, відформатованих у *btrfs*.
 :end
 
 :share_edit_status_help:
@@ -632,42 +632,42 @@ Select the desired destinations and press **Write** to copy the SMB security set
 :end
 
 :smb_export_help:
-This setting determines whether the share is visible and/or accessible.  The 'Yes (hidden)' setting
-will *hide* the share from *browsing* but is still accessible if you know the share name.
+Цей параметр визначає, чи спільний доступ буде видимим і/або доступним. Налаштування 
+'Так (приховано)' *приховає* спільний доступ від *перегляду*, але все одно буде доступним, якщо ви знаєте назву спільного ресурсу.
 :end
 
 :smb_time_machine_volume_help:
-This limits the reported volume size, preventing Time Machine from using the entire real disk space
-for backup.  For example, setting this value to "1024" would limit the reported disk space to 1GB.
+Це обмежує зареєстрований розмір тому, не дозволяючи Time Machine використовувати весь реальний дисковий простір
+для резервного копіювання. Наприклад, встановлення цього значення на «1024» обмежить зареєстрований дисковий простір до 1 ГБ.
 :end
 
 :smb_case_sensitive_names_help:
-Controls whether filenames are case-sensitive.
+Контролює, чи назви файлів чутливі до регістру.
 
-The default setting of **auto** allows clients that support case sensitive filenames (Linux CIFSVFS)
-to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX
-case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to **auto** is the same as
-setting it to No for them; however, the case of filenames passed by a Windows client will be preserved.  This setting can result
-in reduced performance with very large directories because Samba must do a filename search and match on passed names.
+Налаштування за замовчуванням **Авто** дозволяє клієнтам, які підтримують чутливі до регістру імена файлів (Linux CIFSVFS), повідомляти сервер 
+Samba на основі кожного пакета, що вони бажають отримати доступ до файлової системи з урахуванням регістру (для підтримки регістру UNIX чутлива 
+семантика). Жодна система Windows не підтримує чутливі до регістру назви файлів, тому встановлення цього параметра на **авто** є таким самим, як 
+встановлення значення Ні для них; однак регістр імен файлів, переданих клієнтом Windows, буде збережено. Цей параметр може призвести до 
+зниження продуктивності з дуже великими каталогами, оскільки Samba має виконувати пошук імен файлів і збігатися з переданими іменами.
 
-A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case.
-This will speed very large directory access, but some Windows applications may not function properly with this setting.  For
-example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+Параметр **Так** означає, що файли створюються з регістром, який передає клієнт, і доступні лише за допомогою цього самого регістру.
+Це прискорить доступ до дуже великого каталогу, але деякі програми Windows можуть не працювати належним чином із цим параметром.  
+Наприклад, якщо "MyFile" створено, але програма Windows намагається відкрити "MYFILE" (що дозволено в Windows), його не буде знайдено.
 
-A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case.
-In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case.  This
-ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
-Note this setting should only be configured for new shares.
+Значення **Змусити знизити** є особливим: регістр усіх вхідних імен файлів клієнта, а не лише нових імен файлів, буде встановлено в нижньому регістрі.
+Іншими словами, незалежно від того, яке ім’я зі змішаним регістром буде створено на стороні Windows, воно зберігатиметься та використовуватиметься лише в нижньому регістрі.  
+Це гарантує, що всі програми Windows правильно знайдуть будь-який файл незалежно від регістру, але регістр не буде збережено в списках папок.
+Зауважте, що цей параметр слід налаштовувати лише для нових спільних ресурсів.
 :end
 
 :smb_security_modes_help:
-Summary of security modes:
+Короткий опис режимів безпеки:
 
-**Public** All users including guests have full read/write access.
+**Загальнодоступний** Усі користувачі, включаючи гостей, мають повний доступ для читання/запису.
 
-**Secure** All users including guests have read access, you select which of your users have write access.
+**Безпечний** Усі користувачі, включаючи гостей, мають доступ на читання, ви вибираєте, хто з ваших користувачів має доступ на запис.
 
-**Private** No guest access at all, you select which of your users have read/write, read-only access or no access.
+**Приватний** Без гостьового доступу, ви вибираєте, хто з ваших користувачів має доступ для читання/запису, лише для читання чи без доступу.
 :end
 
 :smb_secure_access_help:
