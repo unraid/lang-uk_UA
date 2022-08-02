@@ -801,13 +801,13 @@ If set to 'No' then you must Start the array yourself.
 :end
 
 :disk_spindown_delay_help:
-This setting defines the 'default' time-out for spinning hard drives down after a period
-of no I/O activity.  You may override the default value for an individual disk on the Disk Settings
-page for that disk.
+Цей параметр визначає час очікування 'за замовчуванням' для відключення жорстких дисків після періоду
+без активності введення/виведення. Ви можете змінити значення за замовчуванням для окремого диска в налаштуваннях диска
+для цього диска.
 :end
 
 :disk_spinup_groups_help:
-If set to 'Yes' then the [Spinup Groups](/Help) feature is enabled.
+Якщо встановлено значення 'Так', функція [Групи спінів] (/Help) увімкнена.
 :end
 
 :disk_default_partition_format_help:
