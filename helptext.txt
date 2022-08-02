@@ -905,43 +905,43 @@ A value of zero will disable the critical threshold (including notifications).
 :end
 
 :disk_default_warning_temperature_help:
-*Warning disk temperature* sets the default warning threshold for all hard disks temperature. Exceeding this threshold will result in a warning notification.
+*Попередження про температуру диска* встановлює стандартний поріг попередження для всіх жорстких дисків. Перевищення цього порогу призведе до попередження.
 
-A value of zero will disable the warning threshold (including notifications).
+Нульове значення вимкне порогове значення попередження (включаючи сповіщення).
 :end
 
 :disk_default_critical_temperature_help:
-*Critical disk temperature* sets the default critical threshold for all hard disks temperature. Exceeding this threshold will result in an alert notification.
+*Критична температура диска* встановлює критичне порогове значення за умовчанням для всіх жорстких дисків. Перевищення цього порогу призведе до сповіщення.
 
-A value of zero will disable the critical threshold (including notifications).
+Нульове значення вимкне критичний поріг (включаючи сповіщення).
 :end
 
 :disk_default_smart_notification_help:
-SMART notifications are generated on either an increasing RAW value of the attribute, or a decreasing NORMALIZED value which reaches a predefined threshold set by the manufacturer.
+Сповіщення SMART генеруються або для збільшення значення RAW атрибута, або для зменшення значення NORMALIZED, яке досягає попередньо визначеного порогу, встановленого виробником.
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+Цей розділ використовується для встановлення глобальних параметрів для всіх дисків. Є можливість налаштувати параметри для окремих дисків.
 :end
 
 :disk_default_smart_tolerance_help:
-A tolerance level may be given to prevent that small changes result in a notification. Setting a too high tolerance level may result in critical changes without a notification.
+Щоб запобігти тому, що невеликі зміни призведуть до сповіщення, може бути встановлено рівень допуску. Встановлення занадто високого рівня допуску може призвести до критичних змін без сповіщення.
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+Цей розділ використовується для встановлення глобальних параметрів для всіх дисків. Є можливість налаштувати параметри для окремих дисків.
 :end
 
 :disk_default_smart_controller_help:
-By default automatic controller selection is done by smartctl to read the SMART information. Certain controllers however need specific settings for smartctl to work.
-Use this setting to select your controller type and fill-in the specific disk index and device name for your situation. Use the manufacturer's documentation to find the relevant information.
+За замовчуванням автоматичний вибір контролера виконується за допомогою smartctl для читання інформації SMART. Однак деякі контролери потребують спеціальних налаштувань для роботи smartctl.
+Використовуйте цей параметр, щоб вибрати тип контролера та заповнити індекс конкретного диска та назву пристрою для вашої ситуації. Використовуйте документацію виробника, щоб знайти відповідну інформацію.
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+Цей розділ використовується для встановлення глобальних параметрів для всіх дисків. Є можливість налаштувати параметри для окремих дисків.
 :end
 
 :disk_default_smart_attribute_help:
-The user can enable or disable notifications for the given SMART attributes. It is recommended to keep the default, which is ALL selected attributes,
-when certain attributes are not present on your hard disk or do not provide the correct information, these may be excluded.
-In addition custom SMART attributes can be entered to generate notifications. Be careful in this selection,
-it may cause an avalance of notifcations if inappropriate SMART attributes are chosen.
+Користувач може ввімкнути або вимкнути сповіщення для заданих атрибутів SMART. Рекомендується зберегти значення за замовчуванням, тобто ВСІ вибрані атрибути,
+якщо певні атрибути відсутні на вашому жорсткому диску або не надають правильну інформацію, вони можуть бути виключені.
+Крім того, для створення сповіщень можна ввести власні атрибути SMART. Будьте обережні в цьому виборі,
+це може спричинити низку сповіщень, якщо вибрано невідповідні атрибути SMART.
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+Цей розділ використовується для встановлення глобальних параметрів для всіх дисків. Є можливість налаштувати параметри для окремих дисків.
 :end
 
 :docker_repositories_help:
