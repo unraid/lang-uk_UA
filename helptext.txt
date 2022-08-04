@@ -408,99 +408,99 @@ array or the cache disk/pool.
 :end
 
 :flash_backup_help:
-Use *Flash backup* to create a single zip file of the current contents of the flash device and store it locally on your computer.
+Використовуйте *Резервне копіювання Flash-пам’яті*, щоб створити єдиний zip-файл із поточним вмістом Flash-пристрою та зберегти його локально на комп’ютері.
 :end
 
 :syslinux_cfg_help:
-Use this page to make changes to your `syslinux.cfg` file.
-You will need to reboot your server for these changes to take effect.
+Використовуйте цю сторінку, щоб внести зміни у свій файл `syslinux.cfg`.
+Вам потрібно буде перезавантажити сервер, щоб ці зміни набули чинності.
 :end
 
 :syslinux_button_help:
-Click the **Default** button to initialize the edit box with the
-factory-default contents.  You still need to click **Apply** in order to
-commit the change.
+атисніть кнопку **За замовчуванням**, щоб ініціалізувати вікно редагування стандартним 
+заводським вмістом. Вам все одно потрібно натиснути **Застосувати**, щоб
+прийняти зміни.
 
-Click the **Apply** button to commit the current edits.  Click **Reset** to
-undo any changes you make (before Saving). Click **Done** to exit this page.
+Натисніть кнопку **Застосувати**, щоб прийняти поточні зміни. Натисніть **Скинути**, щоб
+скасувати внесені зміни (перед збереженням). Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
 
 :info_share_assignment_help:
-The selected pool is available for user shares.
+Вибраний пул доступний для спільного доступу користувачів.
 :end
 
 :info_free_space_help:
-This defines a "floor" for the amount of free space remaining in the volume.
-If the free space becomes less than this value, then new files written via user shares will fail with "not enough space" error.
+Це визначає «поверх» для обсягу вільного простору, що залишився в тому.
+Якщо вільний простір стає меншим за це значення, нові файли, записані через спільні ресурси користувача, зазнають невдачі з помилкою «недостатньо місця».
 
-Enter a numeric value with one of these suffixes:
+Введіть числове значення з одним із таких суфіксів:
 
-**KB** = 1,000<br>
-**MB** = 1,000,000<br>
-**GB** = 1,000,000,000<br>
-**TB** = 1,000,000,000,000<br>
-**K** = 1,024 (ie, 2^10)<br>
-**M** = 1,048,576 (ie, 2^20)<br>
-**G** = 1,073,741,824 (ie, 2^30)<br>
-**T** = 1,099,511,627,776 (ie, 2^40)<br>
+**КБ** = 1,000<br>
+**МБ** = 1,000,000<br>
+**ГБ** = 1,000,000,000<br>
+**ТБ** = 1,000,000,000,000<br>
+**К** = 1,024 (ie, 2^10)<br>
+**М** = 1,048,576 (ie, 2^20)<br>
+**Г** = 1,073,741,824 (ie, 2^30)<br>
+**Т** = 1,099,511,627,776 (ie, 2^40)<br>
 
 If no suffix, a count of 1024-byte blocks is assumed.
 :end
 
 :share_list_help:
-**Colored Status Indicator** -- the significance of the color indicator at the beginning of each line in *User Shares* is as follows:
+**Кольоровий індикатор статусу** – значення кольорового індикатора на початку кожного рядка в *Спільних ресурсах користувача* таке:
 
-<i class='fa fa-circle orb green-orb'></i>All files are on protected storage.
+<i class='fa fa-circle orb green-orb'></i>Всі файли знаходяться на захищеному сховищі.
 
-<i class='fa fa-warning orb yellow-orb'></i>Some or all files are on unprotected storage.
+<i class='fa fa-warning orb yellow-orb'></i>Деякі або всі файли знаходяться на незахищеному сховищі.
 
-**Security modes:**
+**Режими безпеки:**
 
-+ '-' -- user share is not exported and unavailable on the network
-+ *Public* -- all users including guests have full read/write access (open access)
-+ *Secure* -- all users including guests have read access, write access is set per user (limited access)
-+ *Private* -- no guest access at all, read/write or read-only access is set per user (closed access)
++ '-' -- частка користувача не експортована та недоступна в мережі
++ *Відкритий* -- усі користувачі, включаючи гостей, мають повний доступ для читання/запису (відкритий доступ)
++ *Безпечний* -- усі користувачі, включаючи гостей, мають доступ для читання, доступ для запису встановлюється для кожного користувача (обмежений доступ)
++ *Приватний* -- гостьовий доступ взагалі відсутній, для кожного користувача встановлено доступ для читання/запису або лише для читання (закритий доступ)
 
-**Special modes:**
+**Спеціальні режими:**
 
-+ SMB security mode displayed in *italics* indicates exported hidden user shares.
-+ NFS does not have special modes for user shares.
++ Режим безпеки SMB, виділений *курсивом*, означає експортовані приховані спільні файли користувачів.
++ NFS не має спеціальних режимів для спільних ресурсів користувачів.
 :end
 
 :disk_list_help:
-**Colored Status Indicator** -- the significance of the color indicator at the beginning of each line in *Disk Shares* is as follows:
+**Кольоровий індикатор стану** – значення кольорового індикатора на початку кожного рядка в *Спільних дискових ресурсах* таке:
 
-<i class='fa fa-circle orb green-orb'></i>Mounted, underlying device has redundancy/protection.
+<i class='fa fa-circle orb green-orb'></i>Змонтований базовий пристрій має резервування/захист.
 
-<i class='fa fa-warning orb yellow-orb'></i>Mounted, underlying device does not have redundancy/protection.
+<i class='fa fa-warning orb yellow-orb'></i>Змонтований базовий пристрій не має резервування/захисту.
 
-**Security modes:**
+**Режими безпеки:**
 
-+ '-' -- disk share is not exported and unavailable on the network
-+ *Public* -- all users including guests have full read/write access (open access)
-+ *Secure* -- all users including guests have read access, write access is set per user (limited access)
-+ *Private* -- no guest access at all, read/write or read-only access is set per user (closed access)
++ '-' -- спільний диск не експортовано та недоступний у мережі
++ *Відкритий* -- усі користувачі, включаючи гостей, мають повний доступ для читання/запису (відкритий доступ)
++ *Безпечний* -- усі користувачі, включаючи гостей, мають доступ для читання, доступ для запису встановлюється для кожного користувача (обмежений доступ)
++ *Приватний* -- гостьовий доступ взагалі відсутній, для кожного користувача встановлено доступ для читання/запису або лише для читання (закритий доступ)
 
-**Special modes:**
+**Спеціальні режими:**
 
-+ SMB security mode displayed in *italics* indicates exported hidden disk shares.
-+ NFS does not have special modes for disk shares.
++ Режим безпеки SMB, виділений *курсивом*, вказує на експортовані спільні приховані диски.
++ NFS не має спеціальних режимів для спільних дисків.
 :end
 
 :share_edit_global1_help:
-A *Share*, also called a *User Share*, is simply the name of a top-level directory that exists on one or more of your
-storage devices (array and cache).  Each share can be exported for network access.  When browsing a share, we return the
-composite view of all files and subdirectories for which that top-level directory exists on each storage device.
+*Спільний ресурс*, також званий *Спільним доступом користувача*, — це просто назва каталогу верхнього рівня, який існує на одному чи кількох ваших
+пристроях зберігання (масив і кеш).  Кожен ресурс можна експортувати для доступу до мережі. Під час перегляду спільного доступу ми повертаємо
+складене подання всіх файлів і підкаталогів, для яких цей каталог верхнього рівня існує на кожному пристрої зберігання даних.
 
-*Read settings from* is used to preset the settings of the new share with the settings of an existing share.
+*Зчитування налаштувань із* використовується для попереднього встановлення налаштувань нового спільного ресурсу з налаштуваннями існуючого спільного ресурсу.
 
-Select the desired share name and press **Read** to copy the settings from the selected source.
+Виберіть потрібну назву спільного доступу та натисніть **Прочитати**, щоб скопіювати налаштування з вибраного джерела.
 :end
 
 :share_edit_global2_help:
-*Write settings to* is used to copy the settings of the current share to one or more other existing shares.
+*Записати налаштування до* використовується для копіювання налаштувань поточного спільного ресурсу до одного або кількох інших існуючих спільних ресурсів.
 
-Select the desired destinations and press **Write** to copy the settings to the selected shares.
+Виберіть потрібні адресати та натисніть **Написати**, щоб скопіювати налаштування до вибраних спільних ресурсів.
 :end
 
 :share_edit_name_help:
@@ -614,21 +614,21 @@ Select the desired destinations and press **Write** to copy the settings to the 
 :end
 
 :share_edit_status_help:
-Share does *not* contain any data and may be deleted if not needed any longer.
+Спільний доступ *не* містить жодних даних і може бути видалений, якщо він більше не потрібен.
 :end
 
 :share_edit_delete_help:
-Share can *not* be deleted as long as it contains data. Be aware that some data can be hidden. See also [SMB Settings](/Settings/SMB) -> Hide "dot" files.
+Спільний доступ *не* можна видалити, якщо він містить дані. Майте на увазі, що деякі дані можуть бути приховані. Дивіться також [Налаштування SMB](/Settings/SMB) -> Приховати файли з крапками.
 :end
 
 :smb_security_help:
-*Read settings from* is used to preset the SMB security settings of the current selected share with the settings of an existing share.
+*Прочитати налаштування з* використовується для попереднього встановлення параметрів безпеки SMB для поточного вибраного спільного ресурсу з налаштуваннями існуючого спільного ресурсу.
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+Виберіть потрібне ім’я спільного доступу та натисніть **Прочитати**, щоб скопіювати налаштування безпеки SMB із вибраного джерела.
 
-*Write settings to* is used to copy the SMB security settings of the current selected share to one or more other existing shares.
+*Записати налаштування до* використовується для копіювання налаштувань безпеки SMB поточного вибраного спільного ресурсу до одного або кількох інших існуючих спільних ресурсів.
 
-Select the desired destinations and press **Write** to copy the SMB security settings to the selected shares.
+Виберіть потрібні адресати та натисніть **Написати**, щоб скопіювати налаштування безпеки SMB у вибрані спільні ресурси.
 :end
 
 :smb_export_help:
