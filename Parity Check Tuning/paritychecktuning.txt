@@ -92,12 +92,12 @@ Elapsed Time=Витрачений Час
 ERROR=ПОМИЛКА
 Following drives overheated=Наступні диски перегрілися
 IMPORTANT=ВАЖЛИВО
-Increments=
+Increments=Інкрементів
 Non-Correcting=Невиправний
 Pause a running array operation=Призупинити запущену операцію з масивом
 Resume a paused array operation=Відновити призупинену операцію з масивом
 Sent notification=Надіслано сповіщення
-Show the status of a running parity check=
+Show the status of a running parity check=Показати статус запущеної перевірки парності
 Shutdown=Вимкнути
 Start a correcting parity check=Почніть коригувальну перевірку парності
 Start a correcting parity check=Почніть коригувальну перевірку парності
@@ -465,5 +465,3 @@ Method used to specify start and stop points=Метод, який викорис
 > який витягує записи із системного журналу, які показують будь-які сектори, для яких є будь-який паритет
 > відображається сектор і чи він виправлявся, чи це помилка парності.
 :end
-
-; Note: June 6, 2022 - 178 missing translations
