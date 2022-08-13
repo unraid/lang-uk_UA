@@ -73,8 +73,8 @@ No Remote SMB=Немає віддаленого SMB
 No Unassigned Disks available=Немає непризначених дисків
 not installed=не встановлено
 Note=Примітка
-You must enable NFS in Settings->NFS to mount NFS shares=Ви повинні ввімкнути NFS у Налаштуваннях->NFS, щоб підключити спільні ресурси NFS
-You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні ввімкнути SMB у Налаштуваннях->SMB, щоб підключити спільні ресурси SMB
+You must enable NFS in Settings->NFS to mount NFS shares=Ви повинні ввімкнути NFS у Наташтуваннях->NFS, щоб підключити спільні ресурси NFS
+You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні ввімкнути SMB у Наташтуваннях->SMB, щоб підключити спільні ресурси SMB
 Open=Відкрити
 Partition and Format Disk=Розбийте та відформатуйте диск
 Pass Thru=
@@ -203,4 +203,4 @@ You will need to enter credentials to list the shares=Вам потрібно б
 > Be careful using the /dev/sdX designation because it can change after a reboot.
 :end
 
-; Note: July 10, 2022 - 128 missing translations
+; Note: August 13, 2022 - 32 missing translations

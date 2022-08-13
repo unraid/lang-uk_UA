@@ -92,7 +92,7 @@ Elapsed Time=Витрачений Час
 ERROR=ПОМИЛКА
 Following drives overheated=Наступні диски перегрілися
 IMPORTANT=ВАЖЛИВО
-Increments=Інкрементів
+Increments=Прирости
 Non-Correcting=Невиправний
 Pause a running array operation=Призупинити запущену операцію з масивом
 Resume a paused array operation=Відновити призупинену операцію з масивом
@@ -167,7 +167,7 @@ Unusually large value=Незвичайно велика вартість
 ; Syslog messages (with debug logging disabled)
 
 %s Cancelled=%s Скасовано
-Array not started so no action taken=Масив не запушено, тому жодних дій не вжито
+Array not started so no action taken=Масив не запущено, тому жодних дій не вжито
 as drives now cooled down=як приводи зараз охололи
 Following drives overheated=Наступні диски перегрілися
 Only able to start a Read-Check due to number of disabled drives=Можливість запустити лише перевірку читання через кількість вимкнених дисків
