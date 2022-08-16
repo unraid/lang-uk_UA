@@ -20,7 +20,7 @@ Save=Зберегти
 Share Device with SMB and NFS=Спільний доступ до пристрою за допомогою SMB і NFS
 Share Remote Mount with SMB and NFS=Спільне віддалене монтування за допомогою SMB та NFS
 Mark this Device as passed through to a VM or Docker=Позначте цей пристрій як переданий до віртуальної машини або Docker
-Unassigned Devices Settings=Параметри пристроїв без призначення
+Unassigned Devices Settings=Параметри Unassigned Devices
 Undo your changes since last Save=Скасуйте зміни, внесені після останнього збереження
 Volume=Об'єм
 ;
