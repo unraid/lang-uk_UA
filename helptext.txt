@@ -2209,11 +2209,11 @@ Each peer must have a unique tunnel IP address.
 :end
 
 :wg_peer_endpoint_help:
-When this field is left empty, the server operates in *passive mode* to establish the tunnel. It must be the peer which starts the tunnel.
+Якщо це поле залишити порожнім, сервер працює в *пасивному режимі* для встановлення тунелю. Це повинен бути одноранговий партнер, який починає тунель.
 
-When an IP address is entered to connect to the peer, the server operates in *active mode* and establishes the tunnel to the peer as soon as there is data to send.
+Коли IP-адреса вводиться для підключення до однорангового пристрою, сервер працює в *активному режимі* та встановлює тунель до однорангового вузла, щойно є дані для надсилання.
 
-*Note: this field is mandatory for "server-to-server" and "LAN-to-LAN" connections*
+*Примітка: це поле є обов’язковим для підключень "сервер-сервер" і "LAN-to-LAN"*
 :end
 
 :wg_peer_allowed_ips_help:
