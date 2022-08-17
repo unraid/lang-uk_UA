@@ -648,7 +648,7 @@ Turn off UPS after shutdown=Вимкніть UPS після вимкнення
 UDP=UDP
 Unable to register this Unraid Server=Неможливо зареєструвати цей Сервер Unraid
 ; Keep the original plugin name in settings
-Unassigned Devices=Непризначені пристрої
+Unassigned Devices=Unassigned Devices
 Unraid OS update notification=Повідомлення про оновлення Unraid OS
 Unraid OS update=Оновлення Unraid OS
 Unraidnet account status=Стан облікового запису Unraid.net
