@@ -29,7 +29,7 @@ Specify SMB Version when Mounting Remote Shares=Укажіть версію SMB 
 Spin down disks=Зупинка обертання дисків
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Щоб увімкнути руйнівний режим, необхідно встановити плагін Unassigned Devices Plus
 to SMB share config=до конфігурації спільного доступу SMB
-Unassigned Devices=Непризначені пристрої
+Unassigned Devices=Unassigned Devices
 Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 або новіша версія необхідна для підтримки NFSv4
 Use only when directed for support=Використовуйте лише за призначенням для підтримки
 
