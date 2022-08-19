@@ -36,94 +36,94 @@ Use only when directed for support=Використовуйте лише за п
 ; Help
 ;
 :ud_settings_plus_plug:
-> **Note:** The 'Unassigned Devices Plus' plugin must be installed in order to mount HFS+ and exFAT disk formats, and enable destructive mode.
+> **Примітка.** Плагін «Unassigned Devices Plus» має бути встановлено, щоб монтувати формати дисків HFS+ і exFAT, а також увімкнути деструктивний режим.
 :end
 
 :ud_settings_common_script_plug:
-> If set, this script will run before the device script.  The action is in the environment variable **$ACTION**. Be sure you reference all commands with their full path.
+> Якщо встановлено, цей сценарій запускатиметься перед сценарієм пристрою. Дія знаходиться в змінній середовища **$ACTION**. Переконайтеся, що ви посилаєтеся на всі команди з їх повним шляхом.
 :end
 
 :ud_settings_destructive_plug:
-> If enabled, this will allow you to erase and format partitions using Unassigned Devices. This cannot be enabled unless the 'Unassigned Devices Plus' plugin is installed.
+> Якщо ввімкнено, це дозволить вам стирати та форматувати розділи за допомогою непризначених пристроїв. Це неможливо ввімкнути, якщо не встановлено плагін «Unassigned Devices Plus».
 :end
 
 :ud_settings_mount_usb_devices_plug:
-> When set to **Yes**, will auto mount a new USB device and share it without user intervention.
+> Якщо встановлено **Так**, новий USB-пристрій буде автоматично підключено та надано спільний доступ до нього без втручання користувача.
 :end
 
 :ud_settings_discard_plug:
-> Mount SSDs that support discard with 'discard' option.  If you are using the SSD Trim Settings to do a periodic trim of SSDs you can set this to **No**.
+> Підключіть твердотільні накопичувачі, які підтримують скасування, за допомогою опції «скасування». Якщо ви використовуєте налаштування SSD Trim для періодичного обрізання SSD, ви можете встановити значення **Ні**.
 :end
 
 :ud_settings_symlinks_plug:
-> Set to **Yes** to create symlinks for /mnt/remotes/ at /mnt/disks/.
+> Установіть значення **Так**, щоб створити символічні посилання для /mnt/remotes/ в /mnt/disks/.
 >
-> This is for backwards compatibility of VM and Docker Container mappings to the /mnt/disks/ mount point.
-> You are encouraged to change your mappings to the /mnt/remotes/ mount point.
+> Це для зворотної сумісності зіставлення віртуальної машини та контейнера Docker із точкою монтування /mnt/disks/.
+> Рекомендуємо змінити зіставлення з точкою монтування /mnt/remotes/.
 >
-> If you do not need the backwards compatibility, leave it set to **No**.
+> Якщо вам не потрібна зворотна сумісність, залиште для неї значення **Ні**.
 :end
 
 :ud_settings_specify_smb_vers_plug:
-> Set to **No** for Unassigned Devices to first try to mount remote shares by not setting the SMB version when mounting.
+> Установіть значення **Ні** для непризначених пристроїв, щоб спочатку спробувати підключити віддалені спільні ресурси, не встановлюючи версію SMB під час підключення.
 >
-> Set to **Yes** for Unassigned Devices to only mount SMB remote shares specifying the SMB version.
+> Установіть значення **Так** для непризначених пристроїв, щоб монтувати лише віддалені спільні ресурси SMB із зазначенням версії SMB.
 >
-> Some remote servers need to have the version specified.
+> Деякі віддалені сервери повинні мати вказану версію.
 :end
 
 :ud_settings_debug_level_plug:
-> Setting a Debug Log Level adds additional logging in specific areas of UD for troubleshooting.
+> Налаштування рівня журналу налагодження додає додаткове журналювання в певних областях UD для усунення несправностей.
 >
-> Set to **None** to turn off debug logging.
+> Установіть значення **Немає**, щоб вимкнути журнал налагодження.
 >
-> Set the Debug Log Level to a numeric value to debug a specific area of UD.
+> Встановіть для параметра Debug Log Level числове значення, щоб налагодити певну область UD.
 >
-> **Note:** Don't leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
+> **Примітка.** Не залишайте рівень журналу налагодження включеним протягом тривалого часу. Він може додати багато повідомлень журналу до системного журналу.
 :end
 
 :ud_settings_specify_nfs_vers_plug:
-> Set to **NFSv3** to mount all NFS Remote Shares with NFSv3.
+> Установіть значення **NFSv3**, щоб підключити всі віддалені спільні ресурси NFS за допомогою NFSv3.
 >
-> Set to **NFSv4** to mount all NFS Remote Shares with NFSv4.
+> Установіть значення **NFSv4**, щоб підключити всі віддалені спільні ресурси NFS за допомогою NFSv4.
 >
-> All NFS remote shares will be mounted with the specified version.
+> Усі віддалені спільні ресурси NFS будуть змонтовані з указаною версією.
 :end
 
 :ud_settings_smb_security_plug:
-> Set the user level of SMB Security.
+> Встановіть рівень безпеки SMB для користувача.
 >
-> + Set to **Yes** to enable SMB Security on SMB shares.  Set access by user to allow access and whether or not the user can write to the share.
-> + Set to **Hidden** to enable SMB Security on SMB shares that will not be visible.  Set access by user to allow access and whether or not the user can write to the share.
-> + Set to **No** will share devices, SMB/NFS, and iso Mounts Public with read and write access.
+> + Установіть значення **Так**, щоб увімкнути безпеку SMB на спільних ресурсах SMB. Налаштуйте доступ користувача, щоб дозволити доступ і чи може користувач писати в спільний ресурс.
+> + Установіть значення **Приховано**, щоб увімкнути безпеку SMB для спільних ресурсів SMB, які не будуть видимі. Налаштуйте доступ користувача, щоб дозволити доступ і чи може користувач писати в спільний ресурс.
+> + Для параметра **Ні** буде надано спільний доступ до пристроїв, SMB/NFS і кріплень iso Public із доступом для читання та запису.
 :end
 
 :ud_settings_case_sensitive_plug:
-> Controls whether filenames are case-sensitive.
+> Контролює, чи назви файлів чутливі до регістру.
 >
-> The default setting of **Auto** allows clients that support case sensitive filenames (Linux CIFSVFS) to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to auto is the same as setting it to No for them; however, the case of filenames passed by a Windows client will be preserved. This setting can result in reduced performance with very large directories because Samba must do a filename search and match on passed names.
+> Налаштування за замовчуванням **Авто** дозволяє клієнтам, які підтримують чутливі до регістру імена файлів (Linux CIFSVFS), повідомляти сервер Samba на основі кожного пакета, що вони бажають отримати доступ до файлової системи з урахуванням регістру (для підтримки регістру UNIX чутлива семантика). Жодна система Windows не підтримує чутливі до регістру назви файлів, тому встановлення для цього параметра значення «автоматично» те саме, що встановлення значення «Ні» для них; однак регістр імен файлів, переданих клієнтом Windows, буде збережено. Цей параметр може призвести до зниження продуктивності з дуже великими каталогами, оскільки Samba має виконувати пошук імен файлів і збігатися з переданими іменами.
 >
-> A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case. This will speed very large directory access, but some Windows applications may not function properly with this setting. For example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+> Параметр **Так** означає, що файли створюються з регістром, який передає клієнт, і доступні лише за допомогою цього самого регістру. Це прискорить доступ до дуже великого каталогу, але деякі програми Windows можуть не працювати належним чином із цим параметром. Наприклад, якщо "MyFile" створено, але програма Windows намагається відкрити "MYFILE" (що дозволено в Windows), його не буде знайдено.
 >
-> A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case. In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case. This ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
+> Значення **Примусово нижче** є особливим: регістр усіх вхідних імен файлів клієнта, а не лише нових імен файлів, буде встановлено в нижньому регістрі. Іншими словами, незалежно від того, яке ім’я зі змішаним регістром буде створено на стороні Windows, воно зберігатиметься та використовуватиметься лише в нижньому регістрі. Це гарантує, що всі програми Windows правильно знайдуть будь-який файл незалежно від регістру, але регістр не буде збережено в списках папок.
 :end
 
 :ud_settings_force_user_plug:
-> There are times when permissions on SMB shares aren't handled as expected.  Turning this feature on can help with those permissions.
-> This applies to all devices mounted with Unassigned Devices.
-> The down side is that it overrides Linux group permissions.  If you are unsure about whether or not this is necessary, leave it enabled.
+> Бувають випадки, коли дозволи на спільні ресурси SMB не обробляються належним чином. Увімкнення цієї функції може допомогти з цими дозволами.
+> Це стосується всіх пристроїв, підключених за допомогою непризначених пристроїв.
+> Недоліком є ​​те, що він перекриває дозволи групи Linux. Якщо ви не впевнені, чи потрібно це чи ні, залиште його ввімкненим.
 :end
 
 :ud_settings_nfs_shares_plug:
-> Set to **Yes** to export NFS shares.  Shares are exported Public with read and write access or Private with the rule you set.  Access is controlled with permission settings on files and folders.
+> Виберіть **Так**, щоб експортувати спільні файли NFS. Спільні ресурси експортуються для загального доступу з доступом для читання та запису або для приватного за допомогою встановленого вами правила. Доступ контролюється налаштуваннями дозволів на файли та папки.
 :end
 
 :ud_settings_disk_pass_plug:
-> Select the disk that you want to set a Password.  This is the password for this disk only and does not affect the array password/passphrase.  Leave password blank to use the array password/passphrase.
+> Виберіть диск, для якого потрібно встановити пароль. Це пароль лише для цього диска і не впливає на пароль/пароль масиву. Залиште пароль порожнім, щоб використовувати масив пароля/парольної фрази.
 :end
 
 :ud_settings_change_uuid_plug:
-> Select the disk that you want to change the UUID.  This is useful when a XFS formatted disk has been removed from the array and has the same UUID as an array disk.  Drive must be unmounted to change the UUID.
+> Виберіть диск, для якого потрібно змінити UUID. Це корисно, коли диск у форматі XFS видалено з масиву та має той самий UUID, що й диск масиву. Щоб змінити UUID, необхідно відключити диск.
 :end
 
 ; Note: August 13, 2022 - 1 missing translations
