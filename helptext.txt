@@ -197,144 +197,144 @@
 Будь ласка, зверніться до [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
 для того, що становить *безпечну* парольну фразу.
 
-**Memorize** this passphrase. **IF LOST, ENCRYPTED CONTENT CANNOT BE RECOVERED!**
+**Запам'ятати** цей пароль. **ЯКЩО ВТРАЧЕНО, ЗАШИФРОВАНИЙ ВМІСТ ВІДНОВИТИ НЕМОЖЛИВО!**
 
-#### Keyfile
+#### Ключовий файл
 
-Select a local keyfile with a stored encryption key or a binary file. The maximum size of the keyfile is 8M (8388608 byte).
+Виберіть локальний ключовий файл із збереженим ключем шифрування або двійковий файл. Максимальний розмір файлу ключів становить 8 Мб (8388608 байт).
 
-**Backup** your local keyfile. **IF LOST, ENCRYPTED CONTENT CANNOT BE RECOVERED!**
+**Назад** ваш локальний файл ключів. **ЯКЩО ВТРАЧЕНО, ЗАШИФРОВАНИЙ ВМІСТ ВІДНОВИТИ НЕМОЖЛИВО!**
 :end
 
 :info_warning_temp_help:
-*Warning disk temperature* sets the warning threshold for this hard disk temperature. Exceeding this threshold will result in a warning notification.
+*Попередження про температуру диска* встановлює поріг попередження для цієї температури жорсткого диска. Перевищення цього порогу призведе до попередження.
 
-A value of zero will disable the warning threshold (including notifications).
+Нульове значення вимкне порогове значення попередження (включаючи сповіщення).
 :end
 
 :info_critical_temp_help:
-*Critical disk temperature* sets the critical threshold for this hard disk temperature. Exceeding this threshold will result in an alert notification.
+*Критична температура диска* встановлює критичний поріг для цієї температури жорсткого диска. Перевищення цього порогу призведе до сповіщення.
 
-A value of zero will disable the critical threshold (including notifications).
+Нульове значення вимкне критичний поріг (включаючи сповіщення).
 :end
 
 :info_file_system_help:
-Enter the desired file system type.  Changing the file system type of a device will permit you to reformat
-that device using the new file system.  Be aware that **all existing data on the device will be lost**.
+Введіть потрібний тип файлової системи. Зміна типу файлової системи пристрою дозволить переформатувати
+цей пристрій використовує нову файлову систему. Майте на увазі, що **усі існуючі дані на пристрої буде втрачено**.
 :end
 
 :info_comments_help:
-This text will appear under the *Comments* column for the share in Windows Explorer.
-Enter anything you like, up to 256 characters.
+Цей текст з’явиться під стовпцем *Коментарі* спільного доступу в Провіднику Windows.
+Введіть що завгодно, до 256 символів.
 :end
 
 :info_warning_utilization_help:
-*Warning disk utilization* sets the warning threshold for this hard disk utilization. Exceeding this threshold will result in a warning notification.
+*Попередження використання диска* встановлює поріг попередження для цього використання жорсткого диска. Перевищення цього порогу призведе до попередження.
 
-When the warning threshold is set equal or greater than the critical threshold, there will be only critical notifications (warnings are not existing).
+Якщо порогове значення попередження дорівнює або перевищує критичний поріг, будуть лише критичні сповіщення (попереджень не існує).
 
-A value of zero will disable the warning threshold (including notifications).
+Нульове значення вимкне порогове значення попередження (включаючи сповіщення).
 :end
 
 :info_critical_utilization_help:
-*Critical disk utilization* sets the critical threshold for this hard disk utilization. Exceeding this threshold will result in an alert notification.
+*Критичне використання диска* встановлює критичний поріг для цього використання жорсткого диска. Перевищення цього порогу призведе до сповіщення.
 
-A value of zero will disable the critical threshold (including notifications).
+Нульове значення вимкне критичний поріг (включаючи сповіщення).
 :end
 
 :info_btrfs_balance_help:
-**Balance** will run the *btrfs balance* program to restripe the extents across all pool devices, for example,
-to convert the pool from raid1 to raid0 or vice-versa.
+**Balance** запустить програму *btrfs balance*, щоб змінити межі на всіх пристроях пулу, наприклад,
+для перетворення пулу з raid1 на raid0 або навпаки.
 
-When a *full balance* is performed, it basically rewrites everything in the current filesystem.
+Коли виконується *повний баланс*, він фактично переписує все в поточній файловій системі.
 
-A *mode conversion* affects the btrfs data extents; metadata always uses raid1 and is converted to raid1 if necessary by any balance operation.
+*Перетворення режиму* впливає на екстенти даних btrfs; метадані завжди використовують raid1 і за потреби перетворюються на raid1 будь-якою операцією балансу.
 
-The run time is potentially very long, depending on the filesystem size and speed of the device.
+Час роботи може бути дуже довгим, залежно від розміру файлової системи та швидкості пристрою.
 
-Unraid uses these default options when creating a multiple-device pool:
+Під час створення пулу з кількома пристроями Unraid використовує ці параметри за замовчуванням:
 
 `-dconvert=raid1 -mconvert=raid1`
 
-For more complete documentation, please refer to the btrfs-balance [Manpage](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
+Щоб отримати повнішу документацію, зверніться до btrfs-balance [Manpage](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
 
-*Note: raid5 and raid6 are generally still considered **experimental** by the Linux community*
+*Примітка: raid5 і raid6 зазвичай все ще вважаються **експериментальними** спільнотою Linux*
 :end
 
 :info_balance_cancel_help:
-**Cancel** will cancel the balance operation in progress.
+**Скасувати** скасує поточну операцію балансу.
 :end
 
 :info_btrfs_scrub_help:
-**Scrub** runs the *btrfs scrub* program which will read all data and metadata blocks from all
-devices and verify checksums.
+**Scrub** запускає програму *btrfs scrub*, яка зчитує всі блоки даних і метаданих з усіх
+пристрої та перевірити контрольні суми.
 
-If *Repair corrupted blocks* is checked, *btrfs scrub* will repair corrupted blocks if there’s a correct copy available.
+Якщо позначено *Repair corrupted blocks*, *btrfs scrub* відновить пошкоджені блоки, якщо доступна правильна копія.
 :end
 
 :info_scrub_cancel_help:
-**Cancel** will cancel the Scrub operation in progress.
+**Скасувати** скасує поточну операцію очищення.
 :end
 
 :info_btrfs_check_help:
-**Check** will run the *btrfs check* program to check file system integrity on the device.
+**Перевірити** запустить програму *btrfs check* для перевірки цілісності файлової системи на пристрої.
 
-The *Options* field is initialized with *--readonly* which specifies check-only.  If repair is needed, you should run
-a second Check pass, setting the *Options* to *--repair*; this will permit *btrfs check* to fix the file system.
+Поле *Параметри* ініціалізується за допомогою *--readonly*, що визначає лише перевірку. Якщо потрібен ремонт, 
+ви повинні запустити другий проход перевірки, встановивши *Параметри* на *--repair*; це дозволить *btrfs check* виправити файлову систему.
 
-After starting a Check, you should Refresh to monitor progress and status.  Depending on
-how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
-Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
-increasing for the device on the Main page.
+Після початку перевірки вам слід оновити, щоб відстежувати прогрес і статус.
+Залежно від того, наскільки велика файлова система та які помилки можуть бути наявні, операція може тривати **довго** (години).
+У вікні друкується небагато інформації, але ви можете переконатися, що операція виконується, спостерігаючи за збільшенням 
+лічильників читання/запису для пристрою на головній сторінці.
 :end
 
 :info_check_cancel_help:
-**Cancel** will cancel the Check operation in progress.
+**Скасувати** скасує поточну операцію перевірки.
 :end
 
 :info_reiserfs_check_help:
-**Check** will run the *reiserfsck* program to check file system integrity on the device.
+**Перевірити** запустить програму *reiserfsck* для перевірки цілісності файлової системи на пристрої.
 
-The *Options* field may be filled in with specific options used to fix problems in the file system. Typically, you
-first run a Check pass leaving *Options* blank.  Upon completion, if *reiserfsck* finds any problems, you must
-run a second Check pass, using a specific option as instructed by the first *reiserfsck* pass.
+Поле *Параметри* може бути заповнене певними параметрами, які використовуються для вирішення проблем у файловій системі. 
+Як правило, ви спочатку запускаєте перевірку пропуску, залишаючи *Параметри* пустими. Після завершення, якщо *reiserfsck* виявить 
+будь-які проблеми, ви повинні виконати другий проход перевірки, використовуючи певний параметр згідно з інструкціями першого проходу *reiserfsck*.
 
-After starting a Check you should Refresh to monitor progress and status.  Depending on
-how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
-Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
-increasing for the device on the Main page.
+Після запуску перевірки вам слід оновити, щоб відстежувати прогрес і статус. Залежно від того, наскільки велика файлова система 
+та які помилки можуть бути наявні, операція може тривати **довго** (години).
+У вікні друкується небагато інформації, але ви можете переконатися, що операція виконується, спостерігаючи за 
+збільшенням лічильників читання/запису для пристрою на головній сторінці.
 :end
 
 :info_reiserfs_cancel_help:
-**Cancel** will cancel the Check operation in progress.
+**Скасувати** скасує поточну операцію перевірки.
 :end
 
 :info_xfs_check_help:
-**Check** will run the *xfs_repair* program to check file system integrity on the device.
+**Check** запустить програму *xfs_repair* для перевірки цілісності файлової системи на пристрої.
 
-The *Options* field is initialized with *-n* which specifies check-only.  If repair is needed, you should run
-a second Check pass, setting the *Options* blank; this will permit *xfs_repair* to fix the file system.
+Поле *Параметри* ініціалізується за допомогою *-n*, що визначає лише перевірку. Якщо потрібен ремонт, 
+ви повинні запустити другий проход перевірки, встановивши *Параметри* порожнім; це дозволить *xfs_repair* виправити файлову систему.
 
-After starting a Check, you should Refresh to monitor progress and status.  Depending on
-how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
-Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
-increasing for the device on the Main page.
+Після початку перевірки вам слід оновити, щоб відстежувати прогрес і статус. Залежно від того, 
+наскільки велика файлова система та які помилки можуть бути наявні, операція може тривати **довго** (години). 
+У вікні друкується небагато інформації, але ви можете переконатися, що операція виконується, спостерігаючи за збільшенням 
+лічильників читання/запису для пристрою на головній сторінці.
 :end
 
 :info_xfs_cancel_help:
-**Cancel** will cancel the Check operation in progress.
+**Скасувати** скасує поточну операцію перевірки.
 :end
 
 :info_smart_notifications_help:
-SMART notifications are generated on either an increasing RAW value of the attribute, or a decreasing NORMALIZED value which reaches a predefined threshold set by the manufacturer.
+Сповіщення SMART генеруються або для збільшення значення RAW атрибута, або для зменшення значення NORMALIZED, яке досягає попередньо визначеного порогу, встановленого виробником.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+Кожен диск може мати власне спеціальне налаштування, яке переважає над налаштуванням за замовчуванням (див. глобальні параметри SMART у розділі Параметри диска).
 :end
 
 :info_tolerance_level_help:
-A tolerance level may be given to prevent that small changes result in a notification. Setting a too high tolerance level may result in critical changes without a notification.
+Щоб запобігти тому, що невеликі зміни призведуть до сповіщення, може бути встановлено рівень допуску. Встановлення занадто високого рівня допуску може призвести до критичних змін без сповіщення.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+Кожен диск може мати власне спеціальне налаштування, яке переважає над налаштуванням за замовчуванням (див. глобальні параметри SMART у розділі Параметри диска).
 :end
 
 :info_controller_type_help:
@@ -444,7 +444,7 @@ array or the cache disk/pool.
 **Г** = 1,073,741,824 (ie, 2^30)<br>
 **Т** = 1,099,511,627,776 (ie, 2^40)<br>
 
-If no suffix, a count of 1024-byte blocks is assumed.
+Якщо суфікса немає, передбачається кількість 1024-байтових блоків.
 :end
 
 :share_list_help:
