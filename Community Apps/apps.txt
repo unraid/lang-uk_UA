@@ -38,11 +38,11 @@ Plugin Note=Примітка Плагіна
 
 ; Multi Install
 Install Plugin Applications=Встановити додатки плагінів
-Select all on page=Виберіть все на сторінці
+Select all on page=Вибрати все на сторінці
 Install Application=Встановити додаток
-Install Applications=Встановити додатоки
+Install Applications=Встановити додатки
 Update Applications=Оновлення додатоків
-Are you sure you want to update %s applications=Ви впевнені, що хочете оновити програми %s
+Are you sure you want to update %s applications=Ви впевнені, що хочете оновити %s додатків
 Are you sure you want to install %s docker and %s plugin applications=Ви впевнені, що хочете встановити докер %1$s і додатки плагінів %2$s
 
 ; Searches
