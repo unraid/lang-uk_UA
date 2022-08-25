@@ -125,5 +125,3 @@ Use only when directed for support=Використовуйте лише за п
 :ud_settings_change_uuid_plug:
 > Виберіть диск, для якого потрібно змінити UUID. Це корисно, коли диск у форматі XFS видалено з масиву та має той самий UUID, що й диск масиву. Щоб змінити UUID, необхідно відключити диск.
 :end
-
-; Note: August 13, 2022 - 1 missing translations

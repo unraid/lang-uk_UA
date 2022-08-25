@@ -91,6 +91,7 @@ Update Plugin=Оновити плагін
 
 Requirements not met=Вимоги не виконані
 The requirements for this upgrade have not been met on your system=Вимоги для цього оновлення не були виконані у вашій системі
+The sidebar for the app (click info) will list the details=
 
 BACK=НАЗАД
 
@@ -439,3 +440,5 @@ An error occurred - Could not determine configuration=Сталася помил�
 ; WebGui
 Click Install to download and install the Community Applications plugin=Натисніть **Встановити**, щоб завантажити та інсталювати плагін **Програми спільноти**
 
+
+; Note: August 25, 2022 - 1 missing translations
