@@ -91,7 +91,7 @@ Update Plugin=Оновити плагін
 
 Requirements not met=Вимоги не виконані
 The requirements for this upgrade have not been met on your system=Вимоги для цього оновлення не були виконані у вашій системі
-The sidebar for the app (click info) will list the details=
+The sidebar for the app click info will list the details=The sidebar for the app (click info) will list the details=
 
 BACK=НАЗАД
 
