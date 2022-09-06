@@ -2000,28 +2000,28 @@ Optionally you can add a : after appname and request a specific version for the 
 :end
 
 :docker_client_support_thread_help:
-Link to a support thread on Lime-Technology's forum.
+Посилання на тему підтримки на форумі Lime-Technology's.
 :end
 
 :docker_client_project_page_help:
-Link to the project page (eg: www.plex.tv)
+Посилання на сторінку проекту (наприклад, www.plex.tv)
 :end
 
 :docker_client_hub_url_help:
-The path to the container's repository location on the Docker Hub.
+Шлях до розташування сховища контейнера в Docker Hub.
 :end
 
 :docker_client_template_url_help:
-This URL is used to keep the template updated.
+Ця URL-адреса використовується для оновлення шаблону.
 :end
 
 :docker_client_icon_url_help:
-Link to the icon image for your application (only displayed on dashboard if Show Dashboard apps under Display Settings is set to Icons).
+Посилання на зображення піктограми вашої програми (відображається на інформаційній панелі, лише якщо для параметра «Показувати програми інформаційної панелі» в розділі «Налаштування дисплея» встановлено значення «Значки»).
 :end
 
 :docker_client_webui_help:
-When you click on an application icon from the Docker Containers page, the WebUI option will link to the path in this field.
-Use [IP] to identify the IP of your host and [PORT:####] replacing the #'s for your port.
+Коли ви клацаєте піктограму програми на сторінці Docker Containers, опція WebUI посилається на шлях у цьому полі.
+Використовуйте [IP], щоб визначити IP-адресу вашого хоста, і [PORT:####] замість # для вашого порту.
 :end
 
 :docker_extra_parameters_help:
