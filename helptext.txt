@@ -338,73 +338,73 @@
 :end
 
 :info_controller_type_help:
-By default automatic controller selection is done by smartctl to read the SMART information. Certain controllers however need specific settings for smartctl to work.
-Use this setting to select your controller type and fill-in the specific disk index and device name for your situation. Use the manufacturer's documentation to find the relevant information.
+За замовчуванням автоматичний вибір контролера виконується за допомогою smartctl для читання інформації SMART. Однак деякі контролери потребують спеціальних налаштувань для роботи smartctl.
+Використовуйте цей параметр, щоб вибрати тип контролера та заповнити індекс конкретного диска та назву пристрою для вашої ситуації. Використовуйте документацію виробника, щоб знайти відповідну інформацію.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+Кожен диск може мати власне спеціальне налаштування, яке переважає над налаштуванням за замовчуванням (див. глобальні параметри SMART у розділі Параметри диска).
 :end
 
 :info_attribute_notifications_help:
-The user can enable or disable notifications for the given SMART attributes. It is recommended to keep the default, which is ALL selected attributes,
-when certain attributes are not present on your hard disk or do not provide the correct information, these may be excluded.
-In addition custom SMART attributes can be entered to generate notifications. Be careful in this selection,
-it may cause an avalance of notifcations if inappropriate SMART attributes are chosen.
+Користувач може ввімкнути або вимкнути сповіщення для заданих атрибутів SMART. Рекомендується зберегти значення за замовчуванням, 
+тобто ВСІ вибрані атрибути, якщо певні атрибути відсутні на вашому жорсткому диску або не надають правильну інформацію, їх можна виключити.
+Крім того, для створення сповіщень можна ввести власні атрибути SMART. Будьте обережні з цим вибором, 
+це може спричинити низку повідомлень, якщо вибрано невідповідні атрибути SMART.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+Кожен диск може мати власне спеціальне налаштування, яке переважає над налаштуванням за замовчуванням (див. глобальні параметри SMART у розділі Параметри диска).
 :end
 
 :selftest_history_help:
-Press **Show** to view the self-test history as is kept on the disk itself.
-This feature is only available when the disk is in active mode.
+Натисніть **Показати**, щоб переглянути історію самоперевірки, яка зберігається на самому диску.
+Ця функція доступна лише тоді, коли диск знаходиться в активному режимі.
 :end
 
 :selftest_error_log_help:
-Press **Show** to view the error report as is kept on the disk itself.
-This feature is only available when the disk is in active mode.
+Натисніть **Показати**, щоб переглянути звіт про помилку, який зберігається на самому диску.
+Ця функція доступна лише тоді, коли диск знаходиться в активному режимі.
 :end
 
 :selftest_short_test_help:
-Starts a *short* SMART self-test, the estimated duration can be viewed under the *Capabilities* section. This is usually a few minutes.
+Запускає *коротку* самоперевірку SMART, приблизну тривалість можна переглянути в розділі *Можливості*. Зазвичай це кілька хвилин.
 
-When the disk is spun down, it will abort any running self-test.
-This feature is only available when the disk is in active mode.
+Коли диск обертається, він перериває будь-яке запущене самотестування.
+Ця функція доступна лише тоді, коли диск знаходиться в активному режимі.
 :end
 
 :selftest_long_test_help:
-Starts an *extended* SMART self-test, the estimated duration can be viewed under the *Capabilities* section. This is usually several hours.
+Запускає *розширену* самоперевірку SMART, приблизну тривалість можна переглянути в розділі *Можливості*. Зазвичай це кілька годин.
 
-When the disk is spun down, it will abort any running self-test. It is advised to disable the spin down timer of the disk
-to avoid interruption of this self-test.
+Коли диск обертається, він перериває будь-яке запущене самотестування. Рекомендується вимкнути таймер обертання диска
+щоб уникнути переривання цього самотестування.
 
-This feature is only available when the disk is in active mode.
+Ця функція доступна лише тоді, коли диск знаходиться в активному режимі.
 :end
 
 :selftest_result_help:
-When no test is running it will show here the latest obtained self-test result (if available).
-Otherwise a progress indicator (percentage value) is shown for a running test.
+Якщо тест не виконується, тут буде показано останній отриманий результат самотестування (якщо доступний).
+В іншому випадку для поточного тесту відображається індикатор прогресу (відсоткове значення).
 :end
 
 :smart_attributes_help:
-This list shows the SMART attributes supported by this disk. For more information about each SMART attribute, it is recommended to search online.
+Цей список показує атрибути SMART, які підтримуються цим диском. Для отримання додаткової інформації про кожен атрибут SMART рекомендується шукати в Інтернеті.
 
-Attributes in *orange* may require your attention. They have a **raw value** greater than zero and may indicate a pending disk failure.
+Атрибути, виділені *помаранчевим*, можуть потребувати вашої уваги. Вони мають **необроблене значення** більше за нуль і можуть вказувати на несправність диска.
 
-Special attention is required when the particular attribute raw value starts to increase over time. When in doubt, consult the Limetech forum for advice.
+Особлива увага потрібна, коли необроблене значення конкретного атрибута починає збільшуватися з часом. У разі сумнівів зверніться за порадою на форум Limetech.
 :end
 
 :smart_capabilities_help:
-This list shows the SMART capabilities supported by this disk.
+Цей список показує можливості SMART, які підтримує цей диск.
 
-Observe here the estimated duration of the SMART short and extended self-tests.
+Зверніть увагу на приблизну тривалість короткого та розширеного самоперевірок SMART.
 :end
 
 :smart_identity_help:
-This list shows the SMART identity information of this disk
+Цей список показує ідентифікаційну інформацію SMART цього диска
 :end
 
 :open_devices_help:
-These are devices installed in your server but not assigned to either the parity-protected
-array or the cache disk/pool.
+Це пристрої, встановлені на вашому сервері, але не призначені ні до масиву, захищеного паритетом, 
+ні до кеш-диска/пулу.
 :end
 
 :flash_backup_help:
@@ -891,17 +891,17 @@ Samba на основі кожного пакета, що вони бажают�
 :end
 
 :disk_default_warning_utilization_help:
-*Warning disk utilization* sets the default warning threshold for all hard disks utilization. Exceeding this threshold will result in a warning notification.
+*Попередження використання диска* встановлює поріг попередження за замовчуванням для всіх жорстких дисків. Перевищення цього порогу призведе до попередження.
 
-When the warning threshold is set equal or greater than the critical threshold, there will be only critical notifications (warnings are not existing).
+Якщо порогове значення попередження дорівнює або перевищує критичний поріг, будуть лише критичні сповіщення (попереджень не існує).
 
-A value of zero will disable the warning threshold (including notifications).
+Нульове значення вимкне порогове значення попередження (включаючи сповіщення).
 :end
 
 :disk_default_critical_utilization_help:
-*Critical disk utilization* sets the default critical threshold for all hard disks utilization. Exceeding this threshold will result in an alert notification.
+*Критичне використання диска* встановлює критичний поріг за умовчанням для всіх жорстких дисків. Перевищення цього порогу призведе до сповіщення.
 
-A value of zero will disable the critical threshold (including notifications).
+Нульове значення вимкне критичний поріг (включаючи сповіщення).
 :end
 
 :disk_default_warning_temperature_help:
