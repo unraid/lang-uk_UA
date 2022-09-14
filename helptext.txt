@@ -2025,187 +2025,187 @@ Optionally you can add a : after appname and request a specific version for the 
 :end
 
 :docker_extra_parameters_help:
-If you wish to append additional commands to your Docker container at run-time, you can specify them here.<br>
-For all possible Docker run-time commands, see here: <a href="https://docs.docker.com/reference/run/" target="_blank">https://docs.docker.com/reference/run/</a>
+Якщо ви хочете додати додаткові команди до контейнера Docker під час виконання, ви можете вказати їх тут.<br>
+Усі можливі команди середовища виконання Docker див. тут: <a href="https://docs.docker.com/reference/run/" target="_blank">https://docs.docker.com/reference/run/</a>
 :end
 
 :docker_post_arguments_help:
-If you wish to append additional arguments AFTER the container definition, you can specify them here.
-The content of this field is container specific.
+Якщо ви бажаєте додати додаткові аргументи ПІСЛЯ визначення контейнера, ви можете вказати їх тут.
+Вміст цього поля залежить від контейнера.
 :end
 
 :docker_cpu_pinning_help:
-Checking a CPU core(s) will limit the container to run on the selected cores only. Selecting no cores lets the container run on all available cores (default)
+Перевірка ядра ЦП обмежить роботу контейнера лише на вибраних ядрах. Якщо не вибрати жодного ядра, контейнер працюватиме на всіх доступних ядрах (за замовчуванням)
 :end
 
 :docker_fixed_ip_help:
-If the Bridge type is selected, the application’s network access will be restricted to only communicating on the ports specified in the port mappings section.
-If the Host type is selected, the application will be given access to communicate using any port on the host that isn’t already mapped to another in-use application/service.
-Generally speaking, it is recommended to leave this setting to its default value as specified per application template.
+Якщо вибрано тип Bridge, мережевий доступ програми буде обмежено лише з’єднанням через порти, указані в розділі зіставлення портів.
+Якщо вибрано тип хоста, програмі буде надано доступ для зв’язку за допомогою будь-якого порту на хості, який ще не зіставлено з іншою активною програмою/службою.
+Загалом, рекомендується залишити значення цього параметра за замовчуванням, як зазначено в шаблоні програми.
 
-IMPORTANT NOTE:  If adjusting port mappings, do not modify the settings for the Container port as only the Host port can be adjusted.
+ВАЖЛИВА ПРИМІТКА. Якщо ви налаштовуєте зіставлення портів, не змінюйте параметри порту контейнера, оскільки можна налаштувати лише порт хоста.
 :end
 
 :docker_privileged_help:
-For containers that require the use of host-device access directly or need full exposure to host capabilities, this option will need to be selected.
-For more information, see this link: <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
+Для контейнерів, які вимагають безпосереднього доступу до хост-пристрою або потребують повного доступу до можливостей хосту, цей параметр потрібно вибрати.
+Для отримання додаткової інформації перегляньте це посилання: <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
 :end
 
 ; sysdevs help - added May 18, 2020
 :sysdevs_iommu_groups_help:
 This displays a list of IOMMU groups available on your system along with the output of the `lspci` command for each IOMMU group.  The numeric identifiers are used to configure PCI pass-through.
 
-Devices you select will be bound to the vfio-pci driver at boot, which makes them available for assignment to a virtual machine, and also prevents the Linux kernel from automatically binding them to any present host driver.
+Вибрані вами пристрої будуть прив’язані до драйвера vfio-pci під час завантаження, що робить їх доступними для призначення віртуальній машині, а також запобігає автоматичному прив’язуванню ядра Linux до будь-якого поточного драйвера хоста.
 
-**Note that selecting a device will bind not only the specified device(s), but *all* other devices in the same IOMMU group as well.**
+**Зауважте, що вибір пристрою прив’яже не лише вказані пристрої, а й *усі* інші пристрої в одній групі IOMMU.**
 
-&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;This symbol indicates the device is currently bound to the vfio-pci driver.
+&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;Цей символ вказує, що пристрій наразі прив’язано до драйвера vfio-pci.
 
-&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;This symbol indicates the device supports FLR (Function Level Reset).
+&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;Цей символ вказує на те, що пристрій підтримує FLR (Function Level Reset).
 
-<input type="checkbox" value="" disabled>&nbsp;&nbsp;If a checkbox is greyed out it means the device is in use by Unraid and can not be passed through.
+<input type="checkbox" value="" disabled>&nbsp;&nbsp;Якщо прапорець неактивний, це означає, що пристрій використовується Unraid і його не можна передати.
 :end
 
 :sysdevs_thread_pairings_help:
-This displays a list of CPU thread pairings.
+Це відображає список пар потоків CPU.
 :end
 
 :sysdevs_usb_devices_help:
-This displays the output of the `lsusb` command.  The numeric identifiers are used to configure PCI pass-through.
+Це відображає вихід команди `lsusb`. Числові ідентифікатори використовуються для налаштування наскрізного проходу PCI.
 :end
 
 :sysdevs_scsi_devices_help:
-This displays the output of the `lsscsi` command.  The numeric identifiers are used to configure PCI pass-through.
+Це відображає вихід команди `lsscsi`. Числові ідентифікатори використовуються для налаштування наскрізного проходу PCI.
 
-Note that linux groups ATA, SATA and SAS devices with true SCSI devices.
+Зауважте, що Linux групує пристрої ATA, SATA та SAS зі справжніми пристроями SCSI.
 :end
 
 ; unraid.net help - added March 11, 2021
 :unraidnet_wanpanel_help:
-WAN Port is the external TCP port number setup on your router to NAT/Port Forward traffic from the internet to this
-Unraid server SSL port for secure web traffic.
+Порт WAN – це номер зовнішнього TCP-порту, налаштований на вашому маршрутизаторі на NAT/порт. Пересилання трафіку з Інтернету на цей
+Порт SSL сервера Unraid для безпечного веб-трафіку.
 :end
 
 :unraidnet_inactivespanel_help:
-Click Activate to set up a local git repo for your local USB Flash boot device and connect to a dedicated remote on unraid.net tied to this server.
+Натисніть «Активувати», щоб налаштувати локальне сховище git для локального завантажувального USB-Flash-пристрою та підключитися до виділеного віддаленого пристрою на unraid.net, пов’язаного з цим сервером.
 :end
 
 :unraidnet_changespanel_help:
-The Not Up-to-date status indicates there are local files which are changed vs. the remote on unraid.net.
+Статус «Не оновлено» вказує на наявність змінених локальних файлів порівняно з віддаленими файлами на unraid.net.
 
-Click Update to push changes to the remote.
+Натисніть «Оновити», щоб надіслати зміни на пульт дистанційного керування.
 
-Click Changes to see what has changed.
+Натисніть «Зміни», щоб побачити, що змінилося.
 :end
 
 :unraidnet_uptodatepanel_help:
-The Up-to-date status indicates your local configuration matches that stored on the unraid.net remote.
+Актуальний статус вказує на те, що ваша локальна конфігурація збігається зі збереженою на віддаленому пристрої unraid.net.
 :end
 
 :unraidnet_activepanel_help:
-Click Deactivate to pause communication with your remote on unraid.net.
+Натисніть Деактивувати, щоб призупинити зв’язок із дистанційним керуванням на unraid.net.
 
-Click Reinitialize to erase all change history in both local and unraid.net remote.
+Натисніть Reinitialize, щоб стерти всю історію змін як на локальному, так і на unraid.net віддаленому.
 :end
 
 ; WireGuard help text
 
 :wg_local_name_help:
-Use this field to set a name for this connection and make it easily recognizable. The same name will appear in the configuration of any peers.
+Використовуйте це поле, щоб встановити назву для цього з’єднання та зробити його легко впізнаваним. Те саме ім’я з’явиться в конфігурації будь-яких однорангових пристроїв.
 :end
 
 :wg_generate_keypair_help:
-Use the **Generate Keypair** button to automatically create a uniqe private and public key combination.<br>
-Or paste in an existing private key, generated by WireGuard. Do **NOT** share this private key with others!
+Використовуйте кнопку **Створити пару ключів**, щоб автоматично створити унікальну комбінацію закритого та відкритого ключів.<br>
+Або вставте наявний закритий ключ, згенерований WireGuard. **НЕ** діліться цим закритим ключем з іншими!
 :end
 
 :wg_local_tunnel_network_pool_help:
-WireGuard tunnels need an internal IP address. Assign a network pool using the default IPv4 network <?=$netpool['wg0']?>/24
-or the default IPv6 network <?=$netpool6['wg0']?>/64 or assign your own network pool from which automatic assignment can be done for both this server and any peers.
+Тунелям WireGuard потрібна внутрішня IP-адреса. Призначте мережевий пул за допомогою мережі IPv4 за умовчанням <?=$netpool['wg0']?>/24
+або мережу IPv6 за замовчуванням <?=$netpool6['wg0']?>/64 або призначте свій власний мережевий пул, з якого можна виконувати автоматичне призначення як для цього сервера, так і для будь-яких однорангових вузлів.
 
-The *tunnel network pool* must be a unique network not already existing on the server or any of the peers.
+*Тунельний мережевий пул* має бути унікальною мережею, яка ще не існує на сервері чи жодному з однорангових вузлів.
 :end
 
 :wg_local_tunnel_network_pool_X_help:
-WireGuard tunnels need an internal IP address. Assign a network pool using the default IPv4 network <?=$netpool['wgX']?>/24 or
-the default IPv6 network <?=$netpool6['wgX']?>/64 or assign your own network pool from which automatic assignment can be done for both this server and any peers.
+Тунелям WireGuard потрібна внутрішня IP-адреса. Призначте мережевий пул за допомогою мережі IPv4 за умовчанням <?=$netpool['wgX']?>/24 або
+мережу IPv6 за замовчуванням <?=$netpool6['wgX']?>/64 або призначте власний мережевий пул, з якого можна виконувати автоматичне призначення як для цього сервера, так і для будь-яких однорангових вузлів.
 
-The *tunnel network pool* must be a unique network not already existing on the server or any of the peers.
+*Тунельний мережевий пул* має бути унікальною мережею, яка ще не існує на сервері чи жодному з однорангових вузлів.
 :end
 
 :wg_local_tunnel_address_help:
-This field is auto filled-in when a local tunnel network pool is created. It is allowed to overwrite the assignment, but this is normally not necessary. Use with care when changing manually.
+Це поле автоматично заповнюється під час створення пулу локальної тунельної мережі. Дозволяється перезаписувати призначення, але зазвичай це не обов’язково. Використовуйте обережно, змінюючи вручну.
 :end
 
 :wg_local_tunnel_address_help:
-This field is auto filled-in when a local tunnel network pool is created. It is allowed to overwrite the assignment, but this is normally not necessary. Use with care when changing manually.
+Це поле автоматично заповнюється під час створення пулу локальної тунельної мережі. Дозволяється перезаписувати призначення, але зазвичай це не обов’язково. Використовуйте обережно, змінюючи вручну.
 :end
 
 :wg_local_endpoint_help:
-This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.unraid.net* or the public address of the server.<br>
-This allows VPN tunnels to be established from external peers to the server.<br>
-Configure the correct port forwarding on your router (default port is <?=$netport['wg0']?> but this may be changed) to allow any incoming connections to reach the server.
+Це поле автоматично заповнюється загальнодоступним ім’ям домену керування *www.&lt;hash&gt;.unraid.net* або публічною адресою сервера.<br>
+Це дозволяє встановлювати VPN-тунелі від зовнішніх вузлів до сервера.<br>
+Налаштуйте правильну переадресацію портів на маршрутизаторі (порт за замовчуванням <?=$netport['wg0']?>, але це можна змінити), щоб дозволити будь-яким вхідним з’єднанням досягати сервера.
 
-Users with a registered domain name can use this field to specify how their server is known on the Internet. E.g. www.myserver.mydomain.<br>
-Again make sure your router is properly set up.
+Користувачі із зареєстрованим доменним іменем можуть використовувати це поле, щоб указати, як їхній сервер відомий в Інтернеті. наприклад www.myserver.mydomain.<br>
+Знову переконайтеся, що маршрутизатор правильно налаштовано.
 
-Note to Cloudflare users: the Cloudflare proxy is designed for http traffic, it is not able to proxy VPN traffic. You must disable the Cloudflare proxy in order to use VPN with your domain.
+Примітка для користувачів Cloudflare: проксі Cloudflare розроблено для HTTP-трафіку, він не може проксі-сервер VPN-трафіку. Ви повинні вимкнути проксі Cloudflare, щоб використовувати VPN зі своїм доменом.
 :end
 
 :wg_local_endpoint_X_help:
-This field is automatically filled in with the public management domain name *www.&lt;hash&gt;.unraid.net* or the public address of the server.<br>
-This allows VPN tunnels to be established from external peers to the server.<br>
-Configure the correct port forwarding on your router (default port is <?=$netport['wgX']?> but this may be changed) to allow any incoming connections to reach the server.
+Це поле автоматично заповнюється загальнодоступним ім’ям домену керування *www.&lt;hash&gt;.unraid.net* або публічною адресою сервера.<br>
+Це дозволяє встановлювати VPN-тунелі від зовнішніх вузлів до сервера.<br>
+Налаштуйте правильну переадресацію портів на маршрутизаторі (порт за замовчуванням — <?=$netport['wgX']?>, але це можна змінити), щоб дозволити будь-яким вхідним з’єднанням досягати сервера.
 
-Users with a registered domain name can use this field to specify how their server is known on the Internet. E.g. www.myserver.mydomain.<br>
-Again make sure your router is properly set up.
+Користувачі із зареєстрованим доменним іменем можуть використовувати це поле, щоб указати, як їхній сервер відомий в Інтернеті. наприклад www.myserver.mydomain.<br>
+Знову переконайтеся, що маршрутизатор правильно налаштовано.
 
-Note to Cloudflare users: the Cloudflare proxy is designed for http traffic, it is not able to proxy VPN traffic. You must disable the Cloudflare proxy in order to use VPN with your domain.
+Примітка для користувачів Cloudflare: проксі Cloudflare розроблено для HTTP-трафіку, він не може проксі-сервер VPN-трафіку. Ви повинні вимкнути проксі Cloudflare, щоб використовувати VPN зі своїм доменом.
 :end
 
 :wg_local_server_uses_nat_help:
 When NAT is enabled, the server uses its own LAN address when forwarding traffic from the tunnel to other devices in the LAN network.
-Use this setting when no router modifications are desired, but this approach doesn't work with Docker containers using custom IP addressess.
+Використовуйте цей параметр, якщо не потрібно модифікувати маршрутизатор, але цей підхід не працює з контейнерами Docker, які використовують настроювані IP-адреси.
 
-When NAT is disabled, the server uses the WireGuard tunnel address when forwarding traffic.
-In this case it is required that the default gateway (router) has a static route configured to refer tunnel address back to the server.
+Якщо NAT вимкнено, сервер використовує адресу тунелю WireGuard під час пересилання трафіку.
+У цьому випадку необхідно, щоб шлюз за замовчуванням (маршрутизатор) мав статичний маршрут, налаштований для повернення адреси тунелю на сервер.
 :end
 
 :wg_local_gateway_uses_upnp_help:
-Defaults to YES if the local gateway has UPnP enabled and is responding to requests.<br>
-When UPnP is enabled, it is not necessary to configure port forwarding on the router to allow incoming tunnel connections. This is done automatically.
+За умовчанням встановлено ТАК, якщо локальний шлюз увімкнув UPnP і відповідає на запити.<br>
+Коли UPnP увімкнено, немає необхідності налаштовувати переадресацію портів на маршрутизаторі, щоб дозволити вхідні тунельні підключення. Це робиться автоматично.
 :end
 
 :wg_local_tunnel_firewall_help:
-The firewall function controls remote access over the WireGuard tunnel to specific hosts and/or subnets.<br>
-The default rule is "deny" and blocks addresses specified in this field, while allowing all others.<br>
-Changing the rule to "allow" inverts the selection, meaning only the specified addresses are allowed and all others are blocked.<br>
-Use a comma as separator when more than one IP address is entered.
+Функція брандмауера контролює віддалений доступ через тунель WireGuard до певних хостів і/або підмереж.<br>
+Типовим правилом є "заборонити", воно блокує адреси, указані в цьому полі, і дозволяє всі інші.<br>
+Зміна правила на «дозволити» інвертує вибір, тобто дозволені лише вказані адреси, а всі інші блокуються.<br>
+Використовуйте кому як роздільник, якщо введено більше ніж одну IP-адресу.
 :end
 
 :wg_mtu_size_help:
-Leave this to the default automatic mode to select the MTU size. This MTU size is common for all peer connections.
+Залиште це в автоматичному режимі за замовчуванням, щоб вибрати розмір MTU. Цей розмір MTU є загальним для всіх однорангових з’єднань.
 :end
 
 :wg_peer_configuration_help:
-The <i class='fa fa-fw fa-eye'></i> icon is used to view a peer's configuration. A configuration can be downloaded or read directly for instant set up of the peer.<br>
-The icon is disabled when no peer configuration exists or the user has made changes to the existing settings which are not applied yet.
+Піктограма <i class='fa fa-fw fa-eye'></i> використовується для перегляду конфігурації однорангового пристрою. Конфігурацію можна завантажити або прочитати безпосередньо для миттєвого налаштування вузла.<br>
+Піктограма вимкнена, якщо немає конфігурації однорангового пристрою або користувач вніс зміни до наявних налаштувань, які ще не застосовано.
 
-The <i class='fa fa-fw fa-key'></i> icon is used to show or hide the private, public and preshared keys. Note that these fields are always shown when no keys are set.
+Піктограма <i class='fa fa-fw fa-key'></i> використовується, щоб показати або приховати приватні, публічні та попередні ключі. Зауважте, що ці поля завжди відображаються, якщо ключі не встановлено.
 :end
 
 :wg_peer_name_help:
-Use this field to set a name for this peer connection and make it easily recognizable. The same name will appear in the configuration of the peer at the opposite side.
+Використовуйте це поле, щоб встановити назву для цього однорангового з’єднання та зробити його легко впізнаваним. Те саме ім’я з’явиться в конфігурації однорангового вузла на протилежній стороні.
 :end
 
 :wg_peer_preshared_key_help:
-For added security a preshared key can be used. Use the **Generate Key** button to automatically create a unique preshared key.<br>
-This key is the same at both server and peer side and is added to the peer configuration as well.
+Для додаткової безпеки можна використовувати попередній ключ. Використовуйте кнопку **Створити ключ**, щоб автоматично створити унікальний попередній ключ.<br>
+Цей ключ є однаковим як на стороні сервера, так і на стороні однорангового пристрою, а також додається до конфігурації однорангового пристрою.
 :end
 
 :wg_peer_tunnel_address_help:
-This field is auto filled-in when a local tunnel network pool is created. It is allowed to overwrite the assignment, but this is normally not necessary. Use with care when changing manually.<br>
-Each peer must have a unique tunnel IP address.
+Це поле автоматично заповнюється під час створення пулу локальної тунельної мережі. Дозволяється перезаписувати призначення, але зазвичай це не обов’язково. Використовуйте обережно, змінюючи вручну.<br>
+Кожен вузол повинен мати унікальну IP-адресу тунелю.
 :end
 
 :wg_peer_endpoint_help:
