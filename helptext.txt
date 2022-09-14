@@ -2053,7 +2053,7 @@ Optionally you can add a : after appname and request a specific version for the 
 
 ; sysdevs help - added May 18, 2020
 :sysdevs_iommu_groups_help:
-This displays a list of IOMMU groups available on your system along with the output of the `lspci` command for each IOMMU group.  The numeric identifiers are used to configure PCI pass-through.
+Це відображає список груп IOMMU, доступних у вашій системі, а також результат команди `lspci` для кожної групи IOMMU. Числові ідентифікатори використовуються для налаштування наскрізного проходу PCI.
 
 Вибрані вами пристрої будуть прив’язані до драйвера vfio-pci під час завантаження, що робить їх доступними для призначення віртуальній машині, а також запобігає автоматичному прив’язуванню ядра Linux до будь-якого поточного драйвера хоста.
 
@@ -2164,7 +2164,7 @@ This displays a list of IOMMU groups available on your system along with the out
 :end
 
 :wg_local_server_uses_nat_help:
-When NAT is enabled, the server uses its own LAN address when forwarding traffic from the tunnel to other devices in the LAN network.
+Коли NAT увімкнено, сервер використовує власну адресу локальної мережі під час пересилання трафіку з тунелю на інші пристрої в мережі локальної мережі.
 Використовуйте цей параметр, якщо не потрібно модифікувати маршрутизатор, але цей підхід не працює з контейнерами Docker, які використовують настроювані IP-адреси.
 
 Якщо NAT вимкнено, сервер використовує адресу тунелю WireGuard під час пересилання трафіку.
