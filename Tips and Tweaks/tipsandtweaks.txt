@@ -1,73 +1,74 @@
-Tips=Поради
-Tweaks=Твіки
-The Tips below are suggestions, workarounds for known problems, and potential fixes=У наведених нижче порадах наведено пропозиції, обхідні шляхи вирішення відомих проблем і можливі способи їх вирішення
-It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Рекомендовано оновити Unraid до останньої стабільної версії, щоб отримати найновіші функції, виправлення помилок і оновлення безпеки
-Support for older versions of Unraid is being phased out=Підтримка старих версій Unraid поступово припиняється
-Many plugins are no longer compatible with older Unraid versons=Багато плагінів більше не сумісні зі старими версіями Unraid
-Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Встановіть плагін Fix Common Problems і вирішіть будь-які проблеми конфігурації Unraid
-Use the Update Assistant that is part of the Fix Common Problems plugin=Встановіть плагін Fix Common Problems і вирішіть будь-які проблеми конфігурації Unraid
-This will identify potential problems to be solved before you upgrade the Unraid OS=Це дозволить визначити потенційні проблеми, які необхідно вирішити перед оновленням Unraid OS
-Check the=Перевірте
-Tips and Tweaks wiki=Поради та налаштування wiki
-for additional ideas on improving your Unraid performance and solving problems=для отримання додаткових ідей щодо покращення продуктивності Unraid і вирішення проблем
-Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=Деякі повідомляють про кращу продуктивність віртуальної машини з потоковим медіа та ігровими віртуальними машинами з пропозиціями щодо цього
-post=пост
-Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=Деякі повідомляють про швидшу та стабільнішу продуктивність мережі, вносячи зміни в параметри мережі на вкладці Tweaks цього плагіна
-If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Якщо у вас є процесор Intel, може здатися, що всі процесори постійно працюють на повній швидкості
-Read this=Прочитай це
-for information on the issue=для інформації з питання
-If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Якщо ви встановите 'Power Save' CPU Регулятор, ви можете побачити, що ваші процесори застрягли на 800 МГц
-It is recommended you use the 'Performance' Governor for best performance and power savings=Рекомендовано використовувати 'Performance' Регулятор для найкращої продуктивності та економії енергії
-It is recommended to use the pstate driver on Intel processors if you want the most performance=Рекомендується використовувати драйвер pstate на процесорах Intel, якщо вам потрібна найбільша продуктивність
-Note=Примітка
-You can check CPU frequencies on the command line with=Ви можете перевірити частоти процесора в командному рядку за допомогою
-The dashboard shows CPU loading and not CPU frequency=Інформаційна панель показує завантаження CPU, а не частоту CPU
-If you configure VLANs on Unraid, you should make Unraid the Master Browser=Якщо ви налаштовуєте VLAN на Unraid, вам слід зробити Unraid головним браузером
-If you dont Unraid may not detect the Master Browser for all network interfaces correctly=Якщо ви цього не зробите, Unraid може неправильно визначити головний браузер для всіх мережевих інтерфейсів
-Some people are reporting OOM out of memory errors=Деякі люди повідомляють про помилки браку пам’яті OOM
-This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=Здається, зараз це відбувається частіше через великий обсяг пам’яті, встановленої в Unraid, і занадто високі налаштування дискового кешу за замовчуванням
-If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=Якщо у вас виникають помилки OOM, спробуйте налаштувати параметри дискового кешу на сторінці налаштувань
-There is a very cool feature in Unraid 6 and up that can be used to capture your logs and help in troubleshooting a situation where your server locks up or becomes unresponsive=В Unraid 6 і новіших версіях є дуже цікава функція, яку можна використовувати для запису ваших журналів і допомоги у вирішенні ситуації, коли ваш сервер блокується або перестає відповідати
-Go to Settings->Syslog Server and enable the Syslog Server=Перейдіть до Налаштування ->Сервер Syslog і ввімкніть Сервер системного журналу
-Put the IP address of your server in the Remote syslog server field=Введіть IP-адресу вашого сервера в полі Віддалений сервер системного журналу
-This will log all your server log enries to the Syslog Server and save the log to an array share=Це зареєструє всі записи журналу вашого сервера на Сервер Syslog і збереже журнал у спільному масиві
 After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Після перезавантаження із заблокованого або завислого сервера ви можете переглянути збережений журнал за допомогою засобу перегляду Syslog
-The first thing you should do is to install the Fix Common Problems plugin to find and fix common problems=Перше, що вам слід зробити, це встановити плагін Fix Common Problems, щоб знаходити та виправляти типові проблеми
-Correct any problems that are identified before doing any tweaking=Виправте будь-які виявлені проблеми, перш ніж робити будь-які налаштування
-You may actually cause more problems than you solve if there are problems with your Unraid configuration=Ви можете створити більше проблем, ніж вирішити, якщо є проблеми з конфігурацією Unraid
-Make one change at a time and verify if it improves your situation=Робіть одну зміну за раз і перевіряйте, чи це покращить вашу ситуацію
-Make changes slowly=Вносьте зміни повільно
-Making changes here can briefly interrupt your network operation=Внесення змін тут може призвести до короткого переривання роботи мережі
-Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=Деякі параметри споживатимуть оперативну пам’ять і можуть призвести до того, що Linux завершить деякі процеси, щоб звільнити оперативну пам’ять
+Check the=Перевірте
 Click on Help for more information=Щоб отримати додаткову інформацію, натисніть «Help».
+Correct any problems that are identified before doing any tweaking=Виправте будь-які виявлені проблеми, перш ніж робити будь-які налаштування
+Current Disk Cache Settings=Поточні налаштування дискового кешу
+Current Inotify Settings=Поточні налаштування Inotify
+Current NIC settings=Поточні налаштування мережевої карти
 Disable NIC Flow Control=Вимкніть керування потоком мережевого NIC
 Disable NIC Offload=Вимкніть розвантаження NIC
+Disk Cache=Дисковий кеш
+Dont change the Disk Cache settings until you read and understand this=Не змінюйте налаштування дискового кешу, доки не прочитаєте та не зрозумієте це
+Driver=Драйвер
+Enable Intel TurboAMD Performance Boost=Увімкніть Intel TurboAMD Performance Boost
+Enable syslog Archiving=Увімкнути архівацію системного журналу
 Ethernet NIC Rx Buffer=Ethernet NIC Rx буфер
 Ethernet NIC Tx Buffer=Ethernet NIC Tx буфер
 Ethernet NICS=Ethernet NICS
-Dont change the Disk Cache settings until you read and understand this=Не змінюйте налаштування дискового кешу, доки не прочитаєте та не зрозумієте це
-Guide=Гід
-Disk Cache=Дисковий кеш
-Max Watches=Максимум Годин
-CPU Scaling Governor=Регулятор масштабування CPU
-Enable Intel TurboAMD Performance Boost=Увімкніть Intel TurboAMD Performance Boost
-Time to set=Час встановити
-Enable syslog Archiving=Увімкнути архівацію системного журналу
-Number of syslogs to Archive=Кількість системних журналів для архіву
-Processes to kill before Array is Stopped=Процеси, які потрібно знищити перед зупинкою масиву
-Current NIC settings=Поточні налаштування мережевої карти
-Current Disk Cache Settings=Поточні налаштування дискового кешу
-Current Inotify Settings=Поточні налаштування Inotify
-CPU Frequency Scaling=Масштабування частоти CPU
 Flow Control=Управління потоком
+for additional ideas on improving your Unraid performance and solving problems=для отримання додаткових ідей щодо покращення продуктивності Unraid і вирішення проблем
+for information on the issue=для інформації з питання
+Go to Settings->Syslog Server and enable the Syslog Server=Перейдіть до Налаштування ->Сервер Syslog і ввімкніть Сервер системного журналу
+Governor=Регулятор
+Guide=Гід
+If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=Якщо у вас виникають помилки OOM, спробуйте налаштувати параметри дискового кешу на сторінці налаштувань
+If you configure VLANs on Unraid, you should make Unraid the Master Browser=Якщо ви налаштовуєте VLAN на Unraid, вам слід зробити Unraid головним браузером
+If you dont Unraid may not detect the Master Browser for all network interfaces correctly=Якщо ви цього не зробите, Unraid може неправильно визначити головний браузер для всіх мережевих інтерфейсів
+If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Якщо у вас є процесор Intel, може здатися, що всі процесори постійно працюють на повній швидкості
+If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Якщо ви встановите 'Power Save' CPU Регулятор, ви можете побачити, що ваші процесори застрягли на 800 МГц
+Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Встановіть плагін Fix Common Problems і вирішіть будь-які проблеми конфігурації Unraid
+It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Рекомендовано оновити Unraid до останньої стабільної версії, щоб отримати найновіші функції, виправлення помилок і оновлення безпеки
+It is recommended to use the pstate driver on Intel processors if you want the most performance=Рекомендується використовувати драйвер pstate на процесорах Intel, якщо вам потрібна найбільша продуктивність
+It is recommended you use the 'Performance' Governor for best performance and power savings=Рекомендовано використовувати 'Performance' Регулятор для найкращої продуктивності та економії енергії
+Make changes slowly=Вносьте зміни повільно
+Make one change at a time and verify if it improves your situation=Робіть одну зміну за раз і перевіряйте, чи це покращить вашу ситуацію
+Making changes here can briefly interrupt your network operation=Внесення змін тут може призвести до короткого переривання роботи мережі
+Many plugins are no longer compatible with older Unraid versons=Багато плагінів більше не сумісні зі старими версіями Unraid
+Max Watches=Максимум Годин
 NIC Offload=Розвантаження NIC
 NIC Rx Buffer=NIC Rx буфер
 NIC Tx Buffer=NIC Tx буфер
+Normal CPU Scaling Governor=
+Note=Примітка
+Number of syslogs to Archive=Кількість системних журналів для архіву
+post=пост
+Power Saving CPU Scaling Governor=
+Processes to kill before Array is Stopped=Процеси, які потрібно знищити перед зупинкою масиву
+Put the IP address of your server in the Remote syslog server field=Введіть IP-адресу вашого сервера в полі Віддалений сервер системного журналу
+Read this=Прочитай це
+Schedule CPU Power Saving Mode=
+Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=Деякі повідомляють про кращу продуктивність віртуальної машини з потоковим медіа та ігровими віртуальними машинами з пропозиціями щодо цього
+Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=Деякі повідомляють про швидшу та стабільнішу продуктивність мережі, вносячи зміни в параметри мережі на вкладці Tweaks цього плагіна
+Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=Деякі параметри споживатимуть оперативну пам’ять і можуть призвести до того, що Linux завершить деякі процеси, щоб звільнити оперативну пам’ять
+Some people are reporting OOM out of memory errors=Деякі люди повідомляють про помилки браку пам’яті OOM
+Support for older versions of Unraid is being phased out=Підтримка старих версій Unraid поступово припиняється
+The dashboard shows CPU loading and not CPU frequency=Інформаційна панель показує завантаження CPU, а не частоту CPU
 The feature is not available on any of your NICs=Ця функція недоступна на жодній із ваших мережевих NICs
-Current Disk Cache Settings=Поточні налаштування дискового кешу
-Current Inotify Settings=Поточні налаштування Inotify
-Driver=Драйвер
-Governor=Регулятор
+The first thing you should do is to install the Fix Common Problems plugin to find and fix common problems=Перше, що вам слід зробити, це встановити плагін Fix Common Problems, щоб знаходити та виправляти типові проблеми
+The Tips below are suggestions, workarounds for known problems, and potential fixes=У наведених нижче порадах наведено пропозиції, обхідні шляхи вирішення відомих проблем і можливі способи їх вирішення
+There is a very cool feature in Unraid 6 and up that can be used to capture your logs and help in troubleshooting a situation where your server locks up or becomes unresponsive=В Unraid 6 і новіших версіях є дуже цікава функція, яку можна використовувати для запису ваших журналів і допомоги у вирішенні ситуації, коли ваш сервер блокується або перестає відповідати
+This will identify potential problems to be solved before you upgrade the Unraid OS=Це дозволить визначити потенційні проблеми, які необхідно вирішити перед оновленням Unraid OS
+This will log all your server log enries to the Syslog Server and save the log to an array share=Це зареєструє всі записи журналу вашого сервера на Сервер Syslog і збереже журнал у спільному масиві
+This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=Здається, зараз це відбувається частіше через великий обсяг пам’яті, встановленої в Unraid, і занадто високі налаштування дискового кешу за замовчуванням
+Time to set Normal CPU Scaling=
+Time to set Power Saving CPU Scaling=
+Tips=Поради
+Tips and Tweaks wiki=Поради та налаштування wiki
+Tweaks=Твіки
+Use the Update Assistant that is part of the Fix Common Problems plugin=Встановіть плагін Fix Common Problems і вирішіть будь-які проблеми конфігурації Unraid
+You can check CPU frequencies on the command line with=Ви можете перевірити частоти процесора в командному рядку за допомогою
+You may actually cause more problems than you solve if there are problems with your Unraid configuration=Ви можете створити більше проблем, ніж вирішити, якщо є проблеми з конфігурацією Unraid
+
 ;
 ; Help
 ;
@@ -147,17 +148,33 @@ Governor=Регулятор
 > Вибір 'Регулятора' варіанти: 'ondemand', 'performance', 'powersave', 'conservative', і 'schedutil'.
 :end
 
+
+:tips_tweaks_power_save_cpu_governor_plug:
+> Select the Power Saving CPU Scaling Governor you want to use.
+>
+> + "Power Save" - Scales CPU frequency based on load.
+> + "On Demand" - Default for ACPI CPU Freq driver.  Scales CPU frequency based on load.  Frequency stepping is aggressive.
+> + "Conservative" - Scales CPU frequency based on load.  Frequency stepping is gentler.  Can cause some latency.
+> + "Schedutil" - Set all CPUs frequency scaling to schedutil.  This sets CPU frequency based on the Linux scheduler.  Note: This is still in development.
+:end
+
 :tips_tweak_turbo_plug:
 > Виберіть 'Так', щоб увімкнути режим Intel Turbo або AMD Performance Boost.
+:end
+
+:tips_tweaks_scheduled_plug:
+> Set to 'Yes' to enable scheduled CPU Power Saving mode based on the times set below for Normal and Power Saving modes.
+:end
+
+
+:tips_tweaks_cpu_state_plug:
+> Введіть час, який потрібно встановити для регулятора на "Power Save" для Intel Pstate і Intel CPU Freq або "On Demand" у 24-годинному форматі гг:мм.
 :end
 
 :tips_tweaks_performance_plug:
 > Введіть час, який потрібно встановити для регулятора на "Performance" у 24-годинному форматі гг:мм.
 :end
 
-:tips_tweaks_cpu_state_plug:
-> Введіть час, який потрібно встановити для регулятора на "Power Save" для Intel Pstate і Intel CPU Freq або "On Demand" у 24-годинному форматі гг:мм.
-:end
 
 :tips_tweaks_syslog_archive_plug:
 > Установіть значення «Так», щоб увімкнути захоплення та архівування syslogs і запустити діагностику після завершення роботи. Журнали та діагностика зберігаються в /boot/logs/.
@@ -174,3 +191,5 @@ Governor=Регулятор
 > Примітка. Будьте обережні з процесами, які ви вбиваєте тут. Ви можете втратити дані!
 :end
 
+
+; Note: September 16, 2022 - 5 missing translations

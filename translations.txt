@@ -825,7 +825,7 @@ DNS issue, unable to resolve wanip4unraidnet=Проблема DNS, не вдає
 Enhance your experience with My Servers=Покращте свій досвід роботи з Моїми серверами
 Enhance your Unraid experience with these My Servers BETA features=Покращте свій досвід Unraid за допомогою цих<br> функцій Мої сервери (БЕТА).
 Enhance your Unraid experience with these<br> My Servers BETA features=Покращте свій досвід Unraid за допомогою цих функцій<br class=\"hidden sm:block\"/> Мої сервери (БЕТА)
-Executes `unraid-api start`; no terminal needed=Виконує `unraid-api start`; термінал не потрібен
+Executes `unraid-api start`; no terminal needed=
 Get started by installing the plugin=Почніть з встановлення плагіна
 Go to My Servers Dashboard=Перейдіть до інформаційної панелі Мої сервери
 Important=Важливо

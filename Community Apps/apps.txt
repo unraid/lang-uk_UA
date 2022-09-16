@@ -440,5 +440,3 @@ An error occurred - Could not determine configuration=Сталася помил�
 ; WebGui
 Click Install to download and install the Community Applications plugin=Натисніть **Встановити**, щоб завантажити та інсталювати плагін **Програми спільноти**
 
-
-; Note: August 25, 2022 - 1 missing translations
