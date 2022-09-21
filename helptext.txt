@@ -945,62 +945,62 @@ Samba на основі кожного пакета, що вони бажают�
 :end
 
 :docker_repositories_help:
-Use this field to add template repositories.
-Docker templates are used to facilitate the creation and re-creation of Docker containers.  Please setup one per line.
+Використовуйте це поле, щоб додати сховища шаблонів.
+Шаблони Docker використовуються для полегшення створення та повторного створення контейнерів Docker. Налаштуйте по одному на рядок.
 
-For a list of popular community-supported repositories, visit here: <a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
+Перелік популярних репозиторіїв, підтримуваних спільнотою, див. тут: <a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
 :end
 
 :docker_enable_help:
-Before you can start the Docker service for the first time, please specify an image file for Docker to install to.
+Перш ніж ви зможете вперше запустити службу Docker, укажіть файл зображення для інсталяції Docker.
 
-Once started, Docker will always automatically start after the array has been started.
+Після запуску Docker завжди запускатиметься автоматично після запуску масиву.
 :end
 
 :docker_timeout_help:
-The time in seconds to allow a container to gracefully stop before forcing it to stop
+Час у секундах, протягом якого контейнер може плавно зупинитися, перш ніж примусово зупинитися
 :end
 
 :docker_vdisk_type_help:
-Select where to keep the Docker persistent state.
+Виберіть, де зберігати постійний стан Docker.
 
-This can be an image file with a specific size or a dedicated folder.
+Це може бути файл зображення певного розміру або окрема папка.
 :end
 
 :docker_vdisk_size_help:
-If the system needs to create a new docker image file, this is the default size to use specified in GB.
+Якщо системі потрібно створити новий файл образу докера, це розмір за замовчуванням у GB.
 
-To resize an existing image file, specify the new size here. Next time the Docker service is started the file (and file system) will be increased to the new size (but never decreased).
+Щоб змінити розмір існуючого файлу зображення, вкажіть тут новий розмір. Під час наступного запуску служби Docker файл (і файлова система) буде збільшено до нового розміру (але ніколи не зменшено).
 :end
 
 :docker_vdisk_location_help:
-You must specify an image file for Docker. The system will automatically create this file when the Docker service is first started.
+Ви повинні вказати файл зображення для Docker. Система автоматично створить цей файл під час першого запуску служби Docker.
 
-The image file name must have the extension .img, If not the input is not accepted and marked red.
+Ім’я файлу зображення має мати розширення .img. Якщо ні, введені дані не приймаються та позначаються червоним.
 
-It is recommended to create this image file outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+Рекомендується створювати цей файл зображення поза масивом, напр. на пулі кешу. Для найкращої продуктивності SSD надають перевагу пристроям.
 :end
 
 :docker_vdisk_directory_help:
-You must specify a folder for Docker. The system will automatically create this folder when the Docker service is first started.
+Ви повинні вказати папку для Docker. Система автоматично створить цю папку під час першого запуску служби Docker.
 
-It is recommended to create this folder under a share which resides on the Cache pool (setting: cache=Only). For best performance SSD devices are preferred.
+Рекомендовано створити цю папку в спільному ресурсі, який знаходиться в пулі кешу (параметр: cache=Only). Для найкращої продуктивності SSD надають перевагу пристроям.
 :end
 
 :docker_appdata_location_help:
-You can specify a folder to automatically generate and store subfolders containing configuration files for each Docker app (via the /config mapped volume).
+Ви можете вказати папку для автоматичного створення та зберігання вкладених папок, що містять конфігураційні файли для кожної програми Docker (через зіставлений том /config).
 
-The folder's path must end with a trailing slash (/) character. If not the input is not accepted and marked red.
+Шлях папки має закінчуватися символом косої риски (/). Якщо ні, введені дані не приймаються та позначаються червоним.
 
-It is recommended to create this folder outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+Рекомендовано створювати цю папку поза масивом, напр. на пулі кешу. Для найкращої продуктивності SSD надають перевагу пристроям.
 
-Only used when adding new Docker apps. Editing existing Docker apps will not be affected by this setting.
+Використовується лише під час додавання нових програм Docker. Цей параметр не вплине на редагування наявних програм Docker.
 :end
 
 :docker_log_rotation_help:
-By default LOG rotation is disabled and will create a single LOG file of unlimited size.
+За замовчуванням ротацію LOG вимкнено, і буде створено один файл LOG необмеженого розміру.
 
-Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
+Увімкніть ротацію LOG, щоб обмежити розмір файлу LOG і вказати кількість файлів, які слід зберігати в схемі ротації.
 :end
 
 :docker_log_file_size_help:
