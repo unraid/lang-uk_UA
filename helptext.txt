@@ -1004,106 +1004,106 @@ Samba на основі кожного пакета, що вони бажают�
 :end
 
 :docker_log_file_size_help:
-Specifies the maximum LOG size. When exceeded LOG rotation will occur.
+Визначає максимальний розмір журналу. При перевищенні LOG відбудеться ротація.
 :end
 
 :docker_log_file_number_help:
-Specifies the number of LOG files when LOG rotation is done.
+Вказує кількість файлів LOG після ротації LOG.
 :end
 
 :docker_authoring_mode_help:
-If set to **Yes**, when creating/editing containers the interface will be present with some extra fields related to template authoring.
+Якщо встановлено значення **Так**, під час створення/редагування контейнерів інтерфейс буде присутній з деякими додатковими полями, пов’язаними зі створенням шаблонів.
 :end
 
 :docker_custom_network_access_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
-By default this is prohibited.
+Дозволяє прямий зв’язок між хостом і контейнерами за допомогою спеціальної (macvlan) мережі.<br>
+За замовчуванням це заборонено.
 :end
 
 :docker_user_defined_network_help:
-User created networks are networks created by the user outside of the GUI.<br>
-By default user created networks are removed from Docker. This is done to prevent potential conflicts with the automatic generation of custom networks.
+Мережі, створені користувачем, — це мережі, створені користувачем поза графічним інтерфейсом користувача.<br>
+За замовчуванням створені користувачами мережі видаляються з Docker. Це зроблено для запобігання можливих конфліктів із автоматичним створенням власних мереж.
 
-Change this setting to preserve user defined networks, but it is the responsibility of the user to ensure these entries work correctly and are conflict free.
+Змініть цей параметр, щоб зберегти визначені користувачем мережі, але користувач несе відповідальність за те, щоб ці записи працювали правильно та не конфліктували.
 :end
 
 :docker_include_interface_vlan_ipv4_help:
-Include (default) or exclude the above interfaces or VLANs as custom network for Docker.
+Включати (за замовчуванням) або виключати наведені вище інтерфейси або VLAN як спеціальну мережу для Docker.
 
-Enter the pool range within each allocated subnet which is used for DHCPv4 assignments by Docker. E.g. 192.168.1.128/25
+Введіть діапазон пулу в кожній виділеній підмережі, який Docker використовує для призначення DHCPv4. наприклад 192.168.1.128/25
 :end
 
 :docker_exclude_interface_vlan_ipv4_help:
-Include or exclude (default) the above interfaces or VLANs as custom network for Docker.
+Включіть або виключіть (за замовчуванням) вищевказані інтерфейси або VLAN як спеціальну мережу для Docker.
 
-Enter the pool range within each allocated subnet which is used for DHCPv4 assignments by Docker. E.g. 192.168.1.128/25
+Введіть діапазон пулу в кожній виділеній підмережі, який Docker використовує для призначення DHCPv4. наприклад 192.168.1.128/25
 :end
 
 :docker_include_interface_vlan_ipv6_help:
-Include (default) or exclude the above interfaces or VLANs as custom network for Docker.
+Включати (за замовчуванням) або виключати наведені вище інтерфейси або VLAN як спеціальну мережу для Docker.
 
-Enter the pool range within each allocated subnet which is used for DHCPv6 assignments by Docker. E.g. 2a02:abcd:9ef5:100:1::/72
+Введіть діапазон пулу в кожній виділеній підмережі, який Docker використовує для призначення DHCPv6. наприклад 2a02:abcd:9ef5:100:1::/72
 :end
 
 :docker_exclude_interface_vlan_ipv6_help:
-Include or exclude (default) the above interfaces or VLANs as custom network for Docker.
+Включіть або виключіть (за замовчуванням) вищевказані інтерфейси або VLAN як спеціальну мережу для Docker.
 
-Enter the pool range within each allocated subnet which is used for DHCPv6 assignments by Docker. E.g. 2a02:abcd:9ef5:100:1::/72
+Введіть діапазон пулу в кожній виділеній підмережі, який Docker використовує для призначення DHCPv6. наприклад 2a02:abcd:9ef5:100:1::/72
 :end
 
 :docker_version_help:
-This is the active Docker version.
+Це активна версія Docker.
 :end
 
 :docker_vdisk_location_active_help:
-This is the location of the Docker image.
+Це розташування образу Docker.
 :end
 
 :docker_appdata_location_active_help:
-This is the storage location for Docker containers.
+Це місце зберігання контейнерів Docker.
 :end
 
 :docker_log_rotation_active_help:
-By default a single unlimited LOG file is created. Otherwise LOG file size and number of files are limited when LOG rotation is enabled.
+За замовчуванням створюється єдиний необмежений файл LOG. Інакше розмір і кількість файлів LOG обмежені, якщо ввімкнено ротацію LOG.
 :end
 
 :docker_custom_network_active_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
+Дозволяє прямий зв’язок між хостом і контейнерами за допомогою спеціальної (macvlan) мережі.<br>
 By default this is prohibited.
 :end
 
 :docker_user_defined_network_active_help:
-Shows whether networks created outside of the GUI are removed or preserved for Docker. When preserved *user defined networks* become available in the *Network type* dropdown list of containers.
+Показує, чи мережі, створені поза графічним інтерфейсом користувача, видаляються чи зберігаються для Docker. У разі збереження *визначені користувачем мережі* стають доступними в розкривному списку контейнерів *Тип мережі*.
 :end
 
 :docker_scrub_help:
-**Scrub** runs the *btrfs scrub* program to check file system integrity.
+**Scrub** запускає програму *btrfs scrub* для перевірки цілісності файлової системи.
 
-If repair is needed you should check the *Correct file system errors* and run a second Scrub pass; this will permit *btrfs scrub* to fix the file system.
+Якщо потрібне відновлення, перевірте *Виправлення помилок файлової системи* та запустіть другий проход очищення; це дозволить *btrfs scrub* виправити файлову систему.
 :end
 
 :docker_cancel_help:
-**Cancel** will cancel the Scrub operation in progress.
+**Скасувати** скасує поточну операцію очищення.
 :end
 
 :id_server_name_help:
-The network identity of your server.  Also known as *hostname* or *short hostname*. Windows networking
-refers to this as the *NetBIOS name* and must be 15 characters or less in length.
-Use only alphanumeric characters (that is, "A-Z", "a-z", and "0-9"), dashes ("-"), and dots (".");
-and, the first and last characters must be alphanumeric.
+Ідентифікація мережі вашого сервера. Також відомий як *ім’я хосту* або *коротке ім’я хосту*. Мережа Windows
+називає це *ім'ям NetBIOS* і має містити 15 символів або менше.
+Використовуйте лише буквено-цифрові символи (тобто "A-Z", "a-z" і "0-9"), тире ("-") і крапки (".");
+а перший і останній символи мають бути буквено-цифровими.
 :end
 
 :id_description_help:
-This is a text field that is seen next to a server when listed within Network or File Explorer
-(Windows), or Finder (macOS).
+Це текстове поле, яке відображається поруч із сервером у списку в Мережі або Провіднику файлів
+(Windows) або Finder (macOS).
 :end
 
 :id_model_help:
-This is the server model number.
+Це номер моделі сервера.
 :end
 
 :mgmt_start_page_help:
-Select the page which is opened first when entering the GUI. By default the *Main* page is selected.
+Виберіть сторінку, яка відкривається першою під час входу в GUI. За замовчуванням вибрано *Головну* сторінку.
 :end
 
 :mgmt_use_telnet_help:
@@ -1116,12 +1116,12 @@ Enter the TELNET port, default port is 23.
 :end
 
 :mgmt_use_ssh_help:
-SSH is enabled by default and offers a secure way of CLI access. Upon system startup SSH keys are automatically generated
-if not yet existing, and stored on the flash device in the folder */config/ssh*.
+SSH увімкнено за замовчуванням і пропонує безпечний спосіб доступу до CLI. Під час запуску системи ключі SSH автоматично генеруються, 
+якщо вони ще не існують, і зберігаються на флеш-пристрої в папці */config/ssh*.
 :end
 
 :mgmt_ssh_port_help:
-Enter the SSH port, default port is 22.
+Введіть порт SSH, порт за замовчуванням 22.
 :end
 
 :mgmt_use_upnp_help:
