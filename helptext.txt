@@ -1239,66 +1239,66 @@ Lime Technology, щоб визначити, чи потрібно оновлюв
 :end
 
 :ftp_overview_help:
-### Overview
+### Огляд
 
-Unraid includes the popular `vsftpd` FTP server.  The configuration of `vsftp` is currently very
-simple: **All** user names entered above are permitted to access the server via FTP and will have
-*full read/write/delete access* to the entire server, so use with caution.
+Unraid містить популярний FTP-сервер `vsftpd`. Наразі конфігурація `vsftp` дуже
+простий: **Усі** імена користувачів, введені вище, мають доступ до сервера через FTP і матимуть
+*повний доступ для читання/запису/видалення* до всього сервера, тому використовуйте з обережністю.
 :end
 
 :smb_enable_help:
-Select 'Yes (Workgroup)' to enable SMB (Windows Networking) protocol support. This
-also enables Windows host discovery.
+Виберіть «Так (робоча група)», щоб увімкнути підтримку протоколу SMB (мережа Windows). Це
+також дозволяє виявити хост Windows.
 
-Select 'Yes (Active Directory)' to enable Active Directory integration.
+Виберіть «Так (Active Directory)», щоб увімкнути інтеграцію Active Directory.
 :end
 
 :smb_hide_files_help:
-If set to 'Yes' then files starting with a '.' (dot) will appear as *hidden files* and normally
-will not appear in Windows folder lists unless you have "Show hidden files, folders, and drives" enabled
-in Windows Folder Options.
+Якщо встановлено значення «Так», то файли починаються з «.» (крапка) відображатимуться як *приховані файли* і зазвичай
+не відображатиметься у списках папок Windows, якщо ви не ввімкнули «Показувати приховані файли, папки та диски».
+у параметрах папки Windows.
 
-If set to 'No' then dot files will appear in folder lists the same as any other file.
+Якщо встановлено значення «Ні», файли з крапками відображатимуться у списках папок так само, як і будь-які інші файли.
 :end
 
 :smb_enhanced_macos_help:
-When set to 'Yes' provides enhanced compatibility with Apple SMB clients, resulting, for example, in faster
-Finder browsing, and ability to export Time Machine shares.  This may cause some issues with Windows clients, however.
-Please also refer to the [VFS_FRUIT MAN PAGE](https://www.mankier.com/8/vfs_fruit).
+Якщо встановлено значення «Так», забезпечується покращена сумісність із клієнтами Apple для малого та середнього бізнесу, що призводить, наприклад, до швидшої
+Перегляд Finder і можливість експорту ресурсів Time Machine. Однак це може викликати деякі проблеми з клієнтами Windows.
+Також зверніться до[VFS_FRUIT MAN PAGE](https://www.mankier.com/8/vfs_fruit).
 :end
 
 :smb_enable_netbios_help:
-Select 'Yes' to enable NetBIOS.  If enabled, SMBv1 protocol will also be recognized.  If disabled,
-clients must use SMBv2 or higher.
+Виберіть "Так", щоб увімкнути NetBIOS. Якщо ввімкнено, протокол SMBv1 також буде розпізнано. Якщо вимкнено,
+клієнти повинні використовувати SMBv2 або вище.
 :end
 
 :smb_enable_wsd_help:
-Select 'Yes' to enable WSD (WS-Discovery).  The only reason to turn this off is when you are running an
-old LAN setup based on SMBv1.
+Виберіть «Так», щоб увімкнути WSD (WS-Discovery). Єдина причина вимкнути це, коли ви запускаєте
+старі налаштування локальної мережі на основі SMBv1.
 :end
 
 :smb_wsd_options_help:
-This is a command line options string passed to the WSD daemon upon startup. Leave this field blank unless
-instructed by support to put something here.
+Це рядок параметрів командного рядка, який передається демону WSD під час запуску. Залиште це поле порожнім, якщо не
+отримав вказівку служби підтримки розмістити тут щось.
 :end
 
 :smb_extra_conf_help:
-Use this page to make changes to your `smb-extra.conf` file.  Samba will need
-to be restarted in order for changes to take effect.
+Використовуйте цю сторінку, щоб внести зміни у свій файл `smb-extra.conf`. Самба знадобиться
+перезапустити, щоб зміни набули чинності.
 :end
 
 :smb_extra_button_help:
-Click the **Apply** button to commit the current edits.  Click **Reset** to
-undo any changes you make (before Saving). Click **Done** to exit this page.
+Натисніть кнопку **Застосувати**, щоб прийняти поточні зміни. Натисніть **Скинути**, щоб
+скасувати будь-які внесені зміни (перед збереженням). Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
 
 :smb_workgroup_help:
-Enter your local network Workgroup name. Usually this is "WORKGROUP".
+Введіть назву робочої групи локальної мережі. Зазвичай це "РОБОЧА ГРУПА".
 :end
 
 :smb_local_master_help:
-If set to 'Yes' then the server will fully participate in browser elections, and in the absence
-of other servers, will usually become the local Master Browser.
+Якщо встановлено значення «Так», сервер буде повністю брати участь у виборах браузера та за його відсутності
+інших серверів, як правило, стає локальним головним браузером.
 :end
 
 :nfs_enable_help:
