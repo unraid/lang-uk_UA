@@ -1302,207 +1302,207 @@ Unraid містить популярний FTP-сервер `vsftpd`. Нараз
 :end
 
 :nfs_enable_help:
-Select 'Yes' to enable the NFS protocol.
+Виберіть «Так», щоб увімкнути протокол NFS.
 :end
 
 :nfs_tunable_fuse_remember_help:
-When NFS is enabled, this Tunable may be used to alleviate or solve instances of "NFS Stale File Handles"
-you might encounter with your NFS client.
+Коли NFS увімкнено, цей параметр можна використовувати для усунення або усунення випадків «застарілих обробок файлів NFS».
+ви можете зіткнутися з клієнтом NFS.
 
-In essence, (fuse_remember) tells an internal subsystem (named "fuse") how long to "remember" or "cache"
-file and directory information associated with user shares.  When an NFS client attempts to access a file
-(or directory) on the server, and that file (or directory) name is not cached, then you could encounter
-"stale file handle".
+По суті, (fuse_remember) повідомляє внутрішній підсистемі (під назвою «запобіжник»), як довго «запам’ятовувати» або «кешувати»
+інформацію про файли та каталоги, пов’язані зі спільними ресурсами користувачів. Коли клієнт NFS намагається отримати доступ до файлу
+(або каталогу) на сервері, а ім’я цього файлу (або каталогу) не кешується, то ви можете зіткнутися з
+"дескриптор застарілого файлу".
 
-The numeric value of this tunable is the number of seconds to cache file/directory name entries,
-where the default value of 330 indicates 5 1/2 minutes.  There are two special values you may also set
-this to:
+Числовим значенням цього параметра є кількість секунд для кешування записів імен файлів/каталогів,
+де значення за замовчуванням 330 означає 5 1/2 хвилин. Є два спеціальні значення, які ви також можете 
+встановити:
 
-* 0 which means, do not cache file/directory names at all, and
-* -1 which means cache file/directory names forever (or until array is stopped)
+* 0, що означає взагалі не кешувати імена файлів/каталогів, і
+* -1, що означає кешування імен файлів/каталогів назавжди (або доки масив не буде зупинено)
 
-A value of 0 would be appropriate if you are enabling NFS but only plan to use it for disk shares,
-not user shares.
+Значення 0 буде відповідним, якщо ви вмикаєте NFS, але плануєте використовувати його лише для спільних дисків,
+а не спільний доступ користувачів.
 
-A value of -1 would be appropriate if no other timeout seems to solve the "stale file handle" on
-your client.  Be aware that setting a value of -1 will cause the memory footprint to grow by approximately
-108 bytes per file/directory name cached.  Depending how much RAM is installed in your server and how many
-files/directories you access via NFS this may or may not lead to out-of-memory conditions.
+Значення -1 було б прийнятним, якщо жоден інший тайм-аут, здається, не вирішує "застарілий дескриптор файлу" 
+на вашому клієнті. Майте на увазі, що встановлення значення -1 призведе до збільшення об’єму пам’яті приблизно на 108 байт 
+на кешовану назву файлу/каталогу. Залежно від того, скільки оперативної пам’яті встановлено на вашому сервері та скільки файлів/каталогів 
+ви отримуєте доступ через NFS, це може або не може призвести до умов нестачі пам’яті.
 :end
 
 :shares_enable_disk_help:
-If set to No, disk shares are unconditionally not exported.
+Якщо встановлено значення «Ні», спільні диски беззастережно не експортуються.
 
-If set to Yes, disk shares may be exported.  **WARNING:** Do not copy data from a disk share to a user share
-unless you *know* what you are doing.  This may result in the loss of data and is not supported.
+Якщо встановлено значення «Так», спільні диски можна експортувати. **ПОПЕРЕДЖЕННЯ:** Не копіюйте дані зі спільного диска на спільний доступ користувача
+якщо ти не *знаєш* що робиш. Це може призвести до втрати даних і не підтримується.
 
-If set to Auto, only disk shares not participating in User Shares may be exported.
+Якщо встановлено значення Auto, можна експортувати лише спільні диски, які не беруть участь у спільних ресурсах користувача.
 :end
 
 :shares_enable_shares_help:
-If set to 'Yes' the User Shares feature is activated.
+Якщо встановлено значення «Так», активується функція «Спільний доступ користувача».
 :end
 
 :shares_included_disks_help:
-This setting defines the set of array disks which are *included* in User Shares.
-Unchecking all disks will allow **all** array disks to be included.
+Цей параметр визначає набір дисків-масивів, які *включаються* до спільних ресурсів користувача.
+Якщо зняти позначку з усіх дисків, буде включено **всі** диски масиву.
 :end
 
 :shares_excluded_disks_help:
-This setting defines the set of array disk which are *excluded* from User Shares.
-Uncheck all disks in order to not exclude any disks
+Цей параметр визначає набір дискових масивів, які *виключаються* зі спільних ресурсів користувача.
+Зніміть прапорці з усіх дисків, щоб не виключати жодного диска
 
-**Note:** Each separate User Share also includes its own set of Included and Excluded
-disks which represent a subset of the Included/Excluded disks defined here.
+**Примітка.** Кожен окремий спільний доступ користувача також включає власний набір «Включених» і «Виключених»
+диски, які представляють підмножину включених/виключених дисків, визначених тут.
 :end
 
 :shares_tunable_hard_links_help:
-If set to Yes then support the link() operation.
+Якщо встановлено значення Так, тоді підтримується операція link().
 
-If set to No then hard links are not supported.
+Якщо встановлено Ні, жорсткі посилання не підтримуються.
 
-Notes:
+Примітки:
 
-* Setting to Yes may cause problems for older media and dvd/bluray players accessing shares using NFS.
-* No matter how this is set, the **mover** will still properly handle any detected hard links.
+* Якщо встановити значення «Так», у старих медіа та DVD/Bluray програвачів можуть виникнути проблеми з доступом до спільних ресурсів за допомогою NFS.
+* Незалежно від того, як це встановлено, **mover** все одно належним чином оброблятиме будь-які виявлені жорсткі посилання.
 :end
 
 :shares_tunable_direct_io_help:
-**Experimental**: If set to Yes then mount User Share file system with FUSE *direct_io* mount option.
-This will increase write performance but might possibly decrease read performance.
+**Експериментальний**: якщо встановлено значення «Так», тоді монтуйте файлову систему User Share за допомогою параметра монтування FUSE *direct_io*.
+Це збільшить продуктивність запису, але може знизити продуктивність читання.
 
-*Auto* selects No.
+*Авто* вибирає Ні.
 :end
 
 :syslog_local_server_help:
-Let the server act as a central syslog server and collect syslog messages from other systems.
-The server can listen on UDP, TCP or both with a selectable port number.
+Нехай сервер діє як центральний сервер системного журналу та збирає повідомлення системного журналу з інших систем.
+Сервер може прослуховувати UDP, TCP або обидва з вибраним номером порту.
 
-Syslog information is stored per IP address. That is every system gets its own syslog file.
+Інформація системного журналу зберігається для кожної IP-адреси. Тобто кожна система отримує власний файл syslog.
 :end
 
 :syslog_local_folder_help:
-Select the share folder where the syslogs will be stored.
-It is recommended that you use a share located on the cache drive to prevent array disk spinups.
+Виберіть спільну папку, де зберігатимуться системні журнали.
+Рекомендується використовувати спільний ресурс, розташований на диску кешу, щоб запобігти розкручуванням диска масиву.
 :end
 
 :syslog_local_rotation_help:
-By default LOG rotation is disabled and will create a single LOG file of unlimited size.
+За замовчуванням ротацію LOG вимкнено, і буде створено один файл LOG необмеженого розміру.
 
-Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
+Увімкніть ротацію LOG, щоб обмежити розмір файлу LOG і вказати кількість файлів, які слід зберігати в схемі ротації.
 :end
 
 :syslog_local_file_size_help:
-Specifies the maximum LOG size. When exceeded LOG rotation will occur.
+Визначає максимальний розмір журналу. При перевищенні LOG відбудеться обертання.
 :end
 
 :syslog_local_file_number_help:
-Specifies the number of additional LOG files to keep in the rotation scheme.
+Визначає кількість додаткових файлів LOG, які слід зберігати в схемі ротації.
 :end
 
 :syslog_remote_server_help:
-Enter a name or IP address of a remote syslog server.
-This will send a copy of the syslog messages to the designated server.
+Введіть назву або IP-адресу віддаленого сервера системного журналу.
+Це надішле копію повідомлень системного журналу на вказаний сервер.
 :end
 
 :syslog_mirror_flash_help:
-This setting is NO by default and must be used with care to avoid unnecessary wear and tear of the USB device.
+За замовчуванням це налаштування НІ, і його слід використовувати обережно, щоб уникнути непотрібного зносу USB-пристрою.
 
-Change this setting to YES when troubleshooting is required and it is not possible to get the regular diagnostics information.
-A mirror of the syslog file is stored in the **logs** folder of the flash device.
+Змініть цей параметр на ТАК, якщо потрібне усунення несправностей і неможливо отримати звичайну діагностичну інформацію.
+Дзеркало файлу syslog зберігається в папці **logs** флеш-пристрою.
 :end
 
 :confirm_reboot_help:
-Choose if rebooting or powering down the server needs a confirmation checkbox.
+Виберіть, чи потрібен прапорець підтвердження під час перезавантаження чи вимкнення сервера.
 :end
 
 :confirm_array_stop_help:
-Choose if stopping the array needs a confirmation checkbox.
+Виберіть, чи потрібно підтвердження для зупинки масиву.
 :end
 
 :display_settings_help:
-The display settings below determine how items are displayed on screen. Use these settings to tweak the visual effects to your likings.
+Наведені нижче параметри відображення визначають, як елементи відображаються на екрані. Використовуйте ці параметри, щоб налаштувати візуальні ефекти на свій смак.
 
-You can experiment with these settings as desired, they only affect visual properties.
+Ви можете експериментувати з цими параметрами як завгодно, вони впливають лише на візуальні властивості.
 :end
 
 :display_font_size_help:
-This is a per device setting
+Це налаштування для кожного пристрою
 :end
 
 :display_wwn_device_id_help:
-World Wide Name (WWN) is a unique identifier used for SAS attached devices.
+Всесвітнє ім’я (WWN) — це унікальний ідентифікатор, який використовується для підключених пристроїв SAS.
 
-Select *Disabled* to suppress the appending of WWN to the device identification
+Виберіть *Вимкнено*, щоб заборонити додавання WWN до ідентифікації пристрою
 
-Select "Automatic" to append WWN to the device identification in case of SAS devices
+Виберіть «Автоматично», щоб додати WWN до ідентифікації пристрою у випадку пристроїв SAS
 :end
 
 :display_custom_text_color_help:
-Overrule the default text color in the header. This can be used to match the text color with a background image.
+Замінити колір тексту за замовчуванням у заголовку. Це можна використати для підбору кольору тексту до фонового зображення.
 :end
 
 :display_custom_background_color_help:
-Overrule the default background color in the header. This can be used to match the background color with a custom text color.
+Замініть фоновий колір за замовчуванням у заголовку. Це можна використовувати, щоб поєднати колір фону з власним кольором тексту.
 :end
 
 :display_custom_banner_help:
-Image will be scaled to 1920x90 pixels. The maximum image file upload size is 512 kB (524,288 bytes).
+Зображення буде масштабовано до 1920x90 пікселів. Максимальний розмір файлу зображення для завантаження становить 512 КБ (524 288 байт).
 :end
 
 :display_temperature_unit_help:
-Selects the temperature unit for the disk temperature thresholds. Changing the unit will adjust the existing value in the disk temperature thresholds as appropriate.
+Вибирає одиницю вимірювання температури для порогових значень температури диска. Зміна одиниці вимірювання призведе до відповідного налаштування поточного значення порогів температури диска.
 
-Make sure any newly entered values represent the selected temperature unit.
+Переконайтеся, що всі щойно введені значення відповідають вибраній одиниці температури.
 :end
 
 :vms_enable_help:
-Stopping the VM Manager will first attempt to shutdown all running VMs. After 60 seconds, any remaining VM instances will be terminated.
+Зупинка диспетчера віртуальних машин спочатку спробує вимкнути всі запущені віртуальні машини. Через 60 секунд усі екземпляри віртуальної машини, що залишилися, буде припинено.
 :end
 
 :vms_libvirt_volume_help:
-This is the libvirt volume.
+Це том libvirt.
 :end
 
 :vms_libvirt_vdisk_size_help:
-If the system needs to create a new libvirt image file, this is the default size to use specified in GB.
-To resize an existing image file, specify the new size here. Next time the Libvirt service is started the file (and file system) will be increased to the new size (but never decreased).
+Якщо системі потрібно створити новий файл образу libvirt, це розмір за замовчуванням, указаний у ГБ.
+Щоб змінити розмір існуючого файлу зображення, вкажіть тут новий розмір. Під час наступного запуску служби Libvirt файл (і файлова система) буде збільшено до нового розміру (але ніколи не зменшено).
 :end
 
 :vms_libvirt_location_help:
-You must specify an image file for Libvirt. The system will automatically create this file when the Libvirt service is first started.
+Ви повинні вказати файл зображення для Libvirt. Система автоматично створить цей файл під час першого запуску служби Libvirt.
 :end
 
 :vms_libvirt_storage_help:
-Specify a user share that contains all your VM subdirectories with vdisks
+Укажіть спільний доступ користувача, який містить усі ваші підкаталоги віртуальної машини з vdisks
 :end
 
 :vms_libvirt_iso_storage_help:
-Specify a user share that contains all your installation media for operating systems
+Укажіть спільний доступ користувача, який містить усі інсталяційні носії для операційних систем
 :end
 
 :vms_virtio_driver_help:
-Specify the virtual CD-ROM (ISO) that contains the VirtIO Windows drivers as provided by the Fedora Project.
-Download the latest ISO from here: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
+Укажіть віртуальний CD-ROM (ISO), який містить драйвери VirtIO Windows, надані проектом Fedora.
+Завантажте останню версію ISO звідси: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
 
-When installing Windows, you will reach a step where no disk devices will be found. There is an option to browse for drivers on that screen.
-Click browse and locate the additional CD-ROM in the menu. Inside there will be various folders for the different versions of Windows.
-Open the folder for the version of Windows you are installing and then select the AMD64 subfolder inside (even if you are on an Intel system, select AMD64).
-Three drivers will be found. Select them all, click next, and the vDisks you have assigned will appear.
+Під час інсталяції Windows ви досягнете кроку, на якому не буде знайдено дискових пристроїв. На цьому екрані є можливість шукати драйвери.
+Натисніть «Огляд» і знайдіть у меню додатковий CD-ROM. Всередині будуть різні папки для різних версій Windows.
+Відкрийте папку для версії Windows, яку ви встановлюєте, а потім виберіть усередині підпапку AMD64 (навіть якщо ви використовуєте систему Intel, виберіть AMD64).
+Знайдуться три водія. Виберіть їх усі, клацніть «Далі», і з’являться призначені вами vDisks.
 :end
 
 :vms_network_bridge_help:
-Select the name of the network bridge you wish to use as default for your VMs,
-the setting 'virbr0' will let libvirt create a virtual bridge that utilizes NAT (network address translation)
-and act as a DHCP server to hand out IP addresses to virtual machines directly.
-More optional selections are present when virtual bridges are created under network settings.
+Виберіть назву мережевого мосту, який ви бажаєте використовувати за умовчанням для своїх віртуальних машин,
+Параметр "virbr0" дозволить libvirt створити віртуальний міст, який використовує NAT (перетворення мережевих адрес)
+і діяти як сервер DHCP для безпосередньої передачі IP-адрес віртуальним машинам.
+Додаткові параметри доступні, коли віртуальні мости створюються в налаштуваннях мережі.
 
-NOTE: You can also specify a network bridge on a per-VM basis.
+ПРИМІТКА. Ви також можете вказати мережевий міст для кожної віртуальної машини.
 :end
 
 :vms_host_shutdown_help:
-When shutting down the server, this defines the action to take upon running VMs. If *Hibernate VMs* is chosen,
-the VM will be instructed to hibernate (if supported) otherwise it will attempt a VM shutdown.
+Під час вимкнення сервера це визначає дію, яку потрібно виконати після запуску віртуальних машин. Якщо вибрано *Hibernate VMs*,
+Віртуальна машина отримає вказівку перейти в сплячий режим (якщо підтримується), інакше вона спробує завершити роботу ВМ.
 :end
 
 :vms_shutdown_timeout_help:
