@@ -1506,160 +1506,160 @@ Unraid містить популярний FTP-сервер `vsftpd`. Нараз
 :end
 
 :vms_shutdown_timeout_help:
-When shutting down the server, this defines how long to wait in seconds for *graceful* VM shutdown before forcing shutdown to continue.
-NOTE: It's recommended to shut down guest VMs from within the VM.
+Під час вимкнення сервера це визначає, скільки часу потрібно чекати в секундах на *витончене* завершення роботи віртуальної машини перед примусовим продовженням завершення роботи.
+ПРИМІТКА. Рекомендується вимикати гостьові віртуальні машини з віртуальної машини.
 :end
 
 :vms_acs_override_help:
-*PCIe ACS override* allows various hardware components to expose themselves as isolated devices.
-Typically it is sufficient to isolate *Downstream* ports.
-A hardware component may need the setting *Multi-function* or *Both* to further isolate different hardware functions.<br>
-A reboot is required for changes to this setting to take affect.
+*Перевизначення PCIe ACS* дозволяє різним апаратним компонентам виставляти себе як ізольовані пристрої.
+Зазвичай достатньо ізолювати порти *Downstream*.
+Апаратному компоненту може знадобитися налаштування *Багатофункціональний* або *Обидва* для подальшої ізоляції різних апаратних функцій.<br>
+Потрібне перезавантаження, щоб зміни цього параметра вступили в силу.
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**Попередження: використання цього параметра може спричинити можливе пошкодження даних за певних конфігурацій апаратного забезпечення.**
+Відвідайте [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm), щоб дізнатися більше.
 :end
 
 :vms_vfio_interupts_help:
-If your system doesn't support interrupt remapping, these can be enabled by allowing unsafe interrupts.<br>
-A reboot will be required for changes to this setting to take affect.
+Якщо ваша система не підтримує перепризначення переривань, їх можна ввімкнути, дозволивши небезпечні переривання.<br>
+Потрібне перезавантаження, щоб зміни цього параметра вступили в силу.
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**Попередження: використання цього параметра може спричинити можливе пошкодження даних за певних конфігурацій апаратного забезпечення.**
+Відвідайте [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm), щоб дізнатися більше.
 :end
 
 :vms_libvirt_log_help:
-View the log for libvirt: <a onclick="openTerminal('log','libvirt','libvirt/libvirtd.log')">View libvirtd.log</a>
+Переглянути журнал для libvirt: <a onclick="openTerminal('log','libvirt','libvirt/libvirtd.log')">View libvirtd.log</a>
 :end
 
 :vms_scrub_help:
-**Scrub** runs the *btrfs scrub* program to check file system integrity.
-If repair is needed you should check the *Correct file system errors* and run a second Scrub pass; this will permit *btrfs scrub* to fix the file system.
+**Scrub** запускає програму *btrfs scrub* для перевірки цілісності файлової системи.
+Якщо потрібне відновлення, перевірте *Виправлення помилок файлової системи* та запустіть другий проход очищення; це дозволить *btrfs scrub* виправити файлову систему.
 :end
 
 :vms_cancel_help:
-**Cancel* will cancel the Scrub operation in progress.
+**Скасувати* скасує поточну операцію очищення.
 :end
 
 :eth_interface_description_help:
-Use this optional field to provide additional information about the purpose of the connection.
+Використовуйте це необов’язкове поле, щоб надати додаткову інформацію про мету підключення.
 :end
 
 :eth_mac_address_help:
-This is the hardware address of the interface.
-When tagging is enabled all VLANs on this interface will share the same hardware address.
+Це апаратна адреса інтерфейсу.
+Коли тегування ввімкнено, усі VLAN на цьому інтерфейсі матимуть однакову апаратну адресу.
 :end
 
 :eth_enable_bonding_help:
-Bonding is a feature that combines multiple physical Ethernet interfaces into a single *bonded* interface named **bond0**.
-This can be used to improve the connection redundancy and/or throughput of the system.
-Different bonding modes are supported (see below), but some modes require proper switch support.
+З’єднання — це функція, яка об’єднує кілька фізичних інтерфейсів Ethernet в один *bonded* інтерфейс під назвою **bond0**.
+Це можна використовувати для покращення резервування з’єднання та/або пропускної здатності системи.
+Підтримуються різні режими з’єднання (див. нижче), але для деяких режимів потрібна належна підтримка перемикачів.
 :end
 
 :eth_bonding_mode_help:
 **Mode 0 (balance-rr)**<br>
-This mode transmits packets in a sequential order from the first available slave through the last.
-If two real interfaces are slaves in the bond and two packets arrive destined out of the bonded interface the first will be transmitted on the first slave and the second frame will be transmitted on the second slave.
-The third packet will be sent on the first and so on. This provides load balancing and fault tolerance.
+Цей режим передає пакети в послідовному порядку від першого доступного підлеглого до останнього.
+Якщо два реальних інтерфейси є підлеглими в зв’язку, і два пакети надходять, призначені за межі зв’язаного інтерфейсу, перший буде передано на першому підпорядкованому пристрої, а другий кадр буде передано на другому підпорядкованому.
+Третій пакет буде відправлено в першому і так далі. Це забезпечує балансування навантаження та стійкість до відмов.
 
 **Mode 1 (active-backup) - default**<br>
-This mode places one of the interfaces into a backup state and will only make it active if the link is lost by the active interface.
-Only one slave in the bond is active at an instance of time. A different slave becomes active only when the active slave fails.
-This mode provides fault tolerance.
+Цей режим переводить один із інтерфейсів у стан резервного копіювання та робить його активним, лише якщо зв’язок втрачено активним інтерфейсом.
+Лише один підлеглий зв’язок є активним у певний момент часу. Інший підлеглий пристрій стає активним лише тоді, коли активний підлеглий пристрій виходить з ладу.
+Цей режим забезпечує відмовостійкість.
 
 **Mode 2 (balance-xor)**<br>
-This mode transmits packets based on an XOR formula. Source MAC address is XOR'd with destination MAC address modula slave count.
-This selects the same slave for each destination MAC address and provides load balancing and fault tolerance.
+Цей режим передає пакети на основі формули XOR. MAC-адреса джерела об’єднується XOR з MAC-адресою призначення за модулем підпорядкованого рахунку.
+Це вибирає той самий підлеглий пристрій для кожної MAC-адреси призначення та забезпечує балансування навантаження та стійкість до відмов.
 
 **Mode 3 (broadcast)**<br>
-This mode transmits everything on all slave interfaces. This mode is least used (only for specific purpose) and provides only fault tolerance.
+Цей режим передає все на всіх підлеглих інтерфейсах. Цей режим використовується найменше (лише для певних цілей) і забезпечує лише відмовостійкість.
 
 **Mode 4 (802.3ad)**<br>
-This mode is known as *Dynamic Link Aggregation*. It creates aggregation groups that share the same speed and duplex settings.
-It requires a switch that supports IEEE 802.3ad dynamic link.
-Slave selection for outgoing traffic is done according to the transmit hash policy, which may be changed from the default simple XOR policy via the xmit_hash_policy option.
-Note that not all transmit policies may be 802.3ad compliant, particularly in regards to the packet mis-ordering requirements of section 43.2.4 of the 802.3ad standard.
-Different peer implementations will have varying tolerances for noncompliance.
+Цей режим відомий як *Dynamic Link Aggregation*. Він створює групи агрегації, які мають однакові параметри швидкості та дуплексу.
+Для цього потрібен комутатор, який підтримує динамічне з’єднання IEEE 802.3ad.
+Вибір підлеглого пристрою для вихідного трафіку здійснюється відповідно до хеш-політики передачі, яку можна змінити замість стандартної політики XOR за допомогою параметра xmit_hash_policy.
+Зауважте, що не всі політики передавання можуть бути сумісними з 802.3ad, особливо щодо вимог щодо неправильного впорядкування пакетів у розділі 43.2.4 стандарту 802.3ad.
+Різні однорангові реалізації матимуть різні допуски щодо невідповідності.
 
 **Mode 5 (balance-tlb)**<br>
-This mode is called *Adaptive transmit load balancing*. The outgoing traffic is distributed according to the current load and queue on each slave interface.
-Incoming traffic is received by the current slave.
+Цей режим називається *Адаптивне балансування навантаження на передачу*. Вихідний трафік розподіляється відповідно до поточного навантаження та черги на кожному підпорядкованому інтерфейсі.
+Вхідний трафік отримує поточний підлеглий пристрій.
 
 **Mode 6 (balance-alb)**<br>
-This mode is called *Adaptive load balancing*. This includes balance-tlb + receive load balancing (rlb) for IPV4 traffic.
-The receive load balancing is achieved by ARP negotiation.
-The bonding driver intercepts the ARP Replies sent by the server on their way out and overwrites the src hw address with the unique hw address of one of the slaves in the bond
-such that different clients use different hw addresses for the server.
+Цей режим називається *Адаптивне балансування навантаження*. Це включає баланс-tlb + отримання балансування навантаження (rlb) для трафіку IPV4.
+Балансування навантаження на отримання досягається узгодженням ARP.
+Драйвер з’єднання перехоплює ARP-відповіді, надіслані сервером, і замінює src hw-адресу унікальною hw-адресою одного з підлеглих пристроїв у зв’язку
+так що різні клієнти використовують різні hw адреси для сервера.
 
-*Mode 1 (active-backup) is the recommended setting. Other modes allow you to set up a specific environment, but may require proper switch support.
-Choosing a unsupported mode can result in a disrupted communication.*
+*Mode 1 (active-backup) є рекомендованим налаштуванням. Інші режими дозволяють налаштувати конкретне середовище, але може вимагати належної підтримки комутаторів.
+Вибір непідтримуваного режиму може призвести до переривання зв’язку.*
 :end
 
 :eth_bonding_members_help:
-Select which interfaces are member of the *bonded* interface. By default eth0 is a member, while other interfaces are optional.
+Виберіть, які інтерфейси є членами інтерфейсу *bonded*. За замовчуванням eth0 є членом, а інші інтерфейси необов’язкові.
 :end
 
 :eth_enable_bridging_help:
-Bridging is a feature which creates a virtual bridge and allows VMs and Docker containers to communicate directly with the physical Ethernet port.
-Both bonding and bridging can be combined to let VMs or containers communicate over a *bonded* interface.
+Перемикання — це функція, яка створює віртуальний міст і дозволяє віртуальним машинам і контейнерам Docker спілкуватися безпосередньо з фізичним портом Ethernet.
+І з’єднання, і з’єднання можна комбінувати, щоб дозволити віртуальним машинам або контейнерам спілкуватися через *з’єднаний* інтерфейс.
 :end
 
 :eth_bridging_members_help:
-Select which interfaces are member of the *bridged* interface. By default eth0 is a member, while other interfaces are optional.
+Виберіть, які інтерфейси є членами інтерфейсу *bridged*. За замовчуванням eth0 є членом, а інші інтерфейси необов’язкові.
 :end
 
 :eth_network_protocol_help:
-Select which protocol(s) are used. By default IPv4 only is used.<br>
-When both IPv4 and IPv6 is selected, each protocol can be configured independently.
+Виберіть, які протоколи використовуються. За умовчанням використовується лише IPv4.<br>
+Якщо вибрано як IPv4, так і IPv6, кожен протокол можна налаштувати окремо.
 :end
 
 :eth_ipv4_address_assignment_help:
-The following settings are possible:
+Можливі такі налаштування:
 
-*Automatic* - the server will attempt to obtain a IPv4 address from the local DHCP server<br>
-*Static* - the IPv4 address is manually set for this interface<br>
-*None* - no IPv4 address is assigned to the interface (only available for VLANs)
+*Автоматично* - сервер намагатиметься отримати адресу IPv4 від локального сервера DHCP<br>
+*Статичний* – IPv4-адреса встановлюється вручну для цього інтерфейсу<br>
+*Немає* - адреса IPv4 не призначена інтерфейсу (доступно лише для VLAN)
 :end
 
 :eth_ipv4_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address and mask of the system.
+Неактивний під час автоматичного призначення IP-адреси. В іншому випадку вкажіть тут адресу IPv4 і маску системи.
 :end
 
 :eth_ipv4_default_gateway_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address of your router.
+Неактивний під час автоматичного призначення IP-адреси. В іншому випадку вкажіть тут IPv4-адресу вашого маршрутизатора.
 :end
 
 :eth_ipv4_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv4 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+Якщо встановлено значення *Автоматично*, сервер використовуватиме DNS-сервер(и) IPv4, отриманий локальним автоматичним призначенням.<br>
+Якщо встановлено *Static*, ви можете ввести власний список.
 
-This is useful in Active Directory configurations where you need to set the first DNS Server entry to the IP address of your AD Domain server.
+Це корисно в конфігураціях Active Directory, де вам потрібно встановити перший запис DNS-сервера на IP-адресу вашого сервера AD Domain.
 :end
 
 :eth_ipv4_dns_server_help:
-This is the primary IPv4 DNS server to use. Enter a IPv4 address.
+Це основний DNS-сервер IPv4 для використання. Введіть адресу IPv4.
 
-Note: for *Active Directory* you **must** ensure this is set to the IP address of your AD Domain server.
+Примітка: для *Active Directory* ви **повинні** переконатися, що для цього встановлено IP-адресу вашого сервера AD Domain.
 :end
 
 :eth_ipv4_dns_server2_help:
-This is the IPv4 DNS server to use when IPv4 DNS server 1 is down.
+Це DNS-сервер IPv4, який використовується, коли DNS-сервер IPv4 1 не працює.
 :end
 
 :eth_ipv4_dns_server3_help:
-This is the IPv4 DNS server to use when IPv4 DNS servers 1 and 2 are both down.
+Це DNS-сервер IPv4, який використовується, коли обидва DNS-сервери IPv4 1 і 2 не працюють.
 :end
 
 :eth_ipv6_address_assignment_help:
-The following settings are possible:
+Можливі такі налаштування:
 
-*Automatic* - the server will attempt to obtain a IPv6 address from the local DHCP server or Router Advertisement (RA)<br>
-*Static* - the IPv6 address is manually set for this interface<br>
-*None* - no IPv6 address is assigned to the interface (only available for VLANs)
+*Автоматично* - сервер намагатиметься отримати адресу IPv6 від локального сервера DHCP або оголошення маршрутизатора (RA)<br>
+*Статичний* - IPv6-адреса встановлюється вручну для цього інтерфейсу<br>
+*Немає* - адреса IPv6 не призначена інтерфейсу (доступно лише для VLAN)
 :end
 
 :eth_ipv6_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 address of the system.
+Неактивний під час автоматичного призначення IP-адреси. В іншому випадку вкажіть тут IPv6-адресу системи.
 :end
 
 :eth_ipv6_default_gateway_help:
@@ -1667,73 +1667,73 @@ Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 a
 :end
 
 :eth_ipv6_privacy_extensions_help:
-Enable or disable the generation of a random IPv6 interface identifier according to RFC4941. This is similar to the temporary IPv6 address generation on Windows machines.
+Увімкніть або вимкніть генерацію випадкового ідентифікатора інтерфейсу IPv6 відповідно до RFC4941. Це схоже на генерацію тимчасової адреси IPv6 на машинах Windows.
 :end
 
 :eth_ipv6_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv6 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+Якщо встановлено значення *Автоматично*, сервер використовуватиме DNS-сервер(и) IPv6, отриманий локальним автоматичним призначенням.<br>
+Якщо встановлено *Static*, ви можете ввести власний список.
 :end
 
 :eth_ipv6_dns_server_help:
-This is the primary IPv6 DNS server to use. Enter a IPv6 address.
+Це основний DNS-сервер IPv6 для використання. Введіть адресу IPv6.
 :end
 
 :eth_ipv6_dns_server2_help:
-This is the IPv6 DNS server to use when IPv6 DNS server 1 is down.
+Це DNS-сервер IPv6, який використовується, коли DNS-сервер IPv6 1 не працює.
 :end
 
 :eth_ipv6_dns_server3_help:
-This is the IPv6 DNS server to use when IPv6 DNS servers 1 and 2 are both down.
+Це DNS-сервер IPv6, який використовується, коли обидва сервери IPv6 DNS 1 і 2 не працюють.
 :end
 
 :eth_desired_mtu_help:
-This is the MTU size to use on the physical Ethernet interface.
-If left blank, the MTU will automatically be determined (by default 1500 bytes).
+Це розмір MTU для фізичного інтерфейсу Ethernet.
+Якщо залишити порожнім, MTU буде визначено автоматично (за замовчуванням 1500 байт).
 :end
 
 :eth_enable_vlans_help:
-By default no VLANs are configured.<br>
-Enabling VLANs extends the number of logical connections over the same physical connection.
+За замовчуванням VLAN не налаштовано.<br>
+Увімкнення VLAN розширює кількість логічних з’єднань через одне фізичне з’єднання.
 
-Note: your router and switch must support VLANs too when this feature is used.
+Примітка: ваш маршрутизатор і комутатор також повинні підтримувати VLAN, коли використовується ця функція.
 :end
 
 :eth_vlan_number_help:
-Give each VLAN a unique identifier. Numbers range from 1 to 4095.
+Надайте кожній VLAN унікальний ідентифікатор. Числа від 1 до 4095.
 :end
 
 :eth_network_rules_help:
-The interface assignment rules can be changed here and might be necessary to set the preferred interface for managing Unraid - *use with care, usually there is no need to change*.
+Правила призначення інтерфейсу можна змінити тут, і це може знадобитися для встановлення бажаного інтерфейсу для керування Unraid - *використовуйте обережно, зазвичай немає потреби змінювати*.
 
-**eth0** is the main interface used to manage the Unraid system. The other interfaces are optional and may be used as desired.
-Every interface must be uniquely identified by its MAC (hardware) address.
+**eth0** — це основний інтерфейс, який використовується для керування системою Unraid. Інші інтерфейси є необов’язковими і можуть використовуватися за бажанням.
+Кожен інтерфейс має бути однозначно ідентифікований своєю MAC (апаратною) адресою.
 
-The interface assignment is stored on the flash device under */config/network-rules.cfg*. This file can be viewed with any editor, but it is recommended to make changes via the webGUI only.<br>
-Deleting the file *network-rules.cfg* from the flash device will restore automatic interface assignment after a system reboot.
+Призначення інтерфейсу зберігається на флеш-пристрої в */config/network-rules.cfg*. Цей файл можна переглядати за допомогою будь-якого редактора, але рекомендується вносити зміни лише через веб-Інтерфейс.<br>
+Видалення файлу *network-rules.cfg* з флеш-пристрою відновить автоматичне призначення інтерфейсу після перезавантаження системи.
 :end
 
 :eth_routing_table_help:
 Enter a valid IPv4 route in the format *nnn.nnn.nnn.nnn/xx*, e.g. *192.168.1.0/24*<br>
-or enter a valid IPv6 route in the format *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80::3ad8:2fff:fe25:9709/64*
+або введіть дійсний маршрут IPv6 у форматі *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80::3ad8:2fff:fe25:9709/64*
 
-Select the gateway from the dropdown list or enter a valid IPv4/IPv6 address as gateway value.
+Виберіть шлюз зі спадного списку або введіть дійсну адресу IPv4/IPv6 як значення шлюзу.
 
-The metric value is optional, it defaults to 1. Use it to select the preferred gateway when more than one entry of the same route exists.
+Значення метрики є необов’язковим, воно за замовчуванням дорівнює 1. Використовуйте його, щоб вибрати бажаний шлюз, якщо існує більше ніж один запис одного маршруту.
 :end
 
 :apc_ups_daemon_help:
-Set to 'Yes' to enable apcupsd and start the daemon, set to 'No' to disable apcupsd and stop the daemon.
+Виберіть «Так», щоб увімкнути apcupsd і запустити демон, встановіть «Ні», щоб вимкнути apcupsd і зупинити демон.
 :end
 
 :apc_ups_cable_help:
-Defines the type of cable connecting the UPS to your computer.Possible generic choices for 'cable' are:
+Визначає тип кабелю, що підключає UPS до вашого комп’ютера. Можливі загальні варіанти для «кабелю»:
 
-+ USB, Simple, Smart, Ether, or Custom to specify a special cable.
++ USB, Simple, Smart, Ether або Custom, щоб вибрати спеціальний кабель.
 :end
 
 :apc_ups_custom_cable_help:
-Specify a special cable by model number, only applicable when *UPS cable* is set to Custom.
+Укажіть спеціальний кабель за номером моделі, застосовний лише тоді, коли для параметра *Кабель UPS* встановлено значення Спеціальний.
 
 + 940-0119A, 940-0127A, 940-0128A, 940-0020B
 + 940-0020C, 940-0023A, 940-0024B, 940-0024C
@@ -1742,113 +1742,113 @@ Specify a special cable by model number, only applicable when *UPS cable* is set
 :end
 
 :apc_ups_type_help:
-Define a *UPS type*, which corresponds to the type of UPS you have (see the Description for more details).
+Визначте *тип UPS*, який відповідає типу вашого UPS (додаткову інформацію див. в Описі).
 
-+ **USB** - most new UPSes are USB
-+ **APCsmart** - newer serial character device, appropriate for SmartUPS models using a serial cable (not USB)
-+ **Net** - network link to a master apcupsd through apcupsd's Network Information Server. This is used if the UPS powering your computer is connected to a different computer for monitoring
-+ **SNMP** - SNMP network link to an SNMP-enabled UPS device
-+ **Dumb** - old serial character device for use with simple-signaling UPSes
-+ **PCnet** - PowerChute Network Shutdown protocol which can be used as an alternative to SNMP with the AP9617 family of smart slot cards
-+ **ModBus** - serial device for use with newest SmartUPS models supporting the MODBUS protocol
++ **USB** - більшість нових UPS є USB
++ **APCsmart** - новий пристрій з послідовним символом, підходить для моделей SmartUPS, які використовують послідовний кабель (не USB)
++ **Net** - мережеве посилання на головний apcupsd через мережевий інформаційний сервер apcupsd. Це використовується, якщо UPS, що живить ваш комп’ютер, підключено до іншого комп’ютера для моніторингу
++ **SNMP** – мережеве з’єднання SNMP із пристроєм UPS із підтримкою SNMP
++ **Dumb** - старий пристрій із послідовним символом для використання з UPS із простою сигналізацією
++ **PCnet** - протокол PowerChute Network Shutdown, який можна використовувати як альтернативу SNMP із сімейством смарт-карт AP9617
++ **ModBus** - послідовний пристрій для використання з найновішими моделями SmartUPS, що підтримують протокол MODBUS
 :end
 
 :apc_ups_device_help:
-Enter the *device* which corresponds to your situation, only applicable when *UPS type* is not set to USB.
+Введіть *пристрій*, який відповідає вашій ситуації, застосовний лише тоді, коли для *Типу UPS* не встановлено USB.
 
 + **apcsmart** - /dev/tty**
-+ **net** - hostname:port. Hostname is the IP address of the NIS server. The default port is 3551
-+ **snmp** - hostname:port:vendor:community. Hostname is the ip address or hostname of the UPS on the network. Vendor can be can be "APC" or "APC_NOTRAP". "APC_NOTRAP" will disable SNMP trap catching; you usually want "APC". Port is usually 161. Community is usually "private"
-+ **dumb** - /dev/tty**
-+ **pcnet** - ipaddr:username:passphrase:port. ipaddr is the IP address of the UPS management card. username and passphrase are the credentials for which the card has been configured. port is the port number on which to listen for messages from the UPS, normally 3052. If this parameter is empty or missing, the default of 3052 will be used
++ **net** - ім'я хоста:порт. Ім'я хоста - це IP-адреса сервера NIS. Стандартний порт 3551
++ **snmp** - ім'я хоста:порт:постачальник:спільнота. Ім’я хоста – це IP-адреса або ім’я хоста UPS у мережі. Постачальником може бути "APC" або "APC_NOTRAP". "APC_NOTRAP" вимкне перехоплення SNMP; ви зазвичай хочете "APC". Порт зазвичай 161. Спільнота зазвичай "приватна"
++ **тупий** - /dev/tty**
++ **pcnet** - ipaddr:ім'я користувача:пароль:порт. ipaddr — IP-адреса карти керування UPS. ім’я користувача та парольна фраза – це облікові дані, для яких налаштовано картку. port — це номер порту, на якому слід прослуховувати повідомлення від UPS, зазвичай 3052. Якщо цей параметр порожній або відсутній, використовуватиметься значення за замовчуванням 3052
 + **modbus** - /dev/tty**
 :end
 
 :apc_battery_level_help:
-If during a power failure, the remaining battery percentage (as reported by the UPS) is below or equal to *Battery level*, apcupsd will initiate a system shutdown.
+Якщо під час збою живлення відсоток залишку батареї (за повідомленням UPS) є нижчим або дорівнює *рівню батареї*, apcupsd ініціює завершення роботи системи.
 :end
 
 :apc_runtime_left_help:
-If during a power failure, the remaining runtime in minutes (as calculated internally by the UPS) is below or equal to this field, apcupsd, will initiate a system shutdown.
+Якщо під час збою живлення час роботи, що залишився, у хвилинах (як розраховано внутрішнім UPS) менше або дорівнює цьому полю, apcupsd ініціює завершення роботи системи.
 :end
 
 :apc_battery_time_help:
-If during a power failure, the UPS has run on batteries for *time-out* many seconds or longer; apcupsd will initiate a system shutdown. A value of zero disables this timer.
+Якщо під час збою живлення UPS працював від батареї протягом *тайм-ауту* багато секунд або довше; apcupsd ініціює завершення роботи системи. Значення нуль вимикає цей таймер.
 
-If you have a Smart UPS, you will most likely want to disable this timer by setting it to zero.
-That way, your UPS will continue on batteries until either the % charge remaining drops to or below *Battery level* or the remaining battery runtime drops to or below *minutes*.
+Якщо у вас є UPS Smart, ви, швидше за все, захочете вимкнути цей таймер, встановивши його на нуль.
+Таким чином, ваш UPS працюватиме від батареї, поки % заряду, що залишився, не впаде до або нижче *Рівня батареї* або час роботи батареї, що залишився, не впаде до або нижче *хвилин*.
 
-Of course - when testing - setting this to 60 causes a quick system shutdown if you pull the power plug.
-If you have an older dumb UPS, you will want to set this to less than the time you know you can run on batteries.
+Звичайно - під час тестування - встановлення значення 60 призведе до швидкого завершення роботи системи, якщо ви витягнете вилку живлення.
+Якщо у вас старий тупий UPS, ви захочете налаштувати його на менше часу, ніж ви знаєте, що ви можете працювати від батарей.
 :end
 
 :apc_note_help:
-**Note:** *Battery level*, *Runtime left*, and *Time on battery* work in conjunction, so the first that occurs will cause the initiation of a shutdown.
+**Примітка.** *Рівень заряду батареї*, *Залишився час роботи* та *Час роботи від батареї* працюють у поєднанні, тому перше, що станеться, призведе до завершення роботи.
 :end
 
 :apc_killups_help:
-Set to *Yes* to turn off the power to the UPS after a shutdown.
+Виберіть *Так*, щоб вимкнути живлення UPS після завершення роботи.
 :end
 
 :parity_check_scheduled_help:
-By default no parity check is scheduled. Select here the desired schedule. This can be one of the preset schedules for daily, weekly, monthly, yearly or a custom schedule.
+За замовчуванням перевірка парності не запланована. Виберіть тут потрібний розклад. Це може бути один із попередньо встановлених розкладів на день, щотижня, щомісяця, на рік або спеціальний розклад.
 :end
 
 :parity_day_of_the_week_help:
-When a **weekly** or **custom** schedule is selected then choose here the preferred *day of the week*, in the other schedules this setting is not used and unavailable.
+Якщо вибрано **щотижневий** або **спеціальний** розклад, виберіть тут бажаний *день тижня*, в інших розкладах цей параметр не використовується та недоступний.
 :end
 
 :parity_week_of_the_month_help:
-When a **monthly** or **yearly** schedule is selected then choose here the preferred *day of the month*.
-When a **custom** schedule is selected then choose here the preferred *week of the month*, in the other schedules this setting is not used and unavailable.
+Якщо вибрано **щомісячний** або **річний** розклад, виберіть тут бажаний *день місяця*.
+Якщо вибрано **спеціальний** розклад, виберіть тут бажаний *тиждень місяця*, в інших розкладах цей параметр не використовується та недоступний.
 :end
 
 :parity_time_of_the_day_help:
-Choose the desired *time of the day* to start the schedule. Time granularity is given in half hour periods.
+Виберіть потрібний *час доби*, щоб почати розклад. Деталізація часу надається в півгодинних періодах.
 :end
 
 :parity_month_of_the_year_help:
-When a **yearly** or **custom** schedule is selected then choose here the preferred *month of the year*, in the other schedules this setting is not used and unavailable.
+Якщо вибрано **річний** або **спеціальний** розклад, виберіть тут бажаний *місяць року*, в інших розкладах цей параметр не використовується та недоступний.
 :end
 
 :parity_write_corrections_help:
-Choose here whether any parity errors found during the check, need to be corrected on the parity disk or not.
+Виберіть тут, чи потрібно будь-які помилки паритету, виявлені під час перевірки, виправляти на диску парності чи ні.
 :end
 
 :mover_schedule_help:
-Choose a mover schedule ranging from hourly, daily, weekly and monthly.
+Виберіть графік переїзду: погодинний, щоденний, тижневий і місячний.
 
-The interval determines how fast the mover will activated, it runs in the background.
+Інтервал визначає швидкість активації рушія, він працює у фоновому режимі.
 :end
 
 :mover_day_of_the_week_help:
-Choose a day when the weekly schedule is selected. Otherwise disabled.
+Виберіть день, коли вибрано тижневий розклад. В іншому випадку вимкнено.
 :end
 
 :mover_day_of_the_month_help:
-Choose a date when the monthly schedule is selected. Otherwise disabled.
+Виберіть дату, коли вибрано місячний графік. В іншому випадку вимкнено.
 :end
 
 :mover_time_of_the_day_help:
-When an hourly schedule is selected this will set the interval in hours. An interval always starts on the whole hour (minute 0).
+Якщо вибрано погодинний розклад, інтервал буде встановлено в годинах. Інтервал завжди починається з цілої години (хвилина 0).
 
-For the other schedules choose here the time of the day the mover should start.
+Для інших розкладів виберіть тут час доби, коли має розпочатися переїзд.
 :end
 
 :mover_logging_help:
-Write mover messages to the syslog file.
+Записати повідомлення про переміщення у файл системного журналу.
 :end
 
 :notifications_display_help:
-In *Detailed* view all notifications will be displayed on screen as soon as they arrive.<br>
-Notifications can be acknowledged individually or all in once.
+У *Детальному* перегляді всі сповіщення відображатимуться на екрані, щойно вони надійдуть.<br>
+Сповіщення можна підтверджувати окремо або всі одночасно.
 
-In *Summarized* view notifications will be counted only and the number of unread notifications is shown in the menu header per category.<br>
-Click on the counters to either acknowledge or view the unread notifications.
+У режимі перегляду *Підсумковано* буде враховано лише сповіщення, а кількість непрочитаних сповіщень відображається в заголовку меню для кожної категорії.<br>
+Натисніть лічильники, щоб підтвердити або переглянути непрочитані сповіщення.
 :end
 
 :notifications_date_format_help:
-Select the desired date format which is used in the notifications archive. Recommended is YYYY-MM-DD, which makes the date/time column sortable in a sensible way.
+Виберіть потрібний формат дати, який використовується в архіві сповіщень. Рекомендовано РРРР-ММ-ДД, що робить стовпець дати/часу зручним для сортування.
 :end
 
 :notifications_time_format_help:
