@@ -86,7 +86,7 @@ Registry=Реєстр
 Details=Деталі
 Added=Додати
 ; Install Plugin title of openbox
-Install Plugin=Установити плагін
+Install Plugin=Встановлення додатку
 Update Plugin=Оновити плагін
 
 Requirements not met=Вимоги не виконані

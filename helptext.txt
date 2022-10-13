@@ -945,165 +945,165 @@ Samba на основі кожного пакета, що вони бажают�
 :end
 
 :docker_repositories_help:
-Use this field to add template repositories.
-Docker templates are used to facilitate the creation and re-creation of Docker containers.  Please setup one per line.
+Використовуйте це поле, щоб додати сховища шаблонів.
+Шаблони Docker використовуються для полегшення створення та повторного створення контейнерів Docker. Налаштуйте по одному на рядок.
 
-For a list of popular community-supported repositories, visit here: <a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
+Перелік популярних репозиторіїв, підтримуваних спільнотою, див. тут: <a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
 :end
 
 :docker_enable_help:
-Before you can start the Docker service for the first time, please specify an image file for Docker to install to.
+Перш ніж ви зможете вперше запустити службу Docker, укажіть файл зображення для інсталяції Docker.
 
-Once started, Docker will always automatically start after the array has been started.
+Після запуску Docker завжди запускатиметься автоматично після запуску масиву.
 :end
 
 :docker_timeout_help:
-The time in seconds to allow a container to gracefully stop before forcing it to stop
+Час у секундах, протягом якого контейнер може плавно зупинитися, перш ніж примусово зупинитися
 :end
 
 :docker_vdisk_type_help:
-Select where to keep the Docker persistent state.
+Виберіть, де зберігати постійний стан Docker.
 
-This can be an image file with a specific size or a dedicated folder.
+Це може бути файл зображення певного розміру або окрема папка.
 :end
 
 :docker_vdisk_size_help:
-If the system needs to create a new docker image file, this is the default size to use specified in GB.
+Якщо системі потрібно створити новий файл образу докера, це розмір за замовчуванням у GB.
 
-To resize an existing image file, specify the new size here. Next time the Docker service is started the file (and file system) will be increased to the new size (but never decreased).
+Щоб змінити розмір існуючого файлу зображення, вкажіть тут новий розмір. Під час наступного запуску служби Docker файл (і файлова система) буде збільшено до нового розміру (але ніколи не зменшено).
 :end
 
 :docker_vdisk_location_help:
-You must specify an image file for Docker. The system will automatically create this file when the Docker service is first started.
+Ви повинні вказати файл зображення для Docker. Система автоматично створить цей файл під час першого запуску служби Docker.
 
-The image file name must have the extension .img, If not the input is not accepted and marked red.
+Ім’я файлу зображення має мати розширення .img. Якщо ні, введені дані не приймаються та позначаються червоним.
 
-It is recommended to create this image file outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+Рекомендується створювати цей файл зображення поза масивом, напр. на пулі кешу. Для найкращої продуктивності SSD надають перевагу пристроям.
 :end
 
 :docker_vdisk_directory_help:
-You must specify a folder for Docker. The system will automatically create this folder when the Docker service is first started.
+Ви повинні вказати папку для Docker. Система автоматично створить цю папку під час першого запуску служби Docker.
 
-It is recommended to create this folder under a share which resides on the Cache pool (setting: cache=Only). For best performance SSD devices are preferred.
+Рекомендовано створити цю папку в спільному ресурсі, який знаходиться в пулі кешу (параметр: cache=Only). Для найкращої продуктивності SSD надають перевагу пристроям.
 :end
 
 :docker_appdata_location_help:
-You can specify a folder to automatically generate and store subfolders containing configuration files for each Docker app (via the /config mapped volume).
+Ви можете вказати папку для автоматичного створення та зберігання вкладених папок, що містять конфігураційні файли для кожної програми Docker (через зіставлений том /config).
 
-The folder's path must end with a trailing slash (/) character. If not the input is not accepted and marked red.
+Шлях папки має закінчуватися символом косої риски (/). Якщо ні, введені дані не приймаються та позначаються червоним.
 
-It is recommended to create this folder outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+Рекомендовано створювати цю папку поза масивом, напр. на пулі кешу. Для найкращої продуктивності SSD надають перевагу пристроям.
 
-Only used when adding new Docker apps. Editing existing Docker apps will not be affected by this setting.
+Використовується лише під час додавання нових програм Docker. Цей параметр не вплине на редагування наявних програм Docker.
 :end
 
 :docker_log_rotation_help:
-By default LOG rotation is disabled and will create a single LOG file of unlimited size.
+За замовчуванням ротацію LOG вимкнено, і буде створено один файл LOG необмеженого розміру.
 
-Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
+Увімкніть ротацію LOG, щоб обмежити розмір файлу LOG і вказати кількість файлів, які слід зберігати в схемі ротації.
 :end
 
 :docker_log_file_size_help:
-Specifies the maximum LOG size. When exceeded LOG rotation will occur.
+Визначає максимальний розмір журналу. При перевищенні LOG відбудеться ротація.
 :end
 
 :docker_log_file_number_help:
-Specifies the number of LOG files when LOG rotation is done.
+Вказує кількість файлів LOG після ротації LOG.
 :end
 
 :docker_authoring_mode_help:
-If set to **Yes**, when creating/editing containers the interface will be present with some extra fields related to template authoring.
+Якщо встановлено значення **Так**, під час створення/редагування контейнерів інтерфейс буде присутній з деякими додатковими полями, пов’язаними зі створенням шаблонів.
 :end
 
 :docker_custom_network_access_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
-By default this is prohibited.
+Дозволяє прямий зв’язок між хостом і контейнерами за допомогою спеціальної (macvlan) мережі.<br>
+За замовчуванням це заборонено.
 :end
 
 :docker_user_defined_network_help:
-User created networks are networks created by the user outside of the GUI.<br>
-By default user created networks are removed from Docker. This is done to prevent potential conflicts with the automatic generation of custom networks.
+Мережі, створені користувачем, — це мережі, створені користувачем поза графічним інтерфейсом користувача.<br>
+За замовчуванням створені користувачами мережі видаляються з Docker. Це зроблено для запобігання можливих конфліктів із автоматичним створенням власних мереж.
 
-Change this setting to preserve user defined networks, but it is the responsibility of the user to ensure these entries work correctly and are conflict free.
+Змініть цей параметр, щоб зберегти визначені користувачем мережі, але користувач несе відповідальність за те, щоб ці записи працювали правильно та не конфліктували.
 :end
 
 :docker_include_interface_vlan_ipv4_help:
-Include (default) or exclude the above interfaces or VLANs as custom network for Docker.
+Включати (за замовчуванням) або виключати наведені вище інтерфейси або VLAN як спеціальну мережу для Docker.
 
-Enter the pool range within each allocated subnet which is used for DHCPv4 assignments by Docker. E.g. 192.168.1.128/25
+Введіть діапазон пулу в кожній виділеній підмережі, який Docker використовує для призначення DHCPv4. наприклад 192.168.1.128/25
 :end
 
 :docker_exclude_interface_vlan_ipv4_help:
-Include or exclude (default) the above interfaces or VLANs as custom network for Docker.
+Включіть або виключіть (за замовчуванням) вищевказані інтерфейси або VLAN як спеціальну мережу для Docker.
 
-Enter the pool range within each allocated subnet which is used for DHCPv4 assignments by Docker. E.g. 192.168.1.128/25
+Введіть діапазон пулу в кожній виділеній підмережі, який Docker використовує для призначення DHCPv4. наприклад 192.168.1.128/25
 :end
 
 :docker_include_interface_vlan_ipv6_help:
-Include (default) or exclude the above interfaces or VLANs as custom network for Docker.
+Включати (за замовчуванням) або виключати наведені вище інтерфейси або VLAN як спеціальну мережу для Docker.
 
-Enter the pool range within each allocated subnet which is used for DHCPv6 assignments by Docker. E.g. 2a02:abcd:9ef5:100:1::/72
+Введіть діапазон пулу в кожній виділеній підмережі, який Docker використовує для призначення DHCPv6. наприклад 2a02:abcd:9ef5:100:1::/72
 :end
 
 :docker_exclude_interface_vlan_ipv6_help:
-Include or exclude (default) the above interfaces or VLANs as custom network for Docker.
+Включіть або виключіть (за замовчуванням) вищевказані інтерфейси або VLAN як спеціальну мережу для Docker.
 
-Enter the pool range within each allocated subnet which is used for DHCPv6 assignments by Docker. E.g. 2a02:abcd:9ef5:100:1::/72
+Введіть діапазон пулу в кожній виділеній підмережі, який Docker використовує для призначення DHCPv6. наприклад 2a02:abcd:9ef5:100:1::/72
 :end
 
 :docker_version_help:
-This is the active Docker version.
+Це активна версія Docker.
 :end
 
 :docker_vdisk_location_active_help:
-This is the location of the Docker image.
+Це розташування образу Docker.
 :end
 
 :docker_appdata_location_active_help:
-This is the storage location for Docker containers.
+Це місце зберігання контейнерів Docker.
 :end
 
 :docker_log_rotation_active_help:
-By default a single unlimited LOG file is created. Otherwise LOG file size and number of files are limited when LOG rotation is enabled.
+За замовчуванням створюється єдиний необмежений файл LOG. Інакше розмір і кількість файлів LOG обмежені, якщо ввімкнено ротацію LOG.
 :end
 
 :docker_custom_network_active_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
+Дозволяє прямий зв’язок між хостом і контейнерами за допомогою спеціальної (macvlan) мережі.<br>
 By default this is prohibited.
 :end
 
 :docker_user_defined_network_active_help:
-Shows whether networks created outside of the GUI are removed or preserved for Docker. When preserved *user defined networks* become available in the *Network type* dropdown list of containers.
+Показує, чи мережі, створені поза графічним інтерфейсом користувача, видаляються чи зберігаються для Docker. У разі збереження *визначені користувачем мережі* стають доступними в розкривному списку контейнерів *Тип мережі*.
 :end
 
 :docker_scrub_help:
-**Scrub** runs the *btrfs scrub* program to check file system integrity.
+**Scrub** запускає програму *btrfs scrub* для перевірки цілісності файлової системи.
 
-If repair is needed you should check the *Correct file system errors* and run a second Scrub pass; this will permit *btrfs scrub* to fix the file system.
+Якщо потрібне відновлення, перевірте *Виправлення помилок файлової системи* та запустіть другий проход очищення; це дозволить *btrfs scrub* виправити файлову систему.
 :end
 
 :docker_cancel_help:
-**Cancel** will cancel the Scrub operation in progress.
+**Скасувати** скасує поточну операцію очищення.
 :end
 
 :id_server_name_help:
-The network identity of your server.  Also known as *hostname* or *short hostname*. Windows networking
-refers to this as the *NetBIOS name* and must be 15 characters or less in length.
-Use only alphanumeric characters (that is, "A-Z", "a-z", and "0-9"), dashes ("-"), and dots (".");
-and, the first and last characters must be alphanumeric.
+Ідентифікація мережі вашого сервера. Також відомий як *ім’я хосту* або *коротке ім’я хосту*. Мережа Windows
+називає це *ім'ям NetBIOS* і має містити 15 символів або менше.
+Використовуйте лише буквено-цифрові символи (тобто "A-Z", "a-z" і "0-9"), тире ("-") і крапки (".");
+а перший і останній символи мають бути буквено-цифровими.
 :end
 
 :id_description_help:
-This is a text field that is seen next to a server when listed within Network or File Explorer
-(Windows), or Finder (macOS).
+Це текстове поле, яке відображається поруч із сервером у списку в Мережі або Провіднику файлів
+(Windows) або Finder (macOS).
 :end
 
 :id_model_help:
-This is the server model number.
+Це номер моделі сервера.
 :end
 
 :mgmt_start_page_help:
-Select the page which is opened first when entering the GUI. By default the *Main* page is selected.
+Виберіть сторінку, яка відкривається першою під час входу в GUI. За замовчуванням вибрано *Головну* сторінку.
 :end
 
 :mgmt_use_telnet_help:
@@ -1116,550 +1116,550 @@ Enter the TELNET port, default port is 23.
 :end
 
 :mgmt_use_ssh_help:
-SSH is enabled by default and offers a secure way of CLI access. Upon system startup SSH keys are automatically generated
-if not yet existing, and stored on the flash device in the folder */config/ssh*.
+SSH увімкнено за замовчуванням і пропонує безпечний спосіб доступу до CLI. Під час запуску системи ключі SSH автоматично генеруються, 
+якщо вони ще не існують, і зберігаються на флеш-пристрої в папці */config/ssh*.
 :end
 
 :mgmt_ssh_port_help:
-Enter the SSH port, default port is 22.
+Введіть порт SSH, порт за замовчуванням 22.
 :end
 
 :mgmt_use_upnp_help:
-Enable (default) or disable the UPnP function on the server. This function allows automatic forwarding of ports on the router, only applicable when UPnP is enabled on the router itself.
+Увімкнути (за замовчуванням) або вимкнути функцію UPnP на сервері. Ця функція дозволяє автоматично перенаправляти порти на маршрутизаторі, застосовна лише тоді, коли на самому маршрутизаторі ввімкнено UPnP.
 :end
 
 :mgmt_use_ssl_tls_help:
-Determines how the webGUI responds to HTTP and/or HTTPS protocol.
+Визначає, як webGUI реагує на протокол HTTP та/або HTTPS.
 
-Select **No** to disable HTTPS
+Виберіть **Ні**, щоб вимкнути HTTPS
 
-Select **Yes** to enable HTTPS and redirect HTTP to HTTPS. If a Let's Encrypt SSL certificate has not
-been provisioned, then an automatically generated self-signed SSL certificate will be used.
+Виберіть **Так**, щоб увімкнути HTTPS і перенаправити HTTP на HTTPS. Якщо SSL-сертифікат Let's Encrypt не надано, 
+буде використано автоматично згенерований самопідписаний SSL-сертифікат.
 
-Select **Auto** if you are using or plan to use a Let's Encrypt SSL certificate provisioned
-by Lime Technology. Before the certificate is provisioned, the webGUI remains
-in http-mode. After provisioning, the webGUI automatically switches to https-mode. In addition
-two background processes are enabled:
+Виберіть **Автоматично**, якщо ви використовуєте або плануєте використовувати сертифікат SSL Let's Encrypt, наданий Lime Technology.
+До надання сертифіката веб-інтерфейс користувача залишається в режимі http.
+Після ініціалізації webGUI автоматично переходить у режим https.
+Крім того, увімкнено два фонові процеси:
 
-- *updatedns* - This starts 30 seconds after server reboot has completed and contacts the Lime Technology
-DNS service to register the servers local IP address. Thereafter it wakes up every 10 minutes in case
-the local IP address has changed again.
+- *updatedns* - це починається через 30 секунд після завершення перезавантаження сервера та зв’язку зі службою 
+DNS Lime Technology для реєстрації локальної IP-адреси сервера.
+Після цього він прокидається кожні 10 хвилин, якщо локальна IP-адреса знову змінилася.
 
-- *renewcert* - This starts 60 seconds after server reboot has completed and contacts the Lime Technology
-certificate renewal service to determine if your Let's Encrypt SSL certificate needs to be renewed.
-Thereafter it wakes up every 24 hours. If within 30 days of expiration, a new certificate is automatically
-provisioned and downloaded to your server.
+- *renewcert* – це починається через 60 секунд після завершення перезавантаження сервера та зв’язується зі службою оновлення сертифікатів 
+Lime Technology, щоб визначити, чи потрібно оновлювати ваш сертифікат SSL Let’s Encrypt.
+Після цього він прокидається кожні 24 години. Якщо протягом 30 днів після закінчення терміну дії новий сертифікат буде автоматично 
+створено та завантажено на ваш сервер.
 
-Note: After provisioning a Let's Encrypt SSL certificate you may turn off the *updatedns* and *newcert*
-background processes by changing this field to **Yes**.
+Примітка. Після надання сертифіката Let's Encrypt SSL ви можете вимкнути фонові процеси *updatedns* і *newcert*, 
+змінивши в цьому полі значення **Так**.
 
-**nginx certificate handling details**
+**подробиці обробки сертифікатів nginx**
 
-The nginx startup script looks for a SSL certificate on the USB boot flash in this order:<br>
+Сценарій запуску nginx шукає сертифікат SSL на завантажувальній флеш-пам’яті USB у такому порядку:<br>
 `config/ssl/certs/certificate_bundle.pem`<br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem`
 
-If neither file exists, a self-signed SSL certificate is automatically created and stored in<br>
+Якщо жоден файл не існує, автоматично створюється самопідписаний сертифікат SSL і зберігається в <br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem`<br>
 
-Provisioning a Let's Encrypt certificate writes the certificate to<br>
+Надання сертифіката Let's Encrypt записує сертифікат до<br>
 `config/ssl/certs/certificate_bundle.pem`<br>
 
 **nginx stapling support**
 
-Whether nginx enables OCSP Staping is determined by which certificate is in use:<br>
+Чи вмикає nginx Staping OCSP, залежить від того, який сертифікат використовується:<br>
 `config/ssl/certs/certificate_bundle.pem` => Yes<br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem` => No
 :end
 
 :mgmt_http_port_help:
-Enter the HTTP port, default port is 80.
+Введіть порт HTTP, порт за замовчуванням 80.
 :end
 
 :mgmt_https_port_help:
-Enter the HTTPS port, default port is 443.
+Введіть порт HTTPS, порт за замовчуванням 443.
 :end
 
 :mgmt_local_tld_help:
-Enter your local Top Level Domain. May be blank.
+Введіть свій локальний домен верхнього рівня. Може бути пустим.
 :end
 
 :mgmt_certificate_expiration_help:
-**Provision** may be used to allocate a *free* SSL Certficiate from [Let's Encrypt](https://letsencrypt.org/) and
-then upload to your server. Note: We **highly** recommend using a static IP address in this case.
+**Надання** можна використовувати для виділення *безкоштовного* сертифіката SSL від [Let's Encrypt](https://letsencrypt.org/) і
+потім завантажте на свій сервер. Примітка. Ми **настійно** рекомендуємо використовувати статичну IP-адресу в цьому випадку.
 
-**Update DNS** may be used to manually initiate updating the DNS A-record of your server FQDN on unraid.net. Note
-that DNS propagation change could take anywhere from 1 minute to several hours (we set TTL to 60 seconds).
+**Оновити DNS** можна використовувати, щоб вручну ініціювати оновлення A-запису DNS повного доменного імені вашого сервера на unraid.net. Примітка
+що зміна поширення DNS може тривати від 1 хвилини до кількох годин (ми встановили TTL на 60 секунд).
 
-Note: **Provision** may fail if your router or upstream DNS server has
-[DNS rebinding protection](https://en.wikipedia.org/wiki/DNS_rebinding) enabled. DNS rebinding
-protection prevents DNS from resolving a private IP network range. DNS rebinding protection is meant as
-a security feature on a local LAN which includes legacy devices with buggy/insecure "web" interfaces.
+Примітка: **Надання** може вийти з ладу, якщо ваш маршрутизатор або вихідний DNS-сервер має
+[Захист від повторного прив’язування DNS] (https://en.wikipedia.org/wiki/DNS_rebinding) увімкнено. Повторне прив'язування DNS
+захист не дозволяє DNS розпізнавати діапазон приватної IP-мережі. Захист від перезв’язування DNS мається на увазі
+функція безпеки в локальній локальній мережі, яка включає застарілі пристрої з помилковими/незахищеними «веб-інтерфейсами».
 
-One source of DNS rebinding protection could be your ISP DNS server. In this case the problem may be solved by
-switching to a different DNS server such as Google's public DNS.
+Одним із джерел захисту від перезв’язування DNS може бути DNS-сервер вашого провайдера. У цьому випадку проблему можна вирішити за допомогою
+перемикаючись на інший DNS-сервер, наприклад, загальнодоступний DNS Google.
 
-More commonly, DNS rebinding protection could be enabled in your router. Most consumer routers do not implement DNS
-rebinding protection; but, if they do, a configuration setting should be available to turn it off.
+У більшості випадків захист від перезв’язування DNS можна ввімкнути у вашому маршрутизаторі. Більшість споживчих маршрутизаторів не реалізують DNS
+захист від перев'язки; але, якщо це так, має бути доступний параметр конфігурації, щоб вимкнути це.
 
-Higher end routers usually do enable DNS rebinding protection however. Typically there are ways of turning it off
-entirely or selectively based on domain. Examples:
+Проте маршрутизатори вищого рівня зазвичай увімкнуть захист від перезв’язування DNS. Як правило, існують способи його відключення
+повністю або вибірково на основі домену. приклади:
 
-**DD-WRT:** If you are using "dnsmasq" with DNS rebinding protection enabled, you can add this line to your router
-configuration file:
+**DD-WRT:** Якщо ви використовуєте «dnsmasq» із увімкненим захистом від перезв’язування DNS, ви можете додати цей рядок до свого маршрутизатора
+конфігураційний файл:
 
 `rebind-domain-ok=/unraid.net/`
 
-**pfSense:** If you are using pfSense internal DNS resolver service, you can add these Custom Option lines:
+**pfSense:** Якщо ви користуєтеся внутрішньою службою розпізнавання DNS pfSense, ви можете додати ці рядки спеціальних параметрів:
 
 `server:`<br>
 `private-domain: "unraid.net"`
 
-**Ubiquiti USG router:** you can add this configuration line:
+**Ubiquiti USG router:** ви можете додати цей рядок конфігурації:
 
 `set service dns forwarding options rebind-domain-ok=/unraid.net/`
 
-**OpenDNS:** Go to Settings -> Security and *remove* the checkbox next to
- "Suspicious Responses - Block internal IP addresses". It is an all-or-nothing setting.
+**OpenDNS:** Перейдіть до Налаштування -> Безпека та *зніміть* прапорець біля
+ «Підозрілі відповіді – блокувати внутрішні IP-адреси». Це налаштування «все або нічого».
 
-When all else fails, you can create an entry in your PC's *hosts* file to override external DNS and
-directly resolve your servers unraid.net FQDN to its local IP address.
+Коли нічого не допомагає, ви можете створити запис у файлі *hosts* вашого ПК, щоб замінити зовнішній DNS і
+напряму дозволити ваші сервери unraid.net FQDN на його локальну IP-адресу.
 :end
 
 :ftp_server_help:
-Enable or disable the FTP server daemon. By default the FTP server is enabled.
-This setting is not saved, i.e. upon system reboot it will revert to its default setting.
+Увімкніть або вимкніть демон FTP-сервера. За замовчуванням FTP-сервер увімкнено.
+Це налаштування не зберігається, тобто після перезавантаження системи воно повернеться до налаштувань за замовчуванням.
 :end
 
 :ftp_users_help:
-Enter the user names (separated by spaces) permitted to access the server using FTP.
-To disallow any user access, clear this setting.
+Введіть імена користувачів (відокремлені пробілами), яким дозволено доступ до сервера через FTP.
+Щоб заборонити доступ користувачам, зніміть це налаштування.
 
-**Note:** do not enter user name `root` since this may cause problems in the future.
+**Примітка:** не вводьте ім’я користувача `root`, оскільки це може спричинити проблеми в майбутньому.
 :end
 
 :ftp_overview_help:
-### Overview
+### Огляд
 
-Unraid includes the popular `vsftpd` FTP server.  The configuration of `vsftp` is currently very
-simple: **All** user names entered above are permitted to access the server via FTP and will have
-*full read/write/delete access* to the entire server, so use with caution.
+Unraid містить популярний FTP-сервер `vsftpd`. Наразі конфігурація `vsftp` дуже
+простий: **Усі** імена користувачів, введені вище, мають доступ до сервера через FTP і матимуть
+*повний доступ для читання/запису/видалення* до всього сервера, тому використовуйте з обережністю.
 :end
 
 :smb_enable_help:
-Select 'Yes (Workgroup)' to enable SMB (Windows Networking) protocol support. This
-also enables Windows host discovery.
+Виберіть «Так (робоча група)», щоб увімкнути підтримку протоколу SMB (мережа Windows). Це
+також дозволяє виявити хост Windows.
 
-Select 'Yes (Active Directory)' to enable Active Directory integration.
+Виберіть «Так (Active Directory)», щоб увімкнути інтеграцію Active Directory.
 :end
 
 :smb_hide_files_help:
-If set to 'Yes' then files starting with a '.' (dot) will appear as *hidden files* and normally
-will not appear in Windows folder lists unless you have "Show hidden files, folders, and drives" enabled
-in Windows Folder Options.
+Якщо встановлено значення «Так», то файли починаються з «.» (крапка) відображатимуться як *приховані файли* і зазвичай
+не відображатиметься у списках папок Windows, якщо ви не ввімкнули «Показувати приховані файли, папки та диски».
+у параметрах папки Windows.
 
-If set to 'No' then dot files will appear in folder lists the same as any other file.
+Якщо встановлено значення «Ні», файли з крапками відображатимуться у списках папок так само, як і будь-які інші файли.
 :end
 
 :smb_enhanced_macos_help:
-When set to 'Yes' provides enhanced compatibility with Apple SMB clients, resulting, for example, in faster
-Finder browsing, and ability to export Time Machine shares.  This may cause some issues with Windows clients, however.
-Please also refer to the [VFS_FRUIT MAN PAGE](https://www.mankier.com/8/vfs_fruit).
+Якщо встановлено значення «Так», забезпечується покращена сумісність із клієнтами Apple для малого та середнього бізнесу, що призводить, наприклад, до швидшої
+Перегляд Finder і можливість експорту ресурсів Time Machine. Однак це може викликати деякі проблеми з клієнтами Windows.
+Також зверніться до[VFS_FRUIT MAN PAGE](https://www.mankier.com/8/vfs_fruit).
 :end
 
 :smb_enable_netbios_help:
-Select 'Yes' to enable NetBIOS.  If enabled, SMBv1 protocol will also be recognized.  If disabled,
-clients must use SMBv2 or higher.
+Виберіть "Так", щоб увімкнути NetBIOS. Якщо ввімкнено, протокол SMBv1 також буде розпізнано. Якщо вимкнено,
+клієнти повинні використовувати SMBv2 або вище.
 :end
 
 :smb_enable_wsd_help:
-Select 'Yes' to enable WSD (WS-Discovery).  The only reason to turn this off is when you are running an
-old LAN setup based on SMBv1.
+Виберіть «Так», щоб увімкнути WSD (WS-Discovery). Єдина причина вимкнути це, коли ви запускаєте
+старі налаштування локальної мережі на основі SMBv1.
 :end
 
 :smb_wsd_options_help:
-This is a command line options string passed to the WSD daemon upon startup. Leave this field blank unless
-instructed by support to put something here.
+Це рядок параметрів командного рядка, який передається демону WSD під час запуску. Залиште це поле порожнім, якщо не
+отримав вказівку служби підтримки розмістити тут щось.
 :end
 
 :smb_extra_conf_help:
-Use this page to make changes to your `smb-extra.conf` file.  Samba will need
-to be restarted in order for changes to take effect.
+Використовуйте цю сторінку, щоб внести зміни у свій файл `smb-extra.conf`. Самба знадобиться
+перезапустити, щоб зміни набули чинності.
 :end
 
 :smb_extra_button_help:
-Click the **Apply** button to commit the current edits.  Click **Reset** to
-undo any changes you make (before Saving). Click **Done** to exit this page.
+Натисніть кнопку **Застосувати**, щоб прийняти поточні зміни. Натисніть **Скинути**, щоб
+скасувати будь-які внесені зміни (перед збереженням). Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
 
 :smb_workgroup_help:
-Enter your local network Workgroup name. Usually this is "WORKGROUP".
+Введіть назву робочої групи локальної мережі. Зазвичай це "РОБОЧА ГРУПА".
 :end
 
 :smb_local_master_help:
-If set to 'Yes' then the server will fully participate in browser elections, and in the absence
-of other servers, will usually become the local Master Browser.
+Якщо встановлено значення «Так», сервер буде повністю брати участь у виборах браузера та за його відсутності
+інших серверів, як правило, стає локальним головним браузером.
 :end
 
 :nfs_enable_help:
-Select 'Yes' to enable the NFS protocol.
+Виберіть «Так», щоб увімкнути протокол NFS.
 :end
 
 :nfs_tunable_fuse_remember_help:
-When NFS is enabled, this Tunable may be used to alleviate or solve instances of "NFS Stale File Handles"
-you might encounter with your NFS client.
+Коли NFS увімкнено, цей параметр можна використовувати для усунення або усунення випадків «застарілих обробок файлів NFS».
+ви можете зіткнутися з клієнтом NFS.
 
-In essence, (fuse_remember) tells an internal subsystem (named "fuse") how long to "remember" or "cache"
-file and directory information associated with user shares.  When an NFS client attempts to access a file
-(or directory) on the server, and that file (or directory) name is not cached, then you could encounter
-"stale file handle".
+По суті, (fuse_remember) повідомляє внутрішній підсистемі (під назвою «запобіжник»), як довго «запам’ятовувати» або «кешувати»
+інформацію про файли та каталоги, пов’язані зі спільними ресурсами користувачів. Коли клієнт NFS намагається отримати доступ до файлу
+(або каталогу) на сервері, а ім’я цього файлу (або каталогу) не кешується, то ви можете зіткнутися з
+"дескриптор застарілого файлу".
 
-The numeric value of this tunable is the number of seconds to cache file/directory name entries,
-where the default value of 330 indicates 5 1/2 minutes.  There are two special values you may also set
-this to:
+Числовим значенням цього параметра є кількість секунд для кешування записів імен файлів/каталогів,
+де значення за замовчуванням 330 означає 5 1/2 хвилин. Є два спеціальні значення, які ви також можете 
+встановити:
 
-* 0 which means, do not cache file/directory names at all, and
-* -1 which means cache file/directory names forever (or until array is stopped)
+* 0, що означає взагалі не кешувати імена файлів/каталогів, і
+* -1, що означає кешування імен файлів/каталогів назавжди (або доки масив не буде зупинено)
 
-A value of 0 would be appropriate if you are enabling NFS but only plan to use it for disk shares,
-not user shares.
+Значення 0 буде відповідним, якщо ви вмикаєте NFS, але плануєте використовувати його лише для спільних дисків,
+а не спільний доступ користувачів.
 
-A value of -1 would be appropriate if no other timeout seems to solve the "stale file handle" on
-your client.  Be aware that setting a value of -1 will cause the memory footprint to grow by approximately
-108 bytes per file/directory name cached.  Depending how much RAM is installed in your server and how many
-files/directories you access via NFS this may or may not lead to out-of-memory conditions.
+Значення -1 було б прийнятним, якщо жоден інший тайм-аут, здається, не вирішує "застарілий дескриптор файлу" 
+на вашому клієнті. Майте на увазі, що встановлення значення -1 призведе до збільшення об’єму пам’яті приблизно на 108 байт 
+на кешовану назву файлу/каталогу. Залежно від того, скільки оперативної пам’яті встановлено на вашому сервері та скільки файлів/каталогів 
+ви отримуєте доступ через NFS, це може або не може призвести до умов нестачі пам’яті.
 :end
 
 :shares_enable_disk_help:
-If set to No, disk shares are unconditionally not exported.
+Якщо встановлено значення «Ні», спільні диски беззастережно не експортуються.
 
-If set to Yes, disk shares may be exported.  **WARNING:** Do not copy data from a disk share to a user share
-unless you *know* what you are doing.  This may result in the loss of data and is not supported.
+Якщо встановлено значення «Так», спільні диски можна експортувати. **ПОПЕРЕДЖЕННЯ:** Не копіюйте дані зі спільного диска на спільний доступ користувача
+якщо ти не *знаєш* що робиш. Це може призвести до втрати даних і не підтримується.
 
-If set to Auto, only disk shares not participating in User Shares may be exported.
+Якщо встановлено значення Auto, можна експортувати лише спільні диски, які не беруть участь у спільних ресурсах користувача.
 :end
 
 :shares_enable_shares_help:
-If set to 'Yes' the User Shares feature is activated.
+Якщо встановлено значення «Так», активується функція «Спільний доступ користувача».
 :end
 
 :shares_included_disks_help:
-This setting defines the set of array disks which are *included* in User Shares.
-Unchecking all disks will allow **all** array disks to be included.
+Цей параметр визначає набір дисків-масивів, які *включаються* до спільних ресурсів користувача.
+Якщо зняти позначку з усіх дисків, буде включено **всі** диски масиву.
 :end
 
 :shares_excluded_disks_help:
-This setting defines the set of array disk which are *excluded* from User Shares.
-Uncheck all disks in order to not exclude any disks
+Цей параметр визначає набір дискових масивів, які *виключаються* зі спільних ресурсів користувача.
+Зніміть прапорці з усіх дисків, щоб не виключати жодного диска
 
-**Note:** Each separate User Share also includes its own set of Included and Excluded
-disks which represent a subset of the Included/Excluded disks defined here.
+**Примітка.** Кожен окремий спільний доступ користувача також включає власний набір «Включених» і «Виключених»
+диски, які представляють підмножину включених/виключених дисків, визначених тут.
 :end
 
 :shares_tunable_hard_links_help:
-If set to Yes then support the link() operation.
+Якщо встановлено значення Так, тоді підтримується операція link().
 
-If set to No then hard links are not supported.
+Якщо встановлено Ні, жорсткі посилання не підтримуються.
 
-Notes:
+Примітки:
 
-* Setting to Yes may cause problems for older media and dvd/bluray players accessing shares using NFS.
-* No matter how this is set, the **mover** will still properly handle any detected hard links.
+* Якщо встановити значення «Так», у старих медіа та DVD/Bluray програвачів можуть виникнути проблеми з доступом до спільних ресурсів за допомогою NFS.
+* Незалежно від того, як це встановлено, **mover** все одно належним чином оброблятиме будь-які виявлені жорсткі посилання.
 :end
 
 :shares_tunable_direct_io_help:
-**Experimental**: If set to Yes then mount User Share file system with FUSE *direct_io* mount option.
-This will increase write performance but might possibly decrease read performance.
+**Експериментальний**: якщо встановлено значення «Так», тоді монтуйте файлову систему User Share за допомогою параметра монтування FUSE *direct_io*.
+Це збільшить продуктивність запису, але може знизити продуктивність читання.
 
-*Auto* selects No.
+*Авто* вибирає Ні.
 :end
 
 :syslog_local_server_help:
-Let the server act as a central syslog server and collect syslog messages from other systems.
-The server can listen on UDP, TCP or both with a selectable port number.
+Нехай сервер діє як центральний сервер системного журналу та збирає повідомлення системного журналу з інших систем.
+Сервер може прослуховувати UDP, TCP або обидва з вибраним номером порту.
 
-Syslog information is stored per IP address. That is every system gets its own syslog file.
+Інформація системного журналу зберігається для кожної IP-адреси. Тобто кожна система отримує власний файл syslog.
 :end
 
 :syslog_local_folder_help:
-Select the share folder where the syslogs will be stored.
-It is recommended that you use a share located on the cache drive to prevent array disk spinups.
+Виберіть спільну папку, де зберігатимуться системні журнали.
+Рекомендується використовувати спільний ресурс, розташований на диску кешу, щоб запобігти розкручуванням диска масиву.
 :end
 
 :syslog_local_rotation_help:
-By default LOG rotation is disabled and will create a single LOG file of unlimited size.
+За замовчуванням ротацію LOG вимкнено, і буде створено один файл LOG необмеженого розміру.
 
-Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
+Увімкніть ротацію LOG, щоб обмежити розмір файлу LOG і вказати кількість файлів, які слід зберігати в схемі ротації.
 :end
 
 :syslog_local_file_size_help:
-Specifies the maximum LOG size. When exceeded LOG rotation will occur.
+Визначає максимальний розмір журналу. При перевищенні LOG відбудеться обертання.
 :end
 
 :syslog_local_file_number_help:
-Specifies the number of additional LOG files to keep in the rotation scheme.
+Визначає кількість додаткових файлів LOG, які слід зберігати в схемі ротації.
 :end
 
 :syslog_remote_server_help:
-Enter a name or IP address of a remote syslog server.
-This will send a copy of the syslog messages to the designated server.
+Введіть назву або IP-адресу віддаленого сервера системного журналу.
+Це надішле копію повідомлень системного журналу на вказаний сервер.
 :end
 
 :syslog_mirror_flash_help:
-This setting is NO by default and must be used with care to avoid unnecessary wear and tear of the USB device.
+За замовчуванням це налаштування НІ, і його слід використовувати обережно, щоб уникнути непотрібного зносу USB-пристрою.
 
-Change this setting to YES when troubleshooting is required and it is not possible to get the regular diagnostics information.
-A mirror of the syslog file is stored in the **logs** folder of the flash device.
+Змініть цей параметр на ТАК, якщо потрібне усунення несправностей і неможливо отримати звичайну діагностичну інформацію.
+Дзеркало файлу syslog зберігається в папці **logs** флеш-пристрою.
 :end
 
 :confirm_reboot_help:
-Choose if rebooting or powering down the server needs a confirmation checkbox.
+Виберіть, чи потрібен прапорець підтвердження під час перезавантаження чи вимкнення сервера.
 :end
 
 :confirm_array_stop_help:
-Choose if stopping the array needs a confirmation checkbox.
+Виберіть, чи потрібно підтвердження для зупинки масиву.
 :end
 
 :display_settings_help:
-The display settings below determine how items are displayed on screen. Use these settings to tweak the visual effects to your likings.
+Наведені нижче параметри відображення визначають, як елементи відображаються на екрані. Використовуйте ці параметри, щоб налаштувати візуальні ефекти на свій смак.
 
-You can experiment with these settings as desired, they only affect visual properties.
+Ви можете експериментувати з цими параметрами як завгодно, вони впливають лише на візуальні властивості.
 :end
 
 :display_font_size_help:
-This is a per device setting
+Це налаштування для кожного пристрою
 :end
 
 :display_wwn_device_id_help:
-World Wide Name (WWN) is a unique identifier used for SAS attached devices.
+Всесвітнє ім’я (WWN) — це унікальний ідентифікатор, який використовується для підключених пристроїв SAS.
 
-Select *Disabled* to suppress the appending of WWN to the device identification
+Виберіть *Вимкнено*, щоб заборонити додавання WWN до ідентифікації пристрою
 
-Select "Automatic" to append WWN to the device identification in case of SAS devices
+Виберіть «Автоматично», щоб додати WWN до ідентифікації пристрою у випадку пристроїв SAS
 :end
 
 :display_custom_text_color_help:
-Overrule the default text color in the header. This can be used to match the text color with a background image.
+Замінити колір тексту за замовчуванням у заголовку. Це можна використати для підбору кольору тексту до фонового зображення.
 :end
 
 :display_custom_background_color_help:
-Overrule the default background color in the header. This can be used to match the background color with a custom text color.
+Замініть фоновий колір за замовчуванням у заголовку. Це можна використовувати, щоб поєднати колір фону з власним кольором тексту.
 :end
 
 :display_custom_banner_help:
-Image will be scaled to 1920x90 pixels. The maximum image file upload size is 512 kB (524,288 bytes).
+Зображення буде масштабовано до 1920x90 пікселів. Максимальний розмір файлу зображення для завантаження становить 512 КБ (524 288 байт).
 :end
 
 :display_temperature_unit_help:
-Selects the temperature unit for the disk temperature thresholds. Changing the unit will adjust the existing value in the disk temperature thresholds as appropriate.
+Вибирає одиницю вимірювання температури для порогових значень температури диска. Зміна одиниці вимірювання призведе до відповідного налаштування поточного значення порогів температури диска.
 
-Make sure any newly entered values represent the selected temperature unit.
+Переконайтеся, що всі щойно введені значення відповідають вибраній одиниці температури.
 :end
 
 :vms_enable_help:
-Stopping the VM Manager will first attempt to shutdown all running VMs. After 60 seconds, any remaining VM instances will be terminated.
+Зупинка диспетчера віртуальних машин спочатку спробує вимкнути всі запущені віртуальні машини. Через 60 секунд усі екземпляри віртуальної машини, що залишилися, буде припинено.
 :end
 
 :vms_libvirt_volume_help:
-This is the libvirt volume.
+Це том libvirt.
 :end
 
 :vms_libvirt_vdisk_size_help:
-If the system needs to create a new libvirt image file, this is the default size to use specified in GB.
-To resize an existing image file, specify the new size here. Next time the Libvirt service is started the file (and file system) will be increased to the new size (but never decreased).
+Якщо системі потрібно створити новий файл образу libvirt, це розмір за замовчуванням, указаний у ГБ.
+Щоб змінити розмір існуючого файлу зображення, вкажіть тут новий розмір. Під час наступного запуску служби Libvirt файл (і файлова система) буде збільшено до нового розміру (але ніколи не зменшено).
 :end
 
 :vms_libvirt_location_help:
-You must specify an image file for Libvirt. The system will automatically create this file when the Libvirt service is first started.
+Ви повинні вказати файл зображення для Libvirt. Система автоматично створить цей файл під час першого запуску служби Libvirt.
 :end
 
 :vms_libvirt_storage_help:
-Specify a user share that contains all your VM subdirectories with vdisks
+Укажіть спільний доступ користувача, який містить усі ваші підкаталоги віртуальної машини з vdisks
 :end
 
 :vms_libvirt_iso_storage_help:
-Specify a user share that contains all your installation media for operating systems
+Укажіть спільний доступ користувача, який містить усі інсталяційні носії для операційних систем
 :end
 
 :vms_virtio_driver_help:
-Specify the virtual CD-ROM (ISO) that contains the VirtIO Windows drivers as provided by the Fedora Project.
-Download the latest ISO from here: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
+Укажіть віртуальний CD-ROM (ISO), який містить драйвери VirtIO Windows, надані проектом Fedora.
+Завантажте останню версію ISO звідси: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
 
-When installing Windows, you will reach a step where no disk devices will be found. There is an option to browse for drivers on that screen.
-Click browse and locate the additional CD-ROM in the menu. Inside there will be various folders for the different versions of Windows.
-Open the folder for the version of Windows you are installing and then select the AMD64 subfolder inside (even if you are on an Intel system, select AMD64).
-Three drivers will be found. Select them all, click next, and the vDisks you have assigned will appear.
+Під час інсталяції Windows ви досягнете кроку, на якому не буде знайдено дискових пристроїв. На цьому екрані є можливість шукати драйвери.
+Натисніть «Огляд» і знайдіть у меню додатковий CD-ROM. Всередині будуть різні папки для різних версій Windows.
+Відкрийте папку для версії Windows, яку ви встановлюєте, а потім виберіть усередині підпапку AMD64 (навіть якщо ви використовуєте систему Intel, виберіть AMD64).
+Знайдуться три водія. Виберіть їх усі, клацніть «Далі», і з’являться призначені вами vDisks.
 :end
 
 :vms_network_bridge_help:
-Select the name of the network bridge you wish to use as default for your VMs,
-the setting 'virbr0' will let libvirt create a virtual bridge that utilizes NAT (network address translation)
-and act as a DHCP server to hand out IP addresses to virtual machines directly.
-More optional selections are present when virtual bridges are created under network settings.
+Виберіть назву мережевого мосту, який ви бажаєте використовувати за умовчанням для своїх віртуальних машин,
+Параметр "virbr0" дозволить libvirt створити віртуальний міст, який використовує NAT (перетворення мережевих адрес)
+і діяти як сервер DHCP для безпосередньої передачі IP-адрес віртуальним машинам.
+Додаткові параметри доступні, коли віртуальні мости створюються в налаштуваннях мережі.
 
-NOTE: You can also specify a network bridge on a per-VM basis.
+ПРИМІТКА. Ви також можете вказати мережевий міст для кожної віртуальної машини.
 :end
 
 :vms_host_shutdown_help:
-When shutting down the server, this defines the action to take upon running VMs. If *Hibernate VMs* is chosen,
-the VM will be instructed to hibernate (if supported) otherwise it will attempt a VM shutdown.
+Під час вимкнення сервера це визначає дію, яку потрібно виконати після запуску віртуальних машин. Якщо вибрано *Hibernate VMs*,
+Віртуальна машина отримає вказівку перейти в сплячий режим (якщо підтримується), інакше вона спробує завершити роботу ВМ.
 :end
 
 :vms_shutdown_timeout_help:
-When shutting down the server, this defines how long to wait in seconds for *graceful* VM shutdown before forcing shutdown to continue.
-NOTE: It's recommended to shut down guest VMs from within the VM.
+Під час вимкнення сервера це визначає, скільки часу потрібно чекати в секундах на *витончене* завершення роботи віртуальної машини перед примусовим продовженням завершення роботи.
+ПРИМІТКА. Рекомендується вимикати гостьові віртуальні машини з віртуальної машини.
 :end
 
 :vms_acs_override_help:
-*PCIe ACS override* allows various hardware components to expose themselves as isolated devices.
-Typically it is sufficient to isolate *Downstream* ports.
-A hardware component may need the setting *Multi-function* or *Both* to further isolate different hardware functions.<br>
-A reboot is required for changes to this setting to take affect.
+*Перевизначення PCIe ACS* дозволяє різним апаратним компонентам виставляти себе як ізольовані пристрої.
+Зазвичай достатньо ізолювати порти *Downstream*.
+Апаратному компоненту може знадобитися налаштування *Багатофункціональний* або *Обидва* для подальшої ізоляції різних апаратних функцій.<br>
+Потрібне перезавантаження, щоб зміни цього параметра вступили в силу.
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**Попередження: використання цього параметра може спричинити можливе пошкодження даних за певних конфігурацій апаратного забезпечення.**
+Відвідайте [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm), щоб дізнатися більше.
 :end
 
 :vms_vfio_interupts_help:
-If your system doesn't support interrupt remapping, these can be enabled by allowing unsafe interrupts.<br>
-A reboot will be required for changes to this setting to take affect.
+Якщо ваша система не підтримує перепризначення переривань, їх можна ввімкнути, дозволивши небезпечні переривання.<br>
+Потрібне перезавантаження, щоб зміни цього параметра вступили в силу.
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**Попередження: використання цього параметра може спричинити можливе пошкодження даних за певних конфігурацій апаратного забезпечення.**
+Відвідайте [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm), щоб дізнатися більше.
 :end
 
 :vms_libvirt_log_help:
-View the log for libvirt: <a onclick="openTerminal('log','libvirt','libvirt/libvirtd.log')">View libvirtd.log</a>
+Переглянути журнал для libvirt: <a onclick="openTerminal('log','libvirt','libvirt/libvirtd.log')">View libvirtd.log</a>
 :end
 
 :vms_scrub_help:
-**Scrub** runs the *btrfs scrub* program to check file system integrity.
-If repair is needed you should check the *Correct file system errors* and run a second Scrub pass; this will permit *btrfs scrub* to fix the file system.
+**Scrub** запускає програму *btrfs scrub* для перевірки цілісності файлової системи.
+Якщо потрібне відновлення, перевірте *Виправлення помилок файлової системи* та запустіть другий проход очищення; це дозволить *btrfs scrub* виправити файлову систему.
 :end
 
 :vms_cancel_help:
-**Cancel* will cancel the Scrub operation in progress.
+**Скасувати* скасує поточну операцію очищення.
 :end
 
 :eth_interface_description_help:
-Use this optional field to provide additional information about the purpose of the connection.
+Використовуйте це необов’язкове поле, щоб надати додаткову інформацію про мету підключення.
 :end
 
 :eth_mac_address_help:
-This is the hardware address of the interface.
-When tagging is enabled all VLANs on this interface will share the same hardware address.
+Це апаратна адреса інтерфейсу.
+Коли тегування ввімкнено, усі VLAN на цьому інтерфейсі матимуть однакову апаратну адресу.
 :end
 
 :eth_enable_bonding_help:
-Bonding is a feature that combines multiple physical Ethernet interfaces into a single *bonded* interface named **bond0**.
-This can be used to improve the connection redundancy and/or throughput of the system.
-Different bonding modes are supported (see below), but some modes require proper switch support.
+З’єднання — це функція, яка об’єднує кілька фізичних інтерфейсів Ethernet в один *bonded* інтерфейс під назвою **bond0**.
+Це можна використовувати для покращення резервування з’єднання та/або пропускної здатності системи.
+Підтримуються різні режими з’єднання (див. нижче), але для деяких режимів потрібна належна підтримка перемикачів.
 :end
 
 :eth_bonding_mode_help:
 **Mode 0 (balance-rr)**<br>
-This mode transmits packets in a sequential order from the first available slave through the last.
-If two real interfaces are slaves in the bond and two packets arrive destined out of the bonded interface the first will be transmitted on the first slave and the second frame will be transmitted on the second slave.
-The third packet will be sent on the first and so on. This provides load balancing and fault tolerance.
+Цей режим передає пакети в послідовному порядку від першого доступного підлеглого до останнього.
+Якщо два реальних інтерфейси є підлеглими в зв’язку, і два пакети надходять, призначені за межі зв’язаного інтерфейсу, перший буде передано на першому підпорядкованому пристрої, а другий кадр буде передано на другому підпорядкованому.
+Третій пакет буде відправлено в першому і так далі. Це забезпечує балансування навантаження та стійкість до відмов.
 
 **Mode 1 (active-backup) - default**<br>
-This mode places one of the interfaces into a backup state and will only make it active if the link is lost by the active interface.
-Only one slave in the bond is active at an instance of time. A different slave becomes active only when the active slave fails.
-This mode provides fault tolerance.
+Цей режим переводить один із інтерфейсів у стан резервного копіювання та робить його активним, лише якщо зв’язок втрачено активним інтерфейсом.
+Лише один підлеглий зв’язок є активним у певний момент часу. Інший підлеглий пристрій стає активним лише тоді, коли активний підлеглий пристрій виходить з ладу.
+Цей режим забезпечує відмовостійкість.
 
 **Mode 2 (balance-xor)**<br>
-This mode transmits packets based on an XOR formula. Source MAC address is XOR'd with destination MAC address modula slave count.
-This selects the same slave for each destination MAC address and provides load balancing and fault tolerance.
+Цей режим передає пакети на основі формули XOR. MAC-адреса джерела об’єднується XOR з MAC-адресою призначення за модулем підпорядкованого рахунку.
+Це вибирає той самий підлеглий пристрій для кожної MAC-адреси призначення та забезпечує балансування навантаження та стійкість до відмов.
 
 **Mode 3 (broadcast)**<br>
-This mode transmits everything on all slave interfaces. This mode is least used (only for specific purpose) and provides only fault tolerance.
+Цей режим передає все на всіх підлеглих інтерфейсах. Цей режим використовується найменше (лише для певних цілей) і забезпечує лише відмовостійкість.
 
 **Mode 4 (802.3ad)**<br>
-This mode is known as *Dynamic Link Aggregation*. It creates aggregation groups that share the same speed and duplex settings.
-It requires a switch that supports IEEE 802.3ad dynamic link.
-Slave selection for outgoing traffic is done according to the transmit hash policy, which may be changed from the default simple XOR policy via the xmit_hash_policy option.
-Note that not all transmit policies may be 802.3ad compliant, particularly in regards to the packet mis-ordering requirements of section 43.2.4 of the 802.3ad standard.
-Different peer implementations will have varying tolerances for noncompliance.
+Цей режим відомий як *Dynamic Link Aggregation*. Він створює групи агрегації, які мають однакові параметри швидкості та дуплексу.
+Для цього потрібен комутатор, який підтримує динамічне з’єднання IEEE 802.3ad.
+Вибір підлеглого пристрою для вихідного трафіку здійснюється відповідно до хеш-політики передачі, яку можна змінити замість стандартної політики XOR за допомогою параметра xmit_hash_policy.
+Зауважте, що не всі політики передавання можуть бути сумісними з 802.3ad, особливо щодо вимог щодо неправильного впорядкування пакетів у розділі 43.2.4 стандарту 802.3ad.
+Різні однорангові реалізації матимуть різні допуски щодо невідповідності.
 
 **Mode 5 (balance-tlb)**<br>
-This mode is called *Adaptive transmit load balancing*. The outgoing traffic is distributed according to the current load and queue on each slave interface.
-Incoming traffic is received by the current slave.
+Цей режим називається *Адаптивне балансування навантаження на передачу*. Вихідний трафік розподіляється відповідно до поточного навантаження та черги на кожному підпорядкованому інтерфейсі.
+Вхідний трафік отримує поточний підлеглий пристрій.
 
 **Mode 6 (balance-alb)**<br>
-This mode is called *Adaptive load balancing*. This includes balance-tlb + receive load balancing (rlb) for IPV4 traffic.
-The receive load balancing is achieved by ARP negotiation.
-The bonding driver intercepts the ARP Replies sent by the server on their way out and overwrites the src hw address with the unique hw address of one of the slaves in the bond
-such that different clients use different hw addresses for the server.
+Цей режим називається *Адаптивне балансування навантаження*. Це включає баланс-tlb + отримання балансування навантаження (rlb) для трафіку IPV4.
+Балансування навантаження на отримання досягається узгодженням ARP.
+Драйвер з’єднання перехоплює ARP-відповіді, надіслані сервером, і замінює src hw-адресу унікальною hw-адресою одного з підлеглих пристроїв у зв’язку
+так що різні клієнти використовують різні hw адреси для сервера.
 
-*Mode 1 (active-backup) is the recommended setting. Other modes allow you to set up a specific environment, but may require proper switch support.
-Choosing a unsupported mode can result in a disrupted communication.*
+*Mode 1 (active-backup) є рекомендованим налаштуванням. Інші режими дозволяють налаштувати конкретне середовище, але може вимагати належної підтримки комутаторів.
+Вибір непідтримуваного режиму може призвести до переривання зв’язку.*
 :end
 
 :eth_bonding_members_help:
-Select which interfaces are member of the *bonded* interface. By default eth0 is a member, while other interfaces are optional.
+Виберіть, які інтерфейси є членами інтерфейсу *bonded*. За замовчуванням eth0 є членом, а інші інтерфейси необов’язкові.
 :end
 
 :eth_enable_bridging_help:
-Bridging is a feature which creates a virtual bridge and allows VMs and Docker containers to communicate directly with the physical Ethernet port.
-Both bonding and bridging can be combined to let VMs or containers communicate over a *bonded* interface.
+Перемикання — це функція, яка створює віртуальний міст і дозволяє віртуальним машинам і контейнерам Docker спілкуватися безпосередньо з фізичним портом Ethernet.
+І з’єднання, і з’єднання можна комбінувати, щоб дозволити віртуальним машинам або контейнерам спілкуватися через *з’єднаний* інтерфейс.
 :end
 
 :eth_bridging_members_help:
-Select which interfaces are member of the *bridged* interface. By default eth0 is a member, while other interfaces are optional.
+Виберіть, які інтерфейси є членами інтерфейсу *bridged*. За замовчуванням eth0 є членом, а інші інтерфейси необов’язкові.
 :end
 
 :eth_network_protocol_help:
-Select which protocol(s) are used. By default IPv4 only is used.<br>
-When both IPv4 and IPv6 is selected, each protocol can be configured independently.
+Виберіть, які протоколи використовуються. За умовчанням використовується лише IPv4.<br>
+Якщо вибрано як IPv4, так і IPv6, кожен протокол можна налаштувати окремо.
 :end
 
 :eth_ipv4_address_assignment_help:
-The following settings are possible:
+Можливі такі налаштування:
 
-*Automatic* - the server will attempt to obtain a IPv4 address from the local DHCP server<br>
-*Static* - the IPv4 address is manually set for this interface<br>
-*None* - no IPv4 address is assigned to the interface (only available for VLANs)
+*Автоматично* - сервер намагатиметься отримати адресу IPv4 від локального сервера DHCP<br>
+*Статичний* – IPv4-адреса встановлюється вручну для цього інтерфейсу<br>
+*Немає* - адреса IPv4 не призначена інтерфейсу (доступно лише для VLAN)
 :end
 
 :eth_ipv4_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address and mask of the system.
+Неактивний під час автоматичного призначення IP-адреси. В іншому випадку вкажіть тут адресу IPv4 і маску системи.
 :end
 
 :eth_ipv4_default_gateway_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address of your router.
+Неактивний під час автоматичного призначення IP-адреси. В іншому випадку вкажіть тут IPv4-адресу вашого маршрутизатора.
 :end
 
 :eth_ipv4_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv4 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+Якщо встановлено значення *Автоматично*, сервер використовуватиме DNS-сервер(и) IPv4, отриманий локальним автоматичним призначенням.<br>
+Якщо встановлено *Static*, ви можете ввести власний список.
 
-This is useful in Active Directory configurations where you need to set the first DNS Server entry to the IP address of your AD Domain server.
+Це корисно в конфігураціях Active Directory, де вам потрібно встановити перший запис DNS-сервера на IP-адресу вашого сервера AD Domain.
 :end
 
 :eth_ipv4_dns_server_help:
-This is the primary IPv4 DNS server to use. Enter a IPv4 address.
+Це основний DNS-сервер IPv4 для використання. Введіть адресу IPv4.
 
-Note: for *Active Directory* you **must** ensure this is set to the IP address of your AD Domain server.
+Примітка: для *Active Directory* ви **повинні** переконатися, що для цього встановлено IP-адресу вашого сервера AD Domain.
 :end
 
 :eth_ipv4_dns_server2_help:
-This is the IPv4 DNS server to use when IPv4 DNS server 1 is down.
+Це DNS-сервер IPv4, який використовується, коли DNS-сервер IPv4 1 не працює.
 :end
 
 :eth_ipv4_dns_server3_help:
-This is the IPv4 DNS server to use when IPv4 DNS servers 1 and 2 are both down.
+Це DNS-сервер IPv4, який використовується, коли обидва DNS-сервери IPv4 1 і 2 не працюють.
 :end
 
 :eth_ipv6_address_assignment_help:
-The following settings are possible:
+Можливі такі налаштування:
 
-*Automatic* - the server will attempt to obtain a IPv6 address from the local DHCP server or Router Advertisement (RA)<br>
-*Static* - the IPv6 address is manually set for this interface<br>
-*None* - no IPv6 address is assigned to the interface (only available for VLANs)
+*Автоматично* - сервер намагатиметься отримати адресу IPv6 від локального сервера DHCP або оголошення маршрутизатора (RA)<br>
+*Статичний* - IPv6-адреса встановлюється вручну для цього інтерфейсу<br>
+*Немає* - адреса IPv6 не призначена інтерфейсу (доступно лише для VLAN)
 :end
 
 :eth_ipv6_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 address of the system.
+Неактивний під час автоматичного призначення IP-адреси. В іншому випадку вкажіть тут IPv6-адресу системи.
 :end
 
 :eth_ipv6_default_gateway_help:
@@ -1667,73 +1667,73 @@ Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 a
 :end
 
 :eth_ipv6_privacy_extensions_help:
-Enable or disable the generation of a random IPv6 interface identifier according to RFC4941. This is similar to the temporary IPv6 address generation on Windows machines.
+Увімкніть або вимкніть генерацію випадкового ідентифікатора інтерфейсу IPv6 відповідно до RFC4941. Це схоже на генерацію тимчасової адреси IPv6 на машинах Windows.
 :end
 
 :eth_ipv6_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv6 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+Якщо встановлено значення *Автоматично*, сервер використовуватиме DNS-сервер(и) IPv6, отриманий локальним автоматичним призначенням.<br>
+Якщо встановлено *Static*, ви можете ввести власний список.
 :end
 
 :eth_ipv6_dns_server_help:
-This is the primary IPv6 DNS server to use. Enter a IPv6 address.
+Це основний DNS-сервер IPv6 для використання. Введіть адресу IPv6.
 :end
 
 :eth_ipv6_dns_server2_help:
-This is the IPv6 DNS server to use when IPv6 DNS server 1 is down.
+Це DNS-сервер IPv6, який використовується, коли DNS-сервер IPv6 1 не працює.
 :end
 
 :eth_ipv6_dns_server3_help:
-This is the IPv6 DNS server to use when IPv6 DNS servers 1 and 2 are both down.
+Це DNS-сервер IPv6, який використовується, коли обидва сервери IPv6 DNS 1 і 2 не працюють.
 :end
 
 :eth_desired_mtu_help:
-This is the MTU size to use on the physical Ethernet interface.
-If left blank, the MTU will automatically be determined (by default 1500 bytes).
+Це розмір MTU для фізичного інтерфейсу Ethernet.
+Якщо залишити порожнім, MTU буде визначено автоматично (за замовчуванням 1500 байт).
 :end
 
 :eth_enable_vlans_help:
-By default no VLANs are configured.<br>
-Enabling VLANs extends the number of logical connections over the same physical connection.
+За замовчуванням VLAN не налаштовано.<br>
+Увімкнення VLAN розширює кількість логічних з’єднань через одне фізичне з’єднання.
 
-Note: your router and switch must support VLANs too when this feature is used.
+Примітка: ваш маршрутизатор і комутатор також повинні підтримувати VLAN, коли використовується ця функція.
 :end
 
 :eth_vlan_number_help:
-Give each VLAN a unique identifier. Numbers range from 1 to 4095.
+Надайте кожній VLAN унікальний ідентифікатор. Числа від 1 до 4095.
 :end
 
 :eth_network_rules_help:
-The interface assignment rules can be changed here and might be necessary to set the preferred interface for managing Unraid - *use with care, usually there is no need to change*.
+Правила призначення інтерфейсу можна змінити тут, і це може знадобитися для встановлення бажаного інтерфейсу для керування Unraid - *використовуйте обережно, зазвичай немає потреби змінювати*.
 
-**eth0** is the main interface used to manage the Unraid system. The other interfaces are optional and may be used as desired.
-Every interface must be uniquely identified by its MAC (hardware) address.
+**eth0** — це основний інтерфейс, який використовується для керування системою Unraid. Інші інтерфейси є необов’язковими і можуть використовуватися за бажанням.
+Кожен інтерфейс має бути однозначно ідентифікований своєю MAC (апаратною) адресою.
 
-The interface assignment is stored on the flash device under */config/network-rules.cfg*. This file can be viewed with any editor, but it is recommended to make changes via the webGUI only.<br>
-Deleting the file *network-rules.cfg* from the flash device will restore automatic interface assignment after a system reboot.
+Призначення інтерфейсу зберігається на флеш-пристрої в */config/network-rules.cfg*. Цей файл можна переглядати за допомогою будь-якого редактора, але рекомендується вносити зміни лише через веб-Інтерфейс.<br>
+Видалення файлу *network-rules.cfg* з флеш-пристрою відновить автоматичне призначення інтерфейсу після перезавантаження системи.
 :end
 
 :eth_routing_table_help:
 Enter a valid IPv4 route in the format *nnn.nnn.nnn.nnn/xx*, e.g. *192.168.1.0/24*<br>
-or enter a valid IPv6 route in the format *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80::3ad8:2fff:fe25:9709/64*
+або введіть дійсний маршрут IPv6 у форматі *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80::3ad8:2fff:fe25:9709/64*
 
-Select the gateway from the dropdown list or enter a valid IPv4/IPv6 address as gateway value.
+Виберіть шлюз зі спадного списку або введіть дійсну адресу IPv4/IPv6 як значення шлюзу.
 
-The metric value is optional, it defaults to 1. Use it to select the preferred gateway when more than one entry of the same route exists.
+Значення метрики є необов’язковим, воно за замовчуванням дорівнює 1. Використовуйте його, щоб вибрати бажаний шлюз, якщо існує більше ніж один запис одного маршруту.
 :end
 
 :apc_ups_daemon_help:
-Set to 'Yes' to enable apcupsd and start the daemon, set to 'No' to disable apcupsd and stop the daemon.
+Виберіть «Так», щоб увімкнути apcupsd і запустити демон, встановіть «Ні», щоб вимкнути apcupsd і зупинити демон.
 :end
 
 :apc_ups_cable_help:
-Defines the type of cable connecting the UPS to your computer.Possible generic choices for 'cable' are:
+Визначає тип кабелю, що підключає UPS до вашого комп’ютера. Можливі загальні варіанти для «кабелю»:
 
-+ USB, Simple, Smart, Ether, or Custom to specify a special cable.
++ USB, Simple, Smart, Ether або Custom, щоб вибрати спеціальний кабель.
 :end
 
 :apc_ups_custom_cable_help:
-Specify a special cable by model number, only applicable when *UPS cable* is set to Custom.
+Укажіть спеціальний кабель за номером моделі, застосовний лише тоді, коли для параметра *Кабель UPS* встановлено значення Спеціальний.
 
 + 940-0119A, 940-0127A, 940-0128A, 940-0020B
 + 940-0020C, 940-0023A, 940-0024B, 940-0024C
@@ -1742,113 +1742,113 @@ Specify a special cable by model number, only applicable when *UPS cable* is set
 :end
 
 :apc_ups_type_help:
-Define a *UPS type*, which corresponds to the type of UPS you have (see the Description for more details).
+Визначте *тип UPS*, який відповідає типу вашого UPS (додаткову інформацію див. в Описі).
 
-+ **USB** - most new UPSes are USB
-+ **APCsmart** - newer serial character device, appropriate for SmartUPS models using a serial cable (not USB)
-+ **Net** - network link to a master apcupsd through apcupsd's Network Information Server. This is used if the UPS powering your computer is connected to a different computer for monitoring
-+ **SNMP** - SNMP network link to an SNMP-enabled UPS device
-+ **Dumb** - old serial character device for use with simple-signaling UPSes
-+ **PCnet** - PowerChute Network Shutdown protocol which can be used as an alternative to SNMP with the AP9617 family of smart slot cards
-+ **ModBus** - serial device for use with newest SmartUPS models supporting the MODBUS protocol
++ **USB** - більшість нових UPS є USB
++ **APCsmart** - новий пристрій з послідовним символом, підходить для моделей SmartUPS, які використовують послідовний кабель (не USB)
++ **Net** - мережеве посилання на головний apcupsd через мережевий інформаційний сервер apcupsd. Це використовується, якщо UPS, що живить ваш комп’ютер, підключено до іншого комп’ютера для моніторингу
++ **SNMP** – мережеве з’єднання SNMP із пристроєм UPS із підтримкою SNMP
++ **Dumb** - старий пристрій із послідовним символом для використання з UPS із простою сигналізацією
++ **PCnet** - протокол PowerChute Network Shutdown, який можна використовувати як альтернативу SNMP із сімейством смарт-карт AP9617
++ **ModBus** - послідовний пристрій для використання з найновішими моделями SmartUPS, що підтримують протокол MODBUS
 :end
 
 :apc_ups_device_help:
-Enter the *device* which corresponds to your situation, only applicable when *UPS type* is not set to USB.
+Введіть *пристрій*, який відповідає вашій ситуації, застосовний лише тоді, коли для *Типу UPS* не встановлено USB.
 
 + **apcsmart** - /dev/tty**
-+ **net** - hostname:port. Hostname is the IP address of the NIS server. The default port is 3551
-+ **snmp** - hostname:port:vendor:community. Hostname is the ip address or hostname of the UPS on the network. Vendor can be can be "APC" or "APC_NOTRAP". "APC_NOTRAP" will disable SNMP trap catching; you usually want "APC". Port is usually 161. Community is usually "private"
-+ **dumb** - /dev/tty**
-+ **pcnet** - ipaddr:username:passphrase:port. ipaddr is the IP address of the UPS management card. username and passphrase are the credentials for which the card has been configured. port is the port number on which to listen for messages from the UPS, normally 3052. If this parameter is empty or missing, the default of 3052 will be used
++ **net** - ім'я хоста:порт. Ім'я хоста - це IP-адреса сервера NIS. Стандартний порт 3551
++ **snmp** - ім'я хоста:порт:постачальник:спільнота. Ім’я хоста – це IP-адреса або ім’я хоста UPS у мережі. Постачальником може бути "APC" або "APC_NOTRAP". "APC_NOTRAP" вимкне перехоплення SNMP; ви зазвичай хочете "APC". Порт зазвичай 161. Спільнота зазвичай "приватна"
++ **тупий** - /dev/tty**
++ **pcnet** - ipaddr:ім'я користувача:пароль:порт. ipaddr — IP-адреса карти керування UPS. ім’я користувача та парольна фраза – це облікові дані, для яких налаштовано картку. port — це номер порту, на якому слід прослуховувати повідомлення від UPS, зазвичай 3052. Якщо цей параметр порожній або відсутній, використовуватиметься значення за замовчуванням 3052
 + **modbus** - /dev/tty**
 :end
 
 :apc_battery_level_help:
-If during a power failure, the remaining battery percentage (as reported by the UPS) is below or equal to *Battery level*, apcupsd will initiate a system shutdown.
+Якщо під час збою живлення відсоток залишку батареї (за повідомленням UPS) є нижчим або дорівнює *рівню батареї*, apcupsd ініціює завершення роботи системи.
 :end
 
 :apc_runtime_left_help:
-If during a power failure, the remaining runtime in minutes (as calculated internally by the UPS) is below or equal to this field, apcupsd, will initiate a system shutdown.
+Якщо під час збою живлення час роботи, що залишився, у хвилинах (як розраховано внутрішнім UPS) менше або дорівнює цьому полю, apcupsd ініціює завершення роботи системи.
 :end
 
 :apc_battery_time_help:
-If during a power failure, the UPS has run on batteries for *time-out* many seconds or longer; apcupsd will initiate a system shutdown. A value of zero disables this timer.
+Якщо під час збою живлення UPS працював від батареї протягом *тайм-ауту* багато секунд або довше; apcupsd ініціює завершення роботи системи. Значення нуль вимикає цей таймер.
 
-If you have a Smart UPS, you will most likely want to disable this timer by setting it to zero.
-That way, your UPS will continue on batteries until either the % charge remaining drops to or below *Battery level* or the remaining battery runtime drops to or below *minutes*.
+Якщо у вас є UPS Smart, ви, швидше за все, захочете вимкнути цей таймер, встановивши його на нуль.
+Таким чином, ваш UPS працюватиме від батареї, поки % заряду, що залишився, не впаде до або нижче *Рівня батареї* або час роботи батареї, що залишився, не впаде до або нижче *хвилин*.
 
-Of course - when testing - setting this to 60 causes a quick system shutdown if you pull the power plug.
-If you have an older dumb UPS, you will want to set this to less than the time you know you can run on batteries.
+Звичайно - під час тестування - встановлення значення 60 призведе до швидкого завершення роботи системи, якщо ви витягнете вилку живлення.
+Якщо у вас старий тупий UPS, ви захочете налаштувати його на менше часу, ніж ви знаєте, що ви можете працювати від батарей.
 :end
 
 :apc_note_help:
-**Note:** *Battery level*, *Runtime left*, and *Time on battery* work in conjunction, so the first that occurs will cause the initiation of a shutdown.
+**Примітка.** *Рівень заряду батареї*, *Залишився час роботи* та *Час роботи від батареї* працюють у поєднанні, тому перше, що станеться, призведе до завершення роботи.
 :end
 
 :apc_killups_help:
-Set to *Yes* to turn off the power to the UPS after a shutdown.
+Виберіть *Так*, щоб вимкнути живлення UPS після завершення роботи.
 :end
 
 :parity_check_scheduled_help:
-By default no parity check is scheduled. Select here the desired schedule. This can be one of the preset schedules for daily, weekly, monthly, yearly or a custom schedule.
+За замовчуванням перевірка парності не запланована. Виберіть тут потрібний розклад. Це може бути один із попередньо встановлених розкладів на день, щотижня, щомісяця, на рік або спеціальний розклад.
 :end
 
 :parity_day_of_the_week_help:
-When a **weekly** or **custom** schedule is selected then choose here the preferred *day of the week*, in the other schedules this setting is not used and unavailable.
+Якщо вибрано **щотижневий** або **спеціальний** розклад, виберіть тут бажаний *день тижня*, в інших розкладах цей параметр не використовується та недоступний.
 :end
 
 :parity_week_of_the_month_help:
-When a **monthly** or **yearly** schedule is selected then choose here the preferred *day of the month*.
-When a **custom** schedule is selected then choose here the preferred *week of the month*, in the other schedules this setting is not used and unavailable.
+Якщо вибрано **щомісячний** або **річний** розклад, виберіть тут бажаний *день місяця*.
+Якщо вибрано **спеціальний** розклад, виберіть тут бажаний *тиждень місяця*, в інших розкладах цей параметр не використовується та недоступний.
 :end
 
 :parity_time_of_the_day_help:
-Choose the desired *time of the day* to start the schedule. Time granularity is given in half hour periods.
+Виберіть потрібний *час доби*, щоб почати розклад. Деталізація часу надається в півгодинних періодах.
 :end
 
 :parity_month_of_the_year_help:
-When a **yearly** or **custom** schedule is selected then choose here the preferred *month of the year*, in the other schedules this setting is not used and unavailable.
+Якщо вибрано **річний** або **спеціальний** розклад, виберіть тут бажаний *місяць року*, в інших розкладах цей параметр не використовується та недоступний.
 :end
 
 :parity_write_corrections_help:
-Choose here whether any parity errors found during the check, need to be corrected on the parity disk or not.
+Виберіть тут, чи потрібно будь-які помилки паритету, виявлені під час перевірки, виправляти на диску парності чи ні.
 :end
 
 :mover_schedule_help:
-Choose a mover schedule ranging from hourly, daily, weekly and monthly.
+Виберіть графік переїзду: погодинний, щоденний, тижневий і місячний.
 
-The interval determines how fast the mover will activated, it runs in the background.
+Інтервал визначає швидкість активації рушія, він працює у фоновому режимі.
 :end
 
 :mover_day_of_the_week_help:
-Choose a day when the weekly schedule is selected. Otherwise disabled.
+Виберіть день, коли вибрано тижневий розклад. В іншому випадку вимкнено.
 :end
 
 :mover_day_of_the_month_help:
-Choose a date when the monthly schedule is selected. Otherwise disabled.
+Виберіть дату, коли вибрано місячний графік. В іншому випадку вимкнено.
 :end
 
 :mover_time_of_the_day_help:
-When an hourly schedule is selected this will set the interval in hours. An interval always starts on the whole hour (minute 0).
+Якщо вибрано погодинний розклад, інтервал буде встановлено в годинах. Інтервал завжди починається з цілої години (хвилина 0).
 
-For the other schedules choose here the time of the day the mover should start.
+Для інших розкладів виберіть тут час доби, коли має розпочатися переїзд.
 :end
 
 :mover_logging_help:
-Write mover messages to the syslog file.
+Записати повідомлення про переміщення у файл системного журналу.
 :end
 
 :notifications_display_help:
-In *Detailed* view all notifications will be displayed on screen as soon as they arrive.<br>
-Notifications can be acknowledged individually or all in once.
+У *Детальному* перегляді всі сповіщення відображатимуться на екрані, щойно вони надійдуть.<br>
+Сповіщення можна підтверджувати окремо або всі одночасно.
 
-In *Summarized* view notifications will be counted only and the number of unread notifications is shown in the menu header per category.<br>
-Click on the counters to either acknowledge or view the unread notifications.
+У режимі перегляду *Підсумковано* буде враховано лише сповіщення, а кількість непрочитаних сповіщень відображається в заголовку меню для кожної категорії.<br>
+Натисніть лічильники, щоб підтвердити або переглянути непрочитані сповіщення.
 :end
 
 :notifications_date_format_help:
-Select the desired date format which is used in the notifications archive. Recommended is YYYY-MM-DD, which makes the date/time column sortable in a sensible way.
+Виберіть потрібний формат дати, який використовується в архіві сповіщень. Рекомендовано РРРР-ММ-ДД, що робить стовпець дати/часу зручним для сортування.
 :end
 
 :notifications_time_format_help:
@@ -1904,99 +1904,99 @@ Select the desired date format which is used in the notifications archive. Recom
 :end
 
 :smtp_preset_service_help:
-Select a preset service to set the basic service settings.
+Виберіть попередньо встановлену послугу, щоб встановити основні параметри служби.
 :end
 
 :smtp_email_address_help:
-Email address of your mail account. This address is used as sender of the notifications.
+Адреса електронної пошти вашого облікового запису. Ця адреса використовується як відправник повідомлень.
 :end
 
 :smtp_recipients_help:
-Recipients of status and error notifications. Specify one or more email addresses, separate multiple email addresses with a space.
+Одержувачі повідомлень про статус і помилки. Укажіть одну чи кілька адрес електронної пошти, розділяючи їх пробілом.
 :end
 
 :smtp_priority_help:
-Set email header with high importance, when there is a problem with unRaid.
+Установіть заголовок електронної пошти з високою важливістю, коли є проблема з unRaid.
 :end
 
 :smtp_subject_prefix_help:
-Set a prefix for easy recognition of Unraid messages.
+Встановіть префікс для легкого розпізнавання повідомлень Unraid.
 :end
 
 :smtp_mail_server_help:
-Specify the name of the email server. Use the preset service selection to have this filled-in automatically.
+Вкажіть назву сервера електронної пошти. Використовуйте попередньо встановлений вибір служби, щоб це заповнювалося автоматично.
 :end
 
 :smtp_mail_server_port_help:
-Specify the port of the email server. Use the preset service selection to have this filled-in automatically.
+Вкажіть порт сервера електронної пошти. Використовуйте попередньо встановлений вибір служби, щоб це заповнювалося автоматично.
 :end
 
 :smtp_use_ssl_tls_help:
-Specifies whether to use SSL/TLS to talk to the SMTP server.
+Визначає, чи використовувати SSL/TLS для спілкування з сервером SMTP.
 :end
 
 :smtp_use_starttls_help:
-Specifies whether to use STARTTLS before starting SSL negotiation - See RFC 2487.
+Визначає, чи використовувати STARTTLS перед початком узгодження SSL – див. RFC 2487.
 :end
 
 :smtp_define_tls_cert_help:
-Select only when you have a certificate which required for communication.
+Виберіть, лише якщо у вас є сертифікат, необхідний для зв’язку.
 :end
 
 :smtp_tls_cert_location_help:
-The file name of an RSA certificate to use for TLS - as required.
+Ім’я файлу сертифіката RSA для використання для TLS – за потреби.
 :end
 
 :smtp_authentication_method_help:
-Select the correct authentication method for your email server. Use test to verify that access is working properly.
+Виберіть правильний метод автентифікації для вашого сервера електронної пошти. Використовуйте тест, щоб переконатися, що доступ працює належним чином.
 :end
 
 :smtp_username_password_help:
-Enter the username and password to login to your email account. Be aware that the password is stored unencrypted in the email configuration file.
+Введіть ім’я користувача та пароль, щоб увійти до свого облікового запису електронної пошти. Майте на увазі, що пароль зберігається в незашифрованому вигляді у файлі конфігурації електронної пошти.
 :end
 
 :plugin_install_help:
-To download and install a plugin, enter the plg file URL and click **Install**. A window will open
-that displays install progress. Do not close this window until install has completed. You may also specify
-the local file name of an extension.
+Щоб завантажити та встановити плагін, введіть URL-адресу файлу plg і натисніть **Встановити**. Відкриється вікно
+який відображає хід встановлення. Не закривайте це вікно до завершення встановлення. Ви також можете вказати
+локальне ім'я файлу розширення.
 :end
 
 :plugin_error_help:
-These plugins were not installed because of some kind of installation error.  You should delete these
-plugins and then **reboot** your server.*
+Ці плагіни не були встановлені через певну помилку встановлення. Ви повинні видалити їх
+плагінів, а потім **перезавантажте** свій сервер.*
 :end
 
 :plugin_stale_help:
-These plugins were not installed because newer code already exists.  It is safe to simply delete these.
+Ці плагіни не встановлено, оскільки вже існує новіший код. Ці безпечно просто видалити.
 :end
 
 :docker_client_general_help:
-Templates are a quicker way to setting up Docker Containers on your Unraid server.  There are two types of templates:
+Шаблони — це швидший спосіб налаштувати контейнери Docker на вашому сервері Unraid. Є два типи шаблонів:
 
-**Default templates**<br>
-When valid repositories are added to your Docker Repositories page, they will appear in a section on this drop down for you to choose (master categorized by author, then by application template).
-After selecting a default template, the page will populate with new information about the application in the Description field, and will typically provide instructions for how to setup the container.
-Select a default template when it is the first time you are configuring this application.
+**Шаблони за замовчуванням**<br>
+Коли дійсні репозиторії додаються на вашу сторінку Docker Repositories, вони з’являться в розділі цього спадного списку, який ви можете вибрати (основний класифікований за автором, а потім за шаблоном програми).
+Після вибору шаблону за замовчуванням сторінка заповниться новою інформацією про програму в полі «Опис» і зазвичай містить інструкції щодо налаштування контейнера.
+Виберіть стандартний шаблон, коли ви вперше налаштовуєте цю програму.
 
 **User-defined templates**<br>
-Once you've added an application to your system through a Default template,
-the settings you specified are saved to your USB flash device to make it easy to rebuild your applications in the event an upgrade were to fail or if another issue occurred.
-To rebuild, simply select the previously loaded application from the User-defined list and all the settings for the container will appear populated from your previous setup.
-Clicking create will redownload the necessary files for the application and should restore you to a working state.
-To delete a User-defined template, select it from the list above and click the red X to the right of it.
+Після того, як ви додали програму до своєї системи за допомогою шаблону за замовчуванням,
+указані вами параметри зберігаються на вашому USB flash-пристрої, щоб спростити переналаштування ваших програм у разі невдачі оновлення або якщо виникне інша проблема.
+Щоб перебудувати, просто виберіть попередньо завантажену програму зі списку, визначеного користувачем, і всі параметри для контейнера з’являться заповненими з ваших попередніх налаштувань.
+Натискання «Створити» призведе до повторного завантаження необхідних файлів для програми та відновлення робочого стану.
+Щоб видалити шаблон, визначений користувачем, виберіть його зі списку вище та натисніть червоний X праворуч від нього.
 :end
 
 :docker_client_name_help:
-Give the container a name or leave it as default.  Two characters minimum.  First character must be a-z A-Z 0-9  Remaining characters a-z A-Z 0-9 . - _
+Назвіть контейнер або залиште його за замовчуванням. Мінімум два символи. Перший символ має бути a-z A-Z 0-9  Решта символів a-z A-Z 0-9 . - _
 :end
 
 :docker_client_overview_help:
-A description for the application container.  Supports basic HTML mark-up.
+Опис контейнера програми. Підтримує базову розмітку HTML.
 :end
 
 :docker_client_repository_help:
-The repository for the application on the Docker Registry.  Format of authorname/appname.
-Optionally you can add a : after appname and request a specific version for the container image.
+Репозиторій програми в реєстрі Docker. Формат імені автора/назви програми.
+За бажанням ви можете додати : після назви програми та запитати певну версію для зображення контейнера.
 :end
 
 :docker_client_support_thread_help:
