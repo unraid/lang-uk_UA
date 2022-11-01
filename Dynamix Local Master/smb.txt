@@ -1,24 +1,24 @@
-Current elected master=
-is current local master browser=
-Local master=
-Monitor local master election=
-please wait, obtaining=
-Workgroup=
+Current elected master=Діючий обраний магістр
+is current local master browser=поточний локальний головний браузер
+Local master=Місцевий майстер
+Monitor local master election=Спостерігати за виборами місцевих голов
+please wait, obtaining=зачекайте, отримання
+Workgroup=Робоча група
 
 :smb_workgroup_plug:
-> Enter your local network Workgroup name. Usually this is "WORKGROUP".
+> Введіть назву робочої групи локальної мережі. Зазвичай це "РОБОЧА ГРУПА".
 :end
 
 :smb_master_plug:
-> If set to 'Yes' then the server will fully participate in browser elections, and in the absense
-> of other servers, will usually become the local Master Browser.
+> Якщо встановлено значення 'Так', тоді сервер буде повністю брати участь у виборах браузера, а також у відсутності
+> інших серверів зазвичай стає локальним головним браузером.
 :end
 
 :smb_master_election_plug:
-> Enable or disable background monitoring of the local master election.
-> The result of the monitoring is displayed in the header at the top-right position.
+> Увімкніть або вимкніть фоновий моніторинг місцевих виборів.
+> Результат моніторингу відображається в заголовку у верхньому правому куті.
 :end
 
 :smb_master_current_plug:
-> Shows in real-time the current elected local master browser.
+> Показує в режимі реального часу поточний обраний локальний головний браузер.
 :end

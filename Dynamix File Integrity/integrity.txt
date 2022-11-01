@@ -1,5 +1,5 @@
-Aborted - export file not found=
-Import=
-Build up-to-date=
-Export up-to-date=
-Operation aborted=
+Aborted - export file not found=Перервано – файл експорту не знайдено
+Import=Імпорт
+Build up-to-date=Збірка в актуальному стані
+Export up-to-date=Експорт актуальний
+Operation aborted=Операцію перервано

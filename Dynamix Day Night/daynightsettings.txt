@@ -1,31 +1,31 @@
-Automatic theming=
-Bing API key=
-Bing=
-City name=
-Country name=
-Day theme=
-Geocoding service=
-Google API key=
-Google=
-MapQuest API key=
-MapQuest=
-Night theme=
-No geographical coordinates found for the given address=
-Please adjust=
-Postal code=
-See=
-Street address=
-this site=
-to obtain a Bing API key=
-to obtain a Google API key=
-to obtain a MapQuest API key=
+Automatic theming=Автоматичне оформлення тем
+Bing API key=Ключ API Bing
+Bing=Bing
+City name=Назва міста
+Country name=Назва країни
+Day theme=Тема дня
+Geocoding service=Сервіс геокодування
+Google API key=Ключ Google API
+Google=Google
+MapQuest API key=Ключ MapQuest API
+MapQuest=MapQuest
+Night theme=Нічна тема
+No geographical coordinates found for the given address=Для вказаної адреси не знайдено географічних координат
+Please adjust=Будь ласка, налаштуйте
+Postal code=Поштовий індекс
+See=Побачити
+Street address=Адреса вулиці
+this site=цей сайт
+to obtain a Bing API key=щоб отримати ключ API Bing
+to obtain a Google API key=щоб отримати ключ Google API
+to obtain a MapQuest API key=щоб отримати ключ MapQuest API
 
 :day_night_plug:
-> Enter your address information (street, city, country) which is used to calculate the sunrise and sunset times of your location.
+> Введіть інформацію про свою адресу (вулиця, місто, країна), яка використовується для розрахунку часу сходу та заходу сонця у вашому місці.
 >
-> A geocoding service is used to convert your address to geographical (latitude and longitude) coordinates.<br>
-> You need to register with one of the available services and get a unique API key to make use of their service.
+> Служба геокодування використовується для перетворення вашої адреси в географічні (широта та довгота) координати.<br>
+> Вам потрібно зареєструватися в одному з доступних сервісів і отримати унікальний ключ API, щоб користуватися його сервісом.
 >
-> The **day** theme is selected between sunrise and sunset<br>
-> The **night** theme is selected between sunset and sunrise
+> Тема **день** вибирається між сходом і заходом сонця<br>
+> Тема **ніч** вибирається між заходом і сходом сонця
 :end
