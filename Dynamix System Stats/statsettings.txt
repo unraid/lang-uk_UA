@@ -1,85 +1,85 @@
-30 seconds=
-1 minute=
-2 minutes=
-5 minutes=
-10 minutes=
-30 minutes=
-1 hour=
-2 hours=
-Bits per second=
-Bytes per second=
-CPU graph scaling=
-Disk Stats=
-Ethernet interface=
-Four=
-Header menu=
-Initial graphing mode=
-Initial real-time sliding window=
-Last day=
-Last 2 days=
-Last 3 days=
-Last week=
-Last 2 weeks=
-Last 3 weeks=
-Last month=
-Network graph display unit=
-Opening page=
-Pair=
-Placement of Stats menu=
-Position of disk utilization percentage=
-Real-time=
-Show disk size=
-Since start=
-Single=
-Storage=
-System graphs view per row=
-System Stats=
-Three=
-Tools menu=
-Viewable system graphs=
+30 seconds=30 секунд
+1 minute=1 хвилина
+2 minutes=2 хвилини
+5 minutes=5 хвилин
+10 minutes=10 хвилин
+30 minutes=30 хвилин
+1 hour=1 година
+2 hours=2 години
+Bits per second=Біт в секунду
+Bytes per second=Байт в секунду
+CPU graph scaling=Графік розширення CPU
+Disk Stats=Статистика диска
+Ethernet interface=Інтерфейс Ethernet
+Four=Чотири
+Header menu=Меню заголовка
+Initial graphing mode=Початковий графічний режим
+Initial real-time sliding window=Початкове ковзаюче вікно реального часу
+Last day=Останній день
+Last 2 days=Останні 2 дні
+Last 3 days=Останні 3 дні
+Last week=Минулого тижня
+Last 2 weeks=Останні 2 тижні
+Last 3 weeks=Останні 3 тижні
+Last month=Минулого місяця
+Network graph display unit=Блок відображення мережевого графіка
+Opening page=Відкриття сторінки
+Pair=Пара
+Placement of Stats menu=Розміщення меню статистики
+Position of disk utilization percentage=Позиція відсотка використання диска
+Real-time=Реальний час
+Show disk size=Показати розмір диска
+Since start=З початку
+Single=Єдиний
+Storage=Сховище
+System graphs view per row=Перегляд системних графіків на рядок
+System Stats=Статистика системи
+Three=Третій
+Tools menu=Меню інструментів
+Viewable system graphs=Перегляд системних графіків
 
 :stats_utilization_plug:
-> The disk utilization percentage number can be positioned either at the start (left) or at the end (right) of the bar.
+> Відсоток використання диска може бути розташований на початку (ліворуч) або в кінці (праворуч) смужки.
 >
-> Left will align all numbers, while right lets the number float depending on its value.
+> Ліворуч вирівнює всі числа, а праворуч дозволяє числу плавати залежно від його значення.
 :end
 
 :stats_graphs_plug:
-> Select which system information needs to be displayed. Internally all information is always gathered and stored.
+> Виберіть, яку системну інформацію потрібно відображати. Всередині вся інформація завжди збирається та зберігається.
 >
-> This setting only affects what is being displayed.
+> Цей параметр впливає лише на те, що відображається.
 :end
 
 :stats_scaling_plug:
-> Select the CPU graph scaling to be automatic or fixed at 100%.
+> Виберіть автоматичне або фіксоване значення 100% для графіка CPU .
 :end
 
 :stats_view_plug:
-> Select how many graphs will be displayed in a single row. The width is automatically adjusted to the number of graphs and the screen resolution.
+> Виберіть, скільки графіків відображатиметься в одному рядку. Ширина автоматично регулюється відповідно до кількості графіків і роздільної здатності екрана.
 >
-> Graph samples are internally done with a one minute interval, this setting does not change the resolution, just the width of a graph.
+> Зразки графіків виконуються внутрішньо з інтервалом в одну хвилину, цей параметр не змінює роздільну здатність, лише ширину графіка.
 :end
 
 :stats_disk_size_plug:
-> Show the size of each disk at the right side of the disk usage graph. Size is always displayed using the highest possible unit.
+> Покажіть розмір кожного диска праворуч на графіку використання диска. Розмір завжди відображається в найвищих можливих одиницях.
 :end
 
 :stats_ethernet_plug:
-> When more than one interface is present then select the interface to be displayed. Internally statistics of all available interfaces is kept.
+> Якщо присутній декілька інтерфейсів, виберіть інтерфейс для відображення. Зберігається внутрішня статистика всіх доступних інтерфейсів.
 :end
 
 :stats_unit_plug:
-> Select how interface (network) speeds are displayed, common is bits per second.
+> Виберіть спосіб відображення швидкості інтерфейсу (мережі), звичайним є біт за секунду.
 :end
 
 :stats_initial_plug:
-> The system graphs can be viewd over different periods, select here the intial period. On the system stats page itself this can be changed to any of the other choices.
+> Системні графіки можна переглядати за різні періоди, виберіть тут початковий період. На самій сторінці системної статистики це можна змінити на будь-який інший варіант.
 >
-> Internally information is kept with a monthly rotating mechanism. Each day is stored in a separate file.
+> Внутрішня інформація зберігається за принципом щомісячної ротації. Кожен день зберігається в окремому файлі.
 :end
 
 :stats_realtime_plug:
-> Real-time graphing is done in a sliding window fashion. E.g. 5 minutes are first filled and next start to slide with each new sample added at the end.
+> Графіки в режимі реального часу виконуються у вигляді ковзного вікна. наприклад Спочатку заповнюється 5 хвилин, а потім починається слайд із додаванням кожного нового зразка в кінці.
 >
-> This setting sets the initial duration of the sliding window, it can be changed on the system stats page itself.
+> Цей параметр встановлює початкову тривалість ковзного вікна, її можна змінити на самій сторінці системної статистики.
 :end

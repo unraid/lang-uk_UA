@@ -1,6 +1,6 @@
-Console=
-Counters only=
-Custom commands after wake-up=
+Console=Консоль
+Counters only=Тільки лічильники
+Custom commands after wake-up=Спеціальні команди після пробудження
 Custom commands before sleep=
 Device activity monitoring=
 DHCP renewal after wake-up=
