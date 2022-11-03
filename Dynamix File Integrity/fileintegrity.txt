@@ -1,8 +1,8 @@
-Apple metadata=
-Array must be Started to use this feature=Array must be **Started** to use this feature
-Automatically protect new and modified files=
-BLAKE2=
-Build=
+Apple metadata=Метадані Apple
+Array must be Started to use this feature=Для використання цієї функції масив має бути **запущений**
+Automatically protect new and modified files=Автоматичний захист нових і змінених файлів
+BLAKE2=БЛЕЙК2
+Build=Будувати
 Continue=
 Corz=
 Custom files=
