@@ -18,7 +18,7 @@ Ethernet NICS=Ethernet NICS
 Flow Control=Управління потоком
 for additional ideas on improving your Unraid performance and solving problems=для отримання додаткових ідей щодо покращення продуктивності Unraid і вирішення проблем
 for information on the issue=для інформації з питання
-Go to Settings->Syslog Server and enable the Syslog Server=Перейдіть до Налаштування ->Сервер Syslog і ввімкніть Сервер системного журналу
+Go to Settings->Syslog Server and enable the Syslog Server=Перейдіть до Налаштування->Сервер Syslog і ввімкніть Сервер системного журналу
 Governor=Регулятор
 Guide=Гід
 If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=Якщо у вас виникають помилки OOM, спробуйте налаштувати параметри дискового кешу на сторінці налаштувань
@@ -73,7 +73,7 @@ You may actually cause more problems than you solve if there are problems with y
 ; Help
 ;
 :tips_tweaks_general_plug:
-> Some General Recommendations:
+> Деякі загальні рекомендації:
 >
 > + У деяких випадках може допомогти використання статичної IP-адреси. Спільні ресурси NFS посилаються за IP-адресою. Обов’язково зарезервуйте IP-адресу на своєму маршрутизаторі або встановіть дуже високу IP-адресу, щоб запобігти конфліктам.
 > + Використання Jumbo Frames не рекомендується. Відомо, що Jumbo Frames викликають проблеми з деякими докерами.
@@ -150,12 +150,12 @@ You may actually cause more problems than you solve if there are problems with y
 
 
 :tips_tweaks_power_save_cpu_governor_plug:
-> Select the Power Saving CPU Scaling Governor you want to use.
+> Виберіть енергозберігаючий регулятор масштабування CPU  який ви хочете використовувати.
 >
-> + "Power Save" - Scales CPU frequency based on load.
-> + "On Demand" - Default for ACPI CPU Freq driver.  Scales CPU frequency based on load.  Frequency stepping is aggressive.
-> + "Conservative" - Scales CPU frequency based on load.  Frequency stepping is gentler.  Can cause some latency.
-> + "Schedutil" - Set all CPUs frequency scaling to schedutil.  This sets CPU frequency based on the Linux scheduler.  Note: This is still in development.
+> + "Power Save" - Масштабує частоту CPU залежно від навантаження.
+> + "On Demand" - За замовчуванням для драйвера ACPI CPU Freq. Масштабує частоту CPU залежно від навантаження. Зміна частоти агресивна.
+> + "Conservative" - Масштабує частоту CPU залежно від навантаження. Перехід частоти м'який. Може викликати деяку затримку.
+> + "Schedutil" - Установіть масштабування частоти всіх CPU на schedutil. Це встановлює частоту процесора на основі планувальника Linux. Примітка: це все ще в розробці.
 :end
 
 :tips_tweak_turbo_plug:
@@ -163,7 +163,7 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_scheduled_plug:
-> Set to 'Yes' to enable scheduled CPU Power Saving mode based on the times set below for Normal and Power Saving modes.
+> Установіть значення 'Так', щоб увімкнути запланований режим енергозбереження процесора на основі часу, встановленого нижче для режимів «Звичайний» і «Енергозбереження».
 :end
 
 
