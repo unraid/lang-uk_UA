@@ -146,7 +146,10 @@ This usually means your flash drive is corrupted or has dropped offline The rest
 Fatal Docker Image Error=Фатальна помилка зображення Docker
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=Ваш образ або папка докера доступні лише для читання або повністю заповнені. Через це виникнуть проблеми. Вам слід створити нову публікацію на форумах Unraid і включити свою діагностику
 This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=Цей шаблон налаштовано на використання спеціальної мережі. Можливо, доведеться налаштувати мережу чи IP-адресу тощо відповідно до вашої системи
+This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=Цей шаблон налаштовано на запуск із привілейованими правами. Це можлива загроза безпеці, і зазвичай його не потрібно вмикати. Зауважте, що деякі програми потребують привілейованих прав для правильної роботи
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Один або кілька портів, які використовує ця програма, уже використовуються іншою службою або програмою, що працює на вашому сервері. Вам потрібно буде відповідно налаштувати порти хоста в шаблоні
+Not Enough Memory=Недостатньо пам'яті
+Community Applications (and Unraid OS) have a minimum required installed memory of 4G CA cannot run without those mimimums being met=Програми спільноти (і Unraid OS) мають мінімальну необхідну встановлену пам’ять 4G CA не можуть працювати без дотримання цих мінімальних вимог
 
 ; CA Sections Keep the length reasonable
 Home=Головна
@@ -308,6 +311,7 @@ Current Version=Поточна версія
 Min OS=Мін OS
 Max OS=Макс OS
 Total Downloads=Загальна кількість завантажень
+Popularity=Популярність
 Licence=Ліцензія
 Ranked #%s=Рейтинг #%s
 ; as in Trending up or down arrow
@@ -439,4 +443,3 @@ Would you like CA to attempt to determine any applicable paths, ports, and varia
 An error occurred - Could not determine configuration=Сталася помилка - Не вдалося визначити конфігурацію
 ; WebGui
 Click Install to download and install the Community Applications plugin=Натисніть **Встановити**, щоб завантажити та інсталювати плагін **Програми спільноти**
-
