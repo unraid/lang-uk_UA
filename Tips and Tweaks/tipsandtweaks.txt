@@ -1,10 +1,12 @@
 After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Після перезавантаження із заблокованого або завислого сервера ви можете переглянути збережений журнал за допомогою засобу перегляду Syslog
 Check the=Перевірте
+Available User Watches=Доступні годинники користувача
 Click on Help for more information=Щоб отримати додаткову інформацію, натисніть «Help».
 Correct any problems that are identified before doing any tweaking=Виправте будь-які виявлені проблеми, перш ніж робити будь-які налаштування
 Current Disk Cache Settings=Поточні налаштування дискового кешу
 Current Inotify Settings=Поточні налаштування Inotify
 Current NIC settings=Поточні налаштування мережевої карти
+Current User Watches=Поточний годинник користувача
 Disable NIC Flow Control=Вимкніть керування потоком мережевого NIC
 Disable NIC Offload=Вимкніть розвантаження NIC
 Disk Cache=Дисковий кеш
@@ -34,7 +36,8 @@ Make changes slowly=Вносьте зміни повільно
 Make one change at a time and verify if it improves your situation=Робіть одну зміну за раз і перевіряйте, чи це покращить вашу ситуацію
 Making changes here can briefly interrupt your network operation=Внесення змін тут може призвести до короткого переривання роботи мережі
 Many plugins are no longer compatible with older Unraid versons=Багато плагінів більше не сумісні зі старими версіями Unraid
-Max Watches=Максимум Годин
+Max SMB Open Files=Максимум SMB Відкритих файлів
+Max User Watches=Максимальна кількість годинників
 NIC Offload=Розвантаження NIC
 NIC Rx Buffer=NIC Rx буфер
 NIC Tx Buffer=NIC Tx буфер
@@ -66,6 +69,7 @@ Tips=Поради
 Tips and Tweaks wiki=Поради та налаштування wiki
 Tweaks=Твіки
 Use the Update Assistant that is part of the Fix Common Problems plugin=Встановіть плагін Fix Common Problems і вирішіть будь-які проблеми конфігурації Unraid
+Version 6.11.4 and later=Версія 6.11.4 і новіша
 You can check CPU frequencies on the command line with=Ви можете перевірити частоти процесора в командному рядку за допомогою
 You may actually cause more problems than you solve if there are problems with your Unraid configuration=Ви можете створити більше проблем, ніж вирішити, якщо є проблеми з конфігурацією Unraid
 
@@ -87,6 +91,7 @@ You may actually cause more problems than you solve if there are problems with y
 > маеш керований комутатор, керування потоком зазвичай можна вмикати та вимикати на комутаторі. Якщо у вас є
 > перемикач споживчого рівня, ви не матимете такого рівня контролю. Flow Control, як відомо, створює
 > проблеми з мережею за певних обставин. Рекомендується вимкнути керування потоком, якщо виникають проблеми з мережею.
+>
 > Щоб змінити будь-яке налаштування на «За замовчуванням», потрібно перезавантажити систему.
 :end
 
@@ -95,16 +100,19 @@ You may actually cause more problems than you solve if there are problems with y
 > до мережевої карти та від основного CPU і працювати з великими пакетами. Це було призначено для економії процесора
 > навантаження та підвищення пропускної здатності мережі. Відомо, що розвантаження TSO викликає проблеми з мережею за певних обставин.
 > Рекомендується вимкнути розвантаження NIC, якщо виникають проблеми з мережею.
+>
 > Щоб змінити будь-яке налаштування на 'За замовчуванням', потрібно перезавантажити систему.
 :end
 
 :tips_tweaks_rx_buffer_plug:
 > Виберіть розмір кільцевого буфера NIC Rx. Деякі мережеві карти мають обмеження на розмір кільцевого буфера Rx. Рекомендується значення за замовчуванням 256.
+>
 > Щоб змінити будь-яке налаштування на 'За замовчуванням', потрібно перезавантажити систему.
 :end
 
 :tips_tweaks_tx_buffer_plug:
 > Виберіть розмір кільцевого буфера NIC Tx. Деякі мережеві карти мають обмеження на розмір кільцевого буфера Tx. Рекомендується значення за замовчуванням 256.
+>
 > Щоб змінити будь-яке налаштування на 'За замовчуванням', потрібно перезавантажити систему.
 :end
 
@@ -133,6 +141,12 @@ You may actually cause more problems than you solve if there are problems with y
 > Типовим значенням є 524288.
 :end
 
+:tips_tweaks_max_files_plug:
+> Це значення використовується samba для встановлення максимальної кількості відкритих файлів, дозволених у спільних ресурсах SMB.
+>
+> За замовчуванням — 40960, а дозволений діапазон — від 40960 до 65535.
+:end
+
 :tips_tweaks_cpu_governor_plug:
 > Виберіть регулятор масштабування CPU , який ви хочете використовувати.
 >
@@ -141,7 +155,6 @@ You may actually cause more problems than you solve if there are problems with y
 > + "Conservative" - "Консервативний" - Масштабує частоту CPU залежно від навантаження. Перехід частоти м'який. Може викликати деяку затримку.
 > + "Performance" - "Продуктивний" - Встановити усі CPU на повну частоту незалежно від навантаження. Це може позитивно вплинути на продуктивність і затримку.
 > + "Schedutil" - Установити масштабування частоти всіх CPU на schedutil. Це встановлює частоту процесора на основі планувальника Linux. Примітка: це все ще в розробці.
-> + "Scheduled" - "Заплановано" - Під час запуску встановіть регулятор на 'Performance'. Під час зупинки встановіть регулятор на «Power Save» або 'On Demand' залежно від використовуваного драйвера.
 >
 > Тепер ви можете налаштувати регулятор CPU  за допомогою сценарію rc.tweaks. Використовуйте команду:
 > /usr/local/sbin/rc.tweaks set_governor 'Регулятор'
@@ -190,6 +203,3 @@ You may actually cause more problems than you solve if there are problems with y
 >
 > Примітка. Будьте обережні з процесами, які ви вбиваєте тут. Ви можете втратити дані!
 :end
-
-
-; Note: September 16, 2022 - 5 missing translations
