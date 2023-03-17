@@ -1,0 +1,7 @@
+Dirty log detected=Виявлено брудний журнал
+File system corruption detected=Виявлено пошкодження файлової системи
+File system corruption fixed=Виправлено пошкодження файлової системи
+Force Log Zeroing=Примусове обнулення журналу
+No file system corruption detected=Пошкоджень файлової системи не виявлено
+Note: While there is some risk, if it is not possible to first mount the filesystem to clear the log, zeroing it is the only option to try and repair the filesystem, and in most cases it results in little or no data loss=Примітка. Хоча існує певний ризик, якщо неможливо спочатку змонтувати файлову систему, щоб очистити журнал, обнулення є єдиним варіантом спроби відновити файлову систему, і в більшості випадків це призводить до незначної втрати даних або до її відсутності.
+Run with Correct flag=Запуск із правильним прапором

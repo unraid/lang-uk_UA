@@ -49,11 +49,13 @@ from disk=з диска
 Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=Перейдіть до Налаштування->Глобальні налаштування спільних ресурсів та встановіть для параметра «Увімкнути спільні диски» значення «Авто» або «Вимкнуто».
 Historical=Історичний
 Historical Devices=Історичні прилади
-Historical Device is=
+
+Historical Device is=Історичний пристрій є
 Identification=Ідентифікація
 If this disk was pre-cleared, you will remove the pre-clear signature=Якщо цей диск було попередньо очищено, ви видалите підпис попереднього очищення
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=Якщо ви додасте диск до масиву, а підпис попереднього очищення буде видалено, Unraid знову пройде тривалий процес очищення диска
-is offline=
+is offline=не в мережі
+
 ISO File is=Файл ISO є
 ISO File Shares=Спільні файли ISO
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=Якщо ви використовуєте пароль диска, обов’язково введіть пароль для цього диска в налаштуваннях UD, щоб його можна було підключити
@@ -76,7 +78,10 @@ No Remote SMB=Немає віддаленого SMB
 No Unassigned Disks available=Немає непризначених дисків
 not installed=не встановлено
 Note=Примітка
-offilne=
+
+offilne=офлайн
+
+
 You must enable NFS in Settings->NFS to mount NFS shares=Ви повинні ввімкнути NFS у Наташтуваннях->NFS, щоб підключити спільні ресурси NFS
 You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні ввімкнути SMB у Наташтуваннях->SMB, щоб підключити спільні ресурси SMB
 Open=Відкрити
@@ -181,14 +186,18 @@ You will need to enter credentials to list the shares=Вам потрібно б
 > + '/usr/local/sbin/rc.unassigned umount all' - усі пристрої та підключення SMB/NFS демонтовано для підготовки до вимкнення масиву.
 > + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - змонтувати пристрій sdX, де «X» — позначення пристрою. DevX — це назва пристрою на сторінці UD. Якщо ім’я пристрою — «Dev 1», використовуйте dev1 як пристрій для підключення.
 > + '/usr/local/sbin/rc.unassigned mount name=diskname' - монтувати пристрій за назвою диска.
-> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - демонтувати пристрій sdX, де «X» — позначення пристрою. DevX — це назва пристрою на сторінці UD. Якщо ім’я пристрою — «Dev 1», використовуйте dev1 як пристрій для відключення. Ви можете використовувати цю команду в сценарії UD, щоб відключити пристрій після завершення сценарію.
+> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - відключити дисковий пристрій. Ви можете використовувати цю команду в сценарії UD, щоб відключити пристрій після завершення сценарію.
 > + '/usr/local/sbin/rc.unassigned umount name=diskname' - демонтувати пристрій за назвою диска.
-> + '/usr/local/sbin/rc.unassigned spindown devX' - зупинити обертання диску.  DevX — це назва пристрою на сторінці UD. Якщо ім’я пристрою — «Dev 1», використовуйте dev1 як пристрій для зупинки обертання. SSD не обертаються.
-> + '/usr/local/sbin/rc.unassigned spindown name=diskname' - зупинити обертання диску за назвою диска.
-> + '/usr/local/sbin/rc.unassigned mount SOURCE' - Де ДЖЕРЕЛО — джерело SMB/NFS.
-> + '/usr/local/sbin/rc.unassigned umount SOURCE' - Де ДЖЕРЕЛО — джерело SMB/NFS.
+> + '/usr/local/sbin/rc.unassigned spindown /dev/sdX or devX' - пристрій обертання диска.
+> + '/usr/local/sbin/rc.unassigned spindown name=diskname' - обертати диск за назвою диска.
+> + '/usr/local/sbin/rc.unassigned detach /dev/sdX or devX' - від'єднати USB-диск. Ви можете використовувати цю команду в сценарії UD, щоб від'єднати пристрій після завершення сценарію.
+> + '/usr/local/sbin/rc.unassigned attach serial - приєднати дисковий пристрій. Ви можете використовувати цю команду в сценарії, щоб підключити пристрій.
+> + '/usr/local/sbin/rc.unassigned mount source' - Де ДЖЕРЕЛО — джерело SMB/NFS.
+> + '/usr/local/sbin/rc.unassigned umount source' - Де ДЖЕРЕЛО — джерело SMB/NFS.
 >
-> Будьте обережні з використанням позначення /dev/sdX, оскільки воно може змінитися після перезавантаження.
+> Примітка: /dev/sdX, де «X» — позначення пристрою. DevX — це назва пристрою на сторінці UD. Якщо ім’я пристрою — «Dev 1», використовуйте dev1 як пристрій для обертання вниз. Використання name=diskname корисно, якщо у вас є сценарій користувача, який потребує виконання операцій UD на диску.
+>
+> Будьте обережні, використовуючи позначення /dev/sdX або devX, оскільки вони можуть змінитися після перезавантаження. Найкраще використовувати значення, передані в сценарій UD для sdX (DEVICE) і devX (UD_DEVICE).
 :end
 
 ; Note: March 17, 2023 - 5 missing translations
