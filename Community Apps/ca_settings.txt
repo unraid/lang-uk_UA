@@ -4,8 +4,8 @@ Hide Incompatible Applications=Приховати несумісні прогр�
 This setting will hide applications that are listed as being incompatible with your version of Unraid=Цей параметр приховає програми, які вказані як несумісні з вашою версією Unraid
 Allow install of second instance=Дозволити встановлення другого екземпляра
 This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=Ця опція вмикає іншу кнопку на картках і спливаючих вікнах, яка дозволить вам переінсталювати встановлену програму, використовуючи її значення шаблону за замовчуванням. Цей параметр іноді може ввести в оману, і зазвичай використовується лише в тому випадку, якщо ви хочете встановити і запустити програму двічі одночасно.
-Show descriptions on application cards=Показати описи на картках додатків
-This option dictates whether the descriptions appear on the cards or not=Цей параметр визначає, чи з’являтимуться описи на картках чи ні
+Automatically open the sidebar=
+Allows CA to automatically open the sidebar for more information when hovering over an application's icon=
 Allow CA to check for updates to applications=Дозволити CA перевіряти наявність оновлень програм
 This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=Цей параметр дозволяє CA перевіряти наявність оновлень для програм. Зауважте, що програми спільноти завжди перевірятимуть наявність оновлень для себе
 Allow CA to send any emergency notifications=Дозволити CA надсилати будь-які екстрені сповіщення
@@ -18,3 +18,5 @@ Only enable this when advised to from the author of Community Applications=Ув�
 Enable developer mode=Увімкнути режим розробника
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=Це розблокує деякі додаткові функції в CA, які зазвичай використовуються лише розробниками. Не рекомендується вмикати
 Support Thread=Підтримка Теми
+
+; Note: March 17, 2023 - 2 missing translations
