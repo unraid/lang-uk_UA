@@ -1,10 +1,12 @@
 After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Після перезавантаження із заблокованого або завислого сервера ви можете переглянути збережений журнал за допомогою засобу перегляду Syslog
 Check the=Перевірте
+Available User Watches=
 Click on Help for more information=Щоб отримати додаткову інформацію, натисніть «Help».
 Correct any problems that are identified before doing any tweaking=Виправте будь-які виявлені проблеми, перш ніж робити будь-які налаштування
 Current Disk Cache Settings=Поточні налаштування дискового кешу
 Current Inotify Settings=Поточні налаштування Inotify
 Current NIC settings=Поточні налаштування мережевої карти
+Current User Watches=
 Disable NIC Flow Control=Вимкніть керування потоком мережевого NIC
 Disable NIC Offload=Вимкніть розвантаження NIC
 Disk Cache=Дисковий кеш
@@ -34,7 +36,8 @@ Make changes slowly=Вносьте зміни повільно
 Make one change at a time and verify if it improves your situation=Робіть одну зміну за раз і перевіряйте, чи це покращить вашу ситуацію
 Making changes here can briefly interrupt your network operation=Внесення змін тут може призвести до короткого переривання роботи мережі
 Many plugins are no longer compatible with older Unraid versons=Багато плагінів більше не сумісні зі старими версіями Unraid
-Max Watches=Максимум Годин
+Max SMB Open Files=
+Max User Watches=
 NIC Offload=Розвантаження NIC
 NIC Rx Buffer=NIC Rx буфер
 NIC Tx Buffer=NIC Tx буфер
@@ -66,6 +69,7 @@ Tips=Поради
 Tips and Tweaks wiki=Поради та налаштування wiki
 Tweaks=Твіки
 Use the Update Assistant that is part of the Fix Common Problems plugin=Встановіть плагін Fix Common Problems і вирішіть будь-які проблеми конфігурації Unraid
+Version 6.11.4 and later=
 You can check CPU frequencies on the command line with=Ви можете перевірити частоти процесора в командному рядку за допомогою
 You may actually cause more problems than you solve if there are problems with your Unraid configuration=Ви можете створити більше проблем, ніж вирішити, якщо є проблеми з конфігурацією Unraid
 
@@ -131,6 +135,12 @@ You may actually cause more problems than you solve if there are problems with y
 > Якщо inotify не запускається через недостатню кількість спостережень користувачів, збільште max_user_watches.
 >
 > Типовим значенням є 524288.
+:end
+
+:tips_tweaks_max_files_plug:
+> This value is used by samba to set the maximum number of open files allowed in SMB shares.
+>
+> The default is 40960 and the allowed range is 40960 to 65535.
 :end
 
 :tips_tweaks_cpu_governor_plug:
