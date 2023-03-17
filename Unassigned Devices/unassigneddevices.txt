@@ -1,7 +1,7 @@
 Add ISO File Share=Додати спільний доступ до файлів ISO
 Add Remote SMB=Додати віддалений SMB
 Add Root Share=Додати Кореневу папку
-An XFS or BTRFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=Диск XFS або BTRFS, розділений на UD, сумісний з розподілом дисків масиву і може бути доданий до масиву
+An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=
 Any data on this disk will be lost=Будь-які дані на цьому диску будуть втрачені
 Are you sure=Ви точно впевнені
 Auto mount=Автоматичне монтування
@@ -49,11 +49,13 @@ from disk=з диска
 Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=Перейдіть до Налаштування->Глобальні налаштування спільних ресурсів та встановіть для параметра «Увімкнути спільні диски» значення «Авто» або «Вимкнуто».
 Historical=Історичний
 Historical Devices=Історичні прилади
+
 Historical Device is=Історичний пристрій є
 Identification=Ідентифікація
 If this disk was pre-cleared, you will remove the pre-clear signature=Якщо цей диск було попередньо очищено, ви видалите підпис попереднього очищення
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=Якщо ви додасте диск до масиву, а підпис попереднього очищення буде видалено, Unraid знову пройде тривалий процес очищення диска
 is offline=не в мережі
+
 ISO File is=Файл ISO є
 ISO File Shares=Спільні файли ISO
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=Якщо ви використовуєте пароль диска, обов’язково введіть пароль для цього диска в налаштуваннях UD, щоб його можна було підключити
@@ -69,14 +71,17 @@ Next=Далі
 NFS Mount Point=Точка монтування NFS
 NFS or ISO File Shares configured=Налаштовано спільні файли NFS або ISO
 NFS Script=Сценарій NFS
+NFS Script Log=Журнал сценаріїв NFS
 NFS Share=Спільний ресурс NFS
 NFS Shares=Спільні ресурси NFS
-Next=Далі
 No Remote SMB=Немає віддаленого SMB
 No Unassigned Disks available=Немає непризначених дисків
 not installed=не встановлено
 Note=Примітка
+
 offilne=офлайн
+
+
 You must enable NFS in Settings->NFS to mount NFS shares=Ви повинні ввімкнути NFS у Наташтуваннях->NFS, щоб підключити спільні ресурси NFS
 You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні ввімкнути SMB у Наташтуваннях->SMB, щоб підключити спільні ресурси SMB
 Open=Відкрити
@@ -130,13 +135,13 @@ Username=Ім'я користувача
 View Device Script Log=Перегляд журналу сценаріїв пристрою
 View ISO File Script Log=Перегляд журналу сценарію файлу ISO
 View Remote SMB=Перегляд віддаленого SMB
+WARNING=УВАГА
 When you copy files between shares in the Root Share, the files may not end up on the expected disks=Коли ви копіюєте файли між спільними ресурсами в Кореневому спільному ресурсі, файли можуть не опинитися на очікуваних дисках
-NFS Script Log=Журнал сценаріїв NFS
+Working=
 You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=Ви також можете піддати себе проблемам безпеки, наприклад програмам-вимагачам, розкривши всі свої спільні ресурси в одному Кореневому ресурсі
 You must enable NFS in Settings->NFS to mount NFS shares=Ви повинні ввімкнути NFS у Наташтуваннях->NFS, щоб підключити спільні ресурси NFS
 You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні ввімкнути SMB у Наташтуваннях->SMB, щоб підключити спільні ресурси SMB
 You must enable the Destructive Mode in UD Settings before you can Format this disk=Ви повинні ввімкнути руйнівний режим у параметрах UD, перш ніж ви зможете відформатувати цей диск
-WARNING=УВАГА
 You WILL have problems if you do=У вас БУДУТЬ проблеми, якщо ви це зробите
 You will need to enter credentials to list the shares=Вам потрібно буде ввести облікові дані, щоб отримати список спільних ресурсів
 
@@ -194,3 +199,5 @@ You will need to enter credentials to list the shares=Вам потрібно б
 >
 > Будьте обережні, використовуючи позначення /dev/sdX або devX, оскільки вони можуть змінитися після перезавантаження. Найкраще використовувати значення, передані в сценарій UD для sdX (DEVICE) і devX (UD_DEVICE).
 :end
+
+; Note: March 17, 2023 - 5 missing translations
