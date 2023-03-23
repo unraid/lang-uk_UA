@@ -28,31 +28,31 @@ HHMM=ЧЧ:ММ
 Import=Імпорт
 Include duplicate file hashes in Find command=Включити повторювані хеші файлів у команду **Знайти**
 log files=файли журналів
-Low=
+Low=Низький
 MD5=MD5
-Output file=
-Placement of file integrity control=
-Process priority=
-Save new hashing results to flash=
-saved files=
-Send notifications=
+Output file=Вихідний файл
+Placement of file integrity control=Розміщення контролю цілісності файлів
+Process priority=Пріоритет процесу
+Save new hashing results to flash=Збережіть нові результати хешування у Flash
+saved files=збережені файли
+Send notifications=Надсилати повідомлення
 SHA2=SHA2
-Syslog only=
-Syslog Output file=Syslog & Output file
-Task=
-Time of the day=
-Toggle all=
-Tools menu=
-Verification tasks=
-view hash files=
-view log files=
-view saved files=
-When parity operation is running=
+Syslog only=Тільки системний журнал
+Syslog Output file=Системний журнал і вихідний файл
+Task=Завдання
+Time of the day=Час доби
+Toggle all=Перемкнути все
+Tools menu=Меню інструментів
+Verification tasks=Перевірочні завдання
+view hash files=перегляд хеш-файлів
+view log files=переглядати файли журналів
+view saved files=переглядати збережені файли
+When parity operation is running=Коли виконується операція паритету
 
 :integrity_control_plug:
-> Select the placement of the file integrity control page. By default it is placed under the *Tools* menu, but it may be moved under the *header* menu.
+> Виберіть розташування сторінки контролю цілісності файлу. За замовчуванням його розміщено в меню *Інструменти*, але його можна перемістити в меню *заголовок*.
 >
-> Keep in mind that the *header* menu has limited space.
+> Майте на увазі, що *заголовок* меню має обмежений простір.
 :end
 
 :integrity_service_plug:
