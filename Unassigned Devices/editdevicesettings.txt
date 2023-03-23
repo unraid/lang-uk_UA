@@ -1,80 +1,80 @@
-Automount=
-Attach=
-Click the 'Default' button to select the default Device Script File=
-Default=
-Delete Device Script File=
-Detach=
-Device Script=
-Device Script content=
-Disable Mount Button=
-Disk Name=
-Edit Device Script=
-Enter Device Script File Name=
-Enter and Edit the Device Script that runs when a udev or operator event occurs=
-Enter the User Script that will be using this device=
-Load the default Device Script=
-Run in background=
-Mark this Device as passed through to a VM or Docker=
-Mount Device Read only=
-Mount Device when Plugged in or Array is Started=
-Mount ISO File when Array is Started=
-Mount Remote SMB or NFS Share when Array is Started=
-Passed Through=
-Read Only=
-Run Device Script File in the background=
-Save your Device Script File changes=
-Save=
-Share Device with SMB and NFS=
-Share Remote Mount with SMB and NFS=
-Unassigned Devices Settings=
-Undo your changes since last Save=
-User Script=
+Automount=Автоматичне монтування
+Attach=Аттач
+Click the 'Default' button to select the default Device Script File=Натисніть кнопку «За замовчуванням», щоб вибрати файл сценарію пристрою за замовчуванням
+Default=За замовчуванням
+Delete Device Script File=Видалити файл сценарію пристрою
+Detach=Від'єднати
+Device Script=Сценарій пристрою
+Device Script content=Вміст сценарію пристрою
+Disable Mount Button=Вимкнути кнопку монтування
+Disk Name=Ім'я диска
+Edit Device Script=Редагувати сценарій пристрою
+Enter Device Script File Name=Введіть назву файлу сценарію пристрою
+Enter and Edit the Device Script that runs when a udev or operator event occurs=Введіть і відредагуйте сценарій пристрою, який запускається, коли відбувається подія udev або оператор
+Enter the User Script that will be using this device=Введіть сценарій користувача, який використовуватиме цей пристрій
+Load the default Device Script=Завантажте стандартний сценарій пристрою
+Run in background=Запуск у фоновому режимі
+Mark this Device as passed through to a VM or Docker=Позначте цей пристрій як переданий до віртуальної машини або Docker
+Mount Device Read only=Монтувати пристрій лише для читання
+Mount Device when Plugged in or Array is Started=Підключити пристрій під час підключення або запуску масиву
+Mount ISO File when Array is Started=Змонтувати файл ISO під час запуску масиву
+Mount Remote SMB or NFS Share when Array is Started=Підключити віддалений спільний доступ SMB або NFS під час запуску масиву
+Passed Through=Пройшов через
+Read Only=Лише для читання
+Run Device Script File in the background=Запустіть файл сценарію пристрою у фоновому режимі
+Save your Device Script File changes=Save your Device Script File changes
+Save=Зберегти
+Share Device with SMB and NFS=Спільний доступ до пристрою за допомогою SMB і NFS
+Share Remote Mount with SMB and NFS=Спільний доступ до віддаленого монтування за допомогою SMB і NFS
+Unassigned Devices Settings=Непризначені налаштування пристроїв
+Undo your changes since last Save=Скасувати зміни з моменту останнього збереження
+User Script=Сценарій користувача
 Volume=
 ;
 ; Help
 ;
 :ud_edit_script_device_settings_plug:
-> Select the options for this device/mount point. These changes are made immediately. You don't need to click **Save** to save them.
+> Виберіть параметри для цього пристрою/точки монтування. Ці зміни вносяться негайно. Вам не потрібно натискати **Зберегти**, щоб зберегти їх.
 :end
 
 :ud_edit_script_attach_detach_plug:
-> Click **Detach** to detach the device.  The device will then show in Historical Devices and can be Attached from the device settings there.
+> Натисніть **Від'єднати**, щоб від’єднати пристрій. Потім пристрій відобразиться в Історичних пристроях, і його можна буде під’єднати з налаштувань пристрою.
 >
-> Click **Attach** to attach a device that has been detached.  This will act like the device was just installed and will auto mount if 'Auto Mount' is on.  It will take a while for the device to show up in UD.
+> Натисніть **Приєднати**, щоб під’єднати від’єднаний пристрій. Це діятиме так, ніби пристрій щойно встановлено, і автоматично монтуватиметься, якщо ввімкнено «Автоматичне монтування». Потрібен деякий час, перш ніж пристрій з’явиться в UD.
 >
-> Click **Done** to exit this page.
+> Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
 
 :ud_disk_name_plug:
-> Enter the alias name for this device.  This is the name you want to use to refer to this drive.  Leave the name blank and the 'devX' will be assigned.
+> Введіть псевдонім для цього пристрою. Це ім’я, яке ви хочете використовувати для позначення цього диска. Залиште ім’я порожнім, і «devX» буде призначено.
 >
-> **Name:** 8 characters max, spaces converted to '_', minimal special characters allowed, name is case sensitive.
+> **Ім’я:** максимум 8 символів, пробіли перетворено на '_', допускається мінімум спеціальних символів, ім’я враховується регістром.
 >
-> **Note:** Cannot contain "dev" as the first characters.  This is reserved for the 'devX' devices.
+> **Примітка:** не може містити «dev» як перші символи. Це зарезервовано для пристроїв «devX».
 :end
 
 :ud_apfs_volume_plug:
-> Enter the volume to mount on this apfs partition. Click **Save** to commit this setting.
+> Введіть обсяг для монтування на цьому розділі apfs. Натисніть **Зберегти**, щоб закріпити це налаштування.
 :end
 
 :ud_edit_script_choose_name_plug:
-> This is the Script File that runs when the device is mounted. Choose your Script File name from the file selection dropdown, or enter your desired script.
+> Це файл сценарію, який запускається під час монтування пристрою. Виберіть назву файлу сценарію зі спадного списку вибору файлів або введіть потрібний сценарій.
 :end
 
 :ud_edit_user_script_choose_name_plug:
-> If you have the User Scripts plugin installed, you can have
-Unassigned Devices show the running status of the User Script that
-will be using this device. This field will only be enabled when a Device Script File exists.
+> Якщо у вас встановлено плагін User Scripts, ви можете його встановити
+Непризначені пристрої показують стан роботи сценарію користувача, який
+буде використовувати цей пристрій. Це поле буде активним, лише якщо існує файл сценарію пристрою.
 :end
 
 :ud_edit_script_run_background_plug:
-> Set to **Yes** to have the Device Script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
+> Установіть значення **Так**, щоб сценарій пристрою запускався як фонове завдання. Це може запобігти зависанню інтерфейсу користувача непризначених пристроїв, коли сценарій запускається з інтерфейсу користувача.
 :end
 
 :ud_edit_script_buttons_plug:
-> Click **Default** to initialize the edit box with a default Device Script. You still need to click **Save** in order to commit the change.
-> Click **Delete** to delete the Device Script file.
-> Click **Reset** to undo any changes you make (before Saving).
-> Click **Save** to commit the current edits.
-> Click **Done** to exit this page.
+> Натисніть **За замовчуванням**, щоб ініціалізувати вікно редагування стандартним сценарієм пристрою. Вам все одно потрібно натиснути **Зберегти**, щоб зафіксувати зміни.
+> Натисніть **Видалити**, щоб видалити файл сценарію пристрою.
+> Натисніть **Скинути**, щоб скасувати внесені зміни (перед збереженням).
+> Натисніть **Зберегти**, щоб прийняти поточні зміни.
+> Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
