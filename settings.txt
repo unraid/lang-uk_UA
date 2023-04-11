@@ -263,6 +263,7 @@ Fahrenheit=Фаренгейта
 Failed to open=Не вдалося відкрити
 Failed to stop=Не вдалося зупинити
 Failure to do so may result in your docker image suffering corruption at a later time=Якщо цього не зробити, це може призвести до того, що ваш образ Docker пізніше буде пошкоджено
+Finished=
 First day=Перший день
 First week=Перший тиждень
 Flash backup=Резервне копіювання Flash
@@ -764,11 +765,25 @@ YYYY-MM-DD=РРРР-ММ-ДД
 zfs=
 
 ; My Servers plugin
+Account status=
+Also delete cloud backup Restore from backup will be unavailable=Also delete cloud backup. Restore from backup will be unavailable.
+Always - Manual Port Forward=
+Always - UPnP=
 Are you sure you want pause communication with your remote flash backup on unraidnet=Ви впевнені, що хочете призупинити зв’язок із віддаленим резервним копіюванням на unraid.net?
+Are you sure you want to delete your cloud backup Restore from backup will be unavailable=Are you sure you want to delete your cloud backup? Restore from backup will be unavailable.
+Are you sure you want to delete your local flash backup=Are you sure you want to delete your local flash backup?
 Are you sure you want to erase all change history in both local and unraidnet remote=Ви впевнені, що хочете стерти всю історію змін як на локальному, так і на віддаленому unraid.net?
+Connected to My Servers Cloud=
+Delete Cloud Backup=
+Disabled until connected to My Servers Cloud=
+Disabled until you have signed in=
+Disabled until you Provision a myunraidnet SSL Cert=Disabled until you Provision a myunraid.net SSL Cert
 Disabled until you Provision an unraidnet SSL Cert and set SSL-TLS to Auto=Вимкнено, доки ви не надасте сертифікат unraid.net SSL і не встановите SSL-TLS на Авто
 Disabled until you Provision an unraidnet SSL Cert=Вимкнено, доки ви не надасте сертифікат unraid.net SSL
 Disabled until your root user account is password-protected=Вимкнено, доки ваш обліковий запис користувача root не буде захищено паролем
+Dynamic - Manual Port Forward=
+Dynamic - UPnP=
+Dynamic Remote Access allows you to do stuff that someone else can explain=Dynamic Remote Access allows you to do stuff that someone else can explain.
 Enable Transparent 2FA for Local Access=Увімкнути прозору 2FA для локального доступу
 Enable Transparent 2FA for Remote Access=Увімкнути прозору 2FA для віддаленого доступу
 In order to activate Flash Backup there must be at least 1GB of free space on your flash drive=Щоб активувати флеш-резервну копію, на флеш-накопичувачі має бути не менше 1 ГБ вільного місця.
@@ -794,4 +809,4 @@ Transient errors in this log can be ignored unless you are having issues=Тим�
 Unraid API extra origins=Додаткові джерела API Unraid
 View Flash Backup Error Log=Переглянути журнал помилок Flash Backup
 
-; Note: March 17, 2023 - 25 missing translations
+; Note: April 11, 2023 - 40 missing translations

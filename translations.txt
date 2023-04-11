@@ -168,6 +168,7 @@ Interface=Інтерфейс
 Invalid Username or Password=Некоректне ім’ я користувача або пароль
 IOMMU=IOMMU
 is available=доступний
+Job=
 KB=KB
 Keep server details anonymous=Зберігайте дані сервера анонімними
 Kernel=Ядро
@@ -710,7 +711,7 @@ This may indicate a complex network that will not work with this Remote Access s
 We have sent a verifcation email to %s=Ми надіслали підтвердження електронного листа на %s
 You will no longer have access to this server using this url=Ви більше не матимете доступу до цього сервера, використовуючи <abbr title="%s" class="italic">цю URL-адресу</abbr>
 
-; Dynamix File Manager - 2022-05-20
+; Dynamix File Manager - 2023-04-11
 %s year ago=%s рік тому
 %s years ago=%s років тому
 Action=Дія
@@ -742,6 +743,7 @@ DEVICE=ПРИСТРІЙ
 Download File=Завантажити файл
 Enter a valid target=Введіть дійсну ціль
 Expand=Розгорнути
+File is removed=
 File Manager=Файловий менеджер
 File name=Ім'я файлу
 file type=тип файлу
@@ -755,7 +757,11 @@ in %s folders and %s files=у папках %s і файлах %s
 Invalid path=Недійсний шлях
 Invalid source=Недійсне джерело
 Invalid target=Недійсна ціль
+Job running=
+Jobs=
 Last modified=Остання зміна
+Minimize=
+more=
 Move Device=Перемістити Пристрій
 Move File=Перемістити Файл
 Move Folder=Перемістити Папку
@@ -766,6 +772,7 @@ New file name=Нова назва файлу
 New folder name=Нова назва папки
 New owner=Новий власник
 New permission=Новий дозвіл
+No jobs scheduled=
 No results found=Нічого не знайдено
 Not allowed to mix disk and user shares=Не дозволяється змішувати дискові та користувацькі спільні ресурси
 Objects to change=Об'єкти для зміни
@@ -779,12 +786,15 @@ Owner=Власник
 Page will be reloaded=Сторінка буде перезавантажена
 Parent Directory=Батьківський каталог
 Permission=Дозвіл
+Queue=
 Removing=Видалення
 Rename File=Перейменувати файл
 Rename Folder=Перейменувати папку
 rename to=перейменувати на
 Renaming=Перейменування
 Save=Зберегти
+Scheduled Jobs=
+Search pattern=
 Search string=Пошуковий рядок
 Search=Пошук
 Share name=ім'я Спільного Доступу
@@ -823,6 +833,7 @@ This renames the selected source=Це перейменує вибране дже
 Toggle TimeAge display=Перемикання відображення часу/віку
 Total occupied space=Загальна зайнята площа
 Updating=Оновлення
+Upload Error=
 Use sparse option=
 year=рік
 years=років
@@ -898,4 +909,4 @@ Your current url %s is not in the list of allowed origins for this server=Your c
 Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=Ваш сервер не можна буде використовувати, доки ви не придбаєте ключ реєстрації або не встановите безкоштовний 30-денний пробний ключ
 Your Unraid registration key is ineligible for replacement as it is blacklisted=Ваш реєстраційний ключ Unraid не підлягає заміні, оскільки він знаходиться в чорному списку
 
-; Note: March 17, 2023 - 19 missing translations
+; Note: April 11, 2023 - 30 missing translations

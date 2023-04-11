@@ -35,8 +35,9 @@ STALE=ЗАСТАЛИЙ
 Support Thread=Лінія підтримки
 Uninstall=Видалення
 Update All Plugins=Оновити Всі Плагіни
+Update Incompatible=
 Update Plugin=Оновити Плагін
 Upgrade=Оновлення
 View Release Notes=Переглянути примітки до випуску
 
-; Note: March 17, 2023 - 2 missing translations
+; Note: April 11, 2023 - 3 missing translations
