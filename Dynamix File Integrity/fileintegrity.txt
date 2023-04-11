@@ -132,5 +132,3 @@ When parity operation is running=Коли виконується операці�
 > Error logging, including file corruption detection information can be given in the system log, or saved as a file on flash.
 > Disabling error logging will suppress log creation, but it is still possible to receive notifications.
 :end
-
-; Note: March 17, 2023 - 17 missing translations

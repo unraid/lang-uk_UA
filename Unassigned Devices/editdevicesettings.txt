@@ -1,9 +1,11 @@
-Automount=Автоматичне монтування
 Attach=Аттач
+Attaching=
+Automount=Автоматичне монтування
 Click the 'Default' button to select the default Device Script File=Натисніть кнопку «За замовчуванням», щоб вибрати файл сценарію пристрою за замовчуванням
 Default=За замовчуванням
 Delete Device Script File=Видалити файл сценарію пристрою
 Detach=Від'єднати
+Detaching=
 Device Script=Сценарій пристрою
 Device Script content=Вміст сценарію пристрою
 Disable Mount Button=Вимкнути кнопку монтування
@@ -78,3 +80,5 @@ Volume=
 > Натисніть **Зберегти**, щоб прийняти поточні зміни.
 > Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
+
+; Note: April 11, 2023 - 3 missing translations
