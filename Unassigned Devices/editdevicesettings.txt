@@ -1,11 +1,11 @@
 Attach=Аттач
-Attaching=
+Attaching=Прикріплення
 Automount=Автоматичне монтування
 Click the 'Default' button to select the default Device Script File=Натисніть кнопку «За замовчуванням», щоб вибрати файл сценарію пристрою за замовчуванням
 Default=За замовчуванням
 Delete Device Script File=Видалити файл сценарію пристрою
 Detach=Від'єднати
-Detaching=
+Detaching=Від'єднання
 Device Script=Сценарій пристрою
 Device Script content=Вміст сценарію пристрою
 Disable Mount Button=Вимкнути кнопку монтування

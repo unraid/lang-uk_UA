@@ -19,7 +19,7 @@ Change ISO File Mount Point=Змінити точку монтування фа�
 Change Remote Share Mount Point=Змінити точку монтування віддаленого спільного доступу
 Change SMB=Змінити SMB
 Changing the Mount Point will also change the disk label=Зміна точки монтування також призведе до зміни мітки диска
-Clear=
+Clear=Чисто
 Click to select ISO file=Натисніть, щоб вибрати файл ISO
 Click to view/hide partitions and mount points=Натисніть, щоб переглянути/приховати розділи та точки монтування
 Complete=Завершено
@@ -140,7 +140,7 @@ You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні в�
 You must enable the Destructive Mode in UD Settings before you can Format this disk=Ви повинні ввімкнути руйнівний режим у параметрах UD, перш ніж ви зможете відформатувати цей диск
 You WILL have problems if you do=У вас БУДУТЬ проблеми, якщо ви це зробите
 You will need to enter credentials to list the shares=Вам потрібно буде ввести облікові дані, щоб отримати список спільних ресурсів
-ZFS Pool Name=
+ZFS Pool Name=Назва пулу ZFS
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices скорочено називається UD.**
