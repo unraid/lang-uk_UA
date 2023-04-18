@@ -375,4 +375,4 @@ System in sleep mode=Система в сплячому режимі
 This will put the system in sleep mode=Це переведе систему в сплячий режим
 wiki entry=wiki запис
 
-; Note: April 11, 2023 - 28 missing translations
+; Note: April 18, 2023 - 1 missing translations

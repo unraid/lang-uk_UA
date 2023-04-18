@@ -55,6 +55,7 @@ Bug Description=Опис помилки
 Bug Report=Повідомлення про помилку
 bytes=байтів
 Cache=Cache
+Calculated free space value=
 Cancel=Скасувати
 Capabilities=Можливості
 Case-sensitive names=Імена чутливі до регістру
@@ -449,7 +450,7 @@ The command failed=Команда не виконана
 The command finished successfully=Команда виконана успішно
 TOTAL DATA PULLED=ВСЬОГО ДАНИХ ВИТЯГНУТО
 Was this container created using this plugin=Цей контейнер створено за допомогою цього плагіна
-Executes `unraid-api start`; no terminal needed=Виконує `unraid-api start`; термінал не потрібен
+Executes `unraid-api start`; no terminal needed=
 Please use a high quality name brand device at least 1GB in size min 4GB recommended=Будь ласка, використовуйте високоякісний пристрій торгової марки розміром принаймні 1 ГБ (рекомендовано мінімум 4 ГБ)
 
 ; Dynamix.system.button plugin
@@ -853,7 +854,7 @@ DNS issue, unable to resolve wanip4unraidnet=Проблема DNS, не вдає
 Enhance your experience with My Servers=Покращте свій досвід роботи з Моїми серверами
 Enhance your Unraid experience with these My Servers BETA features=Покращте свій досвід Unraid за допомогою цих<br> функцій Мої сервери (БЕТА).
 Enhance your Unraid experience with these<br> My Servers BETA features=Покращте свій досвід Unraid за допомогою цих функцій<br class=\hidden sm:block\/> Мої сервери (БЕТА)
-Executes `unraid-api start`; no terminal needed=Виконує `unraid-api start`; термінал не потрібен
+Executes `unraid-api start`; no terminal needed=
 For best results, use one of these urls=Щоб отримати найкращі результати, використовуйте одну з цих URL-адрес
 Get started by installing the plugin=Почніть з встановлення плагіна
 Go to My Servers Dashboard=Перейдіть до інформаційної панелі Мої сервери
@@ -909,4 +910,4 @@ Your current url %s is not in the list of allowed origins for this server=Your c
 Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=Ваш сервер не можна буде використовувати, доки ви не придбаєте ключ реєстрації або не встановите безкоштовний 30-денний пробний ключ
 Your Unraid registration key is ineligible for replacement as it is blacklisted=Ваш реєстраційний ключ Unraid не підлягає заміні, оскільки він знаходиться в чорному списку
 
-; Note: April 11, 2023 - 30 missing translations
+; Note: April 18, 2023 - 5 missing translations
