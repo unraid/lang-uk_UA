@@ -197,4 +197,4 @@ ZFS Pool Name=Назва пулу ZFS
 > Будьте обережні, використовуючи позначення /dev/sdX або devX, оскільки вони можуть змінитися після перезавантаження. Найкраще використовувати значення, передані в сценарій UD для sdX (DEVICE) і devX (UD_DEVICE).
 :end
 
-; Note: April 11, 2023 - 4 missing translations
+; Note: April 18, 2023 - 2 missing translations
