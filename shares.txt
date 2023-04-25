@@ -71,5 +71,3 @@ Use cache pool for new filesdirectories=Використовувати пул к
 User Shares=Спільні ресурси користувачів
 Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
-
-; Note: April 18, 2023 - 8 missing translations
