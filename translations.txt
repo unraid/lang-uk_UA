@@ -55,7 +55,7 @@ Bug Description=Опис помилки
 Bug Report=Повідомлення про помилку
 bytes=байтів
 Cache=Cache
-Calculated free space value=
+Calculated free space value=Розраховане значення вільного простору
 Cancel=Скасувати
 Capabilities=Можливості
 Case-sensitive names=Імена чутливі до регістру
@@ -441,15 +441,16 @@ Configuration not found=Конфігурація не знайдена
 of=з
 Pulling image=Тягнути образ
 Removing container=Видалення контейнера
-Removing orphan image=
+Removing orphan image=Видалення сірого образу
 Stopping container=Зупинений контейнер
 Successfully removed container=Контейнер успішно видалено
-Successfully removed orphan image=
+Successfully removed orphan image=Образ-сироту успішно видалено
 Successfully stopped container=Контейнер успішно зупинено
 The command failed=Команда не виконана
 The command finished successfully=Команда виконана успішно
 TOTAL DATA PULLED=ВСЬОГО ДАНИХ ВИТЯГНУТО
 Was this container created using this plugin=Цей контейнер створено за допомогою цього плагіна
+Executes `unraid-api start`; no terminal needed=Виконує `unraid-api start`; термінал не потрібен
 Please use a high quality name brand device at least 1GB in size min 4GB recommended=Будь ласка, використовуйте високоякісний пристрій торгової марки розміром принаймні 1 ГБ (рекомендовано мінімум 4 ГБ)
 
 ; Dynamix.system.button plugin
