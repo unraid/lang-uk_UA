@@ -65,6 +65,7 @@ Bonding members of=Об’єднання членів
 Bonding mode=Режим склеювання
 boost=підвищити
 Both=Обидва
+Both Web Virt-Manager Remote Viewer=Both Web & Virt-Manager Remote Viewer
 bottom-left=нижній лівий
 bottom-right=нижній правий
 Bridging members of=Об’єднання членів
@@ -110,6 +111,7 @@ Confirm sleep command=Підтвердити команду сну
 Confirmations=Підтвердження
 connect to any device on the VPN tunnel=підключитися до будь-якого пристрою в тунелі VPN
 connect to this server using IP address=підключитися до цього сервера за допомогою IP-адреси
+Console Options=
 Container=Контейнер
 Content=Зміст
 Correct file system errors=Виправте помилки файлової системи
@@ -726,6 +728,7 @@ View libvirt log=Переглянути журнал libvirt
 View Local Config=Переглянути локальну конфігурацію
 View Peer Config=Переглянути конфігурацію однорангового пристрою
 view=перегляд
+Virt-Manager Remote Viewer=
 VLAN assignment mismatch=Невідповідність призначення VLAN
 VLAN number=Номер VLAN
 VM Manager=Менеджер VM
@@ -743,6 +746,7 @@ VPN tunneled access=Тунельний доступ VPN
 WAN Port=Порт WAN
 Warnings=Попередження
 Watts=Ват
+Web interface=
 Week of the month=Тиждень місяця
 Weekly=Щотижня
 WireGuard Configuration=Конфігурація WireGuard
@@ -809,4 +813,4 @@ Transient errors in this log can be ignored unless you are having issues=Тим�
 Unraid API extra origins=Додаткові джерела API Unraid
 View Flash Backup Error Log=Переглянути журнал помилок Flash Backup
 
-; Note: April 25, 2023 - 4 missing translations
+; Note: April 28, 2023 - 8 missing translations
