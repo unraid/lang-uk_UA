@@ -162,7 +162,6 @@ Parity Operation History=Історія паритетних операцій
 Parity operation is running=Виконується операція паритету
 Parity valid requires ALL disks to have their original content=*Парність дійсна* вимагає, щоб **УСІ** диски мали оригінальний вміст
 Parity-Check in progress=Виконується перевірка паритету
-ParityRead-Check History=Parity/Read-Check History
 Parity-Sync in progress=Виконується синхронізація паритету
 Parity-SyncData-Rebuild in progress=Виконується синхронізація паритету/перебудова даних
 Partition format=Формат розділу
@@ -342,7 +341,6 @@ will start Disk-Clear of new data disks=почне **Очищення диска
 will start Parity-Check=розпочнеться **Перевірка Паритету**
 will start Parity-Sync andor Data-Rebuild=запустить **Parity-Sync** та/або **Data-Rebuild**
 will start Parity-Sync=розпочнеться **Синхронізація Паритету**
-will start Read-Check of all array disks=will start **Read-Check** of all array disks
 will stop Clearing=припиняє очищення
 will stop Data-Rebuild=зупинить відновлення даних
 will stop Disk-Clear=зупинить Очищеня Диску
@@ -374,5 +372,7 @@ System in sleep mode=Система в сплячому режимі
 This will put the system in sleep mode=Це переведе систему в сплячий режим
 wiki entry=wiki запис
 
-; Note: April 28, 2023 - 1 missing translations
+; Note: April 29, 2023 - 3 missing translations
+ParityRead-Check History=Parity/Read-Check History
 ReiserFS is deprecated, please use another file system=
+will start Read-Check of all array disks=will start **Read-Check** of all array disks

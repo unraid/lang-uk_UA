@@ -7,9 +7,6 @@ Anonymize diagnostics=Анонімізувати діагностику
 Anytime=Будь-коли
 Archived Notifications=Архівні сповіщення
 Are you sure=Ти впевнений
-Array has been Reset=Array has been **Reset**
-Array must be Started to change permissions=Array must be **Started** to change permissions
-Array must be Stopped to change=Array must be **Stopped** to change
 Array slots=Слоти масиву
 Array=Масив
 Author=Автор
@@ -313,10 +310,13 @@ USB-флеш-пристрій також може бути у *чорному с
 Для отримання додаткової інформації, будь ласка [Contact Support](https://lime-technology.com/contact).
 :end
 
-; Note: April 28, 2023 - 24 missing translations
+; Note: April 29, 2023 - 27 missing translations
 Alert Message=
 Alerts=
 All Categories=
+Array has been Reset=Array has been **Reset**
+Array must be Started to change permissions=Array must be **Started** to change permissions
+Array must be Stopped to change=Array must be **Stopped** to change
 Clear Log=
 Deprecated Only=
 Error reporting level=
