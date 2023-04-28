@@ -201,7 +201,6 @@ Reading=Читання
 Reboot in safe mode=Перезавантаженя в безпечному режимі
 Registration Key Manager=Менеджер ключів реєстрації
 registration key=ключ реєстрації
-ReiserFS is deprecated, please use another file system=
 reiserfsck status=статус reiserfsck
 Rename Pool=Перейменувати Pool
 Repair corrupted blocks=Відремонтувати пошкоджені блоки
@@ -375,4 +374,5 @@ System in sleep mode=Система в сплячому режимі
 This will put the system in sleep mode=Це переведе систему в сплячий режим
 wiki entry=wiki запис
 
-; Note: April 18, 2023 - 1 missing translations
+; Note: April 28, 2023 - 1 missing translations
+ReiserFS is deprecated, please use another file system=

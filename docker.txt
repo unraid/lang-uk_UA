@@ -59,7 +59,6 @@ Icon URL=URL-адреса значка
 Image ID=Образ ID
 Key=Ключ
 Label=Етикетка
-Lock sortable items=
 Management=Менеджмент
 MediaApp=MediaApp
 MediaServer=Медіасервер
@@ -120,7 +119,6 @@ The command finished successfully=Команда завершилася успі
 TOTAL DATA PULLED=ЗАГАЛЬНІ ДАНІ
 Total size=Загальний розмір
 Unknown action=Невідома дія
-Unlock sortable items=
 Update All=Оновити ВСЕ
 update ready=оновлення готове
 Value=Значення
@@ -134,4 +132,6 @@ Web=Web
 WebUI=WebUI
 Writable=Можливий запис
 
-; Note: March 17, 2023 - 2 missing translations
+; Note: April 28, 2023 - 2 missing translations
+Lock sortable items=
+Unlock sortable items=
