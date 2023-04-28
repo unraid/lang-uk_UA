@@ -72,10 +72,11 @@ User Shares=Спільні ресурси користувачів
 Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
 
-; Note: April 28, 2023 - 7 missing translations
+; Note: April 28, 2023 - 8 missing translations
 Clean Up=
 CLEAN UP=
 No unused share configurations present=
+Primary storage %s=
 Primary storage to Secondary storage=
 Remove unused share configurations=
 Removed share configurations=
