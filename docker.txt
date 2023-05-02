@@ -133,5 +133,5 @@ WebUI=WebUI
 Writable=Можливий запис
 
 ; Note: April 28, 2023 - 2 missing translations
-Lock sortable items=
-Unlock sortable items=
+Lock sortable items=Блокування елементів, які можна сортувати
+Unlock sortable items=Розблокуйте елементи, які можна сортувати

@@ -132,6 +132,6 @@ Use only when directed for support=Використовуйте лише за п
 :end
 
 ; Note: April 28, 2023 - 3 missing translations
-Command times=
-Refresh and Update=
-Udev and Hotplug=
+Command times=Командний час
+Refresh and Update=Оновити і Оновлення
+Udev and Hotplug=Udev and Hotplug

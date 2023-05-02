@@ -196,5 +196,5 @@ ZFS Pool Name=Назва пулу ZFS
 :end
 
 ; Note: April 28, 2023 - 2 missing translations
-An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=
-Working=
+An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=Диск XFS, BTRFS або ZFS, розділений на UD, сумісний із розділенням диска масиву та може бути доданий до масиву
+Working=Working

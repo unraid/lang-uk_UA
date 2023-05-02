@@ -443,11 +443,11 @@ Click Install to download and install the Community Applications plugin=Нати
 
 
 ; Note: April 28, 2023 - 8 missing translations
-This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=
-Not Enough Memory=
-Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=
-Installation already in progress=
-Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=
-%s is incompatible with your OS version Please update the OS to proceed=
-%s is incompatible with your OS version Either uninstall %s or update the OS=
-Featured Applications=
+This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=Цей шаблон налаштовано на запуск із Привілейованими правами. Це можлива загроза безпеці, і зазвичай його Не потрібно вмикати. Зауважте, що деякі програми потребують привілейованих прав для правильної роботи
+Not Enough Memory=Недостатньо пам'яті
+Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=Програми спільноти та ОС Unraid мають мінімальну необхідну встановлену пам’ять 4G CA не можуть працювати без дотримання цих мінімальних вимог
+Installation already in progress=Встановлення вже триває
+Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=Вже виконується інсталяція або оновлення іншого плагіна, і це неможливо запустити. Зачекайте, поки поточне встановлення чи оновлення завершиться, і повторіть спробу
+%s is incompatible with your OS version Please update the OS to proceed=%s несумісний із вашою версією ОС. Оновіть ОС, щоб продовжити
+%s is incompatible with your OS version Either uninstall %s or update the OS=%s несумісна з вашою версією ОС Або видаліть %s, або оновіть ОС
+Featured Applications=Рекомендовані Програми
