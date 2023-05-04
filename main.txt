@@ -373,6 +373,6 @@ This will put the system in sleep mode=Це переведе систему в �
 wiki entry=wiki запис
 
 ; Note: April 29, 2023 - 3 missing translations
-ParityRead-Check History=Parity/Read-Check History
-ReiserFS is deprecated, please use another file system=
-will start Read-Check of all array disks=will start **Read-Check** of all array disks
+ParityRead-Check History=Історія парності/перевірки читання
+ReiserFS is deprecated, please use another file system=ReiserFS застаріла, використовуйте іншу файлову систему
+will start Read-Check of all array disks=почне **перевірку читання** всіх дисків масиву

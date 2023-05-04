@@ -73,11 +73,11 @@ Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
 
 ; Note: April 28, 2023 - 8 missing translations
-Clean Up=
-CLEAN UP=
-No unused share configurations present=
-Primary storage %s=
-Primary storage to Secondary storage=
-Remove unused share configurations=
-Removed share configurations=
-Secondary storage to Primary storage=
+Clean Up=Очистити
+CLEAN UP=ОЧИСТИТИ
+No unused share configurations present=Немає невикористаних конфігурацій спільного доступу
+Primary storage %s=Основне сховище %s
+Primary storage to Secondary storage=Основне сховище до Вторинного сховища
+Remove unused share configurations=Видаліть конфігурації спільного доступу, які не використовуються
+Removed share configurations=Видалені конфігурації спільного доступу
+Secondary storage to Primary storage=Вторинне сховищае до Основного сховища

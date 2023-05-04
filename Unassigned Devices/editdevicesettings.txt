@@ -81,4 +81,4 @@ User Script=Сценарій користувача
 :end
 
 ; Note: April 28, 2023 - 1 missing translations
-Volume=
+Volume=Обсяг
