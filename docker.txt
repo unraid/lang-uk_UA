@@ -59,6 +59,7 @@ Icon URL=URL-адреса значка
 Image ID=Образ ID
 Key=Ключ
 Label=Етикетка
+Lock sortable items=Блокування елементів, які можна сортувати
 Management=Менеджмент
 MediaApp=MediaApp
 MediaServer=Медіасервер
@@ -119,6 +120,7 @@ The command finished successfully=Команда завершилася успі
 TOTAL DATA PULLED=ЗАГАЛЬНІ ДАНІ
 Total size=Загальний розмір
 Unknown action=Невідома дія
+Unlock sortable items=Розблокуйте елементи, які можна сортувати
 Update All=Оновити ВСЕ
 update ready=оновлення готове
 Value=Значення
@@ -131,7 +133,3 @@ Was this container created using this plugin=Цей контейнер ство�
 Web=Web
 WebUI=WebUI
 Writable=Можливий запис
-
-; Note: April 28, 2023 - 2 missing translations
-Lock sortable items=Блокування елементів, які можна сортувати
-Unlock sortable items=Розблокуйте елементи, які можна сортувати
