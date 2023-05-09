@@ -3,6 +3,7 @@ Auto Mount USB Devices=Автоматичне монтування USB-прис�
 Change Disk UUID=Змінити UUID диска
 Change UUID=Змінити UUID
 Change the disk UUID=Змініть UUID диска
+Command times=Командний час
 Common Script=Загальний сценарій
 Common Settings=Загальні налаштування
 Destructive Mode=Руйнівний Режим
@@ -17,6 +18,7 @@ NFS Security=Безпека NFS
 NFS Settings=Налаштування NFS
 NFS must be enabled in Settings->NFS to enable NFS Export=Щоб увімкнути експорт NFS, потрібно ввімкнути NFS у меню Налаштування->NFS
 NFS Version to use when Mounting Remote Shares=Версія NFS для використання під час монтування віддалених спільних ресурсів
+Refresh and Update=Оновити і Оновлення
 Rule=Правило
 SMB Security=Безпека SMB
 Select Disk=Вибрати Диск
@@ -29,6 +31,7 @@ Specify SMB Version when Mounting Remote Shares=Укажіть версію SMB 
 Spin down disks=Зупинка обертання дисків
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Щоб увімкнути руйнівний режим, необхідно встановити плагін Unassigned Devices Plus
 to SMB share config=до конфігурації спільного доступу SMB
+Udev and Hotplug=Udev and Hotplug
 Unassigned Devices=Unassigned Devices
 Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 або новіша версія необхідна для підтримки NFSv4
 Use only when directed for support=Використовуйте лише за призначенням для підтримки
@@ -130,8 +133,3 @@ Use only when directed for support=Використовуйте лише за п
 >
 > **Примітка.** Не змінюйте UUID об’єднаного диска.
 :end
-
-; Note: April 28, 2023 - 3 missing translations
-Command times=Командний час
-Refresh and Update=Оновити і Оновлення
-Udev and Hotplug=Udev and Hotplug

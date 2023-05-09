@@ -1,6 +1,7 @@
 Add ISO File Share=Додати спільний доступ до файлів ISO
 Add Remote SMB=Додати віддалений SMB
 Add Root Share=Додати Кореневу папку
+An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=Диск XFS, BTRFS або ZFS, розділений на UD, сумісний із розділенням диска масиву та може бути доданий до масиву
 Any data on this disk will be lost=Будь-які дані на цьому диску будуть втрачені
 Are you sure=Ви точно впевнені
 Auto mount=Автоматичне монтування
@@ -132,6 +133,7 @@ View ISO File Script Log=Перегляд журналу сценарію фай
 View Remote SMB=Перегляд віддаленого SMB
 WARNING=УВАГА
 When you copy files between shares in the Root Share, the files may not end up on the expected disks=Коли ви копіюєте файли між спільними ресурсами в Кореневому спільному ресурсі, файли можуть не опинитися на очікуваних дисках
+Working=Working
 You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=Ви також можете піддати себе проблемам безпеки, наприклад програмам-вимагачам, розкривши всі свої спільні ресурси в одному Кореневому ресурсі
 You must enable NFS in Settings->NFS to mount NFS shares=Ви повинні ввімкнути NFS у Наташтуваннях->NFS, щоб підключити спільні ресурси NFS
 You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні ввімкнути SMB у Наташтуваннях->SMB, щоб підключити спільні ресурси SMB
@@ -194,7 +196,3 @@ ZFS Pool Name=Назва пулу ZFS
 >
 > Будьте обережні, використовуючи позначення /dev/sdX або devX, оскільки вони можуть змінитися після перезавантаження. Найкраще використовувати значення, передані в сценарій UD для sdX (DEVICE) і devX (UD_DEVICE).
 :end
-
-; Note: April 28, 2023 - 2 missing translations
-An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=Диск XFS, BTRFS або ZFS, розділений на UD, сумісний із розділенням диска масиву та може бути доданий до масиву
-Working=Working

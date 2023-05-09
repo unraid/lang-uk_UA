@@ -146,7 +146,14 @@ This usually means your flash drive is corrupted or has dropped offline The rest
 Fatal Docker Image Error=Фатальна помилка зображення Docker
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=Ваш образ або папка докера доступні лише для читання або повністю заповнені. Через це виникнуть проблеми. Вам слід створити нову публікацію на форумах Unraid і включити свою діагностику
 This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=Цей шаблон налаштовано на використання спеціальної мережі. Можливо, доведеться налаштувати мережу чи IP-адресу тощо відповідно до вашої системи
+This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=Цей шаблон налаштовано на запуск із Привілейованими правами. Це можлива загроза безпеці, і зазвичай його Не потрібно вмикати. Зауважте, що деякі програми потребують привілейованих прав для правильної роботи
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Один або кілька портів, які використовує ця програма, уже використовуються іншою службою або програмою, що працює на вашому сервері. Вам потрібно буде відповідно налаштувати порти хоста в шаблоні
+Not Enough Memory=Недостатньо пам'яті
+Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=Програми спільноти та ОС Unraid мають мінімальну необхідну встановлену пам’ять 4G CA не можуть працювати без дотримання цих мінімальних вимог
+Installation already in progress=Встановлення вже триває
+Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=Вже виконується інсталяція або оновлення іншого плагіна, і це неможливо запустити. Зачекайте, поки поточне встановлення чи оновлення завершиться, і повторіть спробу
+%s is incompatible with your OS version Please update the OS to proceed=%s несумісний із вашою версією ОС. Оновіть ОС, щоб продовжити
+%s is incompatible with your OS version Either uninstall %s or update the OS=%s несумісна з вашою версією ОС Або видаліть %s, або оновіть ОС
 
 ; CA Sections Keep the length reasonable
 Home=Головна
@@ -221,6 +228,7 @@ Check out these newly added applications from our awesome community=Перегл
 Check out these up and coming apps=Перегляньте ці нові програми
 These apps have the highest percentage of new installs=Ці програми мають найвищий відсоток нових встановлень
 An assortment of randomly chosen apps=Асортимент випадково вибраних програм
+Featured Applications=Рекомендовані Програми
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
@@ -441,13 +449,3 @@ An error occurred - Could not determine configuration=Сталася помил�
 ; WebGui
 Click Install to download and install the Community Applications plugin=Натисніть **Встановити**, щоб завантажити та інсталювати плагін **Програми спільноти**
 
-
-; Note: April 28, 2023 - 8 missing translations
-This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=Цей шаблон налаштовано на запуск із Привілейованими правами. Це можлива загроза безпеці, і зазвичай його Не потрібно вмикати. Зауважте, що деякі програми потребують привілейованих прав для правильної роботи
-Not Enough Memory=Недостатньо пам'яті
-Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=Програми спільноти та ОС Unraid мають мінімальну необхідну встановлену пам’ять 4G CA не можуть працювати без дотримання цих мінімальних вимог
-Installation already in progress=Встановлення вже триває
-Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=Вже виконується інсталяція або оновлення іншого плагіна, і це неможливо запустити. Зачекайте, поки поточне встановлення чи оновлення завершиться, і повторіть спробу
-%s is incompatible with your OS version Please update the OS to proceed=%s несумісний із вашою версією ОС. Оновіть ОС, щоб продовжити
-%s is incompatible with your OS version Either uninstall %s or update the OS=%s несумісна з вашою версією ОС Або видаліть %s, або оновіть ОС
-Featured Applications=Рекомендовані Програми
