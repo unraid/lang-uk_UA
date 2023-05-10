@@ -20,5 +20,5 @@ This unlocks some extra features within CA generally only used by developers Not
 Support Thread=Підтримка Теми
 
 ; Note: May 10, 2023 - 2 missing translations
-Disable Mouse Wheel Page Changes=
-This setting disables using left or right on a mouse wheel to change the page=
+Disable Mouse Wheel Page Changes=Вимкнути зміну сторінки коліщатком миші
+This setting disables using left or right on a mouse wheel to change the page=Цей параметр вимикає використання лівого або правого колеса миші для зміни сторінки
