@@ -8,6 +8,8 @@ Automatically open the sidebar=Автоматично відкривати бі�
 Allows CA to automatically open the sidebar for more information when hovering over an application's icon=Дозволяє CA автоматично відкривати бічну панель для отримання додаткової інформації при наведенні курсора на піктограму програми
 Allow CA to check for updates to applications=Дозволити CA перевіряти наявність оновлень програм
 This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=Цей параметр дозволяє CA перевіряти наявність оновлень для програм. Зауважте, що програми спільноти завжди перевірятимуть наявність оновлень для себе
+Disable Mouse Wheel Page Changes=Вимкнути зміну сторінки коліщатком миші
+This setting disables using left or right on a mouse wheel to change the page=Цей параметр вимикає використання лівого або правого колеса миші для зміни сторінки
 Allow CA to send any emergency notifications=Дозволити CA надсилати будь-які екстрені сповіщення
 This setting allows CA to periodically scan your system and alert you to the presence of=Цей параметр дозволяє CA періодично сканувати вашу систему та повідомляти про наявність
 1 Known malware and security vulnerabilities within applications=1 Відомі зловмисне програмне забезпечення та вразливості безпеки в програмах
@@ -18,7 +20,3 @@ Only enable this when advised to from the author of Community Applications=Ув�
 Enable developer mode=Увімкнути режим розробника
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=Це розблокує деякі додаткові функції в CA, які зазвичай використовуються лише розробниками. Не рекомендується вмикати
 Support Thread=Підтримка Теми
-
-; Note: May 10, 2023 - 2 missing translations
-Disable Mouse Wheel Page Changes=Вимкнути зміну сторінки коліщатком миші
-This setting disables using left or right on a mouse wheel to change the page=Цей параметр вимикає використання лівого або правого колеса миші для зміни сторінки
