@@ -2380,26 +2380,26 @@ Virtual Manager Remote Viewer відображатиме лише опцію Rem
 ; New entries (3) - 2023-06-02
 
 :shares_exclusive_shares_help:
-If set to Yes, share directories under /mnt/user are actually symlinks to the share directory on a storage volume
-provided the following conditions are met:
+Якщо встановлено значення «Так», каталоги спільного доступу в /mnt/user фактично є символічними посиланнями на каталог спільного доступу на тому сховища
+за умови дотримання наступних умов:
 
-* The Primary storage for a share is set to a pool.
-* The Secondary storage for a share is set to **none**.
-* The share exists on a single volume.
-* The share is **not** exported over NFS.
+* Основним сховищем для спільного ресурсу встановлено пул.
+* Додаткове сховище для спільного ресурсу встановлено на **немає**.
+* Частка існує в одному томі.
+* Спільний ресурс **не** експортується через NFS.
 
-The advantage of *exclusive* shares is that transfers bypass the FUSE layer which may significantly
-increase I/O performance.
+Перевага *ексклюзивних* спільних ресурсів полягає в тому, що перекази обходять рівень FUSE, який може значною мірою
+підвищення продуктивності вводу-виводу.
 :end
 
 :eth_network_extra_include_help:
-Enter one or more interface names or IP addresses which will be included in the list of listening interfaces for local system services.
+Введіть одне або кілька імен інтерфейсів або IP-адрес, які будуть включені до списку інтерфейсів прослуховування для локальних системних служб.
 
-This is particularly useful when you have created custom interfaces (e.g. tailscale VPN tunnel) which are used to access local system services.
+Це особливо корисно, коли ви створили спеціальні інтерфейси (наприклад, tailscale VPN-тунель), які використовуються для доступу до локальних системних служб.
 :end
 
 :eth_network_extra_exclude_help:
-Enter one or more interface names or IP addresses which will be excluded from the list of listening interfaces for local system services.
+Введіть одне чи кілька імен інтерфейсів або IP-адрес, які буде виключено зі списку інтерфейсів прослуховування для локальних системних служб.
 
-This can be used to exclude dedicated local interfaces (e.g. p-t-p connections) or exclude dynamic interfaces (WireGuard tunnels) from using local system services.
+Це можна використовувати для виключення виділених локальних інтерфейсів (наприклад, з’єднань p-t-p) або виключення динамічних інтерфейсів (тунелів WireGuard) із використання локальних системних служб.
 :end
