@@ -1,6 +1,6 @@
 Add=Додати
 Auto Mount USB Devices=Автоматичне монтування USB-пристроїв
-Change Disk UUID=Змінити UUID диска
+Change Disk UUID=Змініть UUID диска
 Change UUID=Змінити UUID
 Change Disk UUID=Змініть UUID диска
 Command times=Командний час
@@ -20,7 +20,6 @@ NFS must be enabled in Settings->NFS to enable NFS Export=Щоб увімкну�
 NFS Version to use when Mounting Remote Shares=Версія NFS для використання під час монтування віддалених спільних ресурсів
 Refresh and Update=Оновити і Оновлення
 Rule=Правило
-SMB Security=Безпека SMB
 Select Disk=Вибрати Диск
 Set Encrypted Disk Password=Встановити пароль зашифрованого диска
 Set Password=Встановити пароль
@@ -34,7 +33,6 @@ to SMB share config=до конфігурації спільного досту�
 Udev and Hotplug=Udev and Hotplug
 Unassigned Devices=Unassigned Devices
 Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 або новіша версія необхідна для підтримки NFSv4
-Use only when directed for support=Використовуйте лише за призначенням для підтримки
 
 ; Help
 ;
@@ -65,6 +63,11 @@ Use only when directed for support=Використовуйте лише за п
 > Рекомендуємо змінити зіставлення з точкою монтування /mnt/remotes/.
 >
 > Якщо вам не потрібна зворотна сумісність, залиште для неї значення **Ні**.
+:end
+
+:ud_settings_remote_share_wait_plug:
+> This is the time in seconds to wait before mounting remote shares when the array is first started.
+>
 :end
 
 :ud_settings_specify_smb_vers_plug:
@@ -118,6 +121,10 @@ Use only when directed for support=Використовуйте лише за п
 > Недоліком є ​​те, що він перекриває дозволи групи Linux. Якщо ви не впевнені, чи потрібно це чи ні, залиште його ввімкненим.
 :end
 
+:ud_settings_nfs_security_plug:
+> Set to **Yes** to export Unassigned Devices with NFS sharing. Shares are exported Public with read and write access or Private with the rule you set. Access is controlled with permission settings on files and folders.
+:end
+
 :ud_settings_nfs_shares_plug:
 > Виберіть **Так**, щоб експортувати спільні файли NFS. Спільні ресурси експортуються для загального доступу з доступом для читання та запису або для приватного за допомогою встановленого вами правила. Доступ контролюється налаштуваннями дозволів на файли та папки.
 >
@@ -133,3 +140,12 @@ Use only when directed for support=Використовуйте лише за п
 >
 > **Примітка.** Не змінюйте UUID об’єднаного диска.
 :end
+
+; Note: June 18, 2023 - 7 missing translations
+Disabled=
+Public=
+Private=
+Private Hidden=
+Remote Share Mount Wait Time=
+SMB Settings=
+Use only when directed for support because the messages can flood the log=
