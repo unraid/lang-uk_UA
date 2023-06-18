@@ -199,8 +199,8 @@ ZFS Pool Name=Назва пулу ZFS
 :end
 
 ; Note: June 18, 2023 - 5 missing translations
-Not Enabled=
-Note: With User Shares, files on the Cache and Pool Devices will not show in the Root Share=
-User and Pool Shares will include all files in User Shares, Cache and Pool Devices=
-User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=
-ZFS Volume=
+Not Enabled=Не ввімкнено
+Note: With User Shares, files on the Cache and Pool Devices will not show in the Root Share=Примітка. За допомогою спільних ресурсів користувача файли на пристроях кешу та пулу не відображатимуться в кореневому ресурсі
+User and Pool Shares will include all files in User Shares, Cache and Pool Devices=Спільні ресурси користувачів і пулів включатимуть усі файли в спільних ресурсах користувачів, кеші та пристроях пулу
+User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=Спільні ресурси користувача нададуть доступ до спільних ресурсів користувача, але кореневий спільний ресурс не включатиме файли кешу та пристроїв пулу
+ZFS Volume=Том ZFS

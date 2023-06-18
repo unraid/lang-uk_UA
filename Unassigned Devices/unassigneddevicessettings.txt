@@ -66,7 +66,7 @@ Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 або новіш
 :end
 
 :ud_settings_remote_share_wait_plug:
-> This is the time in seconds to wait before mounting remote shares when the array is first started.
+> Це час у секундах, який потрібно очікувати перед монтуванням віддалених спільних ресурсів під час першого запуску масиву.
 >
 :end
 
@@ -122,7 +122,7 @@ Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 або новіш
 :end
 
 :ud_settings_nfs_security_plug:
-> Set to **Yes** to export Unassigned Devices with NFS sharing. Shares are exported Public with read and write access or Private with the rule you set. Access is controlled with permission settings on files and folders.
+> Виберіть **Так**, щоб експортувати непризначені пристрої зі спільним використанням NFS. Спільні ресурси експортуються для загального доступу з доступом для читання та запису або для приватного за допомогою встановленого вами правила. Доступ контролюється налаштуваннями дозволів на файли та папки.
 :end
 
 :ud_settings_nfs_shares_plug:
@@ -142,10 +142,10 @@ Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 або новіш
 :end
 
 ; Note: June 18, 2023 - 7 missing translations
-Disabled=
-Public=
-Private=
-Private Hidden=
-Remote Share Mount Wait Time=
-SMB Settings=
-Use only when directed for support because the messages can flood the log=
+Disabled=Вимкнено
+Public=Публічний
+Private=Приватний
+Private Hidden=Приватний Прихований
+Remote Share Mount Wait Time=Час очікування підключення віддаленого спільного доступу
+SMB Settings=SMB Settings
+Use only when directed for support because the messages can flood the log=Використовуйте лише тоді, коли це призначено для підтримки, оскільки повідомлення можуть переповнювати журнал
