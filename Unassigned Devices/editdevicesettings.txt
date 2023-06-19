@@ -82,4 +82,4 @@ Volume=Обсяг
 :end
 
 ; Note: June 18, 2023 - 1 missing translations
-Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=
+Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=Примітка: увімкніть спільний доступ через SMB або експорт NFS у налаштуваннях непризначених пристроїв, щоб надати спільний доступ до цього пристрою
