@@ -7,6 +7,7 @@ Command times=Командний час
 Common Script=Загальний сценарій
 Common Settings=Загальні налаштування
 Destructive Mode=Руйнівний Режим
+Disabled=Вимкнено
 Disk spin down is managed by Unraid=Розкруткою диска керує Unraid
 Enable NFS export=Увімкнути експорт NFS
 Enable SMB Security=Увімкнути безпеку SMB
@@ -18,8 +19,13 @@ NFS Security=Безпека NFS
 NFS Settings=Налаштування NFS
 NFS must be enabled in Settings->NFS to enable NFS Export=Щоб увімкнути експорт NFS, потрібно ввімкнути NFS у меню Налаштування->NFS
 NFS Version to use when Mounting Remote Shares=Версія NFS для використання під час монтування віддалених спільних ресурсів
+Public=Публічний
+Private=Приватний
+Private Hidden=Приватний Прихований
 Refresh and Update=Оновити і Оновлення
+Remote Share Mount Wait Time=Час очікування підключення віддаленого спільного доступу
 Rule=Правило
+SMB Settings=SMB Settings
 Select Disk=Вибрати Диск
 Set Encrypted Disk Password=Встановити пароль зашифрованого диска
 Set Password=Встановити пароль
@@ -33,6 +39,7 @@ to SMB share config=до конфігурації спільного досту�
 Udev and Hotplug=Udev and Hotplug
 Unassigned Devices=Unassigned Devices
 Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 або новіша версія необхідна для підтримки NFSv4
+Use only when directed for support because the messages can flood the log=Використовуйте лише тоді, коли це призначено для підтримки, оскільки повідомлення можуть переповнювати журнал
 
 ; Help
 ;
@@ -140,12 +147,3 @@ Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 або новіш
 >
 > **Примітка.** Не змінюйте UUID об’єднаного диска.
 :end
-
-; Note: June 18, 2023 - 7 missing translations
-Disabled=Вимкнено
-Public=Публічний
-Private=Приватний
-Private Hidden=Приватний Прихований
-Remote Share Mount Wait Time=Час очікування підключення віддаленого спільного доступу
-SMB Settings=SMB Settings
-Use only when directed for support because the messages can flood the log=Використовуйте лише тоді, коли це призначено для підтримки, оскільки повідомлення можуть переповнювати журнал
