@@ -699,7 +699,6 @@ Get started by signing in to Unraidnet=Почніть, увійшовши на U
 Get Started=Розпочати
 Go Back=Повертайся
 Go to Connect=Перейдіть до Connect
-Go to Go to Connect=Перейдіть до Connect
 GUID Error=Помилка GUID
 GUID=GUID
 Have a USB flash device that already has an account associated with it=Ви маєте USB flash-пристрій, з яким уже пов’язано обліковий запис
