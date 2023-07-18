@@ -814,20 +814,20 @@ Unraid API extra origins=Додаткові джерела API Unraid
 View Flash Backup Error Log=Переглянути журнал помилок Flash Backup
 
 ; Note: July 9, 2023 - 17 missing translations
-Always On - Manual Port Forward=
-Always On - UPnP=
-Any=
-Connected to Unraid Connect Cloud=
-Current listening interfaces=
-Disabled until connected to Unraid Connect Cloud=
-Exclude listening interfaces=
-Include listening interfaces=
-Interface Extra=
-Management Interface=
-Permit exclusive shares=
-Questions See the documentation=Questions? See <a href="https://wiki.unraid.net/Connect" target="_blank">the documentation</a>.
-Remark to use the Dynamic - Manual Port Forward option for Remote Access please set Use SSLTLS to Strict in Management Access=Remark: to use the "Dynamic - Manual Port Forward" option for Remote Access please set "Use SSL/TLS" to "Strict" in Management Access.
-Remark to use the UPnP options please set Use UPnP to Yes in Management Access=Remark: to use the UPnP options please set "Use UPnP" to "Yes" in Management Access.
-To test your manual port forward, temporarily configure Allow Remote Access as Always On - Manual Port Forward=To test your manual port forward, temporarily configure 'Allow Remote Access' as 'Always On - Manual Port Forward'
-Unraid Connect=
-You can not exclude this interface=
+Always On - Manual Port Forward=Завжди ввімкнено – переадресація портів вручну
+Always On - UPnP=Завжди ввімкнено - UPnP
+Any=Будь-який
+Connected to Unraid Connect Cloud=Підключено до Unraid Connect Cloud
+Current listening interfaces=Поточні інтерфейси прослуховування
+Disabled until connected to Unraid Connect Cloud=Вимкнено до підключення до Unraid Connect Cloud
+Exclude listening interfaces=Виключити інтерфейси прослуховування
+Include listening interfaces=Включайте інтерфейси прослуховування
+Interface Extra=Додатковий Інтерфейс
+Management Interface=Інтерфейс Управління
+Permit exclusive shares=Дозволити ексклюзивні спільні доступи
+Questions See the documentation=Запитання? Побачити <a href="https://wiki.unraid.net/Connect" мету="_blank">документацію</a>.
+Remark to use the Dynamic - Manual Port Forward option for Remote Access please set Use SSLTLS to Strict in Management Access=Примітка: щоб використовувати опцію "Динамічний – перенаправлення портів вручну» для віддаленого доступу, установіть для «Використовувати SSL/TLS" значення "Строгий" у розділі Доступ до керування.
+Remark to use the UPnP options please set Use UPnP to Yes in Management Access=Примітка: щоб використовувати параметри UPnP, установіть для параметра "Використовувати UPnP" значення "Так" у розділі Доступ до керування.
+To test your manual port forward, temporarily configure Allow Remote Access as Always On - Manual Port Forward=Щоб перевірити перенаправлення портів вручну, тимчасово налаштуйте "Дозволити віддалений доступ" як "Завжди ввімкнути — переадресацію портів вручну"
+Unraid Connect=Unraid Connect
+You can not exclude this interface=Ви не можете виключити цей інтерфейс
