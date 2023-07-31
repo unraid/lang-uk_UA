@@ -81,4 +81,4 @@ Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
 
 ; Note: July 9, 2023 - 1 missing translations
-Share name contains invalid characters for ZFS use=Назва спільного ресурсу містить неприпустимі символи для використання ZFS
+Share name contains invalid characters for ZFS use=
