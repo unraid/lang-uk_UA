@@ -143,6 +143,6 @@ Warnings=Попередження
 ZFS=ZFS
 
 ; Note: July 9, 2023 - 3 missing translations
-ShowHide All Content=Show/Hide All Content
-ShowHide Content=Show/Hide Content
-Tile Management=
+ShowHide All Content=Показати / Приховати Весь вміст
+ShowHide Content=Показати / Приховати Вміст
+Tile Management=Менеджмент Плиток
