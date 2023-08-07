@@ -110,6 +110,8 @@ Share count %s with %s cache only and %s encrypted=Кількість викор
 Shares Information=Ділитися інформацією
 Show details=Показати деталі
 Show Information=Показати інформацію
+ShowHide All Content=Показати / Приховати Весь вміст
+ShowHide Content=Показати / Приховати Вміст
 Shutdown the system=Вимкнути систему
 SMART error=SMART помилка
 SMART health-check failed=Помилка перевірки працездатності SMART
@@ -125,6 +127,7 @@ This will reboot the system=Це призведе до перезавантаж�
 This will shutdown the system=Це призведе до вимкнення системи
 This will start the array=Це запустить масив
 This will stop the array=Це зупинить масив
+Tile Management=Менеджмент Плиток
 Transmit counters=Лічильники передачі
 Transmitted packets=Передані пакети
 Unassigned Devices=Непризначені пристрої
@@ -141,8 +144,3 @@ Virtual Machines=Віртуальні машини
 VPN Connections=Підключення VPN
 Warnings=Попередження
 ZFS=ZFS
-
-; Note: July 9, 2023 - 3 missing translations
-ShowHide All Content=Показати / Приховати Весь вміст
-ShowHide Content=Показати / Приховати Вміст
-Tile Management=Менеджмент Плиток

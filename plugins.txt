@@ -10,6 +10,7 @@ Delete Plugin=Видалити плагін
 DOWNGRADE TO VERSION=ВІДКАТИТИ НА ВЕРСІЮ
 Enter URL of remote plugin file or local plugin file=Введіть URL-адресу файлу віддаленого або локального плагіна
 ERROR=ПОМИЛКА
+I have read the release notes=Я прочитав нотатки про випуск
 Install Plugin=Встановити плагін
 Install=Встановити
 install=встановити
@@ -39,6 +40,3 @@ Update Incompatible=Оновлення несумісне
 Update Plugin=Оновити Плагін
 Upgrade=Оновлення
 View Release Notes=Переглянути примітки до випуску
-
-; Note: July 9, 2023 - 1 missing translations
-I have read the release notes=Я прочитав нотатки про випуск

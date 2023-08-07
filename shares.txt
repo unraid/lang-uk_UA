@@ -61,6 +61,7 @@ Secondary storage=Вторинне зберігання
 Select cache pool=Виберіть пул кешу
 Set when adding new share only=Встановлюється лише під час додавання нового спільного доступу
 Share contains data=Спільний доступ містить дані
+Share name contains invalid characters for ZFS use=Назва спільного ресурсу містить неприпустимі символи для використання ZFS
 Share is empty=Спільний ресур порожній
 Share is outside the list of designated disks=Спільний доступ знаходиться за межами списку призначених дисків
 Share Settings=Налаштування спільного доступу
@@ -79,6 +80,3 @@ Use cache pool for new filesdirectories=Використовувати пул к
 User Shares=Спільні ресурси користувачів
 Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
-
-; Note: July 9, 2023 - 1 missing translations
-Share name contains invalid characters for ZFS use=Назва спільного ресурсу містить неприпустимі символи для використання ZFS
