@@ -79,7 +79,6 @@ No Unassigned Disks available=Немає непризначених дисків
 Not Enabled=Не ввімкнено
 not installed=не встановлено
 Note=Примітка
-Note: With User Shares, files on the Cache and Pool Devices will not show in the Root Share=Примітка. За допомогою спільних ресурсів користувача файли на пристроях кешу та пулу не відображатимуться в кореневому ресурсі
 offilne=офлайн
 You must enable NFS in Settings->NFS to mount NFS shares=Ви повинні ввімкнути NFS у Наташтуваннях->NFS, щоб підключити спільні ресурси NFS
 You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні ввімкнути SMB у Наташтуваннях->SMB, щоб підключити спільні ресурси SMB
@@ -202,3 +201,6 @@ ZFS Volume=Том ZFS
 >
 > Будьте обережні, використовуючи позначення /dev/sdX або devX, оскільки вони можуть змінитися після перезавантаження. Найкраще використовувати значення, передані в сценарій UD для sdX (DEVICE) і devX (UD_DEVICE).
 :end
+
+; Note: August 8, 2023 - 1 missing translations
+Exclusive Share files will not be accessible in a Root Share=

@@ -58,6 +58,10 @@ Update Recycle Bin Size in Background=Оновити розмір кошика �
 > Щоб приховати папку «Кошик», установіть для параметра «Приховати файли з крапками» значення «Так» у налаштуваннях SMB <a href='/Налаштування/SMB'>тут</a>.
 :end
 
+:recycle_bin_hide_folder_plug:
+> Set to **No** to show the Recycle Bin folder in user shares.  The SMB setting "Hide dot files" controls if hidden folders show in user shares.
+:end
+
 :recycle_bin_background_plug:
 > Установіть значення «Так», щоб увімкнути оновлення розміру кошика у фоновому режимі щохвилини. Це може зробити сторінки «Параметри кошика» та «Спільний доступ» більш чуйними та запобігти розвороту диска під час доступу до кошика. Оновлення розміру кошика може тривати до хвилини, якщо це ввімкнено.
 :end
