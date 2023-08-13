@@ -40,15 +40,15 @@ Volume=Обсяг
 :end
 
 :ud_edit_script_detach_plug:
-> Click **Detach** to detach the device.  The device will then show in Historical Devices and can be Attached from the device settings there.
+> Натисніть **Від’єднати**, щоб від’єднати пристрій. Потім пристрій відобразиться в Історичних пристроях, і його можна буде під’єднати з налаштувань пристрою.
 :end
 
 :ud_edit_script_attach_plug:
-> Click **Attach** to attach a device that has been detached.  This will act like the device was just installed and will auto mount if 'Auto Mount' is on.  It will take a while for the device to show up in UD.
+> Натисніть **Приєднати**, щоб приєднати пристрій, який було від’єднано. Це діятиме так, ніби пристрій щойно встановлено, і автоматично монтуватиметься, якщо ввімкнено 'Автоматичне монтування'. Потрібен деякий час, перш ніж пристрій з’явиться в UD.
 :end
 
 :ud_edit_script_abort_plug:
-> Click **Abort** to abort the device script.
+> Натисніть **Перервати**, щоб перервати сценарій пристрою.
 :end
 
 :ud_disk_name_plug:
@@ -82,18 +82,18 @@ Volume=Обсяг
 :end
 
 ; Note: August 8, 2023 - 15 missing translations
-Abort Device Script=
-Attach This Disk=
-Click to select file or click 'Default' button for the Device Script File=
-Detach This Disk=
-Disable Mount and Unmount Button=
-Disk Serial=
-Enter the User Script File Name=
-Enter the volume to mount on this apfs partition=
-Mount Point=
-Mount Remote Share Read only=
-Save your Device Script File=
-Show all partitions on this device by default=
-Show Partitions=
-Source=
-ZFS Volume=
+Abort Device Script=Перервати Сценарій Пристрою
+Attach This Disk=Приєднати цей Диск
+Click to select file or click 'Default' button for the Device Script File=Натисніть, щоб вибрати файл, або натисніть кнопку 'За замовчуванням' для файлу сценарію пристрою
+Detach This Disk=Від'єднати цей диск
+Disable Mount and Unmount Button=Вимкнути кнопку монтувати та демонтувати
+Disk Serial=Послідовний диск
+Enter the User Script File Name=Введіть назву файла скрипту користувача
+Enter the volume to mount on this apfs partition=Введіть обсяг для монтування на цьому розділі apfs
+Mount Point=Точка Монтування
+Mount Remote Share Read only=Монтувати лише віддалений спільний доступ
+Save your Device Script File=Зберегти файл Скрипту пристрою
+Show all partitions on this device by default=Показувати всі розділи на цьому пристрої за умовчанням
+Show Partitions=Показати розділи
+Source=Джерело
+ZFS Volume=Том ZFS
