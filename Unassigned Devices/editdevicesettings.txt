@@ -1,36 +1,51 @@
+Abort Device Script=Перервати Сценарій Пристрою
 Attach=Аттач
+Attach This Disk=Приєднати цей Диск
 Attaching=Прикріплення
 Automount=Автоматичне монтування
+Click to select file or click 'Default' button for the Device Script File=Натисніть, щоб вибрати файл, або натисніть кнопку 'За замовчуванням' для файлу сценарію пристрою
 Default=За замовчуванням
 Delete Device Script File=Видалити файл сценарію пристрою
 Detach=Від'єднати
+Detach This Disk=Від'єднати цей диск
 Detaching=Від'єднання
 Device Script=Сценарій пристрою
 Device Script content=Вміст сценарію пристрою
+Disable Mount and Unmount Button=Вимкнути кнопку монтувати та демонтувати
 Disable Mount Button=Вимкнути кнопку монтування
 Disk Name=Ім'я диска
+Disk Serial=Послідовний диск
 Edit Device Script=Редагувати сценарій пристрою
 Enter Device Script File Name=Введіть назву файлу сценарію пристрою
 Enter and Edit the Device Script that runs when a udev or operator event occurs=Введіть і відредагуйте сценарій пристрою, який запускається, коли відбувається подія udev або оператор
+Enter the User Script File Name=Введіть назву файла скрипту користувача
 Enter the User Script that will be using this device=Введіть сценарій користувача, який використовуватиме цей пристрій
+Enter the volume to mount on this apfs partition=Введіть обсяг для монтування на цьому розділі apfs
 Load the default Device Script=Завантажте стандартний сценарій пристрою
 Run in background=Запуск у фоновому режимі
 Mark this Device as passed through to a VM or Docker=Позначте цей пристрій як переданий до віртуальної машини або Docker
 Mount Device Read only=Монтувати пристрій лише для читання
 Mount Device when Plugged in or Array is Started=Підключити пристрій під час підключення або запуску масиву
 Mount ISO File when Array is Started=Змонтувати файл ISO під час запуску масиву
+Mount Point=Точка Монтування
+Mount Remote Share Read only=Монтувати лише віддалений спільний доступ
 Mount Remote SMB or NFS Share when Array is Started=Підключити віддалений спільний доступ SMB або NFS під час запуску масиву
 Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=Примітка: увімкніть спільний доступ через SMB або експорт NFS у налаштуваннях непризначених пристроїв, щоб надати спільний доступ до цього пристрою
 Passed Through=Пройшов через
 Read Only=Лише для читання
 Run Device Script File in the background=Запустіть файл сценарію пристрою у фоновому режимі
+Save your Device Script File=Зберегти файл Скрипту пристрою
 Save your Device Script File changes=Save your Device Script File changes
 Share Device with SMB and NFS=Спільний доступ до пристрою за допомогою SMB і NFS
 Share Remote Mount with SMB and NFS=Спільний доступ до віддаленого монтування за допомогою SMB і NFS
+Show all partitions on this device by default=Показувати всі розділи на цьому пристрої за умовчанням
+Show Partitions=Показати розділи
+Source=Джерело
 Unassigned Devices Settings=Непризначені налаштування пристроїв
 Undo your changes since last Save=Скасувати зміни з моменту останнього збереження
 User Script=Сценарій користувача
 Volume=Обсяг
+ZFS Volume=Том ZFS
 
 ;
 ; Help
@@ -80,20 +95,3 @@ Volume=Обсяг
 > Натисніть **Зберегти**, щоб прийняти поточні зміни.
 > Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
-
-; Note: August 8, 2023 - 15 missing translations
-Abort Device Script=Перервати Сценарій Пристрою
-Attach This Disk=Приєднати цей Диск
-Click to select file or click 'Default' button for the Device Script File=Натисніть, щоб вибрати файл, або натисніть кнопку 'За замовчуванням' для файлу сценарію пристрою
-Detach This Disk=Від'єднати цей диск
-Disable Mount and Unmount Button=Вимкнути кнопку монтувати та демонтувати
-Disk Serial=Послідовний диск
-Enter the User Script File Name=Введіть назву файла скрипту користувача
-Enter the volume to mount on this apfs partition=Введіть обсяг для монтування на цьому розділі apfs
-Mount Point=Точка Монтування
-Mount Remote Share Read only=Монтувати лише віддалений спільний доступ
-Save your Device Script File=Зберегти файл Скрипту пристрою
-Show all partitions on this device by default=Показувати всі розділи на цьому пристрої за умовчанням
-Show Partitions=Показати розділи
-Source=Джерело
-ZFS Volume=Том ZFS
