@@ -18,7 +18,6 @@ Change Disk Mount Point=Натисніть піктограму, щоб вибр
 Change ISO File Mount Point=Змінити точку монтування файлу ISO
 Change Remote Share Mount Point=Змінити точку монтування віддаленого спільного доступу
 Change SMB=Змінити SMB
-Changing the Mount Point will also change the disk label=Зміна точки монтування також призведе до зміни мітки диска
 Clear=Чисто
 Click to select ISO file=Натисніть, щоб вибрати файл ISO
 Click to view/hide partitions and mount points=Натисніть, щоб переглянути/приховати розділи та точки монтування
@@ -80,7 +79,6 @@ No Unassigned Disks available=Немає непризначених дисків
 Not Enabled=Не ввімкнено
 not installed=не встановлено
 Note=Примітка
-offilne=офлайн
 You must enable NFS in Settings->NFS to mount NFS shares=Ви повинні ввімкнути NFS у Наташтуваннях->NFS, щоб підключити спільні ресурси NFS
 You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні ввімкнути SMB у Наташтуваннях->SMB, щоб підключити спільні ресурси SMB
 Open=Відкрити
@@ -91,8 +89,6 @@ Read only=Лише для читання
 Reboot=Перезавантаження
 Refresh Disks and Configuration=Оновити диски та конфігурацію
 Remember your password It cannot be recovered=Запам'ятайте свій пароль. Його неможливо відновити
-Remote Share is=Віддалений спільний ресурс це
-Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=Віддалене підключення спільного доступу залежить від міцного та надійного мережевого з’єднання, а цього важко досягти
 Remove Device configuration=Видалити конфігурацію пристрою
 Remove ISO File Share=Видалити ISO файл сільного ресурсу
 Remove Partition=Видалити розділ
@@ -119,7 +115,7 @@ Show SMB/NFS/ISO Shares=Показати спільні ресурси SMB/NFS/I
 Show Disk Devices=Показати дискові пристрої
 This is a way to gather Unraid shares into one Root Share=Цей спосіб збере пакети Unraid в один Кореневий ресурс
 This will remove the ISO file share for=Це призведе до видалення спільного файлу ISO для
-This will remove the remote=Пульт дистанційного керування буде видалено
+This will remove the=Це видалить
 This will remove the saved configuration of=Це видалить збережену конфігурацію
 This will remove the=Це видалить
 to confirm=підтвердити
@@ -202,3 +198,13 @@ ZFS Volume=Том ZFS
 >
 > Будьте обережні, використовуючи позначення /dev/sdX або devX, оскільки вони можуть змінитися після перезавантаження. Найкраще використовувати значення, передані в сценарій UD для sdX (DEVICE) і devX (UD_DEVICE).
 :end
+
+; Note: November 16, 2023 - 8 missing translations
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=
+Enter the server name and it will be added to the local DNS names and will then resolve by name=
+failed to=
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=
+If shares do not show, check your credentials=
+offline=
+Remote Server is=
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=

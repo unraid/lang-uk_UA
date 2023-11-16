@@ -147,3 +147,7 @@ Use only when directed for support because the messages can flood the log=Вик
 >
 > **Примітка.** Не змінюйте UUID об’єднаного диска.
 :end
+
+:ud_settings_zfs_upgrade_plug:
+> Select the disk that you want to upgrade to the latest ZFS version. Drive must be mounted to upgrade ZFS.
+:end
