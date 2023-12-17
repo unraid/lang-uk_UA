@@ -62,10 +62,10 @@ Date of purchase=Дата покупки
 Date=Дата
 Delete Pool=Видалити Pool
 detected=виявлено
-Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device encrypted and unlocked=Пристрій зашифровано та розблоковано
 Device encrypted=Пристрій зашифровано
-Device is missing disabled=Device is missing disabled=Device is missing disabled=Device is missing (disabled)
+Device is missing disabled=Device is missing (disabled)
 Device is part of a pool=Пристрій є частиною pool
 Device locked unknown error=Пристрій заблоковано: невідома помилка
 Device locked wrong encryption key=Пристрій заблоковано: неправильний ключ шифрування
