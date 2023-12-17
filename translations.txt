@@ -254,7 +254,6 @@ Online Manual=Онлайн Посібник
 Online manual=Онлайн посібник
 OpenSSL=OpenSSL
 optional=опція
-Options for Block $action=
 Other Comment=Інший коментар
 Other information=Інша інформація
 Parity device is disabled=Пристрій парності вимкнено
