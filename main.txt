@@ -62,8 +62,10 @@ Date of purchase=Дата покупки
 Date=Дата
 Delete Pool=Видалити Pool
 detected=виявлено
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device encrypted and unlocked=Пристрій зашифровано та розблоковано
 Device encrypted=Пристрій зашифровано
+Device is missing disabled=Device is missing disabled=Device is missing disabled=Device is missing (disabled)
 Device is part of a pool=Пристрій є частиною pool
 Device locked unknown error=Пристрій заблоковано: невідома помилка
 Device locked wrong encryption key=Пристрій заблоковано: неправильний ключ шифрування
@@ -376,20 +378,17 @@ System in sleep mode=Система в сплячому режимі
 This will put the system in sleep mode=Це переведе систему в сплячий режим
 wiki entry=wiki запис
 
-; Note: December 17, 2023 - 20 missing translations
+; Note: December 17, 2023 - 17 missing translations
 Add Subpool=
 Add ZFS Subpool=
 cache - Cache Devices=
 Critical NVME temperature threshold=
 Critical SSD temperature threshold=
 dedup - Deduplication Tables=
-Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device contents invalid=
 Device is disabled=
-Device is missing disabled=Device is missing disabled=Device is missing disabled=Device is missing (disabled)
 logs - ZFS Intent Log=
 Missing pool disk=
-Power=
 Power=
 spares - Hot Spares=
 special - Special Allocation Class=
