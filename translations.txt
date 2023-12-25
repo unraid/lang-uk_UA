@@ -68,9 +68,6 @@ Clear=Очистити
 Clearing=Очищення
 Click for context menu=Натисніть, щоб відкрити контекстне меню
 Click=Натисніть
-Clock is unsynchronized with no NTP servers=
-Clock synchronized with %s NTP server=
-Clock synchronized with %s NTP servers=
 close all notifications=закрити всі сповіщення
 Close=Закрити
 close=закрити
@@ -1235,4 +1232,4 @@ Open a bug report=
 %s year=
 %s years=
 
-; Note: December 25, 2023 - 242 missing translations
+; Note: December 25, 2023 - 239 missing translations
