@@ -830,7 +830,7 @@ Transient errors in this log can be ignored unless you are having issues=Тим�
 Unraid API extra origins=Додаткові джерела API Unraid
 View Flash Backup Error Log=Переглянути журнал помилок Flash Backup
 
-; Note: December 17, 2023 - 29 missing translations
+; Note: December 25, 2023 - 30 missing translations
 a value of zero means no automatic closure=
 Auto-close=
 Boxed=
@@ -845,6 +845,7 @@ Enable NVME power monitoring=
 Encryption Key Update=
 Enter existing passphrase=
 Existing encryption key=
+GRUB Configuration=
 Incorrect existing key=
 Key successfully changed=
 Keyfile=
