@@ -7,6 +7,6 @@ Note: While there is some risk, if it is not possible to first mount the filesys
 Run with Correct flag=Запуск із правильним прапором
 
 ; Note: November 16, 2023 - 3 missing translations
-Cannot determine file system on an encrypted disk=
-Executing file system check=
-Executing file system scrub=
+Cannot determine file system on an encrypted disk=Неможливо визначити файлову систему на зашифрованому диску
+Executing file system check=Виконання перевірки файлової системи
+Executing file system scrub=Виконання очищення файлової системи

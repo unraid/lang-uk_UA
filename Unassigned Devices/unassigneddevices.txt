@@ -200,11 +200,11 @@ ZFS Volume=Том ZFS
 :end
 
 ; Note: November 16, 2023 - 8 missing translations
-Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=
-Enter the server name and it will be added to the local DNS names and will then resolve by name=
-failed to=
-If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=
-If shares do not show, check your credentials=
-offline=
-Remote Server is=
-Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=Зміна точки монтування також призведе до зміни мітки диска на всіх дисках і імені пулу на диску ZFS
+Enter the server name and it will be added to the local DNS names and will then resolve by name=Введіть ім'я сервера, і він буде доданий до локальних імен DNS, і потім розпізнасть за назвою
+failed to=не вдалося
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=Якщо IP-адреса сервера відображається в списку після пошуку, ваш DNS-сервер не розпізнає ім’я
+If shares do not show, check your credentials=Якщо спільні ресурси не відображаються, перевірте свої облікові дані
+offline=офлайн
+Remote Server is=Віддалений сервер є
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=Віддалене підключення спільного доступу залежить від міцного та надійного мережевого з’єднання, а цього може бути важко досягти
