@@ -12,7 +12,6 @@ Disable NIC Offload=Вимкніть розвантаження NIC
 Disk Cache=Дисковий кеш
 Dont change the Disk Cache settings until you read and understand this=Не змінюйте налаштування дискового кешу, доки не прочитаєте та не зрозумієте це
 Driver=Драйвер
-Enable Intel TurboAMD Performance Boost=Увімкніть Intel TurboAMD Performance Boost
 Enable syslog Archiving=Увімкнути архівацію системного журналу
 Ethernet NIC Rx Buffer=Ethernet NIC Rx буфер
 Ethernet NIC Tx Buffer=Ethernet NIC Tx буфер
@@ -147,6 +146,18 @@ You may actually cause more problems than you solve if there are problems with y
 > За замовчуванням — 40960, а дозволений діапазон — від 40960 до 65535.
 :end
 
+:tips_tweak_turbo_plug:
+> Виберіть 'Так', щоб увімкнути режим Intel Turbo або AMD Performance Boost.
+:end
+
+:tips_tweaks_turbo_state_off_plug:
+> Enter the time you want to set Intel Turbo/AMD Performance Boost Off in 24 hour format hh:mm.
+:end
+
+:tips_tweaks_turbo_state_on_plug:
+> Enter the time you want to set Intel Turbo/AMD Performance Boost On in 24 hour format hh:mm.
+:end
+
 :tips_tweaks_cpu_governor_plug:
 > Виберіть регулятор масштабування CPU , який ви хочете використовувати.
 >
@@ -204,3 +215,9 @@ You may actually cause more problems than you solve if there are problems with y
 > Примітка. Будьте обережні з процесами, які ви вбиваєте тут. Ви можете втратити дані!
 :end
 
+
+; Note: December 17, 2023 - 4 missing translations
+Enable Intel TurboAMD Performance Boost=Enable Intel Turbo/AMD Performance Boost
+Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
+Time to set TurboPerformance Boost Off=Time to set Turbo/Performance Boost Off
+Time to set TurboPerformance Boost On=Time to set Turbo/Performance Boost On
