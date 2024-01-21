@@ -2454,50 +2454,50 @@ Virtual Manager Remote Viewer відображатиме лише опцію Rem
 ; New entries (2) - 2023-12-17
 
 :ssd_default_warning_temperature_help:
-*Warning SSD temperature* sets the default warning threshold for all SSD devices temperature. Exceeding this threshold will result in a warning notification.
+*Попередження про температуру SSD* встановлює поріг попередження за замовчуванням для температури всіх SSD-пристроїв. Перевищення цього порогу призведе до попередження.
 
-A value of zero will disable the warning threshold (including notifications).
+Нульове значення вимкне порогове значення попередження (включаючи сповіщення).
 :end
 
 :ssd_default_critical_temperature_help:
-*Critical disk temperature* sets the default critical threshold for all SSD devices temperature. Exceeding this threshold will result in an alert notification.
+*Критична температура диска* встановлює критичне порогове значення за умовчанням для всіх пристроїв SSD. Перевищення цього порогу призведе до сповіщення.
 
-A value of zero will disable the critical threshold (including notifications).
+Нульове значення вимкне критичний поріг (включаючи сповіщення).
 :end
 
 ; New entries (8) - 2023-12-28
 
 :syslog_shutdown_flash_help:
-This setting is YES by default and enables the system to copy the syslog file to the USB device on shutdown or reboot.
+За замовчуванням цей параметр має значення ТАК і дозволяє системі копіювати файл системного журналу на USB-пристрій під час вимкнення або перезавантаження.
 
-After rebooting, the syslog from this run will be visible on Tools > Syslog > syslog-previous;
-it will also be included in diagnostics as logs/syslog-previous.txt
+Після перезавантаження системний журнал із цього запуску буде видно в Інструменти > Системний журнал > попередній Системний журнал;
+це також буде включено в діагностику як logs/syslog-previous.txt
 :end
 
 :WOL_enable_help:
-If set to yes Unraidwold daemon is set to run.
+Якщо встановлено значення Так, демон Unraidwold налаштовано на запуск.
 :end
 
 :WOL_docker_help:
-If set to yes when wake on lan packets are received checks are carrried out for dockers otherwise dockers will be ignored.
+Якщо встановлено значення Так, коли надходять пакети пробудження через локальну мережу, перевірки виконуються для докерів, інакше докери ігноруватимуться.
 :end
 
 :WOL_run_VM_help:
-If set to yes when wake on lan packets are received checks are carrried out for virtual machines otherwise virtual machines will be ignored.
+Якщо встановлено значення Так, коли надходять пакети пробудження через локальну мережу, для віртуальних машин виконуються перевірки, інакше віртуальні машини ігноруватимуться.
 :end
 
 :WOL_run_LXC_help:
-If set to yes when wake on lan packets are received checks are carrried out for LXC otherwise LXC will be ignored. The LXC plugin needs to be installed for LXC to be processed.
+Якщо встановлено значення Так, під час отримання пакетів wake on lan виконуються перевірки для LXC, інакше LXC ігноруватиметься. Для обробки LXC необхідно встановити плагін LXC.
 :end
 
 :WOL_interface_help:
-Specify the interface to the daemon to bind to. Some interfaces may not be able to recieve etherframe packets. Recommend to bind to a physical interface.
+Укажіть інтерфейс демона, до якого потрібно прив’язатися. Деякі інтерфейси можуть не отримувати пакети etherframe. Рекомендуємо прив’язати до фізичного інтерфейсу.
 :end
 
 :WOL_promiscuous_mode_help:
-Enable to set the NIC not to filer packets.
+Увімкніть, щоб мережевий адаптер не збирав пакети.
 :end
 
 :WOL_log_file_help:
-Default is to log to syslog but if you want a different log location set the file name.
+За замовчуванням реєструється в syslog, але якщо ви бажаєте інше місце розташування журналу, укажіть назву файлу.
 :end
