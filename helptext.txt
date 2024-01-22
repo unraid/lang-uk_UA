@@ -2407,97 +2407,97 @@ Virtual Manager Remote Viewer відображатиме лише опцію Rem
 ; New entries (1) - 2023-11-17
 
 :sysdrivers_intro_help:
-This page displays all the drivers available on this system. Filter the list according to whether the driver is Inuse or not, or search for a specific driver if desired.
+На цій сторінці показано всі драйвери, доступні для цієї системи. Відфільтруйте список відповідно до того, чи використовується драйвер чи ні, або за бажанням знайдіть конкретний драйвер.
 
-Any 3rd party driver installed by a plugin will have a support symbol next to it, click this to get support for the plugin.
+Біля будь-якого стороннього драйвера, встановленого за допомогою плагіна, буде позначка підтримки. Натисніть це, щоб отримати підтримку для плагіна.
 
-Click the edit button to add/modify/delete any modprobe.d config file in the config/modprobe.d directory on the flash drive.
+Натисніть кнопку редагування, щоб додати/змінити/видалити будь-який конфігураційний файл modprobe.d у каталозі config/modprobe.d на флеш-пам’яті.
 :end
 
 ; New entries (6) - 2023-11-17
 
 :display_width_help:
-**Boxed** is the legacy setting which constrains the content width to maximum 1920 pixels
+**Boxed** – це застаріле налаштування, яке обмежує ширину вмісту максимум 1920 пікселями
 
-**Unlimited** allows content to use all available width, which maybe useful on wide screens
+**Unlimited** дозволяє вмісту використовувати всю доступну ширину, що може бути корисним на широких екранах
 :end
 
 :vms_disable_help:
-Stop VMs from Autostarting\Starting when VM Manager starts or open is run from the gui to start, error message will be seen.
+Зупинити VMs з Автозапуску\Запуску, коли VM Manager запускається або відкривається з графічного інтерфейсу для запуску, з’являється повідомлення про помилку.
 :end
 
 :notifications_auto_close_help:
-Number of seconds before notifications are automatically closed in *Detailed* view.<br>
-A value of 0 disables automatic closure.
+Кількість секунд до автоматичного закриття сповіщень у *Детальному* перегляді.<br>
+Значення 0 вимикає автоматичне закриття.
 :end
 
 :console_keyboard_help:
-Select your default keymap for the local console (not the web Terminal).
+Виберіть розкладку клавіш за замовчуванням для локальної консолі (а не веб-терміналу).
 :end
 
 :console_screen_help:
-**Default:** 'Default' will set the blank timeout to 15 minutes and powersave to 60 minutes.
+**За замовчуванням:** "За замовчуванням" буде встановлено порожній тайм-аут на 15 хвилин і енергозбереження на 60 хвилин.
 
-**Disabled:** 'Disabled' will disable the blank and powersave timeout.
+**Вимкнуто:** «Вимкнуто» вимкне порожній і час очікування енергозбереження.
 
-**All other values:** Will set the blank timout to the selected value and disable the powersave timeout.
+**Усі інші значення:** встановить вибране значення тайм-ауту порожнього параметра та вимкне тайм-аут енергозбереження.
 :end
 
 :console_bash_help:
-If set to 'Yes' the bash history will persist reboots, set to 'No' to disable.
+Якщо встановлено значення «Так», історія bash продовжуватиме перезавантажуватись, установіть значення «Ні», щоб вимкнути.
 
-**ATTENTION:** The bash history will be written to the USB Boot device so this will introduce higher wear and tear!
+**УВАГА:** Історія bash буде записана на завантажувальний USB-пристрій, тому це призведе до більшого зносу!
 
-**Note:** Disabling and Enabling will remove the entire bash history.
+**Примітка.** Вимкнення та ввімкнення видаляє всю історію bash.
 :end
 
 ; New entries (2) - 2023-12-17
 
 :ssd_default_warning_temperature_help:
-*Warning SSD temperature* sets the default warning threshold for all SSD devices temperature. Exceeding this threshold will result in a warning notification.
+*Попередження про температуру SSD* встановлює поріг попередження за замовчуванням для температури всіх SSD-пристроїв. Перевищення цього порогу призведе до попередження.
 
-A value of zero will disable the warning threshold (including notifications).
+Нульове значення вимкне порогове значення попередження (включаючи сповіщення).
 :end
 
 :ssd_default_critical_temperature_help:
-*Critical disk temperature* sets the default critical threshold for all SSD devices temperature. Exceeding this threshold will result in an alert notification.
+*Критична температура диска* встановлює критичне порогове значення за умовчанням для всіх пристроїв SSD. Перевищення цього порогу призведе до сповіщення.
 
-A value of zero will disable the critical threshold (including notifications).
+Нульове значення вимкне критичний поріг (включаючи сповіщення).
 :end
 
 ; New entries (8) - 2023-12-28
 
 :syslog_shutdown_flash_help:
-This setting is YES by default and enables the system to copy the syslog file to the USB device on shutdown or reboot.
+За замовчуванням цей параметр має значення ТАК і дозволяє системі копіювати файл системного журналу на USB-пристрій під час вимкнення або перезавантаження.
 
-After rebooting, the syslog from this run will be visible on Tools > Syslog > syslog-previous;
-it will also be included in diagnostics as logs/syslog-previous.txt
+Після перезавантаження системний журнал із цього запуску буде видно в Інструменти > Системний журнал > попередній Системний журнал;
+це також буде включено в діагностику як logs/syslog-previous.txt
 :end
 
 :WOL_enable_help:
-If set to yes Unraidwold daemon is set to run.
+Якщо встановлено значення Так, демон Unraidwold налаштовано на запуск.
 :end
 
 :WOL_docker_help:
-If set to yes when wake on lan packets are received checks are carrried out for dockers otherwise dockers will be ignored.
+Якщо встановлено значення Так, коли надходять пакети пробудження через локальну мережу, перевірки виконуються для докерів, інакше докери ігноруватимуться.
 :end
 
 :WOL_run_VM_help:
-If set to yes when wake on lan packets are received checks are carrried out for virtual machines otherwise virtual machines will be ignored.
+Якщо встановлено значення Так, коли надходять пакети пробудження через локальну мережу, для віртуальних машин виконуються перевірки, інакше віртуальні машини ігноруватимуться.
 :end
 
 :WOL_run_LXC_help:
-If set to yes when wake on lan packets are received checks are carrried out for LXC otherwise LXC will be ignored. The LXC plugin needs to be installed for LXC to be processed.
+Якщо встановлено значення Так, під час отримання пакетів wake on lan виконуються перевірки для LXC, інакше LXC ігноруватиметься. Для обробки LXC необхідно встановити плагін LXC.
 :end
 
 :WOL_interface_help:
-Specify the interface to the daemon to bind to. Some interfaces may not be able to recieve etherframe packets. Recommend to bind to a physical interface.
+Укажіть інтерфейс демона, до якого потрібно прив’язатися. Деякі інтерфейси можуть не отримувати пакети etherframe. Рекомендуємо прив’язати до фізичного інтерфейсу.
 :end
 
 :WOL_promiscuous_mode_help:
-Enable to set the NIC not to filer packets.
+Увімкніть, щоб мережевий адаптер не збирав пакети.
 :end
 
 :WOL_log_file_help:
-Default is to log to syslog but if you want a different log location set the file name.
+За замовчуванням реєструється в syslog, але якщо ви бажаєте інше місце розташування журналу, укажіть назву файлу.
 :end

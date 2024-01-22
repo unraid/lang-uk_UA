@@ -217,7 +217,7 @@ You may actually cause more problems than you solve if there are problems with y
 
 
 ; Note: December 17, 2023 - 4 missing translations
-Enable Intel TurboAMD Performance Boost=Enable Intel Turbo/AMD Performance Boost
-Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
-Time to set TurboPerformance Boost Off=Time to set Turbo/Performance Boost Off
-Time to set TurboPerformance Boost On=Time to set Turbo/Performance Boost On
+Enable Intel TurboAMD Performance Boost=Увімкніть підвищення продуктивності Intel Turbo/AMD
+Intel TurboAMD Performance Boost=Intel Turbo/AMD підвищення продуктивності
+Time to set TurboPerformance Boost Off=Час для вимкнення Turbo/Performance Boost
+Time to set TurboPerformance Boost On=Час увімкнути Turbo/Performance Boost

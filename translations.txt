@@ -1212,24 +1212,24 @@ check for OS updates=
 unlimited=
 
 ; Downgrade component additions 2023-11-09
-A reboot will be required=
-Confirm Downgrade=
-Create Bug Report=
-Create a bug report on our forums with a description of the issue along with your diagsnotics=
-Downloading=
-Open a bug report=
+A reboot will be required=Буде потрібно перезавантаження
+Confirm Downgrade=Підтвердити пониження
+Create Bug Report=Створити звіт про помилку
+Create a bug report on our forums with a description of the issue along with your diagsnotics=Створіть звіт про помилку на наших форумах з описом проблеми та вашою діагностикою
+Downloading=Downloading
+Open a bug report=Відкрити звіт про помилку
 
-%s day=
-%s days=
-%s hour=
-%s hours=
-%s minute=
-%s minutes=
-%s month=
-%s months=
-%s second=
-%s seconds=
-%s year=
-%s years=
+%s day=%s день
+%s days=%s дні
+%s hour=%s годину
+%s hours=%s годин
+%s minute=%s хвилина
+%s minutes=%s хвилин
+%s month=%s місяць
+%s months=%s місяців
+%s second=%s секунда
+%s seconds=%s секунд
+%s year=%s рік
+%s years=%s років
 
 ; Note: December 25, 2023 - 239 missing translations
