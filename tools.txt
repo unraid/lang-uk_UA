@@ -338,19 +338,19 @@ USB-флеш-пристрій також може бути у *чорному с
 :end
 
 ; Note: December 17, 2023 - 16 missing translations
-Creating Flash backup=
-Creation error=
-Delete Modprobe config=
-Downgrade OS=
-Driver=
-Edit Modprobe config=
-Flash backup=
-Insufficient free disk space available=
-Modprobed config file=Modprobe.d config file
-Rebuild Modules=
-Remove custom modprobed configuration=Remove custom modprobe.d configuration?
-Save Modprobe config=
-Select View=
-State=
-Support page=
-System Drivers=
+Creating Flash backup=Створення резервної копії Flash
+Creation error=Помилка створення
+Delete Modprobe config=Видалити конфігурацію Modprobe
+Downgrade OS=Понизити ОС
+Driver=Драйвер
+Edit Modprobe config=Редагувати конфігурацію Modprobe
+Flash backup=Резервне копіювання Flash
+Insufficient free disk space available=Недостатньо вільного місця на диску
+Modprobed config file=Modprobe.d конфігураційний файл
+Rebuild Modules=Перебудувати модулі
+Remove custom modprobed configuration=Видалити спеціальну конфігурацію modprobe.d?
+Save Modprobe config=Збережіть конфігурацію Modprobe
+Select View=Виберіть Переглянути
+State=Держава
+Support page=Сторінка підтримки
+System Drivers=Системні Драйвери
