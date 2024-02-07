@@ -918,7 +918,7 @@ You may purchase a license key corresponding to this USB Flash device to continu
 You will no longer have access to this server using this url=Ви більше не матимете доступу до цього сервера, використовуючи <abbr title="%s" class="italic">цю URL-адресу</abbr>
 Your current url %s is not in the list of allowed origins for this server=Ваша поточна URL-адреса **%s** не входить до списку дозволених джерел для цього сервера
 Your flash drive is corrupted or offline=Ваш flash-накопичувач пошкоджений або не в мережі
-Your server will not be usable until you purchase a Registration key or install a free 30 day Trial key=Your server will not be usable until you purchase a Registration key or install a free 30 day *Trial* key.
+Your server will not be usable until you purchase a Registration key or install a free 30 day Trial key=Ваш сервер не можна буде використовувати, доки ви не придбаєте реєстраційний ключ або не встановите безкоштовний 30-денний *пробний* ключ.
 Your Trial has expired=Термін дії вашої пробної версії закінчився
 Your Trial key includes all the functionality and device support of a Pro key=Ваш пробний ключ включає в себе всі функції та підтримку пристрою, як і ключ Pro
 Your Trial key requires an internet connection=Для вашого пробного ключа потрібне підключення до Інтернету
@@ -931,7 +931,7 @@ Your USB Flash GUID and other relevant server data will also be sent=Також 
 %1s %2s Key…=Ключ %1s %2s…
 %2s Key %1s Successfully=%2s Ключ %1s успішно
 %s day=%s день
-%s days=%s днів
+%s days=%s дні
 %s hour=%s годину
 %s hours=%s годин
 %s minute=%s хвилина
@@ -1167,7 +1167,7 @@ License key actions=
 License key type=
 New Version: %s=
 No downgrade available=
-Open a bug report=
+Open a bug report=Відкрити звіт про помилку
 Original release date %s=
 Please confirm the update details below=
 Please fix any errors and try again=Please fix any errors and try again.
@@ -1232,4 +1232,4 @@ Open a bug report=Відкрити звіт про помилку
 %s year=%s рік
 %s years=%s років
 
-; Note: December 25, 2023 - 239 missing translations
+; Note: February 7, 2024 - 90 missing translations
