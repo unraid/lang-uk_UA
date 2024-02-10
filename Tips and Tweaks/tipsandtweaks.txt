@@ -12,6 +12,7 @@ Disable NIC Offload=Вимкніть розвантаження NIC
 Disk Cache=Дисковий кеш
 Dont change the Disk Cache settings until you read and understand this=Не змінюйте налаштування дискового кешу, доки не прочитаєте та не зрозумієте це
 Driver=Драйвер
+Enable Intel TurboAMD Performance Boost=Увімкніть підвищення продуктивності Intel Turbo/AMD
 Enable syslog Archiving=Увімкнути архівацію системного журналу
 Ethernet NIC Rx Buffer=Ethernet NIC Rx буфер
 Ethernet NIC Tx Buffer=Ethernet NIC Tx буфер
@@ -28,6 +29,7 @@ If you dont Unraid may not detect the Master Browser for all network interfaces 
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Якщо у вас є процесор Intel, може здатися, що всі процесори постійно працюють на повній швидкості
 If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Якщо ви встановите 'Power Save' CPU Регулятор, ви можете побачити, що ваші процесори застрягли на 800 МГц
 Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Встановіть плагін Fix Common Problems і вирішіть будь-які проблеми конфігурації Unraid
+Intel TurboAMD Performance Boost=Intel Turbo/AMD підвищення продуктивності
 It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Рекомендовано оновити Unraid до останньої стабільної версії, щоб отримати найновіші функції, виправлення помилок і оновлення безпеки
 It is recommended to use the pstate driver on Intel processors if you want the most performance=Рекомендується використовувати драйвер pstate на процесорах Intel, якщо вам потрібна найбільша продуктивність
 It is recommended you use the 'Performance' Governor for best performance and power savings=Рекомендовано використовувати 'Performance' Регулятор для найкращої продуктивності та економії енергії
@@ -64,6 +66,8 @@ This will log all your server log enries to the Syslog Server and save the log t
 This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=Здається, зараз це відбувається частіше через великий обсяг пам’яті, встановленої в Unraid, і занадто високі налаштування дискового кешу за замовчуванням
 Time to set Normal CPU Scaling=Час встановити нормальне масштабування CPU
 Time to set Power Saving CPU Scaling=Час налаштувати енергозберігаюче масштабування CPU
+Time to set TurboPerformance Boost Off=Час для вимкнення Turbo/Performance Boost
+Time to set TurboPerformance Boost On=Час увімкнути Turbo/Performance Boost
 Tips=Поради
 Tips and Tweaks wiki=Поради та налаштування wiki
 Tweaks=Твіки
@@ -138,6 +142,12 @@ You may actually cause more problems than you solve if there are problems with y
 > Якщо inotify не запускається через недостатню кількість спостережень користувачів, збільште max_user_watches.
 >
 > Типовим значенням є 524288.
+:end
+
+:tips_tweaks_max_instances_plug:
+> This is maximum number of inotify instances that a user can create.
+>
+> The default is 128.
 :end
 
 :tips_tweaks_max_files_plug:
@@ -216,8 +226,6 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 
-; Note: December 17, 2023 - 4 missing translations
-Enable Intel TurboAMD Performance Boost=Увімкніть підвищення продуктивності Intel Turbo/AMD
-Intel TurboAMD Performance Boost=Intel Turbo/AMD підвищення продуктивності
-Time to set TurboPerformance Boost Off=Час для вимкнення Turbo/Performance Boost
-Time to set TurboPerformance Boost On=Час увімкнути Turbo/Performance Boost
+; Note: February 10, 2024 - 2 missing translations
+Max User Instances=
+Power Saving Settings=

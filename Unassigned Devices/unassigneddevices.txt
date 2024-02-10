@@ -18,6 +18,7 @@ Change Disk Mount Point=Натисніть піктограму, щоб вибр
 Change ISO File Mount Point=Змінити точку монтування файлу ISO
 Change Remote Share Mount Point=Змінити точку монтування віддаленого спільного доступу
 Change SMB=Змінити SMB
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=Зміна точки монтування також призведе до зміни мітки диска на всіх дисках і імені пулу на диску ZFS
 Clear=Чисто
 Click to select ISO file=Натисніть, щоб вибрати файл ISO
 Click to view/hide partitions and mount points=Натисніть, щоб переглянути/приховати розділи та точки монтування
@@ -37,9 +38,11 @@ Enter the Domain for the share if on a Domain=Введіть домен для �
 Enter the Password if the share is password protected=Введіть пароль, якщо спільний доступ захищено паролем
 Enter the Username if the share is password protected=Введіть ім’я користувача, якщо спільний доступ захищено паролем
 Enter the password to use for this disk=Введіть пароль для використання цього диска
+Enter the server name and it will be added to the local DNS names and will then resolve by name=Введіть ім'я сервера, і він буде доданий до локальних імен DNS, і потім розпізнасть за назвою
 Exclusive Share files will not be accessible in a Root Share=Ексклюзивні файли загального доступу не будуть доступні в кореневому спільному доступі
 Execute Script as udev simulating a device being installed=Виконайте сценарій як udev, що імітує встановлення пристрою
 Fail=Невдача
+failed to=не вдалося
 file share for=файловий ресурс для
 File System Check=Перевірка файлової системи
 File System Scrub=Очищення файлової системи
@@ -52,8 +55,10 @@ Historical=Історичний
 Historical Devices=Історичні прилади
 Historical Device is=Історичний пристрій є
 Identification=Ідентифікація
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=Якщо IP-адреса сервера відображається в списку після пошуку, ваш DNS-сервер не розпізнає ім’я
 If this disk was pre-cleared, you will remove the pre-clear signature=Якщо цей диск було попередньо очищено, ви видалите підпис попереднього очищення
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=Якщо ви додасте диск до масиву, а підпис попереднього очищення буде видалено, Unraid знову пройде тривалий процес очищення диска
+If shares do not show, check your credentials=Якщо спільні ресурси не відображаються, перевірте свої облікові дані
 Invalid Configuration - Remove and Re-add=Недійсна Конфігурація - Видаліть і Додайте повторно
 is offline=не в мережі
 ISO File is=Файл ISO є
@@ -79,16 +84,19 @@ No Unassigned Disks available=Немає непризначених дисків
 Not Enabled=Не ввімкнено
 not installed=не встановлено
 Note=Примітка
+offline=офлайн
+User Shares=Спільний доступ користувачів
 You must enable NFS in Settings->NFS to mount NFS shares=Ви повинні ввімкнути NFS у Наташтуваннях->NFS, щоб підключити спільні ресурси NFS
 You must enable SMB in Settings->SMB to mount SMB shares=Ви повинні ввімкнути SMB у Наташтуваннях->SMB, щоб підключити спільні ресурси SMB
 Open=Відкрити
 Partition and Format Disk=Розбийте та відформатуйте диск
-Pass Thru=Pass Thru
 Password=Пароль
 Read only=Лише для читання
 Reboot=Перезавантаження
 Refresh Disks and Configuration=Оновити диски та конфігурацію
 Remember your password It cannot be recovered=Запам'ятайте свій пароль. Його неможливо відновити
+Remote Server is=Віддалений сервер є
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=Віддалене підключення спільного доступу залежить від міцного та надійного мережевого з’єднання, а цього може бути важко досягти
 Remove Device configuration=Видалити конфігурацію пристрою
 Remove ISO File Share=Видалити ISO файл сільного ресурсу
 Remove Partition=Видалити розділ
@@ -97,11 +105,8 @@ Remove partition=Видалити розділ
 Running=Запуск
 Script=Скрипт
 Search For Servers=Пошук серверів
-Search for Servers, or enter the Server nameIP address manually=Знайдіть сервери або введіть IP-адресу імені сервера вручну
 Search for Shares or enter the Share name manually=Знайдіть «Спільні ресурси» або введіть назву спільного ресурсу вручну
 Searching=Searching
-Select the Mount Point to Root Share=Виберіть точку підключення до кореневої папки
-Serial Number Mount Point=Серійний номер (точка монтування)
 Shares=Спільні ресурси
 Share Type=Тип спільного доступу
 share for=Cпільний доступ для
@@ -124,10 +129,7 @@ Unmount=Демонтувати
 Unmounting=Демонтування
 Use caution when gathering shares into one Root Share=Будьте обережні, збираючи спільні ресурси в один кореневий спільний ресурс
 Used=Використовувати
-User and Pool Shares=Спільні ресурси Користувача та Пулу
 User Shares=Спільний доступ користувачів
-User and Pool Shares will include all files in User Shares, Cache and Pool Devices=Спільні ресурси користувачів і пулів включатимуть усі файли в спільних ресурсах користувачів, кеші та пристроях пулу
-User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=Спільні ресурси користувача нададуть доступ до спільних ресурсів користувача, але кореневий спільний ресурс не включатиме файли кешу та пристроїв пулу
 Username=Ім'я користувача
 View Device Script Log=Перегляд журналу сценаріїв пристрою
 View ISO File Script Log=Перегляд журналу сценарію файлу ISO
@@ -143,6 +145,36 @@ You WILL have problems if you do=У вас БУДУТЬ проблеми, якщ
 You will need to enter credentials to list the shares=Вам потрібно буде ввести облікові дані, щоб отримати список спільних ресурсів
 ZFS Pool Name=Назва пулу ZFS
 ZFS Volume=Том ZFS
+
+:unassgned_devices_switches_plug:
+> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
+>
+> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
+>
+> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
+>
+> Click on the <i class="fa fa-refresh"></i> icon to refresh disks and configuration.
+>
+> Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
+>
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator.  Applies to version 6.9 RC2 and later only.
+>
+> Click on the <i class="fa fa-gears"></i> icon to go to the Device Settings configuration.  This is where you configure a device script and certain device characteristics.
+> 
+> Click on the <i class="icon-nvme"></i> or <i class="fa fa-hdd-o"></i> icon to display syslog entries specific to this disk device.
+>
+> **Mount Point icons:**
+>
+> When the <i class='fa fa-pencil'></i> icon shows next to the mount point it indicates the mount point can be changed when the mount point is clicked.
+>
+> When the <i class='fa fa-external-link'></i> icon shows next to the mount point it indicates the clicking on the mount point will browse the files on that partition.
+>
+> Click on the <i class="fa fa-align-left"></i> icon to display the device script log.  This is the log specific to the device script.
+>
+> Click on the <i class="fa fa-check"></i> icon to perform a file system check.  BTRFS and ZFS file systems need to be mounted to do a file check.  The file check on BTRFS and ZFS file systems is a scrub.
+>
+> Click on the <i class="fa fa-flash"></i> icon to run your device script as if it was hot plugged.  This only applies to disk devices.
+:end
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices скорочено називається UD.**
@@ -199,12 +231,20 @@ ZFS Volume=Том ZFS
 > Будьте обережні, використовуючи позначення /dev/sdX або devX, оскільки вони можуть змінитися після перезавантаження. Найкраще використовувати значення, передані в сценарій UD для sdX (DEVICE) і devX (UD_DEVICE).
 :end
 
-; Note: November 16, 2023 - 8 missing translations
-Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=Зміна точки монтування також призведе до зміни мітки диска на всіх дисках і імені пулу на диску ZFS
-Enter the server name and it will be added to the local DNS names and will then resolve by name=Введіть ім'я сервера, і він буде доданий до локальних імен DNS, і потім розпізнасть за назвою
-failed to=не вдалося
-If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=Якщо IP-адреса сервера відображається в списку після пошуку, ваш DNS-сервер не розпізнає ім’я
-If shares do not show, check your credentials=Якщо спільні ресурси не відображаються, перевірте свої облікові дані
-offline=офлайн
-Remote Server is=Віддалений сервер є
-Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=Віддалене підключення спільного доступу залежить від міцного та надійного мережевого з’єднання, а цього може бути важко досягти
+; Note: February 10, 2024 - 16 missing translations
+Encrypt CIFS Mount=
+User Shares without Pools=
+Partition=
+Passed=
+Passed Through=
+Pool=
+Preclear=
+Remote Shares=
+Search for Servers, or enter the Server name or IP address manually=
+Select the Root Share=
+Serial Number Mount Point=Serial Number (Mount Point)
+Unassigned Devices=
+Unassigned Disks=
+User Shares without Pools=
+User Shares - allow access to User Shares, including Cache and Pool files=
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=
