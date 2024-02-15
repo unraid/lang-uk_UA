@@ -226,5 +226,5 @@ wsport for virtual console=wsport для віртуальної консолі
 XML View=Перегляд XML
 
 ; Note: February 10, 2024 - 2 missing translations
-Description=Description
-Top Image=Top Image
+Description=Опис
+Top Image=Головний Образ
