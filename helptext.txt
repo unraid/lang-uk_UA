@@ -2505,19 +2505,19 @@ Virtual Manager Remote Viewer відображатиме лише опцію Rem
 ; New entries (2) - 2024-02-10
 
 :WOL_intro_help:
-This page allows the setup to start/resume and stop VMs, Containters(Docker and LXC) using WOL magic packets
+Ця сторінка дозволяє налаштування запускати/відновлювати та зупиняти віртуальні машини, контейнери (Docker і LXC) за допомогою магічних пакетів WOL
 
-It does setup wake up of the Unraid server.
+Це налаштовує пробудження сервера Unraid.
 
-The process will look for the defined mac address defined within the service(VM or container) with the exception of dockers. Dockers do not have a mac address until they are running so you will need to define a user mac address to allow you to start them
+Процес шукатиме визначену mac-адресу, визначену в службі (VM або контейнері), за винятком докерів. Докери не мають mac-адреси, доки не запустяться, тому вам потрібно буде визначити mac-адресу користувача, щоб дозволити вам запускати їх
 
-If the service is paused a WOL Packet will resume. 
+Якщо службу призупинено, пакет WOL буде відновлено. 
 
-For each service you can set: enable, disable or enable and shutdown
+Для кожної служби можна встановити: увімкнути, вимкнути або ввімкнути та вимкнути
 
-When the enable and shutdown is set if the service is running when the next WOL packet is recieved a shutdown will be performed.
+Коли ввімкнути та завершити роботу, якщо служба працює, коли буде отримано наступний пакет WOL, буде виконано завершення роботи.
 :end
 
 :WOL_run_shutdown_help:
-If set to yes when wake on lan packets are received checks are carrried out and if enabled for service and that service is running the entity will be shutdown. System has to be set to Enabled and Shutdwon for it to be action.
+Якщо встановлено значення «Так», коли надходять пакети пробудження через локальну мережу, виконуються перевірки, і якщо для служби ввімкнено та ця служба працює, об’єкт буде вимкнено. Система повинна бути встановлена ​​на Enabled і Shutdwon, щоб вона діяла.
 :end
