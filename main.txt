@@ -393,6 +393,6 @@ This will put the system in sleep mode=Це переведе систему в �
 wiki entry=wiki запис
 
 ; Note: February 7, 2024 - 3 missing translations
-spares - Hot Spares=
-special - Special Allocation Class=
+spares - Hot Spares=запчастини - Гаряча заміна
+special - Special Allocation Class=спеціальний - Спеціальний клас розподілу
 W=

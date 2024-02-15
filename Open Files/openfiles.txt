@@ -20,5 +20,5 @@ Cannot get list of open files=Не вдається отримати списо�
 :end
 
 ; Note: February 10, 2024 - 2 missing translations
-Open=
-May prevent shutdown=
+Open=Відкритий
+May prevent shutdown=Може запобігти вимкненню

@@ -227,5 +227,5 @@ You may actually cause more problems than you solve if there are problems with y
 
 
 ; Note: February 10, 2024 - 2 missing translations
-Max User Instances=
-Power Saving Settings=
+Max User Instances=Максимальна кількість екземплярів Користувачів
+Power Saving Settings=Налаштування енергозбереження
