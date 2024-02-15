@@ -232,19 +232,19 @@ ZFS Volume=Том ZFS
 :end
 
 ; Note: February 10, 2024 - 16 missing translations
-Encrypt CIFS Mount=
-User Shares without Pools=
-Partition=
-Passed=
-Passed Through=
-Pool=
-Preclear=
-Remote Shares=
-Search for Servers, or enter the Server name or IP address manually=
-Select the Root Share=
-Serial Number Mount Point=Serial Number (Mount Point)
-Unassigned Devices=
-Unassigned Disks=
-User Shares without Pools=
-User Shares - allow access to User Shares, including Cache and Pool files=
-User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=
+Encrypt CIFS Mount=Шифрувати монтування CIFS
+User Shares without Pools=Обмін користувачами без Пулів
+Partition=Розділ
+Passed=Пройшов
+Passed Through=Пройшов через
+Pool=Пул
+Preclear=Очевидний
+Remote Shares=Віддалені спільні ресурси
+Search for Servers, or enter the Server name or IP address manually=Знайдіть сервери або введіть назву або IP-адресу сервера вручну
+Select the Root Share=Виберіть Кореневу папку
+Serial Number Mount Point=Серійний номер (Точка Монтування)
+Unassigned Devices=Непризначені пристрої
+Unassigned Disks=Непризначені диски
+User Shares without Pools=Обмін користувачами без Пулів
+User Shares - allow access to User Shares, including Cache and Pool files=Спільні ресурси користувача - дозволити доступ до спільних ресурсів користувача, включаючи файли кешу та пулу
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=Спільні ресурси користувача без пулів - дозволити доступ до спільних ресурсів користувача, але кореневий спільний ресурс не включатиме файли кешу та пулу
