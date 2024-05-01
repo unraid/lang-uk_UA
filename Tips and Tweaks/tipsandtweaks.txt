@@ -38,6 +38,7 @@ Make one change at a time and verify if it improves your situation=Робіть 
 Making changes here can briefly interrupt your network operation=Внесення змін тут може призвести до короткого переривання роботи мережі
 Many plugins are no longer compatible with older Unraid versons=Багато плагінів більше не сумісні зі старими версіями Unraid
 Max SMB Open Files=Максимум SMB Відкритих файлів
+Max User Instances=Максимальна кількість екземплярів Користувачів
 Max User Watches=Максимальна кількість годинників
 NIC Offload=Розвантаження NIC
 NIC Rx Buffer=NIC Rx буфер
@@ -46,6 +47,7 @@ Normal CPU Scaling Governor=Нормальний Регулятор масшта
 Note=Примітка
 Number of syslogs to Archive=Кількість системних журналів для архіву
 post=пост
+Power Saving Settings=Налаштування енергозбереження
 Power Saving CPU Scaling Governor=Енергозбереження CPU Scaling Регулятор
 Processes to kill before Array is Stopped=Процеси, які потрібно знищити перед зупинкою масиву
 Put the IP address of your server in the Remote syslog server field=Введіть IP-адресу вашого сервера в полі Віддалений сервер системного журналу
@@ -224,8 +226,3 @@ You may actually cause more problems than you solve if there are problems with y
 >
 > Примітка. Будьте обережні з процесами, які ви вбиваєте тут. Ви можете втратити дані!
 :end
-
-
-; Note: February 10, 2024 - 2 missing translations
-Max User Instances=Максимальна кількість екземплярів Користувачів
-Power Saving Settings=Налаштування енергозбереження

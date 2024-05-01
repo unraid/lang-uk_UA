@@ -1,6 +1,8 @@
 Add ISO File Share=Додати спільний доступ до файлів ISO
 Add Remote SMB=Додати віддалений SMB
 Add Root Share=Додати Кореневу папку
+All Unassigned Devices configurations will be updated=Усі конфігурації непризначених пристроїв буде оновлено
+All disks will be refreshed using udev=Усі диски буде оновлено за допомогою udev
 An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=Диск XFS, BTRFS або ZFS, розділений на UD, сумісний із розділенням диска масиву та може бути доданий до масиву
 Any data on this disk will be lost=Будь-які дані на цьому диску будуть втрачені
 Are you sure=Ви точно впевнені
