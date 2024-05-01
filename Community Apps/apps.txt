@@ -13,6 +13,7 @@ Backup Server Active Some icons may not appear, and plugin installations may be 
 Debugging enabled This significantly increases the memory used by your browser=Увімкнено налагодження. Це значно збільшує обсяг пам’яті, який використовує ваш браузер
 Browser translation detected Display issues may result=Виявлено переклад браузера. Можуть виникнути проблеми з відображенням
 Action Centre Enabled=Центрі Підтримки увімкнено
+Deprecated OS version No further updates to Community Applications will be issued for this OS version=Застаріла версія ОС Жодних подальших оновлень програм спільноти для цієї версії ОС не буде
 
 ; Sorting Options
 Sort By=Сортувати за
@@ -41,7 +42,8 @@ Install Plugin Applications=Встановити додатки плагінів
 Select all on page=Вибрати все на сторінці
 Install Application=Встановити додаток
 Install Applications=Встановити додатки
-Update Applications=Оновлення додатоків
+Update Application=Оновлення Додатока
+Update Applications=Оновлення Додатоків
 Are you sure you want to update %s applications=Ви впевнені, що хочете оновити %s додатків
 Are you sure you want to install %s docker and %s plugin applications=Ви впевнені, що хочете встановити докер %1$s і додатки плагінів %2$s
 
@@ -150,10 +152,15 @@ This template is set up to run as Privileged This is a possible security risk an
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Один або кілька портів, які використовує ця програма, уже використовуються іншою службою або програмою, що працює на вашому сервері. Вам потрібно буде відповідно налаштувати порти хоста в шаблоні
 Not Enough Memory=Недостатньо пам'яті
 Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=Програми спільноти та ОС Unraid мають мінімальну необхідну встановлену пам’ять 4G CA не можуть працювати без дотримання цих мінімальних вимог
+Run Anyways=Запустити в будь-якому випадку
+Memory Requirements not met Problems may result=Вимоги до пам'яті не виконано. Можуть виникнути проблеми
 Installation already in progress=Встановлення вже триває
 Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=Вже виконується інсталяція або оновлення іншого плагіна, і це неможливо запустити. Зачекайте, поки поточне встановлення чи оновлення завершиться, і повторіть спробу
 %s is incompatible with your OS version Please update the OS to proceed=%s несумісний із вашою версією ОС. Оновіть ОС, щоб продовжити
 %s is incompatible with your OS version Either uninstall %s or update the OS=%s несумісна з вашою версією ОС Або видаліть %s, або оновіть ОС
+Browser failed to communicate with Unraid Server=Браузеру не вдалося зв’язатися з Сервером Unraid
+For unknown reasons, your browser was unable to communicate with Community Applications running on your server=З невідомих причин ваш браузер не зміг зв’язатися з додатками спільноти, які працюють на вашому сервері
+Attempt to Fix Via Reload Page=Спроба Виправити через сторінку оновлення
 
 ; CA Sections Keep the length reasonable
 Home=Головна
@@ -448,13 +455,3 @@ Would you like CA to attempt to determine any applicable paths, ports, and varia
 An error occurred - Could not determine configuration=Сталася помилка - Не вдалося визначити конфігурацію
 ; WebGui
 Click Install to download and install the Community Applications plugin=Натисніть **Встановити**, щоб завантажити та інсталювати плагін **Програми спільноти**
-
-
-; Note: February 10, 2024 - 7 missing translations
-Deprecated OS version No further updates to Community Applications will be issued for this OS version=Застаріла версія ОС Жодних подальших оновлень програм спільноти для цієї версії ОС не буде
-Update Application=Оновлення програми
-Run Anyways=Запустити в будь-якому випадку
-Memory Requirements not met Problems may result=Memory Requirements not met Problems may result
-Browser failed to communicate with Unraid Server=Браузеру не вдалося зв’язатися з сервером Unraid
-For unknown reasons, your browser was unable to communicate with Community Applications running on your server=З невідомих причин ваш браузер не зміг зв’язатися з додатками спільноти, які працюють на вашому сервері
-Attempt to Fix Via Reload Page=Спроба виправити через сторінку оновлення
