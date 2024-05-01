@@ -2,7 +2,6 @@ Adaptive=Адаптивний
 Cache pressure of directories on system=Тиск Cache каталогів у системі
 Check HELP for filter example=Перегляньте HELP для прикладу фільтра
 Disk Idle Timer=Таймер Простою Диска
-Excluded folders=Виключені папки
 Folder caching function=Функція кешування папок
 for adaptive depth=для адаптивної глибини
 Important - check HELP if disks spin up=Важливо - перевірте HELP, якщо диски крутяться
