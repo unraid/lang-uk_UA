@@ -26,6 +26,7 @@ btrfs scrub status=Статус очищення btrfs
 cache - Cache Devices=Кеш - Кеш Пристрої
 Canceled=Скасовано
 Cannot contact key-server Please check your=Неможливо зв'язатися з сервером ключів. Будь ласка, перевірте свій
+Caution=**Caution**
 Capabilities not available=Можливості недоступні
 Capabilities=Можливості
 Check Filesystem Status=Перевірте стан файлової системи
@@ -392,11 +393,10 @@ System in sleep mode=Система в сплячому режимі
 This will put the system in sleep mode=Це переведе систему в сплячий режим
 wiki entry=wiki запис
 
-; Note: December 8, 2024 - 16 missing translations
+; Note: December 8, 2024 - 15 missing translations
 After renaming the pool, check that your shares are assigned to the proper primary and secondary storage locations=
 After upgrading the volume may not be mountable in previous versions of Unraid=
 btrfs filesystem usage=
-Caution=**Caution**
 Dirty log detected=
 File system corruption detected=
 Fix=
