@@ -174,3 +174,12 @@ VPN Connections=Підключення VPN
 W=В
 Warnings=Попередження
 ZFS=ZFS
+
+; Note: December 8, 2024 - 7 missing translations
+checking=
+emulated=
+heat warnings=
+invalid=
+SMART errors=
+synching=
+utilization warnings=

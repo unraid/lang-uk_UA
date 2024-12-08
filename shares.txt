@@ -10,7 +10,6 @@ Automatically split only the top four directory levels as required=За потр
 Automatically split only the top level directory as required=За потреби автоматично розділить лише каталог верхнього рівня
 Automatically split only the top three directory levels as required=За потреби автоматично розділить лише три верхні рівні каталогу
 Automatically split only the top two directory levels as required=За потреби автоматично розділить лише два верхні рівні каталогу
-Calculated free space value=Розраховане значення вільного простору
 Clean Up=Очистити
 CLEAN UP=ОЧИСТИТИ
 Comments=Коментар
@@ -80,3 +79,12 @@ Use cache pool for new filesdirectories=Використовувати пул к
 User Shares=Спільні ресурси користувачів
 Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
+
+; Note: December 8, 2024 - 7 missing translations
+Free Space will be calculated=
+is missing=
+it references storage that does not exist=
+Share is empty and is safe to delete=
+Share must be empty to be deleted=
+This share is invalid=
+Warning: Configured Pool=

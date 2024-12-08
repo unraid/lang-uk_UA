@@ -167,7 +167,6 @@ Default appdata storage location=Місце зберігання даних пр
 Default critical disk temperature threshold=Порогове значення критичної температури диска за замовчуванням
 Default critical disk utilization threshold=Порогове значення критичного використання диска за замовчуванням
 Default critical SSD temperature threshold=Поріг критичної температури SSD за замовчуванням
-Default file system=Файлова система за замовчуванням
 Default ISO storage path=Стандартний шлях зберігання ISO
 Default network bridge=Мережевий міст за замовчуванням
 Default network source=Джерело мережі за умовчанням
@@ -859,3 +858,7 @@ to the Unraid server at=на сервер Unraid за адресою
 Transient errors in this log can be ignored unless you are having issues=Тимчасові помилки в цьому журналі можна ігнорувати, якщо у вас не виникли проблеми
 Unraid API extra origins=Додаткові джерела API Unraid
 View Flash Backup Error Log=Переглянути журнал помилок Flash Backup
+
+; Note: December 8, 2024 - 2 missing translations
+Default file system for Array disks=
+Docker PID Limit=
