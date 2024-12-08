@@ -140,6 +140,14 @@ You may actually cause more problems than you solve if there are problems with y
 > Занадто високе значення може призвести до того, що Linux завершить деякі процеси, щоб отримати більше пам’яті. У більшості випадків рекомендовано значення за замовчуванням 20%. Якщо у вас є віртуальна машина для потокового мультимедіа або ігрова VM, використовуйте значення 3%. Якщо виникають помилки OOM, рекомендується встановити значення 2%.
 :end
 
+:tips_tweaks_writeback_plug:
+> The default is 200 centiseconds (2 seconds) to control how often the kernel checks for dirty data to flush in the background.
+:end
+
+:tips_tweaks_expire_plug:
+> The default is 1000 centiseconds (10 seconds) to specify how long data can stay dirty before it is considered for write-back.
+:end
+
 :tips_tweaks_max_watches_plug:
 > Якщо inotify не запускається через недостатню кількість спостережень користувачів, збільште max_user_watches.
 >
@@ -226,3 +234,4 @@ You may actually cause more problems than you solve if there are problems with y
 >
 > Примітка. Будьте обережні з процесами, які ви вбиваєте тут. Ви можете втратити дані!
 :end
+

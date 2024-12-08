@@ -2,7 +2,6 @@ Hide Deprecated Applications=Приховати застарілі програ�
 This setting hides deprecated applications from the list of available apps Deprecated apps will still however display within the installed and previous apps sections=Цей параметр приховує застарілі програми зі списку доступних програм. Однак застарілі програми все одно відображатимуться в розділах встановлених та попередніх програм.
 Hide Incompatible Applications=Приховати несумісні програми
 This setting will hide applications that are listed as being incompatible with your version of Unraid=Цей параметр приховає програми, які вказані як несумісні з вашою версією Unraid
-Allow install of second instance=Дозволити встановлення другого екземпляра
 This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=Ця опція вмикає іншу кнопку на картках і спливаючих вікнах, яка дозволить вам переінсталювати встановлену програму, використовуючи її значення шаблону за замовчуванням. Цей параметр іноді може ввести в оману, і зазвичай використовується лише в тому випадку, якщо ви хочете встановити і запустити програму двічі одночасно.
 Automatically open the sidebar=Автоматично відкривати бічну панель
 Allows CA to automatically open the sidebar for more information when hovering over an application's icon=Дозволяє CA автоматично відкривати бічну панель для отримання додаткової інформації при наведенні курсора на піктограму програми
@@ -20,3 +19,6 @@ Only enable this when advised to from the author of Community Applications=Ув�
 Enable developer mode=Увімкнути режим розробника
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=Це розблокує деякі додаткові функції в CA, які зазвичай використовуються лише розробниками. Не рекомендується вмикати
 Support Thread=Підтримка Теми
+
+; Note: December 8, 2024 - 1 missing translations
+Allow installation of multiple instances=

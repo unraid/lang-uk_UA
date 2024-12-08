@@ -341,7 +341,6 @@ Install=Встановити
 Uninstall=Видалити
 Project=Проект
 Read Me First=Прочитай мене спочатку
-Install second instance=Встановити другий екземпляр
 Install Using The Templates Default Tag=Встановити за допомогою стандартного тегу шаблону
 Moderator Comments=Коментарі модератора:
 Note not all authors keep up to date on change logs=Зауважте, що не всі автори оновлюють журнали змін
@@ -455,3 +454,10 @@ Would you like CA to attempt to determine any applicable paths, ports, and varia
 An error occurred - Could not determine configuration=Сталася помилка - Не вдалося визначити конфігурацію
 ; WebGui
 Click Install to download and install the Community Applications plugin=Натисніть **Встановити**, щоб завантажити та інсталювати плагін **Програми спільноти**
+
+
+; Note: December 8, 2024 - 4 missing translations
+Clear Flag=
+External Link=
+Clicking OK will take you to a 3rd party website not associated with Limetech=
+Install another instance=

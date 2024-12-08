@@ -3,6 +3,7 @@ Attach=Аттач
 Attach This Disk=Приєднати цей Диск
 Attaching=Прикріплення
 Automount=Автоматичне монтування
+Click to select file or click Default button for the Device Script File=Клацніть, щоб вибрати файл, або натисніть кнопку за замовчуванням для файлу сценарію пристрою
 Default=За замовчуванням
 Delete Device Script File=Видалити файл сценарію пристрою
 Detach=Від'єднати
@@ -94,6 +95,3 @@ ZFS Volume=Том ZFS
 > Натисніть **Зберегти**, щоб прийняти поточні зміни.
 > Натисніть **Готово**, щоб вийти з цієї сторінки.
 :end
-
-; Note: February 10, 2024 - 1 missing translations
-Click to select file or click Default button for the Device Script File=Клацніть, щоб вибрати файл, або натисніть кнопку за замовчуванням для файлу сценарію пристрою
