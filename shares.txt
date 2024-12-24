@@ -81,10 +81,10 @@ Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
 
 ; Note: December 8, 2024 - 7 missing translations
-Free Space will be calculated=
-is missing=
-it references storage that does not exist=
-Share is empty and is safe to delete=
-Share must be empty to be deleted=
-This share is invalid=
-Warning: Configured Pool=
+Free Space will be calculated=Вільний простір буде розраховано
+is missing=відсутній
+it references storage that does not exist=це посилання на сховище, яке не існує
+Share is empty and is safe to delete=Спільний ресурс порожній і безпечний для видалення
+Share must be empty to be deleted=Спільний ресурс має бути порожнім для вилучення
+This share is invalid=Цей спільний ресурс є некоректним
+Warning: Configured Pool=Попередження: Налаштований Пул

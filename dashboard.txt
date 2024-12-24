@@ -176,10 +176,10 @@ Warnings=Попередження
 ZFS=ZFS
 
 ; Note: December 8, 2024 - 7 missing translations
-checking=
-emulated=
-heat warnings=
-invalid=
-SMART errors=
-synching=
-utilization warnings=
+checking=перевірка
+emulated=емулювати
+heat warnings=теплові попередження
+invalid=недійсний
+SMART errors=SMART помилки
+synching=синхронізація
+utilization warnings=попередження про використання
