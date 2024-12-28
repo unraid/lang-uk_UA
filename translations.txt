@@ -451,6 +451,8 @@ You must reboot for changes to take effect=Щоб зміни вступили в
 Your browser does not support HTML5 file uploads=Ваш браузер не підтримує завантаження файлів HTML5
 Your browser has JavaScript disabled=У вашому браузері вимкнено JavaScript
 
+; Favorites
+
 ; Dynamix.system.button plugin
 Array busy=Масив зайнятий
 Buttons=Кнопки
@@ -1218,7 +1220,7 @@ Open a bug report=Відкрити звіт про помилку
 %s year=%s рік
 %s years=%s років
 
-; Note: December 8, 2024 - 20 missing translations
+; Note: December 28, 2024 - 33 missing translations
 Always Allow=
 By default UEFI and Legacy boot mode are both enabled when GRUB is used to boot the machine=
 Clicking OK will take you to a 3rd party website not associated with Lime Technology=
@@ -1226,9 +1228,17 @@ Data copied=
 External Link=
 Go to My Servers Dashboard=
 GRUB configuration=
+Options for Block commit=
+Options for Block Commit=
+Options for Block copy=
+Options for Block Copy=
+Options for Block pull=
+Options for Block Pull=
 Percentage=
 Please access this server via the My Servers Dashboard=
+Please enable cookies to use the Unraid webGUI=
 Popup Blocked=
+required=
 See Help=
 Submission of this troubleshooting request will automatically send your system diagnostics to Lime Technology=
 The command failed revert to rsync=
@@ -1236,6 +1246,11 @@ This will start your free 30 day Trial=
 Time remaining=
 Transfer Rate=
 Windows may require a valid User to be defined even for Public shares=
+Add to favorites=
+Added to Favorites=
+My Favorites=
+No favorites available=
+Remove from favorites=
 If you are asked to supply logs, please open a support request on our Contact Page and reply to the email message you receive with your logs attached=If you are asked to supply logs, please open a support request on our Contact Page and reply to the email message you receive with your logs attached.
 If you do not have a backup copy of your license key file you may attempt to recover your key with your Unraidnet account=If you do not have a backup copy of your license key file you may attempt to recover your key with your Unraid.net account
 If you want to replace one of your license keys with a new key bound to this USB Flash device, please first remove all other key files first=If you want to replace one of your license keys with a new key bound to this USB Flash device, please first remove all other key files first.
