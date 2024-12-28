@@ -120,6 +120,7 @@ Percent usage of Docker vdisk=Відсоток використання Docker v
 Percent usage of flash usb device=Відсоток використання флеш-пристрою USB
 Percent usage of LOG file system=Відсоток використання файлової системи LOG
 Pool=Пул
+Popup Blocked=Popup Blocked.
 Power Status=Стан живлення
 Power=Живлення
 Processor Information=Інформація про процесор
@@ -182,7 +183,7 @@ W=В
 Warnings=Попередження
 ZFS=ZFS
 
-; Note: December 28, 2024 - 16 missing translations
+; Note: December 28, 2024 - 13 missing translations
 Clock is synchronized using NTP, time offset is %s %s=
 Clock is synchronized using PTP, time offset is %s %s=
 Clock is unsynchronized with no PTP servers=
@@ -192,7 +193,6 @@ device warnings=
 FS Native Snapshot=
 Memory dump=
 No VMs running=
-Popup Blocked=Popup Blocked.
 RX=
 TX=
 Unchecked will use QEMU External Snapshot=
