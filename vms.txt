@@ -228,7 +228,7 @@ Windows 82012, newer Linux distros=Windows 8/2012, новіші Linux дистр
 wsport for virtual console=wsport для віртуальної консолі
 XML View=Перегляд XML
 
-; Note: December 29, 2024 - 38 missing translations
+; Note: December 29, 2024 - 37 missing translations
 CreateModify Template=Create/Modify Template
 Discard=
 Disk IO=
@@ -252,7 +252,6 @@ No GPU=
 Other XML=
 Remove all files=
 Remove User Template=
-Rename disabled, snapshots exists=Rename disabled, <?=$snapcount?> snapshot(s) exists.
 Repeat=
 Set discard option=
 Set SDD flag=
