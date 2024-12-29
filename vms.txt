@@ -80,7 +80,6 @@ ISO storage path doesnt exist=ISO storage path doesn't existШлях до збе
 ISO storage path was empty=Шлях до зберігання ISO порожній
 keyboard for VM Console=клавіатура для VM Console
 keyboard for VNC=клавіатура для VNC
-Leaving blank will use OS name=
 LibreELEC Version=Версія LibreELEC
 LibreELEC=LibreELEC
 Libvirt Service failed to start=Не вдалося запустити службу Libvirt
@@ -229,7 +228,7 @@ Windows 82012, newer Linux distros=Windows 8/2012, новіші Linux дистр
 wsport for virtual console=wsport для віртуальної консолі
 XML View=Перегляд XML
 
-; Note: December 29, 2024 - 37 missing translations
+; Note: December 29, 2024 - 38 missing translations
 CreateModify Template=Create/Modify Template
 Discard=
 Disk IO=
@@ -244,6 +243,7 @@ Guest CPU=
 Hide inline xml=
 Host CPU=
 If name already exists it will be replaced=
+Leaving blank will use OS name=
 Memory dump=
 Memory inuseCurrentMaximum=Memory inuse/Current/Maximum
 Name contains invalid characters or does not start with an alphanumberic for a ZFS storage locationOnly these special characters are valid Underscore _ Hyphen - Colon Period=Name contains invalid characters or does not start with an alphanumberic for a ZFS storage location<br>Only these special characters are valid Underscore (_) Hyphen (-) Colon (:) Period (.)
