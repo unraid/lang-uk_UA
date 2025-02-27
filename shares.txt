@@ -88,7 +88,7 @@ Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
 
 ; Note: December 28, 2024 - 4 missing translations
-It references storage that does not exist=
-There are no mountable array or pool disks - cannot add shares=
-Unknown cache usage=
-Unknown protection status=
+It references storage that does not exist=Він посилається на сховище, якого не існує
+There are no mountable array or pool disks - cannot add shares=Немає монтованого масиву або дисків пулу – неможливо додати спільні ресурси
+Unknown cache usage=Невідоме використання кешу
+Unknown protection status=Невідомий статус захисту
