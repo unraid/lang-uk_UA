@@ -34,6 +34,7 @@ Invalid Characters=Недійсні символи
 Invalid share name=Недійсна назва спільного ресурсу
 is missing=відсутній
 it references storage that does not exist=це посилання на сховище, яке не існує
+It references storage that does not exist=Він посилається на сховище, якого не існує
 Manual do not automatically split directories=Інструкція: не розділяти каталоги автоматично
 Minimum free space=Мінімум вільного місця
 Missing share name=Відсутня назва спільного ресурсу
@@ -78,17 +79,17 @@ SSD=SSD
 Storage=Storage
 There are no exportable disk shares=Немає спільних дисків для експорту
 There are no exportable user shares=Немає спільних користувачів, які можна експортувати
+There are no mountable array or pool disks - cannot add shares=Немає монтованого масиву або дисків пулу – неможливо додати спільні ресурси
 This share is invalid=Цей спільний ресурс є некоректним
 Time Machine volume size limit=Обмеження розміру обсягу Time Machine
+Unknown cache usage=Невідоме використання кешу
 Unknown encryption state=Невідомий стан шифрування
+Unknown protection status=Невідомий статус захисту
 Use cache pool for new filesdirectories=Використовувати пул кешу (для нових файлів/каталогів)
 User Shares=Спільні ресурси користувачів
 Warning: Configured Pool=Попередження: Налаштований Пул
 Write=Писати
 You cannot use the following within share names=Ви не можете використовувати наступне в іменах спільного доступу
 
-; Note: December 28, 2024 - 4 missing translations
-It references storage that does not exist=Він посилається на сховище, якого не існує
-There are no mountable array or pool disks - cannot add shares=Немає монтованого масиву або дисків пулу – неможливо додати спільні ресурси
-Unknown cache usage=Невідоме використання кешу
-Unknown protection status=Невідомий статус захисту
+; Note: April 21, 2025 - 1 missing translations
+There are no mounted array or pool disks - cannot add shares=
