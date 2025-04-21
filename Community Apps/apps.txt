@@ -133,14 +133,12 @@ Downloading docker icons=Завантаження іконок докерів
 Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=Встановлення завершено Якщо кнопка ГОТОВО не з'явилася, вам потрібно буде натиснути червоний X у верхньому правому куті
 
 ; error messages
-No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=Дані не повернуто Ймовірно, інший сеанс веб-переглядача перезавантажив ваш сервер Перезавантаження цієї вкладки браузера, ймовірно, виправить цю помилку
 An error occurred Could not find any %s Apps=Сталася помилка. Не вдалося знайти %s Програми
 Download of appfeed failed=Помилка завантаження каналу програм
 ; the %s here refers to a function being called
 Something really went wrong here=Тут щось дійсно пішло не так
 Post the ENTIRE contents of this message in the Community Applications Support Thread=Опублікуйте ВЕСЬ вміст цього повідомлення в темі підтримки програм спільноти
 Unknown error happened Please post a screenshot in the support thread of the Statistics screen=Сталася невідома помилка. Опублікуйте знімок екрана в ланцюжку підтримки на екрані статистики
-Something really wrong happened Reloading the Apps tab will probably fix the problem=Сталося щось не так Перезавантаження вкладки «Програми», ймовірно, вирішить проблему
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=Цей плагін має дубльовану назву від іншого плагіна %s. Це вплине на вашу здатність інсталювати обидва плагіни одночасно
 You have been logged out=Ви вийшли з системи
 Fatal Flash Drive Error=Фатальна помилка флешки
@@ -456,8 +454,9 @@ An error occurred - Could not determine configuration=Сталася помил�
 Click Install to download and install the Community Applications plugin=Натисніть **Встановити**, щоб завантажити та інсталювати плагін **Програми спільноти**
 
 
-; Note: December 8, 2024 - 4 missing translations
+; Note: April 21, 2025 - 5 missing translations
 Clear Flag=
+Additional information may be within Tools, PHPSettings - View Log=
 External Link=
 Clicking OK will take you to a 3rd party website not associated with Limetech=
 Install another instance=

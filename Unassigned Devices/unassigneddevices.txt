@@ -240,7 +240,7 @@ ZFS Volume=Том ZFS
 > Будьте обережні, використовуючи позначення /dev/sdX або devX, оскільки вони можуть змінитися після перезавантаження. Найкраще використовувати значення, передані в сценарій UD для sdX (DEVICE) і devX (UD_DEVICE).
 :end
 
-; Note: December 8, 2024 - 20 missing translations
+; Note: April 21, 2025 - 21 missing translations
 Check the syslog for details=
 Choose NFS Server=
 Choose SMB Server=
@@ -249,7 +249,8 @@ Historical Unassigned Devices=
 If SMB shares do not show, check your credentials=
 No script file to execute=
 Remote Shares online status will be reset=
-Script is already runningSearch For Servers=
+Script is already running=
+Search For Servers=
 Script Log=
 Serial Number Mount Point=Serial Number (Mount Point)
 Show/Hide Historical Unassigned Devices=
