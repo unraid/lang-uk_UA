@@ -1220,10 +1220,11 @@ Open a bug report=Відкрити звіт про помилку
 %s year=%s рік
 %s years=%s років
 
-; Note: April 21, 2025 - 47 missing translations
+; Note: May 31, 2025 - 50 missing translations
 Abort background operation=
 Abort background process=
 Alert Message=
+Alerts=
 Always Allow=
 Attention - operation continues in background=
 By default UEFI and Legacy boot mode are both enabled when GRUB is used to boot the machine=
@@ -1234,6 +1235,7 @@ Go to My Servers Dashboard=
 GRUB configuration=
 Live Updates Paused=
 Move To End=
+Notices=
 Notifications=
 Options for Block commit=
 Options for Block Commit=
@@ -1256,6 +1258,7 @@ Time remaining=
 Transfer Rate=
 Tx=
 Unlock sortable items=
+Warnings=
 WiFi connected=
 WiFi disconnected=
 WiFi status unavailable=

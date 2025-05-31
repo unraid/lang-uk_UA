@@ -73,6 +73,7 @@ Language=Мова
 Log file cleared=Файл журналу очищено
 Log size=Розмір журналу
 LOG size=Розмір ЖУРНАЛУ
+Log Viewer new=Log Viewer (new)
 Missing Key File=Відсутній ключовий файл
 Missing Language=Відсутня мова
 Modprobed config file=Modprobe.d конфігураційний файл
@@ -352,6 +353,3 @@ USB-флеш-пристрій також може бути у *чорному с
 
 Для отримання додаткової інформації, будь ласка [Contact Support](https://lime-technology.com/contact).
 :end
-
-; Note: April 21, 2025 - 1 missing translations
-Log Viewer new=Log Viewer (new)

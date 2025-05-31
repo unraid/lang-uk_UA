@@ -532,6 +532,7 @@ No Cache disk present=Немає Cache-диска
 No change to report=Немає змін для звіту
 No CPU pinning available. Docker service must be started=Немає доступного закріплення CPU. Необхідно запустити службу Docker
 No CPU pinning available. VM service must be started=Немає доступного закріплення CPU. Необхідно запустити службу VM
+No encrypted disks found=
 no name=без назви
 No Parity disk present=Диска Парності немає
 No Reply=Без Відповіді
@@ -581,6 +582,7 @@ Optional=
 Or if they are improperly configured, use this feature with care=
 or=або
 Other networks=
+Otherwise use the keyfile method for UTF8 input=Otherwise use the **keyfile** method for UTF8 input
 Outgoing Proxy Manager=Менеджер Вихідних Проксі-Серверів
 Outgoing Proxy=Вихідний Проксі
 Output Voltage=Вихідна напруга
@@ -640,6 +642,7 @@ Port Up=Порт Вверх
 Power Mode=Режим живлення
 Preserve user defined networks=Збереження визначених користувачем мереж
 Preset service=Послуга попереднього налаштування
+Printable Characters Only=
 Priority in header=Пріоритет у заголовку
 Protocol=Протокол
 Provision=Отримати
@@ -865,6 +868,7 @@ UPS Status=Статус UPS
 UPS type=Тип UPS
 URL=URL
 USB=USB
+Use ASCII characters from space to tilde=Use **ASCII** characters from space ' ' to tilde '~'
 Use DEFAULT setting when public NTP servers are defined=
 Use image name dockerimg or docker-xfsimg or select a folder=Використовуйте ім’я зображення docker.img або docker-xfs.img або виберіть папку
 Use NTP=Використовуйте NTP
@@ -989,4 +993,4 @@ Transient errors in this log can be ignored unless you are having issues=Тим�
 Unraid API extra origins=Додаткові джерела API Unraid
 View Flash Backup Error Log=Переглянути журнал помилок Flash Backup
 
-; Note: April 21, 2025 - 60 missing translations
+; Note: May 31, 2025 - 64 missing translations
