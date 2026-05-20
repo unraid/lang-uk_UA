@@ -5,13 +5,13 @@
 У цьому сховищі міститься шістнадцять основних текстових файлів, кожен із власним розділом перекладів:
 
 <pre>
-- <strong>translations.txt</strong>	 -- це <strong>загальні</strong> переклади, які завантажуються щоразу
+- <strong>translations.txt</strong>  -- це <strong>загальні</strong> переклади, які завантажуються щоразу
 - <strong>helptext.txt</strong>      -- це всі розділи <strong>довідкового тексту, які завантажуються щоразу
 - <strong>dashboard.txt</strong>     -- це переклади для розділу <strong>інформаційної панелі</strong>
-- <strong>main.txt</strong>	         -- це переклади основного розділу
+- <strong>main.txt</strong>          -- це переклади основного розділу
 - <strong>shares.txt</strong>        -- це переклади розділу shares
 - <strong>users.txt</strong>         -- це переклади для розділу користувачів
-- <strong>settings.txt</strong>	     -- це переклади розділу налаштувань
+- <strong>settings.txt</strong>      -- це переклади розділу налаштувань
 - <strong>plugins.txt</strong>       -- це переклади розділу <strong>плагінів</strong>
 - <strong>docker.txt</strong>        -- це переклади розділу <strong>docker</strong>
 - <strong>vms.txt</strong>           -- це переклади розділу <strong>vms</strong>
