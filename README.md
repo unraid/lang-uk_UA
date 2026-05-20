@@ -6,21 +6,21 @@
 
 <pre>
 - <strong>translations.txt</strong>  -- це <strong>загальні</strong> переклади, які завантажуються щоразу
-- <strong>helptext.txt</strong>      -- це всі розділи <strong>довідкового тексту, які завантажуються щоразу
-- <strong>dashboard.txt</strong>     -- це переклади для розділу <strong>інформаційної панелі</strong>
+- <strong>helptext.txt</strong>      -- це переклади для розділу <strong>Довідка</strong>
+- <strong>dashboard.txt</strong>     -- це переклади для розділу <strong>Інформаційної панелі</strong>
 - <strong>main.txt</strong>          -- це переклади основного розділу
 - <strong>shares.txt</strong>        -- це переклади розділу shares
 - <strong>users.txt</strong>         -- це переклади для розділу користувачів
 - <strong>settings.txt</strong>      -- це переклади розділу налаштувань
-- <strong>plugins.txt</strong>       -- це переклади розділу <strong>плагінів</strong>
+- <strong>plugins.txt</strong>       -- це переклади розділу <strong>Плагінів</strong>
 - <strong>docker.txt</strong>        -- це переклади розділу <strong>docker</strong>
 - <strong>vms.txt</strong>           -- це переклади розділу <strong>vms</strong>
-- <strong>tools.txt</strong>         -- це переклади розділу <strong>інструментів</strong>
+- <strong>tools.txt</strong>         -- це переклади розділу <strong>Інструментів</strong>
 - <strong>javascript.txt</strong>    -- це переклади для сценаріїв <strong>javascript</strong>
-- <strong>scripts.txt</strong>       -- це переклади для <strong>локальних скриптів</strong>
-- <strong>apps.txt</strong>          -- це переклади для розділу CA (у папці Community Apps)
-- <strong>ca_settings</strong>       -- це переклади налаштувань ЦС (у папці Community Apps)
-- <strong>javascript.ca.txt</strong> -- це переклади для <strong>CA javascript</strong> (у папці Community Apps)
+- <strong>scripts.txt</strong>       -- це переклади для <strong>Локальних скриптів</strong>
+- <strong>apps.txt</strong>          -- це переклади для розділу <strong>Застосунок</strong> <em>(CA = Community Applications)</em>
+- <strong>ca_settings</strong>       -- це переклади для <strong>Налаштувань застосунку</strong> <em>(CA)</em>
+- <strong>javascript.ca.txt</strong> -- це переклади для <strong>JavaScript-скриптів</strong>, які використовуються в розділі <em>CA</em>
 </pre>
 
 Усі назви файлів пишуться у нижньому регістрі та повинні бути включені в репозиторій, щоб переклади були повними.
