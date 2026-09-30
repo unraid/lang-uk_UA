@@ -414,7 +414,7 @@ This will put the system in sleep mode=Це переведе систему в �
 wiki entry=wiki запис
 
 ; Note: April 21, 2025 - 4 missing translations
-loopback=
-not set=
-Rx=
-Tx=
+loopback=Петльовий інтерфейс (Loopback)
+not set=не встановлено
+Rx=Rx
+Tx=Tx
